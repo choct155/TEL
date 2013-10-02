@@ -1708,7 +1708,7 @@ init_mathjax();
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[1]:
+In&nbsp;[3]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -1748,6 +1748,8 @@ In&nbsp;[1]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
+The rmagic extension is already loaded. To reload it, use:
+  %reload_ext rmagic
 &lt;class &apos;pandas.core.frame.DataFrame&apos;&gt;
 Int64Index: 2240 entries, 0 to 2239
 Data columns (total 58 columns):
@@ -1825,7 +1827,7 @@ dtypes: float64(1), int64(56), object(1)
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[2]:
+In&nbsp;[4]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Construct hierarchical dictionaries    </span>
@@ -1850,7 +1852,7 @@ In&nbsp;[2]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[3]:
+In&nbsp;[6]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Open feed to CPI info</span>
@@ -1883,7 +1885,7 @@ In&nbsp;[3]:
 
 
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
+    Out[6]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 <div class="output_html rendered_html">
@@ -1938,7 +1940,7 @@ In&nbsp;[3]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[4]:
+In&nbsp;[11]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Set index</span>
@@ -1950,7 +1952,11 @@ In&nbsp;[4]:
 <span class="c">#Divide each column by deflator ratio</span>
 <span class="n">cgg_real</span><span class="o">=</span><span class="n">c_gg</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">c_gg</span><span class="p">[</span><span class="s">&#39;DFL&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="n">cgg_real</span><span class="p">[</span><span class="n">cgg_real</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">6</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c">#Replace population and ID variables</span>
+<span class="n">cgg_real</span><span class="p">[</span><span class="s">&#39;CTY_POP&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">c_gg</span><span class="p">[</span><span class="s">&#39;POPULATION&#39;</span><span class="p">]</span>
+<span class="n">cgg_real</span><span class="p">[</span><span class="s">&#39;LGID&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">c_gg</span><span class="p">[</span><span class="s">&#39;LG_ID&#39;</span><span class="p">]</span>
+
+<span class="n">cgg_real</span><span class="p">[[</span><span class="s">&#39;LG_ID&#39;</span><span class="p">,</span><span class="s">&#39;REV_TOTAL&#39;</span><span class="p">,</span><span class="s">&#39;POPULATION&#39;</span><span class="p">,</span><span class="s">&#39;CTY_POP&#39;</span><span class="p">,</span><span class="s">&#39;LGID&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1960,8 +1966,23 @@ In&nbsp;[4]:
 <div class="output vbox">
 
 
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+                                   LG_ID  REV_TOTAL  POPULATION
+NAME         AUDIT_YEAR LGTYPE_ID                              
+Adams County 1975       1           1001   27622900      216880
+             1976       1           1001   32777100      222739
+             1977       1           1001   35305800      226135
+             1978       1           1001   43821800      239634
+             1979       1           1001   44203200      246063
+
+</pre>
+</div>
+</div>
+
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[4]:</div>
+    Out[11]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 <div class="output_html rendered_html">
@@ -1974,16 +1995,14 @@ In&nbsp;[4]:
       <th></th>
       <th>LG_ID</th>
       <th>REV_TOTAL</th>
-      <th>REV_TOTAL_TAX</th>
-      <th>REV_PROPERTY_TAX</th>
-      <th>REV_SO_TAX</th>
-      <th>REV_SALES_USE_TAX</th>
+      <th>POPULATION</th>
+      <th>CTY_POP</th>
+      <th>LGID</th>
     </tr>
     <tr>
       <th>NAME</th>
       <th>AUDIT_YEAR</th>
       <th>LGTYPE_ID</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1998,50 +2017,45 @@ In&nbsp;[4]:
       <th>1</th>
       <td> 3990.975836</td>
       <td> 1.101322e+08</td>
-      <td> 36796318.773234</td>
-      <td> 32885082.713755</td>
-      <td> 3583106.877323</td>
-      <td> 0</td>
+      <td> 864698.141264</td>
+      <td> 216880</td>
+      <td> 1001</td>
     </tr>
     <tr>
       <th>1976</th>
       <th>1</th>
       <td> 3773.541301</td>
       <td> 1.235622e+08</td>
-      <td> 47573385.764499</td>
-      <td> 42537724.956063</td>
-      <td> 4735586.994728</td>
-      <td> 0</td>
+      <td> 839675.140598</td>
+      <td> 222739</td>
+      <td> 1001</td>
     </tr>
     <tr>
       <th>1977</th>
       <th>1</th>
       <td> 3543.143564</td>
       <td> 1.249685e+08</td>
-      <td> 48133304.455446</td>
-      <td> 43899230.198020</td>
-      <td> 4122222.772277</td>
-      <td> 0</td>
+      <td> 800428.341584</td>
+      <td> 226135</td>
+      <td> 1001</td>
     </tr>
     <tr>
       <th>1978</th>
       <th>1</th>
       <td> 3293.167178</td>
       <td> 1.441683e+08</td>
-      <td> 50945394.938650</td>
-      <td> 45667444.785276</td>
-      <td> 5126615.797546</td>
-      <td> 0</td>
+      <td> 788366.457055</td>
+      <td> 239634</td>
+      <td> 1001</td>
     </tr>
     <tr>
       <th>1979</th>
       <th>1</th>
       <td> 2957.500000</td>
       <td> 1.306004e+08</td>
-      <td> 48466068.181818</td>
-      <td> 43089977.272727</td>
-      <td> 5261454.545455</td>
-      <td> 0</td>
+      <td> 727004.318182</td>
+      <td> 246063</td>
+      <td> 1001</td>
     </tr>
   </tbody>
 </table>
@@ -2065,15 +2079,16 @@ In&nbsp;[4]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[5]:
+In&nbsp;[13]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
+<span class="c">#install.packages(&quot;rgdal&quot;)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">maptools</span><span class="p">)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">gpclib</span><span class="p">)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">sp</span><span class="p">)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">ggmap</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">rgdal</span><span class="p">)</span>
+<span class="c">#library(rgdal)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">raster</span><span class="p">)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">plyr</span><span class="p">)</span>
@@ -2099,28 +2114,13 @@ In&nbsp;[5]:
 
 
 <pre>
-Loading required package: foreign
-Loading required package: sp
-Loading required package: grid
-Loading required package: lattice
-Checking rgeos availability: TRUE
-General Polygon Clipper Library for R (version 1.5-5)
-	Type &apos;class ? gpc.poly&apos; for help
-Loading required package: ggplot2
-rgdal: version: 0.8-10, (SVN revision 478)
-Geospatial Data Abstraction Library extensions to R successfully loaded
-Loaded GDAL runtime: GDAL 1.9.0, released 2011/12/29
-Path to GDAL shared files: /usr/share/gdal/1.9
-Loaded PROJ.4 runtime: Rel. 4.7.1, 23 September 2009, [PJ_VERSION: 470]
-Path to PROJ.4 shared files: (autodetected)
 Object of class SpatialPolygonsDataFrame
 Coordinates:
          min       max
 x -179.23109 179.85968
 y  -14.60181  71.44106
 Is projected: FALSE 
-proj4string :
-[+proj=longlat +datum=NAD83 +ellps=GRS80 +towgs84=0,0,0]
+proj4string : [+proj=longlat +datum=NAD83]
 Data attributes:
     STATEFP        COUNTYFP        COUNTYNS        GEOID              NAME     
  48     : 254   001    :  50   00023901:   1   01001  :   1   Washington:  31  
@@ -2194,7 +2194,7 @@ Data attributes:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[6]:
+In&nbsp;[14]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
@@ -2273,7 +2273,7 @@ NULL
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[7]:
+In&nbsp;[15]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
@@ -2334,7 +2334,7 @@ NULL
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[8]:
+In&nbsp;[16]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
@@ -2374,7 +2374,7 @@ In&nbsp;[8]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[9]:
+In&nbsp;[17]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%</span><span class="k">Rpull</span> <span class="n">co_df</span> <span class="n">cols</span>
@@ -2390,7 +2390,7 @@ In&nbsp;[9]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[10]:
+In&nbsp;[18]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Generate dictionary containing the spatial data from R</span>
@@ -2440,7 +2440,7 @@ In&nbsp;[10]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[53]:
+In&nbsp;[19]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;THE NUMBER OF COUNTIES IN co_DF AND cgg_real IS EQUIVALENT:&#39;</span><span class="p">,</span>\
@@ -2481,7 +2481,7 @@ THE SAME COUNTIES ARE REPRESENTED IN BOTH SETS: False
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[64]:
+In&nbsp;[20]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="nb">set</span><span class="p">(</span><span class="n">cgg_real</span><span class="p">[</span><span class="s">&#39;FNAME&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">co_DF</span><span class="p">[</span><span class="s">&#39;NAME&#39;</span><span class="p">]))</span>
@@ -2516,7 +2516,7 @@ set([&apos;San Juan&apos;, &apos;San Miguel&apos;, &apos;La Plata&apos;, &apos;C
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[81]:
+In&nbsp;[21]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Create list of cgg_real counties over which to iterate</span>
@@ -2596,7 +2596,7 @@ Name: FNAME, Length: 2240, dtype: object
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[82]:
+In&nbsp;[22]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;THE SAME COUNTIES ARE REPRESENTED IN BOTH SETS:&#39;</span><span class="p">,</span><span class="nb">set</span><span class="p">(</span><span class="n">cgg_real</span><span class="p">[</span><span class="s">&#39;FNAME&#39;</span><span class="p">])</span><span class="o">==</span><span class="nb">set</span><span class="p">(</span><span class="n">co_DF</span><span class="p">[</span><span class="s">&#39;NAME&#39;</span><span class="p">])</span>
@@ -2632,7 +2632,7 @@ set([&apos;Rio Grande&apos;])
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[84]:
+In&nbsp;[23]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Identify FNAME for Rio Grande</span>
@@ -2707,7 +2707,7 @@ Name: FNAME, Length: 70, dtype: object
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[85]:
+In&nbsp;[24]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c">#Patch Rio Grande County</span>
@@ -2743,11 +2743,223 @@ THE SAME COUNTIES ARE REPRESENTED IN BOTH SETS: True
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[25]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre>
+<div class="highlight"><pre><span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">cgg_real</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">co_DF</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">cgg_real</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">co_DF</span><span class="p">)</span>
+<span class="n">co_county_sp</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">cgg_real</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span><span class="n">co_DF</span><span class="p">,</span><span class="n">left_on</span><span class="o">=</span><span class="s">&#39;FNAME&#39;</span><span class="p">,</span><span class="n">right_on</span><span class="o">=</span><span class="s">&#39;NAME&#39;</span><span class="p">)</span>
+<span class="n">co_county_sp</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">workdir</span><span class="o">+</span><span class="s">&#39;CO_county_ggfin.csv&#39;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">co_county_sp</span><span class="p">[</span><span class="s">&#39;sorting_id&#39;</span><span class="p">]))</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+2240 64 35
+64
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can push back to R to reintegrate the data into the shapefile.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[26]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas.rpy.common</span> <span class="kn">as</span> <span class="nn">com</span>
+
+<span class="c">#Convert pandas DataFrames to R data.frames</span>
+<span class="n">cgg_sp_r</span><span class="o">=</span><span class="n">com</span><span class="o">.</span><span class="n">convert_to_r_dataframe</span><span class="p">(</span><span class="n">co_county_sp</span><span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
+
+<span class="c">#Push new data.frame into the R namespace</span>
+<span class="o">%</span><span class="k">Rpush</span> <span class="n">cgg_sp_r</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Having merged in the Python namespace, we need only to order the data by sorting_id and check to make sure the row names correspond.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[34]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
+<span class="c">#Reorder by sorting_id</span>
+<span class="n">cgg</span><span class="o">.</span><span class="n">o</span><span class="o">&lt;-</span><span class="n">cgg_sp_r</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="k">as</span><span class="o">.</span><span class="n">numeric</span><span class="p">(</span><span class="n">cgg_sp_r</span><span class="err">$</span><span class="n">sorting_id</span><span class="p">)),]</span>
+
+<span class="c">#Check equality of objects</span>
+<span class="k">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s">&#39;Equality of Row Names (ordered vs. original):&#39;</span><span class="p">,</span><span class="n">identical</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">cgg</span><span class="o">.</span><span class="n">o</span><span class="p">),</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">co_df</span><span class="p">))))</span>
+
+<span class="c">#Check equality of object lengths</span>
+<span class="k">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s">&#39;Equality of Row Name Length (ordered vs. original):&#39;</span><span class="p">,</span><span class="n">identical</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">cgg</span><span class="o">.</span><span class="n">o</span><span class="p">)),</span>
+                                                                            <span class="n">length</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">co_df</span><span class="p">)))))</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
+
+
+<pre>
+[1] &quot;Equality of Row Names (ordered vs. original): FALSE&quot;
+[1] &quot;Equality of Row Name Length (ordered vs. original): FALSE&quot;
+
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ah, of course they don't. The county finance data include all years, while the original <em>data</em> slot in the SPDF included only a single cross-section. The unique sorting_id values should match, but the row names will not.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[39]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
+<span class="c">#Check equality of objects</span>
+<span class="k">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s">&#39;Equality of Row Names (ordered vs. original):&#39;</span><span class="p">,</span><span class="n">identical</span><span class="p">(</span><span class="n">unique</span><span class="p">(</span><span class="n">cgg</span><span class="o">.</span><span class="n">o</span><span class="err">$</span><span class="n">sorting_id</span><span class="p">),</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">co_df</span><span class="p">))))</span>
+
+<span class="c">#Check equality of object lengths</span>
+<span class="k">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s">&#39;Equality of Row Name Length (ordered vs. original):&#39;</span><span class="p">,</span><span class="n">identical</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">unique</span><span class="p">(</span><span class="n">cgg</span><span class="o">.</span><span class="n">o</span><span class="err">$</span><span class="n">sorting_id</span><span class="p">)),</span>
+                                                                            <span class="n">length</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">co_df</span><span class="p">)))))</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
+
+
+<pre>
+[1] &quot;Equality of Row Names (ordered vs. original): TRUE&quot;
+[1] &quot;Equality of Row Name Length (ordered vs. original): TRUE&quot;
+
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And this is confirmed. The question is where to go from here... Do I have to create a new shapefile for every year?</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">R</span>
+<span class="n">library</span><span class="p">(</span><span class="n">rgdal</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">summary</span><span class="p">(</span><span class="n">co</span><span class="p">))</span>
+
+<span class="c">#Convert to WGS84</span>
+<span class="n">co_ll</span><span class="o">&lt;-</span><span class="n">spTransform</span><span class="p">(</span><span class="n">co</span><span class="p">,</span><span class="n">CRS</span><span class="p">(</span><span class="s">&#39;+proj=longlat +datum=WGS84&#39;</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">summary</span><span class="p">(</span><span class="n">co_ll</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+ERROR: Cell magic &#96;%%R&#96; not found.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[43]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">co_county_sp</span><span class="o">.</span><span class="n">columns</span>
+<span class="k">print</span> <span class="n">co_DF</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+Index([u&apos;NAME_x&apos;, u&apos;AUDIT_YEAR&apos;, u&apos;LGTYPE_ID&apos;, u&apos;LG_ID&apos;, u&apos;REV_TOTAL&apos;, u&apos;REV_TOTAL_TAX&apos;, u&apos;REV_PROPERTY_TAX&apos;, u&apos;REV_SO_TAX&apos;, u&apos;REV_SALES_USE_TAX&apos;, u&apos;REV_OCCUPATION_TAX&apos;, u&apos;REV_FRANCHISE_TAX&apos;, u&apos;REV_OTHER_TAX&apos;, u&apos;REV_LODGING_TAX&apos;, u&apos;REV_REAL_ESTATE_TRANSFER_TAX&apos;, u&apos;REV_UNCLASS_TAX&apos;, u&apos;REV_LICENSES&apos;, u&apos;REV_CHARGES&apos;, u&apos;REV_FINES&apos;, u&apos;REV_TRANSFER_IN&apos;, u&apos;REV_INTGOVT&apos;, u&apos;REV_HUT&apos;, u&apos;REV_CIGARETTE_TAX&apos;, u&apos;REV_MOTOR_VEH_FEE&apos;, u&apos;REV_CTF&apos;, u&apos;REV_SOCIAL_SERVICE&apos;, u&apos;ALL_OTHER_INTGOVT&apos;, u&apos;REV_MISC&apos;, u&apos;REV_INTEREST&apos;, u&apos;EXP_TOTAL&apos;, u&apos;EXP_TOTAL_OPERATING&apos;, u&apos;EXP_GEN_GOVT&apos;, u&apos;EXP_JUDICIAL&apos;, u&apos;EXP_TOTAL_PUBLIC_SAFETY&apos;, u&apos;EXP_POLICE&apos;, u&apos;EXP_FIRE&apos;, u&apos;EXP_OTHER_PUBLIC_SAFETY&apos;, u&apos;EXP_TOTAL_PUBLIC_WORKS&apos;, u&apos;EXP_STREET&apos;, u&apos;EXP_TRASH&apos;, u&apos;EXP_OTHER_PUBLIC_WORKS&apos;, u&apos;EXP_HEALTH&apos;, u&apos;EXP_RECREATION&apos;, u&apos;EXP_SOCIAL_SERVICE&apos;, u&apos;EXP_MISC&apos;, u&apos;EXP_TRANSFER_OUT&apos;, u&apos;EXP_CAPITAL_OUTLAY&apos;, u&apos;EXP_DEBT_SERVICE_GEN&apos;, u&apos;EXP_PRINCIPAL_GEN&apos;, u&apos;EXP_INTEREST_GEN&apos;, u&apos;GO_DEBT_GEN&apos;, u&apos;REVENUE_DEBT_GEN&apos;, u&apos;OTHER_DEBT_GEN&apos;, u&apos;ASSETS&apos;, u&apos;LIABILITIES&apos;, u&apos;POPULATION&apos;, u&apos;RETAIL_SALES&apos;, u&apos;ST_SALES_TAX_PAID&apos;, u&apos;SALES_TAX_RATE&apos;, u&apos;DFL&apos;, u&apos;FNAME&apos;, u&apos;ALAND&apos;, u&apos;AWATER&apos;, u&apos;CBSAFP&apos;, u&apos;CLASSFP&apos;, u&apos;COUNTYFP&apos;, u&apos;COUNTYNS&apos;, u&apos;CSAFP&apos;, u&apos;FUNCSTAT&apos;, u&apos;GEOID&apos;, u&apos;INTPTLAT&apos;, u&apos;INTPTLON&apos;, u&apos;LSAD&apos;, u&apos;METDIVFP&apos;, u&apos;MTFCC&apos;, u&apos;NAME_y&apos;, u&apos;NAMELSAD&apos;, u&apos;STATEFP&apos;, u&apos;sorting_id&apos;], dtype=object)
+          ALAND      AWATER CBSAFP CLASSFP COUNTYFP  COUNTYNS CSAFP FUNCSTAT  GEOID    INTPTLAT      INTPTLON LSAD METDIVFP  MTFCC  \
+0  2893573835.0  15324680.0     NA      H1      053  00198142    NA        A  08053  37.8116669   -107.383335   06       NA  G4020   
+1  2957922894.0  16953424.0     NA      H1      029  00198130    NA        A  08029  38.8617559   -107.864757   06       NA  G4020   
+2   388229141.0    941898.0  19740      H1      047  00198139   216        A  08047  39.8610823  -105.5289473   06       NA  G4020   
+3  3177803460.0   8828904.0     NA      H1      023  00198127    NA        A  08023  37.2775474  -105.4289399   06       NA  G4020   
+4  4179563675.0  18750018.0     NA      H1      057  00198144    NA        A  08057  40.6634319  -106.3292476   06       NA  G4020   
+
+       NAME         NAMELSAD STATEFP sorting_id  
+0  Hinsdale  Hinsdale County      08       2169  
+1     Delta     Delta County      08       2170  
+2    Gilpin    Gilpin County      08       2171  
+3  Costilla  Costilla County      08       2174  
+4   Jackson   Jackson County      08       2176  
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>

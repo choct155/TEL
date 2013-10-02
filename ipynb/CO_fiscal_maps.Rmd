@@ -1,0 +1,61 @@
+Mapping Colorado Fiscal Activity by County (1987-2009)
+========================================================
+
+This script is a support script of sorts for the primary IPython Notebook *CO_county_fin*.  I am doing the actual mapping separately because, for some unknown reason, I am no longer able to call th **[rgdal](http://crantastic.org/packages/rgdal)** library in the Notebook, even though I can still call it here (in RStudio).
+
+In any event, the problem that I was working on was how to associate several years of data with the same spatial information.  To state the problem more explicitly, even though we aren't plotting all of it, the full set contains 35 years of information.  Thus, the dataset is now 35 times the size of the data that was removed from the shapefile in the first place.  Since I want to use **[ggplot2](http://ggplot2.org/)** to make cool looking maps, I will not be using the spatio-temporal capability of the **[spacetime](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CDcQFjAB&url=http%3A%2F%2Fcran.r-project.org%2Fweb%2Fpackages%2Fspacetime%2Fvignettes%2Fjss816.pdf&ei=vrZBUunhAbb_4APjwoCwCg&usg=AFQjCNEtZPUEGwHgQYpqRYOYYGvlZUAdFw&sig2=4H81oEVeshYJykwFmM4CeA&bvm=bv.52434380,d.dmg)** package nor its associated plotting functions.  Rather, I will be using the methods described in a great [Stack Overflow response](http://stackoverflow.com/questions/9186529/grid-with-choropleth-maps-in-ggplot2) to a question about choropleth map grids.
+
+First, we need to read in the merged data and the shapefile.
+```{r Data Load}
+library(maptools)
+library(gpclib)
+library(sp)
+library(ggmap)
+library(rgdal)
+library(raster)
+library(ggplot2)
+library(plyr)
+
+#Read in fiscal data
+cgg<-read.csv('/home/choct155/Google Drive/Dissertation/Data/CO_county_ggfin.csv')
+
+#Read in county shapefile
+us<-readShapeSpatial('/home/choct155/Google Drive/Dissertation/Data/spatial/US/tl_2012_us_county.shp')
+projection(us) <- '+proj=longlat +datum=NAD83'
+
+#Subset to Colorado 
+co<-us[us$STATEFP=='08',]
+
+#Inspect both sets
+print(str(cgg))
+print(summary(co))
+```
+
+**UPDATE:** Trying to merge all of the data at once creates a heavy load (circa 4.5 M observations with 80 variables or something stupid).  This is taxing my poor laptop to the limit, and in reality, we only need to map every so often.  If we can map every 5 years over the 1989-2009 time period.
+
+```{r Sequence Generation}
+years<-seq(1989,2009,5)
+```
+
+To link the spatial information with the fiscal info, we will need to fortify the data and merge based upon the polygon IDs.  I grabbed these from the initial shapefile for the fiscal data, so they are already in there as *sorting_id*.  Once the spatial information is extracted as a data.frame (fortification), the fiscal data must be reordered by *sorting_id* and the row names made commensurate with the spatial data.frame.
+
+```{r Spatial Integration}
+#Convert to dataframe
+co_f<-fortify(co)
+
+#Reorder fiscal data
+cgg.o<-cgg[order(as.numeric(cgg$sorting_id)),]
+
+#Merge data and spatial info
+co_map<-merge(cgg,co_f,by.x='sorting_id',by.y='id')
+
+```
+
+```{r Plotting by Year}
+co_map$pcrev<-co_map$REV_TOTAL/co_map$POPULATION
+rev_plot<-ggplot(aes(x=long,y=lat,group=group,fill=as.numeric(pcrev)),data=co_map)+
+            geom_polygon(colour='white',size=.05)+
+            coord_equal()+
+            labs(title='Distribution of Revenue Capacity')
+rev_plot
+```
