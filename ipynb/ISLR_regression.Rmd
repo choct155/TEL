@@ -1,0 +1,115 @@
+Introduction to Regression with the ISLR Library
+========================================================
+
+This is a file that is intended to be the first of a series of scripts associated with the [Introduction to Statistical Learning](http://online.stanford.edu/course/statistical-learning-winter-2014) offered online by [Stanford](http://online.stanford.edu/).  This covers their introduction to regression, but more importantly, it's an introduction to the statistical learning package they have developed called [ISLR](http://cran.r-project.org/web/packages/ISLR/index.html).
+
+Why am I bothering to do this now?  I knew a priori that teasing out the impact of tax and expenditure limitations on fiscal and economic outcomes would be a sensitive business, and indeed, I have has analysis to date verify this.  To the extent that I want to capture the clearest signals I can, the [Elements of Statistical Learning](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&ved=0CE0QFjAD&url=http%3A%2F%2Fwww.stanford.edu%2F~hastie%2Flocal.ftp%2FSpringer%2FOLD%2FESLII_print4.pdf&ei=5C_kUtn3NMLisAS_tYHYCA&usg=AFQjCNGbK_GY8ymndHodqJ0PijBqvAYvyw&sig2=h2X28tDdJQTer750LHK4Rw&bvm=bv.59930103,d.cWc) text has been a treasure trove of ideas.  Furthermore, it simply discusses statistics in a manner that is more intuitive to me than any of my prior instruction.  The course walks through an applied version of this book, implemented in R.
+
+This exercise begins with just three packages:
+
+```{r Libraries}
+library(MASS)
+library(ggplot2)
+library(ISLR)
+```
+
+We will begin with a dataset called Boston.  What variables are we using?
+
+```{r Variable List}
+names(Boston)
+```
+
+Just to get a feel for things, let's look at median home value vs "lower" status population.
+
+```{r Home Value vs Lower Status}
+#Regress medv on lstat
+fit1<-lm(medv~lstat,Boston)
+summary(fit1)
+
+#Add fit line to plot
+ggplot(Boston,aes(lstat,medv)) + geom_point() + geom_abline(intercept=fit1$coef[1],slope=fit1$coef[2],colour="red")
+
+#stat_smooth is a bit more keystroke efficient
+ggplot(Boston,aes(lstat,medv)) + geom_point() + stat_smooth(method='lm')
+```
+
+Nothing crazy about that.  In the context of learning, prediction is of particular interest.  We can use our fitted model to predict the median home value associated with three new values of "lower" status (whatever that means).
+
+```{r Prediction}
+predict(fit1,data.frame(lstat=c(5,10,15)),interval='confidence')
+```
+
+Let's get real crazy with some *multiple* regression.
+
+```{r Multiple Regression}
+#Fit multiple regression model
+fit2<-lm(medv~lstat+age,Boston)
+summary(fit2)
+
+#Fit multiple regression with all other variables in the data.frame
+fit3<-lm(medv~.,Boston)
+summary(fit3)
+
+#Plot the four visual inspection plots associated with lm
+par(mfrow=c(2,2))
+plot(fit3)
+
+#Get rid of some of the variables from fit3
+fit4<-update(fit3,~. -age -indus)
+summary(fit4)
+```
+
+Let's move on to interactions and non-linearities.  To start, let's see if `lstat` and `age` alter each other's impact on `medv`.
+
+```{r Interaction}
+#Fit interaction model
+fit5<-lm(medv~lstat*age,Boston)
+summary(fit5)
+```
+
+Note that we need only to explicitly include the interaction, but the base terms are still included.
+
+```{r Nonlinear}
+#Fit nonlinear model
+fit6<-lm(medv~lstat+I(lstat^2),Boston); summary(fit6)
+```
+
+The `I()` term is used to ensure that the exponential reference does not mess up the formula language (it has its own meaning).  It stands for *Identity*.  The semi-colon enables us to put multiple commands in a single line.
+
+We saw before that the linear fit line was not sufficient to explain the action in `medv`, but it does appear that a quadratic fit might.  We can use the model we just ran for this purpose.
+
+```{r Quadratic Fit}
+#Plot original data and add the fit line with base R
+par(mfrow=c(1,1))
+plot(Boston$medv~Boston$lstat)
+points(Boston$lstat,fitted(fit6),col="red",pch=20)
+
+#Do the same thing with ggplot2
+ggplot(Boston,aes(lstat,medv)) + geom_point() + stat_smooth(method='lm',formula=y~poly(x,2))
+```
+
+Note that we can add arbitrarily many overlay plots in R's base plotting system.  From here on out, however, we will opt for [ggplot2](http://ggplot2.org/).
+
+The whole `I()` business is a little cumbersome, there is a quicker way to fit such a model.
+
+```{r Higher Order}
+#Fit fourth power model
+fit7<-lm(medv~poly(lstat,4),Boston);summary(fit7)
+
+#Plot
+ggplot(Boston,aes(lstat,medv)) + geom_point() + stat_smooth(method='lm',formula=y~poly(x,2)) + 
+  stat_smooth(method='lm',formula=y~poly(x,4),color="red")
+```
+
+How can we deal with categoricals?  We will use a new set called **Carseats** for this.  (By the way, if we want a quick and dirty data editor we can use `fix()`).
+
+Let's fit a model with a couple interaction terms thrown into the mix.
+
+```{r Categorical}
+#Fit model
+cfit1<-lm(Sales~.+Income:Advertising+Age:Price,Carseats); summary(cfit1)
+
+#Reveal how R codes this categorical variable
+contrasts(Carseats$ShelveLoc)
+```
+

@@ -1,0 +1,17 @@
+#Revision of Dissertation Plan
+
+The time has come to revise the scope of my inquiry.  My expectations were quite high with my initial proposal draft, so my [refined plan](https://github.com/choct155/TELs/blob/master/auxprod/RefinedPlan_28FEB2013update.docx) sought to limit the scope of inquiry by focusing on hypotheses that drew from a common dataset.  Having worked through some of the analysis has revealed, however, that even this "streamlined" version was still a bit ambitious.  It featured three empricial sections, which is not unreasonable.  However, the sections housed  14 hypotheses among them.  The amount of analysis required apparently outstrips what is needed to demonstrate doctoral level proficiency, so what follows is a distillation of this plan.
+
+##Analysis To Date
+
+At the current time, I have done much of the work required to demonstrate the impact of TELs on both the clustering of economic and fiscal behavior and the divergence between the expenditure profiles desired by jurisdictions and the actual expenditure composition they use.  The final models need to be adjusted for both, but this will be revisited when all the pieces are completed to understand the best means of fitting them together.
+
+##Value Added
+
+There is a wealth of rich research in the area of tax and expenditure limitations, but my research has three components that are not currently (or barely are) in play:
+
+1. Most research attacks TELs from the perspective of evaluating the average effect across jurisdictions.  Mullins' work is a notable exception in this regard, and it seems only fitting that I extend the body of work in this area.
+
+2. Variability in the application of TELs has been difficult to capture.  The simple reason is, in a nutshell, that authorizing statutes and/or constitutional provisions do not change all that rapidly.  The most common approach for introducing variation has been the construction of indices from TEL provisions.  This has led to even more focus on state comparisons than might otherwise be the case (because variation in TEL structure is typically across states).  Furthermore, researchers have had difficulty studying the effect of overlapping policies, which typically disrupt the impact that indices are trying to pick up.  My approach has been to abstract away from specific provisions, towards the impact of said provisions on individual jurisdictions.  The measure (intensity stock) seeks to capture the cumulative constraint placed upon revenue sources for each jurisdiction.  It varies as a function of economic base growth.  To the best of my knowledge, this is a unique approach.
+
+3. 

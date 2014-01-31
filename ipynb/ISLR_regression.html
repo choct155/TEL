@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Introduction to Regression with the ISLR Library</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<h1>Introduction to Regression with the ISLR Library</h1>
+
+<p>This is a file that is intended to be the first of a series of scripts associated with the <a href="http://online.stanford.edu/course/statistical-learning-winter-2014">Introduction to Statistical Learning</a> offered online by <a href="http://online.stanford.edu/">Stanford</a>.  This covers their introduction to regression, but more importantly, it&#39;s an introduction to the statistical learning package they have developed called <a href="http://cran.r-project.org/web/packages/ISLR/index.html">ISLR</a>.</p>
+
+<p>Why am I bothering to do this now?  I knew a priori that teasing out the impact of tax and expenditure limitations on fiscal and economic outcomes would be a sensitive business, and indeed, I have has analysis to date verify this.  To the extent that I want to capture the clearest signals I can, the <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=4&amp;cad=rja&amp;ved=0CE0QFjAD&amp;url=http%3A%2F%2Fwww.stanford.edu%2F%7Ehastie%2Flocal.ftp%2FSpringer%2FOLD%2FESLII_print4.pdf&amp;ei=5C_kUtn3NMLisAS_tYHYCA&amp;usg=AFQjCNGbK_GY8ymndHodqJ0PijBqvAYvyw&amp;sig2=h2X28tDdJQTer750LHK4Rw&amp;bvm=bv.59930103,d.cWc">Elements of Statistical Learning</a> text has been a treasure trove of ideas.  Furthermore, it simply discusses statistics in a manner that is more intuitive to me than any of my prior instruction.  The course walks through an applied version of this book, implemented in R.</p>
+
+<p>This exercise begins with just three packages:</p>
+
+<pre><code class="r">library(MASS)
+library(ggplot2)
+library(ISLR)
+</code></pre>
+
+<p>We will begin with a dataset called Boston.  What variables are we using?</p>
+
+<pre><code class="r">names(Boston)
+</code></pre>
+
+<pre><code>##  [1] &quot;crim&quot;    &quot;zn&quot;      &quot;indus&quot;   &quot;chas&quot;    &quot;nox&quot;     &quot;rm&quot;      &quot;age&quot;    
+##  [8] &quot;dis&quot;     &quot;rad&quot;     &quot;tax&quot;     &quot;ptratio&quot; &quot;black&quot;   &quot;lstat&quot;   &quot;medv&quot;
+</code></pre>
+
+<p>Just to get a feel for things, let&#39;s look at median home value vs &ldquo;lower&rdquo; status population.</p>
+
+<pre><code class="r"># Regress medv on lstat
+fit1 &lt;- lm(medv ~ lstat, Boston)
+summary(fit1)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ lstat, data = Boston)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -15.17  -3.99  -1.32   2.03  24.50 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  34.5538     0.5626    61.4   &lt;2e-16 ***
+## lstat        -0.9500     0.0387   -24.5   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 6.22 on 504 degrees of freedom
+## Multiple R-squared:  0.544,  Adjusted R-squared:  0.543 
+## F-statistic:  602 on 1 and 504 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">
+# Add fit line to plot
+ggplot(Boston, aes(lstat, medv)) + geom_point() + geom_abline(intercept = fit1$coef[1], 
+    slope = fit1$coef[2], colour = &quot;red&quot;)
+</code></pre>
+
+<p><img src="figure/Home%20Value%20vs%20Lower%20Status1.png" alt="plot of chunk Home Value vs Lower Status"/> </p>
+
+<pre><code class="r">
+# stat_smooth is a bit more keystroke efficient
+ggplot(Boston, aes(lstat, medv)) + geom_point() + stat_smooth(method = &quot;lm&quot;)
+</code></pre>
+
+<p><img src="figure/Home%20Value%20vs%20Lower%20Status2.png" alt="plot of chunk Home Value vs Lower Status"/> </p>
+
+<p>Nothing crazy about that.  In the context of learning, prediction is of particular interest.  We can use our fitted model to predict the median home value associated with three new values of &ldquo;lower&rdquo; status (whatever that means).</p>
+
+<pre><code class="r">predict(fit1, data.frame(lstat = c(5, 10, 15)), interval = &quot;confidence&quot;)
+</code></pre>
+
+<pre><code>##     fit   lwr   upr
+## 1 29.80 29.01 30.60
+## 2 25.05 24.47 25.63
+## 3 20.30 19.73 20.87
+</code></pre>
+
+<p>Let&#39;s get real crazy with some <em>multiple</em> regression.</p>
+
+<pre><code class="r"># Fit multiple regression model
+fit2 &lt;- lm(medv ~ lstat + age, Boston)
+summary(fit2)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ lstat + age, data = Boston)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -15.98  -3.98  -1.28   1.97  23.16 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  33.2228     0.7308   45.46   &lt;2e-16 ***
+## lstat        -1.0321     0.0482  -21.42   &lt;2e-16 ***
+## age           0.0345     0.0122    2.83   0.0049 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 6.17 on 503 degrees of freedom
+## Multiple R-squared:  0.551,  Adjusted R-squared:  0.549 
+## F-statistic:  309 on 2 and 503 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">
+# Fit multiple regression with all other variables in the data.frame
+fit3 &lt;- lm(medv ~ ., Boston)
+summary(fit3)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ ., data = Boston)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -15.594  -2.730  -0.518   1.777  26.199 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  3.65e+01   5.10e+00    7.14  3.3e-12 ***
+## crim        -1.08e-01   3.29e-02   -3.29  0.00109 ** 
+## zn           4.64e-02   1.37e-02    3.38  0.00078 ***
+## indus        2.06e-02   6.15e-02    0.33  0.73829    
+## chas         2.69e+00   8.62e-01    3.12  0.00193 ** 
+## nox         -1.78e+01   3.82e+00   -4.65  4.2e-06 ***
+## rm           3.81e+00   4.18e-01    9.12  &lt; 2e-16 ***
+## age          6.92e-04   1.32e-02    0.05  0.95823    
+## dis         -1.48e+00   1.99e-01   -7.40  6.0e-13 ***
+## rad          3.06e-01   6.63e-02    4.61  5.1e-06 ***
+## tax         -1.23e-02   3.76e-03   -3.28  0.00111 ** 
+## ptratio     -9.53e-01   1.31e-01   -7.28  1.3e-12 ***
+## black        9.31e-03   2.69e-03    3.47  0.00057 ***
+## lstat       -5.25e-01   5.07e-02  -10.35  &lt; 2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 4.75 on 492 degrees of freedom
+## Multiple R-squared:  0.741,  Adjusted R-squared:  0.734 
+## F-statistic:  108 on 13 and 492 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">
+# Plot the four visual inspection plots associated with lm
+par(mfrow = c(2, 2))
+plot(fit3)
+</code></pre>
+
+<p><img src="figure/Multiple%20Regression.png" alt="plot of chunk Multiple Regression"/> </p>
+
+<pre><code class="r">
+# Get rid of some of the variables from fit3
+fit4 &lt;- update(fit3, ~. - age - indus)
+summary(fit4)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ crim + zn + chas + nox + rm + dis + rad + 
+##     tax + ptratio + black + lstat, data = Boston)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -15.598  -2.739  -0.505   1.727  26.237 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  36.34115    5.06749    7.17  2.7e-12 ***
+## crim         -0.10841    0.03278   -3.31  0.00101 ** 
+## zn            0.04584    0.01352    3.39  0.00075 ***
+## chas          2.71872    0.85424    3.18  0.00155 ** 
+## nox         -17.37602    3.53524   -4.92  1.2e-06 ***
+## rm            3.80158    0.40632    9.36  &lt; 2e-16 ***
+## dis          -1.49271    0.18573   -8.04  6.8e-15 ***
+## rad           0.29961    0.06340    4.73  3.0e-06 ***
+## tax          -0.01178    0.00337   -3.49  0.00052 ***
+## ptratio      -0.94652    0.12907   -7.33  9.2e-13 ***
+## black         0.00929    0.00267    3.47  0.00056 ***
+## lstat        -0.52255    0.04742  -11.02  &lt; 2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 4.74 on 494 degrees of freedom
+## Multiple R-squared:  0.741,  Adjusted R-squared:  0.735 
+## F-statistic:  128 on 11 and 494 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>Let&#39;s move on to interactions and non-linearities.  To start, let&#39;s see if <code>lstat</code> and <code>age</code> alter each other&#39;s impact on <code>medv</code>.</p>
+
+<pre><code class="r"># Fit interaction model
+fit5 &lt;- lm(medv ~ lstat * age, Boston)
+summary(fit5)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ lstat * age, data = Boston)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -15.81  -4.04  -1.33   2.08  27.55 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 36.088536   1.469835   24.55  &lt; 2e-16 ***
+## lstat       -1.392117   0.167456   -8.31  8.8e-16 ***
+## age         -0.000721   0.019879   -0.04    0.971    
+## lstat:age    0.004156   0.001852    2.24    0.025 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 6.15 on 502 degrees of freedom
+## Multiple R-squared:  0.556,  Adjusted R-squared:  0.553 
+## F-statistic:  209 on 3 and 502 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>Note that we need only to explicitly include the interaction, but the base terms are still included.</p>
+
+<pre><code class="r"># Fit nonlinear model
+fit6 &lt;- lm(medv ~ lstat + I(lstat^2), Boston)
+summary(fit6)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ lstat + I(lstat^2), data = Boston)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -15.28  -3.83  -0.53   2.31  25.41 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 42.86201    0.87208    49.1   &lt;2e-16 ***
+## lstat       -2.33282    0.12380   -18.8   &lt;2e-16 ***
+## I(lstat^2)   0.04355    0.00375    11.6   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 5.52 on 503 degrees of freedom
+## Multiple R-squared:  0.641,  Adjusted R-squared:  0.639 
+## F-statistic:  449 on 2 and 503 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>The <code>I()</code> term is used to ensure that the exponential reference does not mess up the formula language (it has its own meaning).  It stands for <em>Identity</em>.  The semi-colon enables us to put multiple commands in a single line.</p>
+
+<p>We saw before that the linear fit line was not sufficient to explain the action in <code>medv</code>, but it does appear that a quadratic fit might.  We can use the model we just ran for this purpose.</p>
+
+<pre><code class="r"># Plot original data and add the fit line with base R
+par(mfrow = c(1, 1))
+plot(Boston$medv ~ Boston$lstat)
+points(Boston$lstat, fitted(fit6), col = &quot;red&quot;, pch = 20)
+</code></pre>
+
+<p><img src="figure/Quadratic%20Fit1.png" alt="plot of chunk Quadratic Fit"/> </p>
+
+<pre><code class="r">
+# Do the same thing with ggplot2
+ggplot(Boston, aes(lstat, medv)) + geom_point() + stat_smooth(method = &quot;lm&quot;, 
+    formula = y ~ poly(x, 2))
+</code></pre>
+
+<p><img src="figure/Quadratic%20Fit2.png" alt="plot of chunk Quadratic Fit"/> </p>
+
+<p>Note that we can add arbitrarily many overlay plots in R&#39;s base plotting system.  From here on out, however, we will opt for <a href="http://ggplot2.org/">ggplot2</a>.</p>
+
+<p>The whole <code>I()</code> business is a little cumbersome, there is a quicker way to fit such a model.</p>
+
+<pre><code class="r"># Fit fourth power model
+fit7 &lt;- lm(medv ~ poly(lstat, 4), Boston)
+summary(fit7)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = medv ~ poly(lstat, 4), data = Boston)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -13.563  -3.180  -0.632   2.283  27.181 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)       22.533      0.235   95.99  &lt; 2e-16 ***
+## poly(lstat, 4)1 -152.460      5.280  -28.87  &lt; 2e-16 ***
+## poly(lstat, 4)2   64.227      5.280   12.16  &lt; 2e-16 ***
+## poly(lstat, 4)3  -27.051      5.280   -5.12  4.3e-07 ***
+## poly(lstat, 4)4   25.452      5.280    4.82  1.9e-06 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 5.28 on 501 degrees of freedom
+## Multiple R-squared:  0.673,  Adjusted R-squared:  0.67 
+## F-statistic:  258 on 4 and 501 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">
+# Plot
+ggplot(Boston, aes(lstat, medv)) + geom_point() + stat_smooth(method = &quot;lm&quot;, 
+    formula = y ~ poly(x, 2)) + stat_smooth(method = &quot;lm&quot;, formula = y ~ poly(x, 
+    4), color = &quot;red&quot;)
+</code></pre>
+
+<p><img src="figure/Higher%20Order.png" alt="plot of chunk Higher Order"/> </p>
+
+<p>How can we deal with categoricals?  We will use a new set called <strong>Carseats</strong> for this.  (By the way, if we want a quick and dirty data editor we can use <code>fix()</code>).</p>
+
+<p>Let&#39;s fit a model with a couple interaction terms thrown into the mix.</p>
+
+<pre><code class="r"># Fit model
+cfit1 &lt;- lm(Sales ~ . + Income:Advertising + Age:Price, Carseats)
+summary(cfit1)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = Sales ~ . + Income:Advertising + Age:Price, data = Carseats)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -2.921 -0.750  0.018  0.675  3.341 
+## 
+## Coefficients:
+##                     Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         6.575565   1.008747    6.52  2.2e-10 ***
+## CompPrice           0.092937   0.004118   22.57  &lt; 2e-16 ***
+## Income              0.010894   0.002604    4.18  3.6e-05 ***
+## Advertising         0.070246   0.022609    3.11  0.00203 ** 
+## Population          0.000159   0.000368    0.43  0.66533    
+## Price              -0.100806   0.007440  -13.55  &lt; 2e-16 ***
+## ShelveLocGood       4.848676   0.152838   31.72  &lt; 2e-16 ***
+## ShelveLocMedium     1.953262   0.125768   15.53  &lt; 2e-16 ***
+## Age                -0.057947   0.015951   -3.63  0.00032 ***
+## Education          -0.020852   0.019613   -1.06  0.28836    
+## UrbanYes            0.140160   0.112402    1.25  0.21317    
+## USYes              -0.157557   0.148923   -1.06  0.29073    
+## Income:Advertising  0.000751   0.000278    2.70  0.00729 ** 
+## Price:Age           0.000107   0.000133    0.80  0.42381    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.01 on 386 degrees of freedom
+## Multiple R-squared:  0.876,  Adjusted R-squared:  0.872 
+## F-statistic:  210 on 13 and 386 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">
+# Reveal how R codes this categorical variable
+contrasts(Carseats$ShelveLoc)
+</code></pre>
+
+<pre><code>##        Good Medium
+## Bad       0      0
+## Good      1      0
+## Medium    0      1
+</code></pre>
+
+</body>
+
+</html>
+
