@@ -68,9 +68,7 @@ An alternative approach, the one pursued initially in this inquiry, attempts to 
 
 ![Fiscal Clusters](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
 
-![](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
-
-[[img src=https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png]]
+![Folium](http://farm3.staticflickr.com/2860/8754661081_c40e5a214c_o.jpg)
 
 **H5:  TELs decrease variation in expenditure portfolios across local governments that are similarly constrained by said TELs and increase variation between more affluent (less constrained) and less affluent (more constrained) jurisdictions**
 
