@@ -64,23 +64,27 @@ The general theory here is that if TELs constrain revenue sources, they will for
 
 The challenge in demonstrating a difference between preferred and actual expenditure portfolios is capturing a plausible counterfactual.  A general approach to this is to identify a reasonable attribute match with a different jurisdiction or construct.  This can be a county in a different state that does not operate under the same TEL conditions.  This approach has the benefit of tangibility, and if a composite of like counties is generated, it affords an opportunity to abstract away from state specific institutional contexts.  A downside of this approach is the difficulty in incorporating state specific unobservables that are particular to Colorado.  
 
-An alternative approach, the one pursued initially in this inquiry, attempts to capture the preferences of a given county by grouping like counties together based upon expenditure composition.  The idea here is that expenditure composition is a reasonable proxy for opportunity cost preference ordering, and as such, counties with similar compositions during the learning phase (the period of time over which preferences are measured) desire similar things from the public sector.  Deviations from the group preference are conceived as being exogenously driven.  Operationally, these deviations are measured as the distance between two /n/-dimensional points (\n\ corresponds to the number of expenditure functions in the portfolio).  The first point is a given county-year.  The second point is the centroid of the original cluster (which was generated over the learning period).  The clusters in 1975, for example, appear in the figure below:
+An alternative approach, the one pursued initially in this inquiry, attempts to capture the preferences of a given county by grouping like counties together based upon expenditure composition.  The idea here is that expenditure composition is a reasonable proxy for opportunity cost preference ordering, and as such, counties with similar compositions during the learning phase (the period of time over which preferences are measured) desire similar things from the public sector.  Deviations from the group preference are conceived as being exogenously driven.  Operationally, these deviations are measured as the distance between two **n**-dimensional points (**n** corresponds to the number of expenditure functions in the portfolio).  The first point is a given county-year's expenditure composition.  The second point is the expenditure composition represented by the centroid of the original cluster (which was generated over the learning period).  The clusters in 1975 (determined via [K-Means clustering](http://en.wikipedia.org/wiki/K-means_clustering)), for example, appear in the figure below:
 
 ![Fiscal Clusters](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
 
-![](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
+If those represent our training clusters, the centroids then remain fixed and we measure the distance of a county in a given year from its associated centroid.  This distance to the cluster becomes our dependent variable, a measure of disimilarity between the county in a given year and it's preference foundation.  Then we can regress this distance on TEL intensity stock, the Gallagher ratio, and our covariates to measure how much the TEL structure causes a county to stray from its preferred expenditure composition.  In this way, we have built a composite construct to represent our counterfactual and we are able to avoid issues associated with state-specific unobservables.  The downside of this approach is that the state has been fundamentally altered by the TEL regime, so we do not capture the full extent of the effect.  It is thus a complementary technique to the cross-state approach rather than a substitute.
 
-[[img src=https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png]]
+**H5:  TELs decrease variation in expenditure portfolios across local governments that are similarly constrained by said TELs**
 
-**H5:  TELs decrease variation in expenditure portfolios across local governments that are similarly constrained by said TELs and increase variation between more affluent (less constrained) and less affluent (more constrained) jurisdictions**
+The challenge in evaluating convergence as a function the TEL structure is establishing the point of convergence.  If we are to understand variation across the similarly constrained, one approach is to bin the constraint measure and measure variation within each of the bins.  The problem with this approach is an a priori definition of the size of these bins when we have no reason to suspect that our size choices are appropriate before the fact.  A better approach would allow the data to define the groupings that occur as a matter of course.
 
-**H6:  TELs will reduce the propensity for capital investment**
+KMeans on constraint and evaluate coefficient of variation on expenditure composition within cluster?
+
+**H6:  TELs increase variation between more affluent and less affluent jurisdictions**
+
+**H7:  TELs will reduce the propensity for capital investment**
 
 
 
 ###*Economic Impact*
 
-**H7:  TELs decrease the attractiveness of a jurisdiction for residents**
+**H8:  TELs decrease the attractiveness of a jurisdiction for residents**
 
-**H8:  TELs decrease the attractiveness of a jurisdiction for employers**
+**H9:  TELs decrease the attractiveness of a jurisdiction for employers**
 
