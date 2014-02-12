@@ -1,7 +1,3 @@
-#Revision of Dissertation Plan
-
-The time has come to revise the scope of my inquiry.  My expectations were quite high with my initial proposal draft, so my [refined plan](https://github.com/choct155/TELs/blob/master/auxprod/RefinedPlan_28FEB2013update.docx) sought to limit the scope of inquiry by focusing on hypotheses that drew from a common dataset.  Having worked through some of the analysis has revealed, however, that even this "streamlined" version was still a bit ambitious.  It featured three empricial sections, which is not unreasonable.  However, the sections housed  14 hypotheses among them.  The amount of analysis required apparently outstrips what is needed to demonstrate doctoral level proficiency, so what follows is a distillation of this plan.
-
 ##Analysis To Date
 
 At the current time, I have done much of the work required to demonstrate the impact of TELs on both the clustering of economic and fiscal behavior and the divergence between the expenditure profiles desired by jurisdictions and the actual expenditure composition they use.  The final models need to be adjusted for both, but this will be revisited when all the pieces are completed to understand the best means of fitting them together.
@@ -71,6 +67,8 @@ The challenge in demonstrating a difference between preferred and actual expendi
 An alternative approach, the one pursued initially in this inquiry, attempts to capture the preferences of a given county by grouping like counties together based upon expenditure composition.  The idea here is that expenditure composition is a reasonable proxy for opportunity cost preference ordering, and as such, counties with similar compositions during the learning phase (the period of time over which preferences are measured) desire similar things from the public sector.  Deviations from the group preference are conceived as being exogenously driven.  Operationally, these deviations are measured as the distance between two /n/-dimensional points (\n\ corresponds to the number of expenditure functions in the portfolio).  The first point is a given county-year.  The second point is the centroid of the original cluster (which was generated over the learning period).  The clusters in 1975, for example, appear in the figure below:
 
 ![Fiscal Clusters](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
+
+![](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
 
 [[img src=https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png]]
 
