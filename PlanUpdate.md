@@ -70,7 +70,7 @@ The challenge in demonstrating a difference between preferred and actual expendi
 
 An alternative approach, the one pursued initially in this inquiry, attempts to capture the preferences of a given county by grouping like counties together based upon expenditure composition.  The idea here is that expenditure composition is a reasonable proxy for opportunity cost preference ordering, and as such, counties with similar compositions during the learning phase (the period of time over which preferences are measured) desire similar things from the public sector.  Deviations from the group preference are conceived as being exogenously driven.  Operationally, these deviations are measured as the distance between two /n/-dimensional points (\n\ corresponds to the number of expenditure functions in the portfolio).  The first point is a given county-year.  The second point is the centroid of the original cluster (which was generated over the learning period).  The clusters in 1975, for example, appear in the figure below:
 
-![Fiscal Clusters](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png)
+![Fiscal Clusters](https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png "Fiscal Clusters")
 
 [[img src=https://github.com/choct155/TEL/blob/master/ipynb/FiscClusters1975.png]]
 
