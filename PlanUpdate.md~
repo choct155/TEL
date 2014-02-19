@@ -74,9 +74,13 @@ If those represent our training clusters, the centroids then remain fixed and we
 
 The challenge in evaluating convergence as a function the TEL structure is establishing the point of convergence.  If we are to understand variation across the similarly constrained, one approach is to bin the constraint measure and measure variation within each of the bins.  The problem with this approach is an a priori definition of the size of these bins when we have no reason to suspect that our size choices are appropriate before the fact.  A better approach would allow the data to define the groupings that occur as a matter of course.
 
-KMeans on constraint and evaluate coefficient of variation on expenditure composition within cluster?
+In a broad sense we want to capture expenditure composition as a function of TEL intensity.  We can again use a spatial frame to explore this relationship.  The first step is understanding how to represent similarly constrained counties.  We can do this by clustering counties in the (intensity stock, Gallagher ratio) plane.  Once we have these clusters of similarly constrained counties, we can evaluate the expenditure attributes of each cluster.  That is, we find the centroid of the **n**-dimensional space (again, **n** is the number of expenditure functions) and measure the distance of each county in the cluster from that point.  What we are after is the variation in this distance to the cluster centroid.  Once we have these distances, we can compare the distances in cluster '**A**' with the distances in cluster '**B**' with a Bayesian t-test (and so on until all clusters are compared with all others).  The expected relationship is that those county-years with the highest values of intensity stock and Gallgher ratio will exhibit the least amount of variation.  
+
+A benefit of this approach is that, since we are evaluating distances in **n**-dimensional space, we can capture individual dimensions if need be.  Furthermore, the clustering space can be extended to include other dimensions (e.g. a scaling factor like total expenditures).
 
 **H6:  TELs increase variation between more affluent and less affluent jurisdictions**
+
+
 
 **H7:  TELs will reduce the propensity for capital investment**
 

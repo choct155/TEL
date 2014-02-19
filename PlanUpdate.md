@@ -78,9 +78,16 @@ In a broad sense we want to capture expenditure composition as a function of TEL
 
 A benefit of this approach is that, since we are evaluating distances in **n**-dimensional space, we can capture individual dimensions if need be.  Furthermore, the clustering space can be extended to include other dimensions (e.g. a scaling factor like total expenditures).
 
-**H6:  TELs increase variation between more affluent and less affluent jurisdictions**
+**H6:  TELs are more binding on less affluent jurisdictions**
+
+To the extent that TELs in Colorado restrict revenue for counties, a problem arises if this restriction is more binding on less affluent jurisdictions.  Such a property would mean that the institutional structure was biased in favor of providing resource freedom for jurisdictions that already have the most flexibility.  One way to abstractly test this would be to evaluate the shift in the [cumulative density function](http://en.wikipedia.org/wiki/Cumulative_distribution_function) for county-level revenue.  If that density function increases the sharpness of it's slope in the higher income ranges while controlling for economic factors, it may be reasonably inferred that the institutional structure played a role.
+
+From an operational standpoint, we can get at this idea by regressing the proportional contribution of revenue for a given county relative to the revenue for all counties on TEL intensity and county specific economic factors.  The relationship between TEL intensity of county resources can be incorporated explicitly as an interaction term between intensity stock and per capita annual payroll.  This interaction would reveal the variation in TEL impact across the income spectrum, and stronger impacts at low ranges would be needed to confirm the hypothesized institutional bias.
+
 
 **H7:  TELs will reduce the propensity for capital investment**
+
+Infrastructure development is a primary function of government, particularly at the subnational level.  The proportion of expenditures allocated to capital investment is likely to be the most direct available proxy for said development.  To evaluate whether TELs impact this activity, we can regress capital investment on TEL intensity and economic factors.  Fixed effects would be appropriate here to mitigate variation across county-level preference schedules.
 
 
 
@@ -88,5 +95,14 @@ A benefit of this approach is that, since we are evaluating distances in **n**-d
 
 **H8:  TELs decrease the attractiveness of a jurisdiction for residents**
 
+The first inclination for modeling the effect of TEL intensity on residential growth is to regress the growth rate on TEL intensity, utilizing fixed effects to control for differences across individual counties.  This is not an unreasonable approach, and can serve effectively as a baseline model against which to measure specifications.  However, upon revealing the average effect, two questions arise that dive deeper into the mechanism by which TELs would impact such growth:
+
++ Do the impacts differ across counties with differing economic profiles?
++ To what extent is growth driven by the expenditure choices made by a given jurisdiction?
+
+If we can typify economic and expenditure profiles, we can jettison fixed effects and incorporate these types as sets of binary indicators to understand the average growth impacts of membership. Interaction terms between economic profile membership and TEL intensity would be needed to evaluate differential impacts across economic types.  Both profiles can be generated in a manner similar to the expenditure profiles in H4, K-Means clusters based upon a vector of proportions.  The remaining covariates would capture state level business cycle activity (unemployment rate) and initial endowment (annual payroll in year 0).
+
 **H9:  TELs decrease the attractiveness of a jurisdiction for employers**
+
+This hypothesis is actually quite similar to H8 with respect to the testing regime.  All that shifts here is the dependent.  Firm growth replaces employment growth.
 
