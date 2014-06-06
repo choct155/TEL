@@ -1,0 +1,15 @@
+var	desc
+AGE050190D	Resident population: Median age (complete count) 1990
+AGE050200D	Resident population: Median age (April 1 - complete count) 2000
+AGE050210D	Resident population: Median age (April 1 - complete count) 2010
+EDU685190D	Educational attainment - persons 25 years and over - percent bachelor's degree or higher 1990
+EDU685200D	Educational attainment - persons 25 years and over - percent bachelor's degree or higher 2000
+EDU685209D	Educational attainment - persons 25 years and over - percent bachelor's degree or higher 2005-2009
+ELE025192D	Vote cast for president- percent Democratic 1992 ***Subject to copyright***
+ELE025196D	Vote cast for president- percent Democratic 1996 ***Subject to copyright***
+ELE025200D	Vote cast for president - percent Democratic 2000 ***Subject to copyright***
+ELE025204D	Vote cast for president - percent Democratic 2004 ***Subject to copyright***
+ELE025208D	Vote cast for president - percent Democratic 2008 ***Subject to copyright***
+PVY020189D	Persons below poverty level 1989
+PVY020199D	Population below poverty level 1999
+PVY020209D	Population below poverty level 2005-2009
