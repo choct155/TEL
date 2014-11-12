@@ -1,0 +1,38 @@
+                    ,coef,pval
+prob_exmpt          ,40.1519,0.0
+administrative      ,-22.7156,0.0
+no waiver           ,13.0115,0.0
+ss_tourism          ,32.2701,0.0
+ss_transfer         ,30.74,0.0
+ss_value            ,28.3316,0.0
+ss_nontax           ,25.9235,0.0
+ss_open             ,28.0471,0.0
+ss_no waiver        ,13.0115,0.0
+ss_sales            ,29.5567,0.0
+ss_property         ,24.3161,0.0
+ss_gaming           ,36.9737,0.001
+sales_change        ,-3.2774,0.003
+prop_ratio          ,4.4093,0.004
+prop_change         ,-1.4229,0.004
+rev_time            ,0.0419,0.021
+intensity_stock     ,-4.1753,0.042
+ss_library          ,30.3219,0.046
+prop_levy_change    ,-3.742e-06,0.05
+unknown             ,-27.2006,0.063
+public safety       ,-3.6655,0.08199999999999999
+hss                 ,-3.6512,0.111
+open                ,-4.0416,0.203
+ss_unknown          ,18.7271,0.215
+infrastructure      ,-2.2754,0.22699999999999998
+ss_development      ,-8.961000000000001e-10,0.23600000000000002
+agriculture         ,-7.578,0.35
+environment         ,2.0851,0.376
+education           ,-2.6521,0.385
+tourism             ,3.7557,0.42100000000000004
+s_time              ,0.0234,0.478
+economic development,-4.6457,0.522
+choice              ,-3.1487,0.66
+limited             ,-3.1487,0.66
+debt_change         ,2.2430000000000003e-08,0.757
+unspecified         ,-0.8924,0.768
+ss_nonproperty      ,0.7076,0.925
