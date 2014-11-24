@@ -1,0 +1,369 @@
+%Last modified: 2013 Aug 16
+\documentclass[12pt,econ]{authesis}
+% IMPORTANT NOTES:
+% 1) You MUST run LaTeX THREE times after runing BibTeX.
+% 2) Make sure that you have the LATEST version of the AUTHESIS class files
+%    before you hand in the final version of your thesis or dissertation.
+
+% \usepackage commands should go before the \begin{document}
+
+%\usepackage{ctable} %You should learn about ctable!!
+
+% IF you use the 'cas' option instead of the preferred 'econ' option,
+% you MAY uncomment the following line.  (NOT recommended.)
+%\usepackage{ulem}
+
+\usepackage{natbib}  % natbib citation style
+
+% LONGTABLE
+% To use longtable, add the following code to your preamble.
+% Long table captions are single-spaced, but AU requires a
+% double space between captions, so add to the pre-amble
+% this redefinition (below) of the LT caption to your document.
+% Also, attend to the order the captions are listed in the List of Tables.}
+%% BEGIN longtable support code
+\usepackage{longtable} %illustrate a problem with longtable
+\def\ssp{\def\baselinestretch{1.0}\large\normalsize}
+\def\dsp{\def\baselinestretch{1.67}\large\normalsize}
+\makeatletter
+\def\LT@makecaption#1#2#3{%
+  \LT@mcol\LT@cols c{\hbox to\z@{\hss\parbox[t]\LTcapwidth{%
+    \sbox\@tempboxa{#1{#2: }#3}%
+    \ifdim\wd\@tempboxa>\hsize
+      #1{#2. }\ssp #3%
+    \else
+      \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+    \fi
+    \endgraf\vskip\baselineskip}%
+  \hss}}}
+\def\LT@c@ption#1[#2]#3{%
+  \LT@makecaption#1\fnum@table{#3}%
+  \def\@tempa{#2}%
+  \ifx\@tempa\@empty\else
+     {\let\\\space
+     \addcontentsline{lot}{table}{\protect\numberline{\thetable}{#2}}}%
+     \addtocontents{lot}{\protect\addvspace{10\p@}}%
+  \fi}
+\makeatother
+%% END longtable support code
+\begin{document}
+
+% Declarations for Front Matter
+
+%
+% IMPORTANT: IF A TITLE OR SUBTITLE EXCEEDS MORE THAN ONE LINE,
+%            THERE SHOULD ONLY BE  48 CHARACTERS PER LINE.
+%
+% The dissertation title must be capitalized for AU-CAS
+\title{MY THESIS OR DISSERTATION TITLE IN CAPITALS \\
+(WITH 48 CHARACTERS OR FEWER PER LINE)\\
+AS AN INVERTED PYRAMID}
+
+\author{Will E. Finnish}
+\degreeyear{2525}
+\degree{Doctor of Philosophy}
+\chair{Professor Knowit Icann}
+\secondreader{Professor Ivory Tower}
+\thirdreader{Professor Mih Sing Cite}
+% If you have more than a chair and two readers, you need to
+% edit file AUTHESIS.CLS and add a line to the table in the
+% coverpage. I have defined up to sixthreader (that is, seven
+% all told).
+
+\degreefield{Introspective Empiricism}
+
+% The following command makes the title page, it is duplicated to produce
+% two copies of cover page, as required by AU-CAS.
+
+\maketitle
+
+\maketitle
+
+% The following command makes the copyright page
+
+\copyrightpage
+
+% The frontmatter environment uses roman lower case page numbering. The
+% abstract, acknowledgements, table of contents, list of figures, and
+% list of tables are a part of this environment.
+
+\begin{frontmatter}
+
+% The Guide requires one numbered abstract page.
+% The 'abstractn' macro generates a numbered abstract page.
+% Do NOT use the 'abstract' macro, which generates an unnumbered, abstract page.
+% (The Guide no longer requires two abstract pages, one numbered, one without numbers.)
+
+
+\abstractn
+
+This is an abstractn.  It has a page number.
+(AU no longer wants you to provide an unnumbered abstract page.)
+The \emph{Guide} says an abstract should not exceed 350 words.
+(If you do exceed this,
+then under the CAS option, the first page is numbered bottom center, and the rest are numbered top right.)
+
+This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. This is an abstractn. 
+
+
+
+% Acknowledgements are optional. If you do not wish to include them,
+% simply do not include this command in your source.
+
+\acknowledgements
+
+I want to ``thank'' my committee,
+without whose ridiculous demands I would have graduated so very much faster.
+
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+
+\end{frontmatter}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: Generally you will want each chapter in its own .tex file.
+%       Read about \include and \includeonly
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction} %will be force to all capitals
+
+Every dissertation should have an introduction.
+The introduction should introduce the concepts, background, and goals of the dissertation.
+
+
+%
+% IMPORTANT: IF A TITLE OR SUBTITLE EXCEEDS MORE THAN ONE LINE,
+%            THERE SHOULD ONLY BE  48 CHARACTERS PER LINE.
+%
+\section{My First Section Title\\With 48 or Fewer Characters Per Line}
+
+This is the first sentence of the first paragraph of the first section. Cool, eh?
+This section includes a floating table.
+
+Another paragraph.
+Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence.%
+\footnote{%
+Here is a footnote.}
+%
+
+% Captions for tables must go above the table.
+
+\begin{table}[h]\centering
+\caption{A normalsize table.
+Captions for tables must go above the table.
+Table captions must be single-spaced,
+and the code indicates that they should be formatted as such.}
+\begin{tabular}{lr}\hline\hline
+Title & Author \\ \hline
+TANSTAAFL & Milton Friedman \\
+Oh Yes There Is & John Maynard Keynes \\ \hline
+\multicolumn{2}{c}{\small Use ctable or booktab for better looking tables.}
+\end{tabular}
+\end{table}
+
+\subsection{Long Tables}
+
+If possible, break long tables into pieces.
+If you must, you can use the \texttt{longtable} package.
+Get the supporting code from the preamble of autest.tex.
+However, be aware that the \texttt{longtable} environment
+can create problems.
+In particular, a \texttt{longtable} does not float,
+so table numbering may end up out of order.
+
+\begin{center}
+\begin{longtable}{ll}\hline\hline
+\caption{Note that you must also place captions for longtables above your table.
+This is not handled for you by LaTeX.}
+\\
+Title & Author \\ \hline
+TANSTAAFL & Milton Friedman \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Another Title & Another Author \\
+Oh Yes There Is & John Maynard Keynes \\ \hline
+\multicolumn{2}{c}{\small For better looking tables, try to avoid longtable.}
+\end{longtable}
+\end{center}
+
+
+\subsection{Long Section Names: First subsection of first section of introduction which is intentionally long to see what happens if it needs to break a line}
+
+
+Another approach to fitting large tables is to shrink the fontsize.
+We provide the \texttt{scriptsizetabluar} environment to help you with this.
+Note that you can have a different caption in your List of Tables than
+in the text, if you wish.
+
+\begin{table}\centering
+\caption[Alternative caption for List of Tables]{A table using scriptsizetabluar.}
+\begin{scriptsizetabular}{lr}\hline\hline
+Title & Author \\ \hline
+TANSTAAFL & Milton Friedman \\
+Oh Yes There Is & John Maynard Keynes \\ \hline
+\end{scriptsizetabular}
+\end{table}
+
+
+
+\subsubsection{Subsubsection for test purposes}
+
+Another paragraph.
+Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. Another sentence. 
+
+
+
+\chapter{PREVIOUS WORK}
+
+Some other research was once performed.
+
+
+\section{Section}
+%first section
+
+Some was good and some was bad.
+
+% Captions for figures must go below the figure.  
+\begin{figure}
+\centering MY FIRST FIGURE
+\caption{Figure caption must be below figure.}
+\end{figure}
+
+
+\subsection{Subsection}
+
+Some was neither good or bad.
+
+\begin{figure}
+\centering MY SECOND FIGURE
+\caption{Second figure.}
+\end{figure}
+
+
+\subsubsection{Subsubsection}
+
+Surely mine will be better.
+Here is a bulleted list of reasons why.
+\begin{itemize}
+\item Reason 1.
+Some people hate the way test wraps in our bulleted lists,
+but that is what the Guide says we have to do---apparently based on Turabian.
+You can argue with CAS if you wish \dots
+\item Reason 2.
+\item Reason 3.
+\item Reason 4.
+\end{itemize}
+
+
+\chapter{DISCUSSION OF FINDINGS}
+
+
+\section{Section}
+%second section 
+
+\begin{figure}
+\centering MY THIRD FIGURE
+\caption{First figure in second section.}
+\end{figure}
+
+
+
+\subsection{Subsection}
+
+\begin{figure}
+\centering MY FOURTH FIGURE
+\caption{Second figure in second section.}
+\end{figure}
+
+
+\subsubsection{Subsubsection}
+
+
+\section{Section}
+
+\begin{figure}
+\centering MY FIFTH FIGURE
+\caption{First figure in third section.}
+\end{figure}
+
+
+\subsection{Subsection}
+
+\section{Section}
+\subsection{Subsection}
+\subsection{Subsection}
+\section{Section}
+\subsection{Subsection}
+\subsection{Subsection}
+
+\begin{figure}
+\centering MY SIXTH FIGURE
+\caption{Second figure in third section.}
+\end{figure}
+
+
+\subsubsection{Subsubsection}
+
+
+\chapter{CONCLUSION}
+
+All is well that ends.
+
+This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. 
+
+This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. This will end soon. 
+
+See?
+
+%IMPORTANT: use the \appendix command to change numbering to lettering
+\appendix
+
+\chapter{SOME ANCILLARY STUFF}
+
+
+\chapter{SOME MORE\\ANCILLARY STUFF}
+
+
+
+\ssp                           %IMPORTANT: set single spacing for bibliography
+\nocite{*}
+\bibliographystyle{au-cms}     % download au-cms.bst to run this test
+\bibliography{autest}          % you must download autest.bib to run this test
+
+\end{document}
+
+

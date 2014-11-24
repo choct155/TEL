@@ -1,0 +1,71 @@
+\contentsline {chapter}{ABSTRACT}{ii}
+\addvspace {10\p@ }
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}
+\addvspace {10\p@ }
+\contentsline {chapter}{LIST OF TABLES}{vi}
+\addvspace {10\p@ }
+\contentsline {chapter}{LIST OF FIGURES}{vii}
+\addvspace {10\p@ }
+\hspace {-0.25in}{ }\par 
+\hspace {-0.40in}{CHAPTER}\par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {1.}Introduction}{1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {1.1}My First Section Title\\With 48 or Fewer Characters Per Line}{1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.1.1}Long Tables}{2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.1.2}Long Section Names: First subsection of first section of introduction which is intentionally long to see what happens if it needs to break a line}{3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{Subsubsection for test purposes}{4}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {2.}PREVIOUS WORK}{5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.1}Section}{5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.1.1}Subsection}{5}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{Subsubsection}{5}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {3.}DISCUSSION OF FINDINGS}{7}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.1}Section}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.1.1}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{Subsubsection}{7}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.2}Section}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.2.1}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.3}Section}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.3.1}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.3.2}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.4}Section}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.4.1}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.4.2}Subsection}{7}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{Subsubsection}{7}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {4.}CONCLUSION}{9}
+\addvspace {10\p@ }
+\hspace {-0.25in}{ }\par 
+\hspace {-0.25in}{ }\par 
+\hspace {-0.40in}{APPENDIX}\par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {A.}SOME ANCILLARY STUFF}{11}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {B.}SOME MORE\\ANCILLARY STUFF}{12}
+\addvspace {10\p@ }

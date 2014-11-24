@@ -1,0 +1,169 @@
+\ProvidesFile{aucas.clo}[2005/04/24]
+%%%%%%%%%%%%% Contains code specific to the 'cas' class option. 
+\typeout{
+******************************************************************************
+*****  You are using the CAS option but the ECON option is recommended.  *****
+******************************************************************************}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MODIFICATION LOG:
+%AI: 20050401: moved common page formatting commands to authesis.cls
+%AI: 20050329: add \paragraph def just as place holder
+%    for testing convenience.  Ask if you want a real one.
+%AI: 20030112: \chindent def moved to authesis.cls
+%AI: 20030112: double digit chapter numbering fixed
+%AI: 20030112: chapter header formatting adjusted
+%========================================================================
+\setcounter{secnumdepth}{0}
+
+
+% Definition of 'chapfirst' page style.
+% This is for the first page of a new chapter.
+% The chapter heading is centerted at top,
+% the page number centered at bottom.
+% The page number is forced above 1 inch bottom margin.
+% (which is offset by 'makechapterhead'
+
+\def\ps@chapfirst{\let\@mkboth\@gobbletwo
+\renewcommand{\@oddfoot}{\rmfamily\hfil\smash{\raise 0.25in\hbox{\thepage}}\hfil}
+\renewcommand{\@evenfoot}{\@oddfoot}					%\evenfoot as \@oddfooot
+\def\@oddhead{}									% no header
+\def\@evenhead{}								% no header
+}
+
+%    ****************************************
+%    *        CHAPTERS AND SECTIONS         *
+%    ****************************************
+%
+
+%%% define: \@makechapterhead {TEXT} 
+%%% (Makes the heading for the \chapter command.)
+\def\@makechapterhead#1{%%begin: def @makechapterhead
+\vspace*{4\p@}%                 %AI: Space at top of text page: bad hack.
+  {\thispagestyle{chapfirst}	% set page number to bottom center
+   \enlargethispage{-0.25in}    % shrink textheight to fit page number inside margin-bottom
+   %\parindent \z@       %AI: I don't see the point of this ...
+   \centering\fmfont\bfseries%%Pick font
+   \@chapapp{} \thechapter\par #1  %print '\chaptername' and number.
+   \par
+   \nobreak                        % TeX penalty to prevent page break.
+   \vskip 40\p@                    % Space between title and text.
+   }
+}%%end: def @makechapterhead
+
+
+%%% define: '\@makeschapterhead {TEXT}' 
+%%% (Makes the heading for the \chapter* command.)
+\def\@makeschapterhead#1{%          % Heading for \chapter* command
+  {\thispagestyle{chapfirst}	% set page number to bottom center
+   \enlargethispage{-0.25in}    % shrink textheight to fit page number inside margin-bottom
+   %\parindent \z@       %AI: I don't see the point of this ...
+   \centering\fmfont\bfseries #1               % Set font; print Title.
+   \par
+   \nobreak                        % TeX penalty to prevent page break.
+   \vskip 40\p@                    % Space between title and text.
+  }
+}%%end: def @makeschapterhead
+
+% \secdef{UNSTARCMDS}{STARCMDS} :
+%    When defining a \chapter or \section command without using
+%    \@startsection, you can use \secdef as follows:
+%       \def\chapter { ... \secdef \CMDA \CMDB }
+%       \def\CMDA    [#1]#2{ ... }  % Command to define
+%                                   % \chapter[...]{...}
+%       \def\CMDB    #1{ ... }      % Command to define
+%                                   % \chapter*{...}
+
+\newcommand\chapter{\clearpage
+   \thispagestyle{chapfirst}           % page number bottom center; see def of 'chapfirst'
+	\enlargethispage{-0.25in}
+	\setlength{\topmargin}{-0.30in}
+	\vspace*{0.45in}			 % ABC Top margin (total 2.0in)
+   \global\@topnum\z@        % Prevents figures from going at top of page.
+   \@afterindenttrue         % keep first paragraph indent
+   \secdef\@chapter\@schapter}   
+
+%AI: \chindent defined in authesis.cls
+\def\@chapter[#1]#2{%%begin: def @chapter
+      \ifnum\c@chapter=0  %AI: fixed 20030112
+        \addtocontents{toc}{\hspace{\AIindent}{  }\par}
+        \addtocontents{toc}{\hspace{\chindent}{\@chapapp}\par}  %AI: fixed 20030112
+        \addtocontents{toc}{\protect\addvspace{10\p@}}
+      \fi
+      \ifnum \c@secnumdepth >\m@ne
+        \refstepcounter{chapter}%
+        \typeout{\@chapapp\space\thechapter.}%
+        \addcontentsline{toc}{chap}{\protect\numberline{\thechapter.}#1}    % ABC for indented line
+	\addtocontents{toc}{\protect\addvspace{10\p@}}
+      \else
+         \addcontentsline{toc}{chap}{#1}            % ABC for indented line
+	 \addtocontents{toc}{\protect\addvspace{10\p@}}
+      \fi
+   \chaptermark{#1}%
+   \addtocontents{lof}%
+       {\protect}
+   \addtocontents{lot}%
+       {\protect}
+   \@makechapterhead{#2}%
+   \@afterheading          		   % Routine called after chapter and section heading.
+}%%end: def @chapter
+
+
+\def\@schapter#1{\@makeschapterhead{#1}%
+              \@afterheading}
+
+
+% ABC Section Header Definitions
+
+\def\@startsection#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \relax\fi
+   \if@nobreak \everypar{}\else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi
+	 \@ifstar
+    {\@ssect{#3}{#4}{#5}{#6}}
+	{\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+
+%AI: sectioning definitions for cas option
+%If I can fix the ToC listings that result, I
+%ought to switch to something like the commmented out stuff here: 
+%\newcommand\section{\@startsection {section}{1}{\z@}%
+%                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+%                                   {2.3ex \@plus.2ex}%
+%                                   {\centering\normalsize\bfseries\em}
+%                                   }
+%\newcommand\subsection{\@startsection{subsection}{2}{\z@}%
+%                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+%                                     {1.5ex \@plus .2ex}%
+%                                     {\normalfont\large\bfseries}}
+%\newcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+%                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+%                                     {1.5ex \@plus .2ex}%
+%                                     {\normalfont\normalsize\bfseries}}
+\newcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+\newcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
+                                       {3.25ex \@plus1ex \@minus .2ex}%
+                                       {-1em}%
+                                      {\normalfont\normalsize\bfseries}}
+
+%old defs (retained for now)
+\def\section#1{\vspace{2em}%
+ %{\ssp\begin{center}\bfseries\emph{#1}\end{center}\vspace{-10\p@}}
+ {\centering\ssp\bfseries\emph{#1}\par}
+ {\addcontentsline{toc}{section}{\numberline{}#1}}
+ {\addtocontents{toc}{\protect\addvspace{10\p@}}}
+}
+\def\subsection#1{\vspace{2em}%
+ {\centering\ssp\bfseries{#1}\par}%don't change to center env
+ {\addcontentsline{toc}{subsection}{\numberline{}#1}}
+ {\addtocontents{toc}{\protect\addvspace{10\p@}}}
+}
+\def\subsubsection#1{\vspace{2em}%
+ {\ssp\noindent\bfseries\emph{#1}\par}
+ %\vspace{-5\p@}
+}
+
+\endinput

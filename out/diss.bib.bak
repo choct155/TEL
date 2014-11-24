@@ -1,0 +1,1239 @@
+% This file was created with JabRef 2.10b2.
+% Encoding: UTF-8
+
+
+@TechReport{Census_COG2013,
+  Title                    = {{2012 Census of Governments}},
+  Author                   = {Stephen Owens et al},
+  Institution              = {US Census Bureau},
+  Year                     = {2013},
+  Month                    = {sep},
+  Note                     = {Stephen Ownes led the effort within the Economics and Statistics Administration},
+  Type                     = {Report},
+
+  Crossref                 = {http://www2.census.gov/govs/cog/2012isd.pdf}
+}
+
+@TechReport{Bueche2009,
+  Title                    = {{A History of Home Rule}},
+  Author                   = {Kenneth G. Bueche},
+  Institution              = {Colorado Municipal League},
+  Year                     = {2009},
+  Type                     = {Advocacy Report},
+
+  Crossref                 = {http://www.cml.org/09_home_rule/}
+}
+
+@Book{Cooley_McLaughlin1898,
+  Title                    = {{The General Principles of Constitutional Law in the United States of America}},
+  Author                   = {T.M.I. Cooley and A.C. McLaughlin},
+  Publisher                = {Little, Brown, and Company},
+  Year                     = {1898},
+  Series                   = {Student's Series},
+
+  Crossref                 = {http://books.google.com/books?id=7-g9AAAAIAAJ}
+}
+
+@Book{Dillon1873,
+  Title                    = {{The Law of Municipal Corporations}},
+  Author                   = {J.F. Dillon},
+  Publisher                = {James Cockcroft},
+  Year                     = {1873},
+
+  Crossref                 = {http://books.google.com/books?id=QeQ9AAAAIAAJ}
+}
+
+@Article{Dye_McGuire1997,
+  Title                    = {{The Effect of Property Tax Limitation Measures on Local Government Fiscal Behavior}},
+  Author                   = {Richard F. Dye and Therese J. McGuire},
+  Journal                  = {Journal of Public Economics},
+  Year                     = {1997},
+
+  Month                    = {dec},
+  Number                   = {3},
+  Pages                    = {469–487},
+  Volume                   = {66},
+
+  Crossref                 = {doi:10.1016/S0047-2727(97)00047-9}
+}
+
+@TechReport{Edwards2006,
+  Title                    = {{State and Local Revenues Beyond the Property Tax}},
+  Author                   = {Mary Edwards},
+  Institution              = {Lincoln Institute of Land Policy},
+  Year                     = {2006},
+  Type                     = {Working Paper},
+
+  Crossref                 = {http://www.lincolninst.edu/subcenters/teaching-fiscal-dimensions-of-planning/materials/edwards-revenue.pdf}
+}
+
+@Article{Figlio_Rueben2001,
+  Title                    = {{Tax Limits and the Qualifications of New Teachers}},
+  Author                   = {David N Figlio and Kim S Rueben},
+  Journal                  = {Journal of Public Economics},
+  Year                     = {2001},
+
+  Month                    = {apr},
+  Number                   = {1},
+  Pages                    = {49–71},
+  Volume                   = {80},
+
+  Crossref                 = {doi:10.1016/S0047-2727(00)00116-X}
+}
+
+@Article{Gervais2002,
+  Title                    = {{Housing Taxation and Capital Accumulation}},
+  Author                   = {Martin Gervais},
+  Journal                  = {Journal of Monetary Economics},
+  Year                     = {2002},
+
+  Month                    = {oct},
+  Number                   = {7},
+  Pages                    = {1461–1489},
+  Volume                   = {49},
+
+  Crossref                 = {doi:10.1016/S0304-3932(02)00172-1}
+}
+
+@Article{Groves_Kahn1952,
+  Title                    = {{The Stability of State and Local Tax Yields}},
+  Author                   = {Harold M. Groves and C. Harry Kahn},
+  Journal                  = {The American Economic Review},
+  Year                     = {1952},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {87–102},
+  Volume                   = {42},
+
+  Crossref                 = {doi:10.2307/1914417}
+}
+
+@TechReport{Fullerton1999,
+  Title                    = {{Labor Force Participation: 75 Years of Change, 1950-98 and 1998-2025}},
+  Author                   = {Howard Fullerton Jr,},
+  Institution              = {Bureau of Labor Statistics},
+  Year                     = {1999},
+  Type                     = {Monthly Labor Review},
+
+  Crossref                 = {http://www.bls.gov/mlr/1999/12/art1full.pdf}
+}
+
+@Book{Jensen1931,
+  Title                    = {{Property Taxation in the United States}},
+  Author                   = {J.P. Jensen},
+  Publisher                = {University of Chicago Press},
+  Year                     = {1931},
+  Series                   = {The University of Chicago Studies in Economics},
+
+  Crossref                 = {http://books.google.com/books?id=ZhhFcAAACAAJ}
+}
+
+@Article{Birch_Sundermean_Smith2004,
+  Title                    = {{Vertical Inequity in Property Taxation: A Neighborhood Based Analysis}},
+  Author                   = {John W. Birch, Mark A. Sunderman, and Brent C. Smith},
+  Journal                  = {The Journal of Real Estate Finance and Economics},
+  Year                     = {2004},
+
+  Month                    = {jul},
+  Number                   = {1},
+  Pages                    = {71–78},
+  Volume                   = {29},
+
+  Crossref                 = {doi:10.1023/B:REAL.0000027201.39235.63}
+}
+
+@TechReport{Lyons_Farkas_Johnson2007,
+  Title                    = {{THE PROPERTY TAX CIRCUIT BREAKER: An Introduction and Survey of Current Programs}},
+  Author                   = {Karen Lyons, Sarah Farkas, and Nicholas Johnson},
+  Institution              = {Center for Budget and Policy Priorities},
+  Year                     = {2007},
+  Type                     = {Report},
+
+  Crossref                 = {http://www.cbpp.org/files/3-21-07sfp.pdf}
+}
+
+@Misc{Mamet_Allen2012,
+  Title                    = {{Overview of Colorado Municipal Home Rule}},
+
+  Author                   = {Sam Mamet and Rachel Allen},
+  HowPublished             = {Presentation},
+  Month                    = {may},
+  Year                     = {2012},
+
+  Crossref                 = {http://www.cml.org/Issues/Home-Rule/2012-05-01-Overview-of-Colorado-Municipal-Home-Rule/}
+}
+
+@Article{Mullins2004,
+  Title                    = {{Tax and Expenditure Limitations and the Fiscal Response of Local Government: Asymmetric Intra-Local Fiscal Effects}},
+  Author                   = {Daniel Mullins},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2004},
+
+  Month                    = {dec},
+  Number                   = {4},
+  Pages                    = {111-147},
+  Volume                   = {24},
+
+  Crossref                 = {DOI: 10.1111/j.0275-1100.2004.00350.x}
+}
+
+@Book{Oates1972,
+  Title                    = {{Fiscal Federalism}},
+  Author                   = {Wallace Oates},
+  Publisher                = {Harcourt Brace Jovanovich},
+  Year                     = {1972},
+  Series                   = {Harbrace Series in Business and Economics},
+
+  Crossref                 = {http://books.google.com/books?id=nh6zAAAAIAAJ}
+}
+
+@Article{Perdue_Misiolek1987,
+  Title                    = {{The Portfolio Approach to Tax Structures and Education Finance}},
+  Author                   = {D. Grady Perdue and Walter S. Misiolek},
+  Journal                  = {Journal of Education Finance},
+  Year                     = {1987},
+
+  Month                    = {jul},
+  Number                   = {1},
+  Pages                    = {13–23},
+  Volume                   = {13},
+
+  Crossref                 = {doi:10.2307/40703581}
+}
+
+@Article{Poterba_Rueben1995,
+  Title                    = {{The Effect of Property-Tax Limits on Wages and Employment in the Local Public Sector}},
+  Author                   = {James M. Poterba and Kim S. Rueben},
+  Journal                  = {The American Economic Review},
+  Year                     = {1995},
+
+  Month                    = {may},
+  Number                   = {2},
+  Pages                    = {384–389},
+  Volume                   = {85},
+
+  Crossref                 = {doi:10.2307/2117953}
+}
+
+@Article{Romer_Rosenthal1979,
+  Title                    = {{The Elusive Median Voter}},
+  Author                   = {Thomas Romer and Howard Rosenthal},
+  Journal                  = {Journal of Public Economics},
+  Year                     = {1979},
+
+  Month                    = {mar},
+  Pages                    = {143-170},
+  Volume                   = {12},
+
+  Crossref                 = {http://www.gonzalo.depeco.econo.unlp.edu.ar/bspub/romer-rosenthal79.pdf}
+}
+
+@InBook{Ross_Yinger1999,
+  Title                    = {{Handbook of Regional and Urban Economics}},
+  Author                   = {Stephen Ross and John Yinger},
+  Chapter                  = {Chapter 47 Sorting and Voting: A Review of the Literature on Urban Public Finance},
+  Publisher                = {Elsevier},
+  Year                     = {1999},
+  Volume                   = {3},
+
+  Crossref                 = {http://www.sciencedirect.com/science/article/pii/S1574008099800169}
+}
+
+@Article{Samuelson1954,
+  Title                    = {{The Pure Theory of Public Expenditure}},
+  Author                   = {Paul Samuelson},
+  Journal                  = {The Review of Ecoonomics and Statistics},
+  Year                     = {1954},
+
+  Month                    = {nov},
+  Number                   = {4},
+  Pages                    = {387-389},
+  Volume                   = {36},
+
+  Crossref                 = {http://www.ses.unam.mx/docencia/2007II/Lecturas/Mod3_Samuelson.pdf}
+}
+
+@Article{Sokolow1998,
+  Title                    = {{The Changing Property Tax and State-Local Relations}},
+  Author                   = {Alvin D Sokolow},
+  Journal                  = {Publius},
+  Year                     = {1998},
+
+  Month                    = {jan},
+  Number                   = {1},
+  Pages                    = {165–187},
+  Volume                   = {28},
+
+  Crossref                 = {doi:10.2307/3331014}
+}
+
+@Article{Stiglitz2012,
+  Title                    = {{The Book of Jobs}},
+  Author                   = {Joseph Stiglitz},
+  Journal                  = {Vanity Fair},
+  Year                     = {2012},
+
+  Month                    = {jan},
+
+  Crossref                 = {http://www.vanityfair.com/politics/2012/01/stiglitz-depression-201201}
+}
+
+@Article{Downes_Dye_McGuire1998,
+  Title                    = {{Do Limits Matter? Evidence on the Effects of Tax Limitations on Student Performance}},
+  Author                   = {Thomas A. Downes, Richard F. Dye, and Therese J. McGuire},
+  Journal                  = {Journal of Urban Economics},
+  Year                     = {1998},
+
+  Month                    = {may},
+  Number                   = {3},
+  Pages                    = {401–417},
+  Volume                   = {43},
+
+  Crossref                 = {doi:10.1006/juec.1997.2052}
+}
+
+@Article{Thompson_Gates2007,
+  Title                    = {{Betting on the Future with a Cloudy Crystal Ball? How Financial Theory Can Improve Revenue Forecasting and Budgets in the States}},
+  Author                   = {Fred Thompson and Bruce L. Gates},
+  Journal                  = {Public Administration Review},
+  Year                     = {2007},
+  Number                   = {5},
+  Pages                    = {825–836},
+  Volume                   = {67},
+
+  Crossref                 = {doi:10.1111/j.1540-6210.2007.00771_2.x}
+}
+
+@Article{Tiebout1956,
+  Title                    = {{A Pure Theory of Local Expenditures}},
+  Author                   = {Charles Tiebout},
+  Journal                  = {Journal of Political Economy},
+  Year                     = {1956},
+
+  Month                    = {oct},
+  Number                   = {5},
+  Pages                    = {416–424},
+  Volume                   = {64},
+
+  Crossref                 = {doi:10.2307/1826343}
+}
+
+@Article{Wildavsky61,
+  Title                    = {{Political Implications of Budgetary Reform}},
+  Author                   = {Aaron Wildavsky},
+  Journal                  = {Public Administration Review},
+  Year                     = {1961},
+
+  Month                    = {oct},
+  Number                   = {4},
+  Pages                    = {183-190},
+  Volume                   = {21},
+
+  Crossref                 = {doi:10.2307/973628}
+}
+
+@Article{Yan2011,
+  Title                    = {{The Interactive Effect of Revenue Diversification and Economic Base on US Local Government Revenue Stability}},
+  Author                   = {Wenli Yan},
+  Journal                  = {Public Money \& Management},
+  Year                     = {2011},
+  Number                   = {6},
+  Pages                    = {419–426},
+  Volume                   = {31},
+
+  Crossref                 = {doi:10.1080/09540962.2011.618766}
+}
+
+@Article{Aaronson99,
+  Title                    = {{The Effect of School Finance Reform on Population Heterogeneity}},
+  Author                   = {Daniel Aaronson},
+  Journal                  = {National Tax Journal},
+  Year                     = {1999},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {5–29},
+  Volume                   = {52}
+}
+
+@Article{Agarwal_Morgan85,
+  Title                    = {{The Interindustry Effects of Tax and Expenditure Limitations}},
+  Author                   = {Vinod Agarwal and W. Douglas Morgan},
+  Journal                  = {Growth \& Change},
+  Year                     = {1985},
+
+  Month                    = {apr},
+  Number                   = {2},
+  Volume                   = {16}
+}
+
+@TechReport{Anselin2009,
+  Title                    = {{Thirty Years of Spatial Econometrics}},
+  Author                   = {Luc Anselin},
+  Institution              = {Arizona State University},
+  Year                     = {2009},
+  Type                     = {Working Paper}
+}
+
+@Article{Anselin1995,
+  Title                    = {{Local Indicators of Spatial Association - LISA}},
+  Author                   = {Luc Anselin},
+  Journal                  = {Geographical Analysis},
+  Year                     = {1995},
+  Number                   = {2},
+  Pages                    = {93-115},
+  Volume                   = {27}
+}
+
+@TechReport{Arias2012,
+  Title                    = {{United States Life Tables, 2008}},
+  Author                   = {Elizabeth Arias},
+  Institution              = {Center for Disease Control},
+  Year                     = {2012},
+  Type                     = {National Vital Statistics Reports}
+}
+
+@InBook{Hamilton_Mills_Puryear1975,
+  Title                    = {{Fiscal Zoning and Land Use Controls}},
+  Author                   = {B.W. Hamilton, E.S. Mills, and D. Puryear},
+  Chapter                  = {The Tiebout Hypothesis and Residential Income Segregation},
+  Publisher                = {Lexington Books},
+  Year                     = {1975}
+}
+
+@Book{Bahl1984,
+  Title                    = {{Financing State and Local Government in the 1980s}},
+  Author                   = {Roy Bahl},
+  Publisher                = {Oxford University Press},
+  Year                     = {1984}
+}
+
+@Article{Banovetz2002,
+  Title                    = {{Illinois Home Rule: A Case Study in Fiscal Responsibility}},
+  Author                   = {James Banovetz},
+  Journal                  = {The Journal of Regional Analysis \& Policy},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {79-98},
+  Volume                   = {32}
+}
+
+@Article{Bartik1985,
+  Title                    = {{Business Location Decisions in the United States: Estimates of the Effects of Unionization, Taxes, and Other Characteristics of States}},
+  Author                   = {Timothy Bartik},
+  Journal                  = {Journal of Business \& Economic Statistics},
+  Year                     = {1985},
+
+  Month                    = {jan},
+  Number                   = {1},
+  Pages                    = {14-22},
+  Volume                   = {3}
+}
+
+@TechReport{NIPA,
+  Title                    = {{National Income and Product Accounts}},
+  Author                   = {BEA},
+  Institution              = {U.S. Department of Commerce},
+  Year                     = {2014}
+}
+
+@Article{Besley_Case1995,
+  Title                    = {{Incumbent Behavior: Vote-seeking, Tax-setting, and Yardstick Competition}},
+  Author                   = {Timothy Besley and Anne Case},
+  Journal                  = {American Economic Review},
+  Year                     = {1995},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Volume                   = {85}
+}
+
+@Book{Honadle_Costa_Cigler2004,
+  Title                    = {{Fiscal Health for Local Governments: An Introduction to Concepts, Practical Analysis, and Strategies}},
+  Author                   = {Beth Honadle, James Costa, and Beverly Cigler},
+  Publisher                = {Elsevier Academic Press},
+  Year                     = {2004}
+}
+
+@InBook{Yuan_Cordes_Brunori_Bell2009,
+  Title                    = {{Erosion of the Property Tax Base}},
+  Author                   = {Bing Yuan, Joseph Cordes, David Brunori, and Michael Bell},
+  Chapter                  = {Tax and Expenditure Limitations and Local Public Finances},
+  Publisher                = {Lincoln Institute of Land Policy},
+  Year                     = {2009},
+
+  Address                  = {Cambridge, MA}
+}
+
+@Article{Bird1993,
+  Title                    = {{Threading the Fiscal Labyrinth - Some Issues in Fiscal Decentralization}},
+  Author                   = {Richard M. Bird},
+  Journal                  = {National Tax Journal},
+  Year                     = {1993},
+
+  Month                    = {June},
+  Number                   = {2},
+  Pages                    = {207-227},
+  Volume                   = {46}
+}
+
+@InBook{Bowman2009,
+  Title                    = {{Erosion of the Property Tax Base}},
+  Author                   = {James Bowman},
+  Chapter                  = {Residential Property Tax Relief Measures},
+  Publisher                = {Lincoln Institute of Land Policy},
+  Year                     = {2009}
+}
+
+@TechReport{Bowman2008,
+  Title                    = {{Property Tax Circuit Breakers in 2007: Features, Use, and Policy Issues}},
+  Author                   = {John Bowman},
+  Institution              = {Lincoln Institute of Land Policy},
+  Year                     = {2008},
+
+  Address                  = {Cambridge, MA},
+  Type                     = {Working Paper}
+}
+
+@Article{Bradbury_Zhao2009,
+  Title                    = {{Measuring Non-School Fiscal Disparities Among Municipalities}},
+  Author                   = {Katharine Bradbury and Bo Zhao},
+  Journal                  = {National Tax Journal},
+  Year                     = {2009},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {25-56},
+  Volume                   = {62}
+}
+
+@Article{Braid2002,
+  Title                    = {{The Spatial Effects of Wage or Property Tax Differentials, and Local Government Choice Between Tax Instruments}},
+  Author                   = {Ralph Braid},
+  Journal                  = {Journal of Urban Economics},
+  Year                     = {2002},
+
+  Month                    = {may},
+  Number                   = {3},
+  Pages                    = {429–445},
+  Volume                   = {51}
+}
+
+@Book{Burkhead_Miner1971,
+  Title                    = {{Public Expenditure}},
+  Author                   = {Jesse Burkhead and Jerry Miner},
+  Publisher                = {Transaction Publishers},
+  Year                     = {1971}
+}
+
+@Article{Carroll_Wasylenko1994,
+  Title                    = {{Do State Business Climates Still Matter?-Evidence of a Structural Change}},
+  Author                   = {Robert Carroll and Michael Wasylenko},
+  Journal                  = {National Tax Journal},
+  Year                     = {1994},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {19–37},
+  Volume                   = {47}
+}
+
+@TechReport{CBO_LTBO2012,
+  Title                    = {{Long-Term Budget Outlook}},
+  Author                   = {CBO},
+  Institution              = {Congressional Budget Office},
+  Year                     = {2012},
+
+  Address                  = {Washington D.C.},
+  Type                     = {Report}
+}
+
+@Article{StClair2012,
+  Title                    = {{The Effect of Tax and Expenditure Limitations on Revenue Volatility: Evidence from Colorado}},
+  Author                   = {Travis St. Clair},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {61–78},
+  Volume                   = {32}
+}
+
+@Article{Cornia_Walters2006,
+  Title                    = {{Full Disclosure: Controlling Property Tax Increases During Periods of Increasing Housing Values}},
+  Author                   = {Gary C. Cornia and Lawrence C. Walters},
+  Journal                  = {National Tax Journal},
+  Year                     = {2006},
+
+  Month                    = {sep},
+  Number                   = {3},
+  Pages                    = {735-749},
+  Volume                   = {59}
+}
+
+@Article{Cornia_Walters2005,
+  Title                    = {{Full Disclosure: Unanticipated Improvements in Property Tax Uniformity}},
+  Author                   = {Gary C. Cornia and Lawrence C. Walters},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {106-123},
+  Volume                   = {25}
+}
+
+@Article{Cutler_Sahni2013,
+  Title                    = {{If Slow Rate Of Health Care Spending Growth Persists Projections May Be Off By \$770 Billion}},
+  Author                   = {D. M. Cutler and N. R. Sahni},
+  Journal                  = {Health Affairs},
+  Year                     = {2013},
+
+  Month                    = {May},
+  Number                   = {5},
+  Pages                    = {841-850},
+  Volume                   = {32},
+
+  Doi                      = {10.1377/hlthaff.2012.0289},
+  Publisher                = {Health Affairs (Project Hope)},
+  Url                      = {http://dx.doi.org/10.1377/hlthaff.2012.0289}
+}
+
+@Article{Deller_Stallman2007,
+  Title                    = {{Tax and Expenditure Limitations and Economic Growth}},
+  Author                   = {Steven Deller and Judith I. Stallmann},
+  Journal                  = {Marquette Law Review},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {497–554},
+  Volume                   = {90}
+}
+
+@Article{Downes_Figlio1999,
+  Title                    = {{Do Tax and Expenditure Limits Provide a Free Lunch? Evidence on the Link Between Limits and Public Sector Service Quality}},
+  Author                   = {Thomas A. Downes and David N. Figlio},
+  Journal                  = {National Tax Journal},
+  Year                     = {1999},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {113-128},
+  Volume                   = {52}
+}
+
+@Article{Due1961,
+  Title                    = {{Studies of State-Local Tax Influences on Location of Industry}},
+  Author                   = {John F. Due},
+  Journal                  = {National Tax Journal},
+  Year                     = {1961},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Volume                   = {14}
+}
+
+@Article{Eberts_Gronberg1981,
+  Title                    = {{Jurisdictional Homogeneity and the Tiebout Hypothesis}},
+  Author                   = {R.W. Eberts and T.J. Gronberg},
+  Journal                  = {Journal of Urban Economics},
+  Year                     = {1981},
+  Pages                    = {227-239},
+  Volume                   = {10}
+}
+
+@Article{Fischel1989,
+  Title                    = {{Did Serrano Cause Proposition 13?}},
+  Author                   = {William A Fischel},
+  Journal                  = {National Tax Journal},
+  Year                     = {1989},
+
+  Month                    = {dec},
+  Number                   = {4},
+  Pages                    = {465–473},
+  Volume                   = {42}
+}
+
+@Book{Fisher1996,
+  Title                    = {{The Worst Tax?: A History of the Property Tax in America}},
+  Author                   = {Fisher, Glenn},
+  Publisher                = {University Press of Kansas},
+  Year                     = {1996},
+
+  Address                  = {Lawrence},
+  Edition                  = {1st},
+
+  ISBN                     = {0-7006-0753-6}
+}
+
+@Article{Florestano1981,
+  Title                    = {{Revenue-Raising Limitations on Local Government: A Focus on Alternative Responses}},
+  Author                   = {Patricia S Florestano},
+  Journal                  = {Public Administration Review},
+  Year                     = {1981},
+
+  Month                    = {jan},
+  Number                   = {1},
+  Pages                    = {122–131},
+  Volume                   = {41}
+}
+
+@Article{Gentry_Ladd1994,
+  Title                    = {{State Tax Structure and Multiple Policy Objectives}},
+  Author                   = {William M. Gentry and Helen F. Ladd},
+  Journal                  = {National Tax Journal},
+  Year                     = {1994},
+
+  Month                    = {dec},
+  Number                   = {4},
+  Pages                    = {747–772},
+  Volume                   = {47}
+}
+
+@Article{Getis_Ord1992,
+  Title                    = {{The Analysis of Spatial Association by Use of Distance Statistics}},
+  Author                   = {A Getis and JK Ord},
+  Journal                  = {Geographical Analysis},
+  Year                     = {1992},
+  Number                   = {3},
+  Pages                    = {189-206},
+  Volume                   = {24}
+}
+
+@Article{Duranton_Gobillon_Overman2011,
+  Title                    = {{Assessing the Effects of Local Taxation Using Microgeographic Data}},
+  Author                   = {Gilles Duranton, Laurent Gobillon, and Henry G. Overman},
+  Journal                  = {Economic Journal},
+  Year                     = {2011},
+
+  Month                    = {sep},
+  Number                   = {555},
+  Pages                    = {1017–1046},
+  Volume                   = {121}
+}
+
+@Article{Gold1981,
+  Title                    = {{Homeowner Property Taxes, Inflation and Property Tax Relief}},
+  Author                   = {Steven Gold},
+  Journal                  = {National Tax Journal},
+  Year                     = {1981},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Pages                    = {167-184},
+  Volume                   = {34}
+}
+
+@Article{Gramlich_Rubinfeld1982,
+  Title                    = {{Micro-Estimates of Public Spending Demand Functions and Tests of the Tiebout and Median-Voter Hypotheses}},
+  Author                   = {E.M. Gramlich and D.L. Rubinfeld},
+  Journal                  = {Journal of Political Economy},
+  Year                     = {1982},
+  Pages                    = {536-560},
+  Volume                   = {90}
+}
+
+@Article{Gramlich1993,
+  Title                    = {{A Policymaker's Guide to Fiscal Decentralization}},
+  Author                   = {Edward M Gramlich},
+  Journal                  = {National Tax Journal},
+  Year                     = {1993},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Pages                    = {229-235},
+  Volume                   = {46}
+}
+
+@Book{Greene2008,
+  Title                    = {{Econometric Analysis}},
+  Author                   = {William Greene},
+  Publisher                = {Pearson Prentice Hall},
+  Year                     = {2008},
+  Edition                  = {sixth}
+}
+
+@Article{Heikkila1996,
+  Title                    = {{Are Municipalities Tieboutian Clubs?}},
+  Author                   = {E.J. Heikkila},
+  Journal                  = {Regional Science and Urban Economics},
+  Year                     = {1996},
+  Pages                    = {203-226},
+  Volume                   = {26}
+}
+
+@Article{Henderson1991,
+  Title                    = {{Separating Tiebout Equilibrium}},
+  Author                   = {J.V. Henderson},
+  Journal                  = {Journal of Urban Economics},
+  Year                     = {1991},
+  Pages                    = {128-152},
+  Volume                   = {29}
+}
+
+@Article{Hicks39,
+  Title                    = {{The Foundations of Welfare Economics}},
+  Author                   = {J.R. Hicks},
+  Journal                  = {Economic Journal},
+  Year                     = {1939},
+  Number                   = {196},
+  Pages                    = {696-712},
+  Volume                   = {49}
+}
+
+@TechReport{COG_Summary2012,
+  Title                    = {Government Organization Summary Report: 2012},
+  Author                   = {Carma Hogue},
+  Institution              = {US Census Bureau, Governments Division},
+  Year                     = {2013},
+  Month                    = {September},
+  Number                   = {G12-CG-ORG},
+  Type                     = {Governments Division Brief},
+
+  Owner                    = {choct155},
+  Timestamp                = {2014.11.23},
+  Url                      = {http://www2.census.gov/govs/cog/g12_org.pdf}
+}
+
+@InBook{Hoover2008,
+  Title                    = {{The Philosophy of Economics: An Anthology}},
+  Author                   = {Kevin Hoover},
+  Chapter                  = {Econometrics as Observation: The Lucas Critique and the Nature of Econometric Inference},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2008}
+}
+
+@Article{IAAO2005,
+  Title                    = {{Standard on Property Tax Policy}},
+  Author                   = {IAAO},
+  Journal                  = {Journal of Property Tax Assessment \& Administration},
+  Year                     = {2005},
+
+  Month                    = {oct},
+  Number                   = {4},
+  Pages                    = {43–81},
+  Volume                   = {2}
+}
+
+@Article{Springer_Lusby_Leatherman_Featherstone2009,
+  Title                    = {{An Evaluation of Alternative Tax and Expenditure Limitation Policies on Kansas Local Governments}},
+  Author                   = {Job D. Springer, Aaron K. Lusby, John C. Leatherman, and Allen M. Featherstone},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {48–70},
+  Volume                   = {29}
+}
+
+@Article{Bartle_Endon_Krane2003,
+  Title                    = {{Beyond the Property Tax: Local Government Revenue Diversification}},
+  Author                   = {John R. Bartle, Carol Ebdon, and Dale Krane},
+  Journal                  = {Journal of Public Budgeting, Accounting \& Financial Management},
+  Year                     = {2003},
+  Number                   = {4},
+  Pages                    = {622–648},
+  Volume                   = {15}
+}
+
+@Article{Joyce_Mullins1991,
+  Title                    = {{The Changing Fiscal Structure of the State and Local Public Sector: The Impact of Tax and Expenditure Limitations}},
+  Author                   = {Philip G. Joyce and Daniel R. Mullins},
+  Journal                  = {Public Administration Review},
+  Year                     = {1991},
+
+  Month                    = {may},
+  Number                   = {3},
+  Pages                    = {240-253},
+  Volume                   = {51}
+}
+
+@Article{McLure2001,
+  Title                    = {{The Tax Assignment Problem: Ruminations on How Theory and Practice Depend on History}},
+  Author                   = {Charles E. McLure Jr.},
+  Journal                  = {National Tax Journal},
+  Year                     = {2001},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Pages                    = {339–363},
+  Volume                   = {54}
+}
+
+@Article{Stallman_Deller_Amiel_Maher2012,
+  Title                    = {{Tax and Expenditure Limitations and State Credit Ratings}},
+  Author                   = {Judith I. Stallmann, Steven Deller, Lindsay Amiel, and Craig Maher},
+  Journal                  = {Public Finance Review},
+  Year                     = {2012},
+
+  Month                    = {sep},
+  Number                   = {5},
+  Pages                    = {643–669},
+  Volume                   = {40}
+}
+
+@Article{Kaldor39,
+  Title                    = {{Welfare Propositions in Economics and Interpersonal Comparisons of Utility}},
+  Author                   = {Nicholas Kaldor},
+  Journal                  = {Economic Journal},
+  Year                     = {1939},
+  Number                   = {195},
+  Pages                    = {549-52},
+  Volume                   = {49}
+}
+
+@Article{Ladd_Yinger1994,
+  Title                    = {{The Case for Equalizing Aid}},
+  Author                   = {Helen F. Ladd and John Yinger},
+  Journal                  = {National Tax Journal},
+  Year                     = {1994},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {211–224},
+  Volume                   = {47}
+}
+
+@TechReport{McGuire_Rueben2006,
+  Title                    = {{The Colorado Revenue Limit: The Economic Effects of TABOR}},
+  Author                   = {Therese J. McGuire and Kim Rueben},
+  Institution              = {Economic Policy Institute},
+  Year                     = {2006},
+  Type                     = {Briefing Paper}
+}
+
+@InProceedings{Mikesell_Mullins2008,
+  Title                    = {{Structural/Institutional Determinants of Variations in Household Property Burdens and Effective Tax Rates Within and Across Local Governments: The Implications of Classification, Assessment Methods, Revenue Diversity, and TELS}},
+  Author                   = {John L. Mikesell and Daniel R. Mullins},
+  Booktitle                = {Proceedings of the Annual Conference on Taxation},
+  Year                     = {2008},
+  Month                    = {jun},
+  Organization             = {National Tax Association},
+  Pages                    = {92–105}
+}
+
+@Article{Moore2008,
+  Title                    = {{Property Tax Equity Implications of Assessment Capping and Homestead Exemptions for Owner-Occupied Single-Family Housing}},
+  Author                   = {J. Wayne Moore},
+  Journal                  = {Journal of Property Tax Assessment \& Administration},
+  Year                     = {2008},
+
+  Month                    = {jul},
+  Number                   = {3},
+  Pages                    = {37–70},
+  Volume                   = {5}
+}
+
+@InProceedings{Mullins2002,
+  Title                    = {{Popular Processes and the Transformation of State and Local Government Finance}},
+  Author                   = {Daniel R. Mullins},
+  Booktitle                = {Proceedings of the Annual Conference on Taxation},
+  Year                     = {2002},
+  Organization             = {National Tax Association}
+}
+
+@Book{Musgrave59,
+  Title                    = {{The Theory of Public Finance}},
+  Author                   = {Richard Musgrave},
+  Publisher                = {McGraw-Hill},
+  Year                     = {1959}
+}
+
+@Article{Musgrave1979,
+  Title                    = {{The Tax Revolt}},
+  Author                   = {Richard A. Musgrave},
+  Journal                  = {Social Science Quarterly (University of Texas Press)},
+  Year                     = {1979},
+
+  Month                    = {mar},
+  Number                   = {4},
+  Pages                    = {697–703},
+  Volume                   = {59}
+}
+
+@Article{Musgrave1939,
+  Title                    = {{The Voluntary Exchange Theory of Public Economy}},
+  Author                   = {Richard A. Musgrave},
+  Journal                  = {Quarterly Journal of Economics},
+  Year                     = {1939},
+
+  Month                    = {feb},
+  Number                   = {2},
+  Pages                    = {213-237},
+  Volume                   = {53}
+}
+
+@Book{Netzer1966,
+  Title                    = {{Economics of the Property Tax}},
+  Author                   = {Dick Netzer},
+  Publisher                = {The Brookings Institution},
+  Year                     = {1966},
+  Series                   = {Studies of Government Finance}
+}
+
+@Article{Oates2008,
+  Title                    = {{On The Evolution of Fiscal Federalism: Theory and Institutions}},
+  Author                   = {Wallace Oates},
+  Journal                  = {National Tax Journal},
+  Year                     = {2008},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Pages                    = {313–334},
+  Volume                   = {61}
+}
+
+@Article{Oates1999,
+  Title                    = {{An Essay on Fiscal Federalism}},
+  Author                   = {Wallace Oates},
+  Journal                  = {Journal of Economic Literature},
+  Year                     = {1999},
+
+  Month                    = {sep},
+  Number                   = {3},
+  Volume                   = {37}
+}
+
+@Article{Pack_Pack1977,
+  Title                    = {{Metropolitan Fragmentation and Suburban Homogeneity}},
+  Author                   = {H. Pack and J.R. Pack},
+  Journal                  = {Urban Studies},
+  Year                     = {1977},
+  Pages                    = {191-201},
+  Volume                   = {14}
+}
+
+@Book{Perrson_Tabellini2000,
+  Title                    = {{Political Economics: Explaining Economic Policy}},
+  Author                   = {T. Perrson and G. Tabellini},
+  Publisher                = {MIT Press},
+  Year                     = {2000}
+}
+
+@Article{Dye_McMillen_Merriman2006,
+  Title                    = {{Illinois’ Response to Rising Residential Property Values: An Assessment Growth Cap in Cook County}},
+  Author                   = {Richard F. Dye, Daniel P. McMillen, and David F. Merriman},
+  Journal                  = {National Tax Journal},
+  Year                     = {2006},
+
+  Month                    = {sep},
+  Number                   = {3},
+  Pages                    = {707-716},
+  Volume                   = {59}
+}
+
+@Article{Dye_McGuire_Merriman2001,
+  Title                    = {{The Impact of Property Taxes and Property Tax Classification on Business Activity in the Chicago Metropolitan Area}},
+  Author                   = {Richard F. Dye, Therese J. McGuire, and David F. Merriman},
+  Journal                  = {Journal of Regional Science},
+  Year                     = {2001},
+
+  Month                    = {nov},
+  Number                   = {4},
+  Volume                   = {41}
+}
+
+@Article{Rooney2002,
+  Title                    = {{Local Government Revenue Structure: Does Home Rule Matter?}},
+  Author                   = {Tom Rooney},
+  Journal                  = {The Journal of Regional Analysis \& Policy},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {67–78},
+  Volume                   = {32}
+}
+
+@Book{Rubin1998,
+  Title                    = {{Class, Tax, \& Power}},
+  Author                   = {Irene Rubin},
+  Publisher                = {Chatham House Publishers, Inc.},
+  Year                     = {1998}
+}
+
+@Article{Schelling1971,
+  Title                    = {{Dynamic Models of Segregation}},
+  Author                   = {Thomas Schelling},
+  Journal                  = {Journal of Mathematical Sociology},
+  Year                     = {1971},
+  Pages                    = {143-186},
+  Volume                   = {1}
+}
+
+@Article{Schmidt1992,
+  Title                    = {{Private School Enrollment in Metropolitan Areas}},
+  Author                   = {A. Schmidt},
+  Journal                  = {Public Finance Quarterly},
+  Year                     = {1992},
+  Pages                    = {298–320},
+  Volume                   = {20}
+}
+
+@Article{Seabright1996,
+  Title                    = {{Accountability and Decentralisation in Government: An Incomplete Contracts Model}},
+  Author                   = {Paul Seabright},
+  Journal                  = {European Economic Review},
+  Year                     = {1996},
+
+  Month                    = {jan},
+  Number                   = {1},
+  Pages                    = {61–89},
+  Volume                   = {40}
+}
+
+@Book{Sears_Citrin1985,
+  Title                    = {{Tax Revolt: Something for Nothing in California}},
+  Author                   = {David Sears and Jack Citrin},
+  Publisher                = {Harvard University Press},
+  Year                     = {1985},
+
+  Address                  = {Cambridge, MA}
+}
+
+@Book{Seligman1913,
+  Title                    = {{Essays in Taxation}},
+  Author                   = {Edward Seligman},
+  Publisher                = {The Macmillan Company},
+  Year                     = {1913},
+
+  Address                  = {http://books.google.com/books?id=geIaAAAAMAAJ}
+}
+
+@Article{Sexton2003,
+  Title                    = {{The Property Tax Base In The United States: Exemptions, Incentives, and Relief}},
+  Author                   = {Terri A Sexton},
+  Journal                  = {Assessment Journal},
+  Year                     = {2003},
+  Number                   = {4},
+  Pages                    = {5–33},
+  Volume                   = {10}
+}
+
+@Book{Shoham_Leyton-Brown2009,
+  Title                    = {{Multi-Agent Systems: Algorithmic, Game-Theoretic, and Logical Foundations}},
+  Author                   = {Yoav Shoham and Kevin Leyton-Brown},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2009}
+}
+
+@Book{Smith1776,
+  Title                    = {{An Inquiry into the Nature and Causes of the Wealth of Nations}},
+  Author                   = {Adam Smith},
+  Publisher                = {Unknown},
+  Year                     = {1776}
+}
+
+@Article{Sokolow2000,
+  Title                    = {{The Changing Property Tax in the West: State Centralization of Local Finances}},
+  Author                   = {Alvin D Sokolow},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2000},
+  Number                   = {1},
+  Volume                   = {20}
+}
+
+@TechReport{LegStaff2003,
+  Title                    = {{House Joint Resolution 03-133 Study: TABOR, Amendment 23, the Gallagher Amendment, and Other Fiscal Issues}},
+  Author                   = {Legislative Council Staff},
+  Institution              = {Colorado General Assembly},
+  Year                     = {2003},
+  Type                     = {Legislative Study}
+}
+
+@Article{Stallman_Deller2011,
+  Title                    = {{State Tax and Expenditure Limitations, Business Climate, and Economic Performance}},
+  Author                   = {Judith I. Stallmann and Steven Deller},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2011},
+  Number                   = {4},
+  Pages                    = {109–135},
+  Volume                   = {31}
+}
+
+@Article{Stallman_Deller2010,
+  Title                    = {{Impacts of Local and State Tax and Expenditure Limits on Economic Growth}},
+  Author                   = {Judith I. Stallmann and Steven Deller},
+  Journal                  = {Applied Economic Letters},
+  Year                     = {2010},
+
+  Month                    = {may},
+  Number                   = {7},
+  Pages                    = {645–648},
+  Volume                   = {17}
+}
+
+@Book{Storing1981,
+  Title                    = {{What the Anti-Federalists Were For: The Political Thought of the Opponents of the Constitution}},
+  Author                   = {Herbert Storing},
+  Publisher                = {The University of Chicago Press},
+  Year                     = {1981}
+}
+
+@Article{Bae_Moon_Jung2012,
+  Title                    = {{Economic Effects of State-Level Tax and Expenditure Limitations}},
+  Author                   = {Suho Bae, Seong-gin Moon, and Changhoon Jung},
+  Journal                  = {Public Administration Review},
+  Year                     = {2012},
+
+  Month                    = {oct},
+  Number                   = {5},
+  Pages                    = {649–658},
+  Volume                   = {72}
+}
+
+@TechReport{Smith_Thoolen1980,
+  Title                    = {{The Design of Organizations for Rural Development Projects - A Progress Report}},
+  Author                   = {W., F. Lethem Smith and B. Thoolen},
+  Institution              = {World Bank},
+  Year                     = {1980},
+  Type                     = {Working Paper}
+}
+
+@Book{Wagner1983,
+  Title                    = {{Public Finance: Revenues and Expenditures in a Democratic Society}},
+  Author                   = {Richard Wagner},
+  Publisher                = {Little, Brown and Company},
+  Year                     = {1983}
+}
+
+@Article{Wallin2004,
+  Title                    = {{The Tax Revolt in Massachusetts: Revolution and Reason}},
+  Author                   = {Bruce Wallin},
+  Journal                  = {Public Budgeting \& Finance},
+  Year                     = {2004},
+  Number                   = {4},
+  Pages                    = {34–50},
+  Volume                   = {24}
+}
+
+@Article{Wallin_Zabel2011,
+  Title                    = {{Property Tax Limitations and Local Fiscal Conditions: The Impact of Proposition 2½ in Massachusetts}},
+  Author                   = {Bruce Wallin and Jeffrey Zabel},
+  Journal                  = {Regional Science \& Urban Economics},
+  Year                     = {2011},
+
+  Month                    = {jul},
+  Number                   = {4},
+  Pages                    = {382–393},
+  Volume                   = {41}
+}
+
+@Article{White1983,
+  Title                    = {{Trade-Off in Growth and Stability in State Taxes}},
+  Author                   = {Fred White},
+  Journal                  = {National Tax Journal},
+  Year                     = {1983},
+
+  Month                    = {mar},
+  Number                   = {1},
+  Pages                    = {103–114},
+  Volume                   = {36}
+}
+
+@Article{White_Musser1978,
+  Title                    = {{Business Cycles and State Governmental Finances: Implications for Higher Education}},
+  Author                   = {Fred C. White and Wesley N. Musser},
+  Journal                  = {Higher Education},
+  Year                     = {1978},
+
+  Month                    = {may},
+  Number                   = {2},
+  Pages                    = {177–192},
+  Volume                   = {7}
+}
+

@@ -1,0 +1,5 @@
+#% Do not delete the line below; configuration depends on this #
+#\DeclareLaTeXClass{authesis}
+
+# Read the definitions from report.layout
+Input report.layout
