@@ -1191,8 +1191,161 @@ key "Oates1972"
  base upon which to levy a local tax.
 \end_layout
 
+\begin_layout Subsubsection
+Duality in Public Finance
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+The classical approach to the theory of Public Finance - with its neglect
+ of the expenditure aspects of public economy and its overemphasis of the
+ consideration of justice in its treatment of the revenue aspect of the
+ problem - had left the revenue-expenditure process outside the body of
+ economic theory.
+\begin_inset Quotes erd
+\end_inset
+
+ - Richard Abel Musgrave, 1939
+\end_layout
+
+\begin_layout Standard
+Professor Musgrave described here a concept that dates at least as far back
+ as Adam Smith's 
+\emph on
+Wealth of Nations.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Smith1776"
+
+\end_inset
+
+ 
+\emph default
+Smith's work is probably among the most prominent writings in economics
+ that advocates for the ability-to-pay principle.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Adam Smith, himself, did not actually support the neglect of the expenditure
+ side of public finance in his writings.
+ Rather, this phenomenon was a product of his successors - McCullock, Nassau
+ Senior, James Mill, etc.
+ - who distilled Smith's message down to a narrower vision.
+\end_layout
+
+\end_inset
+
+ While ability-to-pay does well to explicitly address equity concerns, using
+ the concept as an analytic base facilitates neglect of a fundamental characteri
+stic of public finance.
+ Musgrave's 
+\begin_inset Quotes eld
+\end_inset
+
+revenue-expenditure process
+\begin_inset Quotes erd
+\end_inset
+
+, Wagner's 
+\begin_inset Quotes eld
+\end_inset
+
+quid pro quo
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+consensual democracy
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wagner1983"
+
+\end_inset
+
+, and Burkhead & Miner's 
+\begin_inset Quotes eld
+\end_inset
+
+general equilibrium analysis
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+balance sheet
+\begin_inset Quotes erd
+\end_inset
+
+ approach 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Burkhead_Miner1971"
+
+\end_inset
+
+ are all slices at the same underlying concept: duality.
+ 
+\end_layout
+
+\begin_layout Standard
+Revenue systems cannot, and should not, be divorced from the public services
+ they finance.
+ Though this fact was recognized with the advent of marginal utility economics
+ (particularly as advanced by Wicksell), it has not yet made much headway
+ in popular discourse over economic policy in the United States.
+ Too often we see tax discussions without thought to programmatic impacts
+ and vice versa.
+ As we will see, this disconnect has created conditions that drive an even
+ larger wedge between considerations of public revenue and expenditure.
+\end_layout
+
 \begin_layout Section
 What does Subnational Finance Look Like in Practice?
+\end_layout
+
+\begin_layout Standard
+Theoretical knowledge of 
+\begin_inset Quotes eld
+\end_inset
+
+proper
+\begin_inset Quotes erd
+\end_inset
+
+ tax design and a strong appreciation for the normative role of subnational
+ finance are important from a foundational perspective.
+ However, theoretical constructs are insufficient to operate in the real
+ world.
+ The competent fiscal manager requires knowledge about the characteristics
+ of the revenue bases in question, trends in base activity and expenditure
+ risk, and the institutions that govern the linkages between the economic
+ capacity of a given population and its desired basket of public services.
+ In short, one must understand the operating context.
+\end_layout
+
+\begin_layout Subsection
+The Significance of the State and Local Government Sector
+\end_layout
+
+\begin_layout Subsection
+Growth and Volatility Factors in Local Public Finance
+\end_layout
+
+\begin_layout Subsection
+The Importance of Demography
 \end_layout
 
 \begin_layout Section
@@ -1204,6 +1357,68 @@ Fiscal Behavior in Colorado
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:CO-FiscBehavior"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+CO GSP
+\end_layout
+
+\end_inset
+
+Colorado Gross State Product (1963-2013)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_gsp.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Footnote: For long-term price changes, it is desirable to use the Chained
+ Personal Consumer Expenditures Index.
+ The primary reason is that the PCE, in contrast to the Consumer Price Index,
+ accounts for changes in the basket of consumed goods over time and substitution
+ for less expensive alternatives when the price of a particular good increases.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FOMC2000"
 
 \end_inset
 

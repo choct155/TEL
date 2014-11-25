@@ -791,21 +791,14 @@ The first (allocation) is the direct product of government operation, the
  that have occured due to trade.
  Insofar as the cost-benefit calculation from a trade is typically considered
  beneficial whether or not the gains help to offset the losses experienced
- by ill-placed parties (
+ by ill-placed parties 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Hicks39"
+key "Hicks39,Kaldor39"
 
 \end_inset
 
-,
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kaldor39"
-
-\end_inset
-
-), losses are free to occur by construction.
+, losses are free to occur by construction.
  The third function (stabilization) seeks to maintain an environment conducive
  to achieving the full potential of economic output.
 \end_layout
@@ -813,34 +806,27 @@ key "Kaldor39"
 \begin_layout Standard
 As it turns out, these three functions cannot be cleanly assigned to the
  three levels of government (federal, state, and local).
- Indeed, comparatively recent literature (
+ Indeed, comparatively recent literature 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Bahl1984"
+key "Bahl1984,Gramlich1993"
 
 \end_inset
 
-,
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Gramlich1993"
-
-\end_inset
-
-) suggests that the discord is even greater than Musgrave had originally
+ suggests that the discord is even greater than Musgrave had originally
  believed.
  In any event, there is broad agreement that the preponderance of direct
  service provision occurs at the level closest to the recipients of services:
  local.
  Indeed, this de facto postulate is the supporting force behind Oates' Decentral
-ization Theorem (
+ization Theorem 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Oates1972"
 
 \end_inset
 
-)
+
 \begin_inset Foot
 status collapsed
 
@@ -1093,7 +1079,7 @@ when possible
 \emph default
 .
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Bird captures the latter suggestion directly: 
