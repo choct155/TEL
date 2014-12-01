@@ -488,8 +488,21 @@ Second, counties are favored over municipalities for reasons of spatial
  (Denver and Broomfield).
  For the purposes of this study, Denver and Broomfield are also treated
  as counties.
- This choice reflects the fact that Denver and Broomfield do not overlap,
- nor are they overlapped by, the conventional counties in the state.
+ This choice reflects the fact that Denver and Broomfield
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+According to the Bureau of Economic Analysis, Broomfield County was created
+ from parts of Adams, Boulder, Jefferson, and Weld counties effective November
+ 15, 2001.
+ Estimates from BEA for Broomfield began in 2002.
+\end_layout
+
+\end_inset
+
+ do not overlap, nor are they overlapped by, the conventional counties in
+ the state.
  Moreover, this collection of 64 jurisdictions represents a spatially-exhaustive
  set of jurisdictional units.
  Municipalities do not feature these properties, nor do they consistently
@@ -690,6 +703,14 @@ reference "chap:Conclusion"
  in Colorado.
  It will also include discussion of the extent of the study's external validity,
  as well as thoughts on what may be explored with future research.
+\end_layout
+
+\begin_layout Subsection
+A Word on TELs as an Instrument of Democracy
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Chapter
@@ -1191,8 +1212,938 @@ key "Oates1972"
  base upon which to levy a local tax.
 \end_layout
 
+\begin_layout Subsubsection
+Duality in Public Finance
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+The classical approach to the theory of Public Finance - with its neglect
+ of the expenditure aspects of public economy and its overemphasis of the
+ consideration of justice in its treatment of the revenue aspect of the
+ problem - had left the revenue-expenditure process outside the body of
+ economic theory.
+\begin_inset Quotes erd
+\end_inset
+
+ - Richard Abel Musgrave, 1939
+\end_layout
+
+\begin_layout Standard
+Professor Musgrave described here a concept that dates at least as far back
+ as Adam Smith's 
+\emph on
+Wealth of Nations.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Smith1776"
+
+\end_inset
+
+ 
+\emph default
+Smith's work is probably among the most prominent writings in economics
+ that advocates for the ability-to-pay principle.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Adam Smith, himself, did not actually support the neglect of the expenditure
+ side of public finance in his writings.
+ Rather, this phenomenon was a product of his successors - McCullock, Nassau
+ Senior, James Mill, etc.
+ - who distilled Smith's message down to a narrower vision.
+\end_layout
+
+\end_inset
+
+ While ability-to-pay does well to explicitly address equity concerns, using
+ the concept as an analytic base facilitates neglect of a fundamental characteri
+stic of public finance.
+ Musgrave's 
+\begin_inset Quotes eld
+\end_inset
+
+revenue-expenditure process
+\begin_inset Quotes erd
+\end_inset
+
+, Wagner's 
+\begin_inset Quotes eld
+\end_inset
+
+quid pro quo
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+consensual democracy
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wagner1983"
+
+\end_inset
+
+, and Burkhead & Miner's 
+\begin_inset Quotes eld
+\end_inset
+
+general equilibrium analysis
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+balance sheet
+\begin_inset Quotes erd
+\end_inset
+
+ approach 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Burkhead_Miner1971"
+
+\end_inset
+
+ are all slices at the same underlying concept: duality.
+ 
+\end_layout
+
+\begin_layout Standard
+Revenue systems cannot, and should not, be divorced from the public services
+ they finance.
+ Though this fact was recognized with the advent of marginal utility economics
+ (particularly as advanced by Wicksell), it has not yet made much headway
+ in popular discourse over economic policy in the United States.
+ Too often we see tax discussions without thought to programmatic impacts
+ and vice versa.
+ As we will see, this disconnect has created conditions that drive an even
+ larger wedge between considerations of public revenue and expenditure.
+\end_layout
+
 \begin_layout Section
 What does Subnational Finance Look Like in Practice?
+\end_layout
+
+\begin_layout Standard
+Theoretical knowledge of 
+\begin_inset Quotes eld
+\end_inset
+
+proper
+\begin_inset Quotes erd
+\end_inset
+
+ tax design and a strong appreciation for the normative role of subnational
+ finance are important from a foundational perspective.
+ However, theoretical constructs are insufficient to operate in the real
+ world.
+ The competent fiscal manager requires knowledge about the characteristics
+ of the revenue bases in question, trends in base activity and expenditure
+ risk, and the institutions that govern the linkages between the economic
+ capacity of a given population and its desired basket of public services.
+ In short, one must understand the operating context.
+\end_layout
+
+\begin_layout Subsection
+The Economic Significance of the State and Local Government Sector
+\end_layout
+
+\begin_layout Standard
+The role of government, as measured by its size relative to the total economy,
+ has grown signficantly since the beginning of the early 20th century.
+ Given the comparatively low-level of resources allocated to the judicial
+ and legislative branches, this growth has been driven by increases in the
+ executive and regulatory capacity of government at all levels.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tot-Gov-Size"
+
+\end_inset
+
+ depicts the trajectory of total government receipts and expenditures as
+ a percentage of gross domestic product.
+ As one might expect, both receipts and expenditures tell similar stories.
+ Between 1929 and 2013, receipts grew from 10.04% of GDP to 28.56%, while
+ expenditures grew from 8.03% to 33.77%.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Government Size
+\end_layout
+
+\end_inset
+
+Growth in the Size of Government
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tot-Gov-Size"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/tot_gov_GDP_perc.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This growth reflects the rise of what Dwight Waldo referred to as the 
+\begin_inset Quotes eld
+\end_inset
+
+administrative state
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Waldo1948"
+
+\end_inset
+
+ Although the growth in government we were to experience in the US was unprecede
+nted, it was by no means an accident.
+ Rather, it was a consequence of the intersection between a growing population
+ and the prevailing culture.
+ 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+[D]espite occasional claims that public administration is a science with
+ principles of universal validity, American public administration has evolved
+ political theories unmistakeably related to unique economic, social, government
+al, and ideological facts.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Waldo1948"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In effect, the growing population placed a strain on existing methods of
+ allocating resources and conducting the business of running a country.
+ Interdependence amongst people was growing, which highlighted the need
+ for methods of promoting common expectation.
+ If two parties are to engage in a fruitful manner, some common set of rules
+ is required.
+ The sheer number of such engagements grows faster than the population
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Consider a population of two people.
+ The addition of a third person adds not one, but two additional avenues
+ for engagement.
+\end_layout
+
+\end_inset
+
+, and the potential for variation in the engagements grows with it.
+ Furthermore, as the economy matured, industrial activity became more differenti
+ated, specialized, and technical.
+ Establishing common expectation in this circumstance requires a regulatory
+ apparatus with specialized training.
+ Ignorance of this fact was a perilous strategy.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cleveland1906"
+
+\end_inset
+
+ The resource base required for a governmental apparatus to achieve these
+ efficiencies was larger than had been previously required.
+\end_layout
+
+\begin_layout Standard
+Although the federal government has expanded more rapidly than the state
+ and local sector, subnational finance still increased its share of the
+ economy over the course of the past century.
+ Over the 1929-2013 period, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SL-Gov-Size"
+
+\end_inset
+
+ shows that subnational receipts grew from 6.79% of GDP to 12.68%, while subnation
+al expenditures grew from 5.45% to 14.02%.
+ As can be seen, the sector grew quite rapidly early on, before a temporary
+ decline in the mid-1930s.
+ Much of the early experimentation with new methods of administration accordingl
+y started in state and local governments.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Subnational Government Size
+\end_layout
+
+\end_inset
+
+Growth in the Size of Subnational Government
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SL-Gov-Size"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/sl_gov_GDP_perc.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Role of the Property Tax in Financing Local Government
+\end_layout
+
+\begin_layout Standard
+Over the course of US history, financing the array of service responsibilities
+ contained within any given local government entity has required careful
+ and ongoing cultivaton of a revenue portfolio that seeks to draw upon the
+ economic activity contained within (or near) the jurisdiction in question.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This characterization encompasses only own-source revenues and not intergovernme
+ntal transfers.
+\end_layout
+
+\end_inset
+
+ Amongst all revenue options, taxes dominate the space.
+ That being said, as Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sub-Taxes"
+
+\end_inset
+
+ shows, their importance has declined over the past century.
+ Between 1929 and 2013, taxes dropped as a percentage of total subnational
+ receipts from 90.14% to 69.24%.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Subnational Taxes
+\end_layout
+
+\end_inset
+
+Decline in Tax Proportion of Subnational Receipts
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sub-Taxes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/sl_tax_perc.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Focusing on local governments, despite a variety of revenue instruments
+ from which to choose, one has stood out over time as the dominant source
+ of local receipts: the taxation of property.
+ This instrument serves as both the motivation behind, and the primary driver
+ of, the empirical analysis that follows.
+\end_layout
+
+\begin_layout Standard
+The property tax as an object of study is an immense topic worthy of the
+ extensive literature devoted to it.
+ This study is specifically motivated by what has been popularly described
+ as the erosion of the property tax base.
+ Insofar as they reduce property tax revenue by construction, the impact
+ of deviations from the property base carry clear first order effects.
+ The ultimate systemic impact on revenue performance and utilization is
+ less than clear.
+ It is not known, for example, whether or not these deviations make the
+ property tax a more palatable revenue instrument for taxpayers.
+ As noted by Glenn Fisher 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fisher1996"
+
+\end_inset
+
+, there are competing forces at work in a complex political economic system.
+ The resultant of these forces appears to require empirical identification.
+ This study does not address this question per se, but it does explore the
+ related topic of the implications associated with policies seeking to limit
+ the property tax's scope of application.
+\end_layout
+
+\begin_layout Standard
+Property taxes have managed to maintain strong yields over time, and still
+ remain the single largest revenue source for local governments.
+ This compositional prominence, however, has experienced a notable decline.
+ Between 1959 and 2012, property tax revenue declined as a percentage of
+ local current receipts from 53% to 36% (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:prop-tax"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Property Tax Decline
+\end_layout
+
+\end_inset
+
+Declining 
+\begin_inset Quotes eld
+\end_inset
+
+Importance
+\begin_inset Quotes erd
+\end_inset
+
+ of Property Taxation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:prop-tax"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/NIPA_prop_tax.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As with the entire state and local sector, we see that the declining importance
+ of property taxes for local governments coincides with the declining importance
+ of local taxes generally (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Local-Receipts"
+
+\end_inset
+
+).
+ Tax receipts as a percentage of total current receipts has declined from
+ 63% to 50% over the 1959-2012 time period, offset entirely by a larger
+ rise in current transfers from other governments (31% to 48%).
+ Within tax receipts, the decline in proportion of property revenue is still
+ significant, if less dramatic (84% to72%).
+ Sales taxes (7% to 16%) and income taxes (1% to 4%) have filled the void.
+ Nevertheless, the continued importance of the property tax cannot be overstated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Local Receipts
+\end_layout
+
+\end_inset
+
+Sources of Local Receipts
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Local-Receipts"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/NIPA_rev_comp.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The decline of the property tax is quite marked beginning in the 1970s.
+ The likely culprit is the tax revolt that occurred during this period,
+ which brought a wave of base eroding measures.
+ The impact of this class of measures on fiscal behavior is the subject
+ of this study.
+\end_layout
+
+\begin_layout Standard
+This so-called tax revolt was the product of a confluence of economic and
+ social factors.
+ The 1970s saw two recessions, a marked decline in real GDP growth, and
+ a sharp increase in inflation (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Macroeconomic-Turmoil-in-1970s"
+
+\end_inset
+
+).
+ Citizens still recalled the remarkable expansionary period that had preceded
+ the decade, a time of growing incomes and a voracious appetite for social
+ progress.
+ Irene Rubin captures well the environment that spawned the strong anti-tax
+ sentiment:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+Citizens have often endorsed or even demanded rapid expansion, but when
+ projects fail, when citizens' incomes lag and they no longer feel they
+ can afford these projects and programs, or both, they withdraw their support
+ for additional taxation or try to reduce their tax burden.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The consequence was a wave of reforms, designed to aggressively lower taxpayers'
+ most visible local revenue instrument, the property tax.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Turmoil in the 1970s
+\end_layout
+
+\end_inset
+
+Macroeconomic Turmoil in the 1970s
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Macroeconomic-Turmoil-in-1970s"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/cpi_gdp_60_1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The implications of these reforms was far-reaching.
+ The central role played by the property tax makes it a critical tool of
+ fiscal autonomy.
+ Unlike transders, which rely on the willful participation of other jurisdiction
+s, taxes are designed by the collecting jurisdiction.
+ They are thus customizable, tailored to suit said jurisdiction's needs.
+ As has been demonstrated, the property tax plays a dominant role within
+ this space.
+\end_layout
+
+\begin_layout Subsection
+Growth and Volatility Factors in Local Public Finance
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+'Policy handles' are merely levers that local officials can use to adjust
+ at the margin the fiscal health of their local governments as opposed to
+ precision tools that can bend and shape the environment to their will.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Honadle_Costa_Cigler2004"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Local Strategies
+\end_layout
+
+\end_inset
+
+Strategies of the Local Fiscal Manager
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Loc-Fisc-Strategy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/official_handles.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Loc-Fisc-Strategy"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The figure is a recreation of Honadle et al.'s adaptation of the framework
+ developed by Smith and Thoolen.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Smith_Thoolen1980"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ represents the strategies that a local fiscal manager can tak to effect
+ changes in the operations of his/her jurisdiction.
+ The size of each circle reflects the amount of opportunity the manager
+ has to pursue such a strategy.
+ Note that the smallest circle contains the 
+\begin_inset Quotes eld
+\end_inset
+
+Control
+\begin_inset Quotes erd
+\end_inset
+
+ strategy.
+ The interpretation is that there are few scenarios in which the local fiscal
+ manager has complete deterministic control over the outcome of a particular
+ policy.
+ One example of such an opportunity would be the selection and implementation
+ of the accounting system used to track receipts collected by the jurisdiction's
+ tax authority.
+ With each successively larger circle, the subset of variables controlled
+ by the manager for a given policy outcome decreases.
+ The largest circle, the 
+\begin_inset Quotes eld
+\end_inset
+
+Appreciation
+\begin_inset Quotes erd
+\end_inset
+
+ strategy, captures those outcomes for which the manager has almost no control
+ at all.
+ A decision by the state to cut state aid to local governments would likely
+ fall into this category.
+ The implication of the small area allocated to 
+\begin_inset Quotes eld
+\end_inset
+
+Control
+\begin_inset Quotes erd
+\end_inset
+
+ is that very little of the forces that act upon a local government are
+ under the control of the manager, creating a tumultuous environment for
+ fiscal responsibility.
+ It is this uncertainty, the details of which will be elaborated upon shortly,
+ that drives the need for a stable and reliable revenue portfolio.
+\end_layout
+
+\begin_layout Quotation
+Tax and expenditure limitations would fall within the 
+\begin_inset Quotes eld
+\end_inset
+
+Adaptation
+\begin_inset Quotes erd
+\end_inset
+
+ sphere.
+ In our case (Colorado), they are imposed by the state on local authorities.
+ The impacts of these policies are mitigated only by utilizing supplemental
+ revenue sources, or successful execution of a local override (
+\begin_inset Quotes eld
+\end_inset
+
+deBrucing
+\begin_inset Quotes erd
+\end_inset
+
+).
+ In general, local authorities have little opportunity to avoid these policies
+ completely.
+\end_layout
+
+\begin_layout Subsection
+The Importance of Demography
 \end_layout
 
 \begin_layout Section
@@ -1204,6 +2155,64 @@ Fiscal Behavior in Colorado
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:CO-FiscBehavior"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+CO GSP
+\end_layout
+
+\end_inset
+
+Colorado Gross State Product (1963-2013)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_gsp.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Footnote: For long-term price changes, it is desirable to use the Chained
+ Personal Consumer Expenditures Index.
+ The primary reason is that the PCE, in contrast to the Consumer Price Index,
+ accounts for changes in the basket of consumed goods over time and substitution
+ for less expensive alternatives when the price of a particular good increases.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FOMC2000"
 
 \end_inset
 
@@ -1354,10 +2363,6 @@ options "bibtotoc,acm"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

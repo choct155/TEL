@@ -559,6 +559,20 @@
   Volume                   = {32}
 }
 
+@Article{Cleveland1906,
+  Title                    = {Municipal Ownership as a Form of Governmental Control},
+  Author                   = {F.A. Cleveland},
+  Journal                  = {Annals of the American Academy of Political and Social Science},
+  Year                     = {1906},
+
+  Month                    = {November},
+  Pages                    = {1-12},
+  Volume                   = {28},
+
+  Owner                    = {root},
+  Timestamp                = {2014.11.30}
+}
+
 @TechReport{FOMC2000,
   Title                    = {Monetary Policy Report to the Congress Pursuant to the Full Employment and Balanced Growth Act of 1978},
   Author                   = {Federal Open Market Committee},
@@ -1201,6 +1215,16 @@
   Author                   = {Richard Wagner},
   Publisher                = {Little, Brown and Company},
   Year                     = {1983}
+}
+
+@Book{Waldo1948,
+  Title                    = {The Administrative State - A Study of the Political Theory of American Public Administration},
+  Author                   = {Dwight Waldo},
+  Publisher                = {Ronald Press Co.},
+  Year                     = {1948},
+
+  Owner                    = {root},
+  Timestamp                = {2014.11.30}
 }
 
 @Article{Wallin2004,
