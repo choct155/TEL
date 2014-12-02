@@ -2146,6 +2146,261 @@ deBrucing
 The Importance of Demography
 \end_layout
 
+\begin_layout Standard
+One of the primary challenges facing fiscal managers at any level of government
+ in the US is the deomgraphic shift that is occurring in the country.
+ For local managers, there are three key areas that must always figure prominent
+ly in planning for the future: the senior population, school age children,
+ and migratory patterns.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Honadle_Costa_Cigler2004"
+
+\end_inset
+
+ The first two deal directly with the provision of expensive services while
+ the last drives both expenditure and revenue side concerns.
+ At the current time, the imminent growth in the senior proportion of the
+ population represents the elephant in the room:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+[T]he growing debt [...] reflects an imbalance between spending and revenues
+ that predated the recession.
+ Whether that debt will continue to grow in the coming decades will be affected
+ by not only long-term demographic and economic trends but also by the policymak
+ers' decsions about taxes and spending.
+ The aging of the baby boom generation portends a significant and sustained
+ increase in the share of the population receiving benefits from Social
+ Security and Medicaid, as well as long-term care services financed by Medicaid.
+ Moreover, per capita spending for health care is likely to continue rising
+ faster than spending per person on other goods and services for many years
+ [...].
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CBO_LTBO2012"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While healthcare spending growth has actually slowed significantly in recent
+ years 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cutler_Sahni2013"
+
+\end_inset
+
+, the point is still a salient one with respect to drivers of fiscal exposure.
+ Furthermore, provision of economic security in the 
+\begin_inset Quotes eld
+\end_inset
+
+out years
+\begin_inset Quotes erd
+\end_inset
+
+ of life is not a new concept.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One can find a history of the concept on the Social Security Administration's
+ website.
+\end_layout
+
+\end_inset
+
+ The idea is fundamentally based upon the insurance concept and it dates
+ back to the Ancient Greeks who stockpiled olive oil to fortify themselves
+ against fluctuations in the economy.
+ The modern US Social Security program was initiated in 1935.
+ The life expectancy in that year was 61.7 years 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arias2012"
+
+\end_inset
+
+; the earliest benefits from the program are payable at 62 years of age.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Age Distribution
+\end_layout
+
+\end_inset
+
+***Replace this with a custom image.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Age-Distribution"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Demographic-profile-US-by-age.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Medicare is essentially a healthcare-specific variant of the same concept.
+ Congress initiated this program in 1965, a year in which life expectancy
+ in the US was 70.2 years.
+ This program pays out full benefits at age 65.
+ Both Social Security and Medicare have grown substantially as a function
+ of improving health outcomes, and this effect is exacerbated by bulges
+ in the age distribution.
+ In particular, the 
+\begin_inset Quotes eld
+\end_inset
+
+Baby Boomer
+\begin_inset Quotes erd
+\end_inset
+
+ generation has already begun to place considerable strain on the solvency
+ of these initiatives.
+\end_layout
+
+\begin_layout Standard
+This macro-level environment has direct and indirect consequences for local
+ fiscal managers.
+ The first direct impact involves increased expenditure exposure in functions
+ related to emergency services and any funding for senior care.
+ The second direct impact reduces receipts by way of senior-related tax
+ non-neutralities (e.g.
+ property tax credits for seniors).
+ Indirect impacts are driven by increased expenditure risk for governments
+ at the state and federal level.
+ To the extent that the administration of these programs reduces the available
+ funding for aid to local governments, the local fiscal manager must find
+ creative solutions to funding shortfalls.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Evolution of the Economy
+\end_layout
+
+\begin_layout Standard
+One of th greatest challenges facing local jurisdictions is the evolution
+ of the economy.
+ The well-recognized trend away from hard goods production to services 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stiglitz2012"
+
+\end_inset
+
+ undermines the traditional revenue handles held by local governments.
+ As mentioned previously, one of the most critical aspects of a local revenue
+ portfolio is a reliable, and preferably, 
+\emph on
+immobile
+\emph default
+ revenue source.
+ The immobility of the property tax base, for instance, derives much of
+ its value from the decision of economic actors to site themselves within
+ the jurisdiction in question.
+ To the extent that economic coordination requires spatially proximate associati
+on to a decreasing degree, local governments are losing the capacity to
+ leverage this siting choice.
+ Even if the country as a whole experienced no net loss in population, those
+ local jurisdictions with comparatively high revenue requirements stand
+ to lose a great deal.
+ Beyond that, siting within the US in general is not quite as necessary
+ as it was at one time.
+\end_layout
+
+\begin_layout Standard
+This phenomenon is not entirely driven, however, by revenues.
+ Before any consideration of remote coordination occurs, jurisdictions must
+ have the capacity to support it:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+An information-based economy that is fueled by advanced telecommunications
+ may mean that small cities and rural areas - many already with declining
+ population and job bases - lose locational advantages derived from proximity
+ to railroads or water.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Honadle_Costa_Cigler2004"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In general, the onset of the information age is catalyzing a fundamental
+ shift in the nature of economic interaction in this country.
+ This shift is necessarily coupled with a shift in the relative value of
+ factor inputs.
+ Strategic governance decisions of the past are, for many local jurisdictions,
+ becoming liabilities.
+ The challenge for local officials is to adapt in a manner that retains
+ or recreates relevance for the their jurisdiction.
+ The transition is costly, placing further emphasis on the need to safeguard
+ reliable sources of revenue (even when said sources are plagued by base
+ erosion).
+\end_layout
+
 \begin_layout Section
 What are Fiscal Institutions?
 \end_layout
