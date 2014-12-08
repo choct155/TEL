@@ -993,6 +993,19 @@
   Series                   = {Studies of Government Finance}
 }
 
+@InBook{Oates2001,
+  Title                    = {Property Taxation and Local Government Finance},
+  Author                   = {Wallace Oates},
+  Chapter                  = {Property Taxation and Local Government Finance - An Overview and Some Reflections},
+  Editor                   = {Wallace Oates},
+  Pages                    = {21-31},
+  Publisher                = {Lincoln Institute of Land Policy},
+  Year                     = {2001},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.06}
+}
+
 @Article{Oates2008,
   Title                    = {{On The Evolution of Fiscal Federalism: Theory and Institutions}},
   Author                   = {Wallace Oates},
@@ -1200,6 +1213,18 @@
   Number                   = {5},
   Pages                    = {649-658},
   Volume                   = {72}
+}
+
+@Book{Varian1992,
+  Title                    = {Microeconomic Analysis},
+  Author                   = {Varian, Hal},
+  Editor                   = {Varian, Hal},
+  Publisher                = {W. W. Norton \& Company, Inc.},
+  Year                     = {1992},
+  Edition                  = {3rd},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.06}
 }
 
 @TechReport{Smith_Thoolen1980,

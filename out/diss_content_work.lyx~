@@ -941,6 +941,13 @@ key "Storing1981"
 
 \begin_layout Subsection
 What Normative Objectives Should be Pursued in a System of Subnational Finance?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:SubFinance-Normative-Objectives"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3781,8 +3788,34 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pitken and Weld Counties
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Dillon's Rule Counties
 \end_layout
+
+\end_inset
+
+Pitken and Weld Counties
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dillons-Rule"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/pitken_weld.png
+	width 100text%
 
 \end_inset
 
@@ -4160,6 +4193,32 @@ Which Socioeconomic Dynamics Characterize the Study Period (1993-2009)?
 \end_layout
 
 \begin_layout Standard
+As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Colorado-GSP"
+
+\end_inset
+
+, although economic clearly stagnated during national recession periods,
+ the Colorado economy grew dramatically in real terms over the study period.
+ Between 1993 and 2009, the real gross state product grew over 90%.
+ Nevertheless, the recessionary periods had outsized influence.
+ Insofar as revenues declined in those years, the baseline against which
+ future revenues were to be compared was reduced.
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+ratcheting
+\begin_inset Quotes erd
+\end_inset
+
+ process will be discussed in further detail when the TEL policies are presented
+ in more detail.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4179,6 +4238,13 @@ CO GSP
 \end_inset
 
 Colorado Gross State Product (1963-2013)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Colorado-GSP"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4202,12 +4268,648 @@ Colorado Gross State Product (1963-2013)
 
 \end_layout
 
+\begin_layout Standard
+Over the 1975-2009 time period, according to demographic information acquired
+ directly from the Colorado Division of Local Affairs, the population across
+ all counties grew 93.4% (2,589,171 to 5,008,427).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:County-Population-Dynamics"
+
+\end_inset
+
+ displays total population growth and the distribution of county population
+ by year via violin plots.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Violin plots are essentially richer versions of box plots.
+ The median value is given by the 
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+ dashed line, while the first and third quartile values are given by the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+light
+\begin_inset Quotes erd
+\end_inset
+
+ dashed lines.
+ The sides of each 
+\begin_inset Quotes eld
+\end_inset
+
+violin
+\begin_inset Quotes erd
+\end_inset
+
+ are actually mirror images of the kernel density estimate.
+ Thus, wide portions indicate regions in which many observations lie, while
+ narrow portions indicate a relative paucity of observations.
+\end_layout
+
+\end_inset
+
+ While the population has grown notably over time, the violin plots indicate
+ that a relatively small portion of this growth is due to increases in the
+ median county population.
+ Rather, most of this growth is due to an increase in the size of the largest
+ counties.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+County Population
+\end_layout
+
+\end_inset
+
+County Population Dynamics Over Time
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:County-Population-Dynamics"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_pop_growth.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With respect to the tax base, as expected, the number of housing units scales
+ tightly with population.
+ Interestingly enough, however, the highest value housing tends to reside
+ in the comparatively smaller counties.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Growth-in-Housing"
+
+\end_inset
+
+ shows the relationship between county population and housing units in Colorado.
+ The color captures the median home value.
+ The home values clearly do not scale with population, which may suggest
+ that the desire for land scales with income.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Colorado Housing
+\end_layout
+
+\end_inset
+
+Growth in Housing Units
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Growth-in-Housing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/cty_pop_vs_hu2010.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As can be seen, most counties contain less than 100,000 people, further
+ supporting the notion that outlier counties are driving the population
+ growth.
+ The distribution of housing stock value is characterized by a high level
+ of variance, which is highlighted in the second panel of the plot.
+ As may be expected, the income base also exhibits a great deal of variation.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Distribution-of-Income"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Blue indicates higher values while red indicates lower values.
+\end_layout
+
+\end_inset
+
+ demonstrates that this variation in magnitude has a strong spatial contigent
+ as well.
+ Wealther counties reside disproportionately in the northern and northwestern
+ portions of the state.
+ Median Houshold incomes range from $25,309 to $101,108.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Distribution of Income
+\end_layout
+
+\end_inset
+
+Distribution of Income
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Distribution-of-Income"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_med_inc_cty_map.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we will see, this spatial variation and apparent spatial clustering plays
+ a role in parsing the impact of TELs in the state.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Although the data are collected from the 5-year ACS over the 2008-2012 period,
+ they can be loosely interpreted as a point in time.
+\end_layout
+
+\end_inset
+
+ Unemployment and poverty rates exhibit wide variation.
+ Unemployment rates varied from 2.4% to 20.1% during the survey period (2008-2012)
+, while poverty rates varied from 3.9% to 22.5% (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Economic-Stress"
+
+\end_inset
+
+).
+ The inverse relationshp between median household income and measures of
+ economic stress is apparent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Economic Stress
+\end_layout
+
+\end_inset
+
+Economic Stress by County
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Economic-Stress"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_unemp_pov_cty_map.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Which Revenue Sources are Employed?
 \end_layout
 
+\begin_layout Standard
+From a revenue perspective, in real terms, Colorado has experienced consistent
+ growth over the 1975-2009 time period.
+ Overall, county revenue increased by 72% over the period on average (from
+ $1,013 to $1,741).
+ These measures of central tendency, however, mask considerable variation
+ in the individual trajectories of specific counties.
+ The average range of per capita revenue was $3,772 over the same period.
+ Note also that the median revenue per capita increase (63%) did not significant
+ly lag the mean increase, suggesting a relatively stable distribution of
+ county revenue across time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+County Revenue
+\end_layout
+
+\end_inset
+
+County Revenue Growth
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:County-Revenue-Growth"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CTY_rev_growth.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Somewhat surprisingly, the growth in tax receipts (+187%) over the period
+ outpaced growth in intergovernmental transfers (+42%).
+ As Mullins and Joyce have noted, there has been a general increase in local
+ dependency on higher level transfers in addition to dependency on fees
+ and charges associated with the imposition of strong TELs.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joyce_Mullins1991"
+
+\end_inset
+
+ In fairness, however, the target of these TELs is usually the property
+ tax.
+ While the property tax has grown in terms of receipts (+168%), it has fallen
+ as a percentage of total tax revenue (-6.5%).
+ Moreover, the growth in sales revenue as a percentage of all tax revenues
+ has increased dramatically (+30%).
+ It has also stood out as the fastest growing revenue source (+273%).
+ Although it remains a small portion of the overall portfolio, license revenu
+ grew faster than all other sources (+489%), followed by revenue from charges
+ (+406%).
+ This growth is consistent with the expected impacts of TEL policies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Revenue Composition
+\end_layout
+
+\end_inset
+
+Revenue Composition
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Revenue-Composition"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_cty_rev_comp.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Which Expenditure Responsibilities Exist?
+\end_layout
+
+\begin_layout Standard
+On the expenditure side, both growth in average (+65%) and median (+61%)
+ liabilities per capita has remarkably lagged growth in revenues over the
+ 1975-2009 period (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:County-Expenditure-Growth"
+
+\end_inset
+
+).
+ As with the revenue trajectories, median expenditures mirror average expenditur
+e growth rather closely.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+County Expenditures
+\end_layout
+
+\end_inset
+
+County Expenditure Growth 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:County-Expenditure-Growth"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CTY_exp_growth.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While debt service has been the fastest growing liability for counties in
+ Colorado (+633%), it still remains a small portion of the overall budget
+ (4.7% in 2009).
+ The dominant liability resides with operating expenditures.
+ Given the preponderence of direct spending activity at the local level,
+ this is unsurprising.
+ Operating expenditures increased 116% over the period, but fell as a percentage
+ of total expenditures (79% to 76%).
+ Within operating expenditures, the fastest growing line item was judicial
+ expenditure (+263%), although it constituted only 3.6% of operating expenditures
+ in 2009.
+ The real story is in public safety, which grew 231% over the period.
+ This spending increased its compositional importance notably, growing from
+ 19% to 29% of operating expenditures and 15% to 22% of total expenditures.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Expenditure Composition
+\end_layout
+
+\end_inset
+
+Expenditure Composition
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Expenditure-Composition"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/CO_cty_exp_comp.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4221,8 +4923,1850 @@ name "sec:COTELs"
 
 \end_layout
 
+\begin_layout Standard
+As noted in the beginning of this study, the TABOR amendment was passed
+ in 1992.
+ TABOR is by far the most well known of the Colorado TELs, but in fact,
+ the history of TELs in Colorado started much earlier.
+ What follows is a timeline of major TEL initiatives in Colorado:
+\end_layout
+
+\begin_layout Itemize
+1913: Colorado General Assembly approves a measure limiting the annual growth
+ in state-level property taxes to 15%.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The state property tax was eliminated in 1964.
+\end_layout
+
+\end_inset
+
+ growth
+\end_layout
+
+\begin_layout Itemize
+1964: The state property tax was abandoned, but limits on local property
+ tax revenue growth were set to 5% annually.
+\end_layout
+
+\begin_layout Itemize
+1976: Statewide limitations on local property tax growth were increased
+ from 5% to 7% (this refers to the Statewide Limit on Property Tax Revenue).
+\end_layout
+
+\begin_layout Itemize
+1977: The 
+\begin_inset Quotes eld
+\end_inset
+
+Kadlecek Amendment
+\begin_inset Quotes erd
+\end_inset
+
+ limited annual growth in state General Fund Appropriations to 7%, and required
+ the maintenance of a 4% reserve.
+\end_layout
+
+\begin_layout Itemize
+1979: The Kadlecek Amendment was made permanent.
+\end_layout
+
+\begin_layout Itemize
+1982: The Gallagher Amendment was passed, limiting the allowable assessment
+ value of residential property.
+\end_layout
+
+\begin_layout Itemize
+1984: The Kadlecek Amendment increased the limit ot 7%, plus the costs of
+ property tax reappraisals.
+\end_layout
+
+\begin_layout Itemize
+1988: The SLPTR was decreased to 5.5%.
+\end_layout
+
+\begin_layout Itemize
+1991: The statutory state-level General Fund appropriation limit (a.k.a the
+ Arveshoug-Bird Limit or ABL) caps growth at the lesser of either 5% of
+ growth in statewide income, or 6% growth over the previous year's appropriation
+ level.
+\end_layout
+
+\begin_layout Standard
+While multiple limits act at the state level, our focus for this analysis
+ is local revenue behavior.
+ In particular, we are concerned with the property tax, which has stood
+ out over time as the most important revenue source for local governments.
+ For this reason, we will further unpack the three most significant reforms
+ in this areas a bit further: TABOR, SLPTR, and GA.
+\end_layout
+
+\begin_layout Subsection
+Taxpayer's Bill of Rights
+\end_layout
+
+\begin_layout Standard
+TABOR is, in and of itself, a composite measure that acts on individual
+ tax districts.
+ Tax districts in this case represent local jurisdictions that raise revenue,
+ such as general purposes municipalities, counties, and school districts.
+ It features three major elements that work in concert to limit revenue
+ growth: voter approaval for tax increases, a limitation on the growth in
+ revenue, and protection of the existing limits.
+ 
+\end_layout
+
+\begin_layout Standard
+For the purposes of TABOR, a tax increase is defined as any one of the following
+:
+\end_layout
+
+\begin_layout Itemize
+New tax instrument;
+\end_layout
+
+\begin_layout Itemize
+Tax rate increase;
+\end_layout
+
+\begin_layout Itemize
+Local mill levy increase;
+\end_layout
+
+\begin_layout Itemize
+Property assessment valuation ratio increase;
+\end_layout
+
+\begin_layout Itemize
+Extension of an expiring tax; or,
+\end_layout
+
+\begin_layout Itemize
+Any tax policy resulting in a net tax revenue gain.
+\end_layout
+
+\begin_layout Standard
+If any of the above are proposed, they must be validated by explicit voter
+ approval in the jurisdiction in question.
+ On the other side, no voter approval is required for a tax decrease.
+ Note, however, that such a decrease resets the baseline to a new, lower
+ level.
+ This is one manifestation of the so-called 
+\begin_inset Quotes eld
+\end_inset
+
+ratchet effect
+\begin_inset Quotes erd
+\end_inset
+
+ which will be explored further below.
+ TABOR also explicitly prohibits some types of new taxes.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Prohibited taxes include new or increased real estate transfers, local income
+ taxes, state property taxes, and surcharges on state income taxes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The limit on annual revenue growth for a tax district is set by formula,
+ which generally accounts for increases in inflation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The Consumer Price Index serves as the inflation measure.
+\end_layout
+
+\end_inset
+
+ and some measure of growth.
+ At the state level, revenue growth is limited to CPI plus population growth.
+ For local general purpose districts, growth is limited to CPI plus growth
+ in the volume of jurisdictional housing stock.
+ School districts, by contrast, are bound by CPI growth plus growth in school
+ enrollment.
+ Any surplus revenue must be returned to taxpayers as credits or refunds.
+ Note that at the state level, the revenue subject to TABOR (a.k.a.
+ the TABOR base) constituted only 58.5% of the entire budget in the FY02-03
+ fiscal cycle.
+ The two largest sources were the individual income, sales, and use taxes.
+\end_layout
+
+\begin_layout Standard
+TABOR also raised the bar for efforts to modify existing limitations.
+ Prior to its passage, ABL could have been weakened by a simple majority
+ vote in the General Assembly.
+ TABOR requires explicit voter approval for changes to ABL or any other
+ limitations.
+ This element of the reform is viewed by Colorado legislative analysts as
+ being incorporated with ABL specifically in mind.
+\end_layout
+
+\begin_layout Standard
+Perhaps the most restrictive feature of TABOR is the implicit 
+\begin_inset Quotes eld
+\end_inset
+
+ratchet effect
+\begin_inset Quotes erd
+\end_inset
+
+.
+ If, in a given year, revenue fails to exhaust the allowable increase, the
+ new baseline is set at a lower level.
+ For example, if in year zero a jurisdiction received $100 million in revenue,
+ and the CPI plus the growth factor totaled 6% in the allowable increase,
+ the TABOR limit is $106 million in year one.
+ Similar inflation and growth activity in the following year would allow
+ for approximately $112.4 million in year two.
+ If, perhaps for economic reasons, only $105 million is actually collected
+ in year one, the maximum allowable revenue in year two would be $111.3 million.
+ Thus, failing to hit the limit in a given year has a dynamic effect, forever
+ lowering the baseline growth trajectory of revenue.
+ This becomes problematic when expenditures are out of phase with revenues.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Ratchet Effect
+\end_layout
+
+\end_inset
+
+TABOR 
+\begin_inset Quotes eld
+\end_inset
+
+Ratchet Effect
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TABOR-Ratchet-Effect"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+DeBrucing
+\end_layout
+
+\begin_layout Standard
+One characteristic of TABOR that appears to be a confounding element initially
+ is the capacity of local jurisdictions to 
+\begin_inset Quotes eld
+\end_inset
+
+deBruce
+\begin_inset Quotes erd
+\end_inset
+
+.
+ DeBrucing is the process by which a local government can vote on whether
+ or not its tax base should be subject to the constraints of TABOR.
+ One may consider this override capacity to be a robust safety valve, sufficient
+ to invalidate any claims of undue restriction imposed by reform.
+ If a jurisdiction can actually vote to exempt itself from reform, how can
+ it impact fiscal choices? The analysis that follows will reveal that there
+ is indeed a very real impact from this reform that results in observable
+ impacts on the revenue and expenditure behavior of affected jurisdictions.
+\end_layout
+
+\begin_layout Standard
+Ultimately, despite initially appearing to be an analytic liability, the
+ existence of deBrucing emerges as an opportunity for greater estimating
+ precision.
+ In particular, the practice provides an important source of horizontal
+ variation, allowing us to more cleanly separate macroeconomic conditions
+ from the policy structure.
+ The nature of this separation will be considered in further detail in Subsectio
+n 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:TEL-operationalization"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Statewide Limitation of Property Tax Revenue
+\end_layout
+
+\begin_layout Standard
+As mentioned above, the SLPTR is among the oldest limitations in Colorado.
+ It was originally enacted in 1913, but its most recent level (5.5%) is a
+ vestige of its last modification in 1988.
+ The structure of the limit, a constant ceiling, is quite straightforward.
+ For our purposes, the interest is in how this limit interacts with TABOR.
+ To the extent that the TABOR limit may be above or below 5.5% in any given
+ year for a given county, we must account for variation in which limit binds
+ over time.
+\end_layout
+
+\begin_layout Subsection
+Gallagher Amendment
+\end_layout
+
+\begin_layout Standard
+In response to a dramatic increase in residential property values and the
+ lack of uniformity in assessment practices that characterized the 1970s,
+ voters passed House Concurrent Resolution 82-1005 in 1982.
+ It included the following elements:
+\end_layout
+
+\begin_layout Itemize
+Provisions to ensure uniform and fair assessment practice;
+\end_layout
+
+\begin_layout Itemize
+An assessment rate of 29% for nonresidential property;
+\end_layout
+
+\begin_layout Itemize
+A reduction in the residential assessment rate, from 30% to 21%;
+\end_layout
+
+\begin_layout Itemize
+A business property tax exemption for inventories;
+\end_layout
+
+\begin_layout Itemize
+A property tax exemption for certain agricultural materials;
+\end_layout
+
+\begin_layout Itemize
+A new valuation scheme for agricultural land;
+\end_layout
+
+\begin_layout Itemize
+A new valuation scheme for value producing mines and oil/gas properties;
+\end_layout
+
+\begin_layout Itemize
+The State Board of Equalization, tasked with evaluating property tax valuation
+ schemes; and,
+\end_layout
+
+\begin_layout Itemize
+The Gallagher Amendment (GA).
+\end_layout
+
+\begin_layout Standard
+In addition to the residential assessment rate reduction, GA provided a
+ dynamic relief mechanism for residential property taxpayers.
+ GA automatically adjusts the residential assessment rate each year to hold
+ the residential share of total assessed value constant.
+ That is, even when residential assessment growth outpaces nonresidential
+ assessment growth, the proportion of the property tax paid by residential
+ taxpayers will not increase as a result.
+ That being said, modification is allowed in the event of new construction.
+ In other words, 
+\emph on
+the residential share of property taxes in Colorado cannot increase as a
+ consequence of an increase in tax unit value, but it can increase when
+ the number of tax units increases.
+
+\emph default
+ Modification of the rate for new construction has been limited in practice.
+ The residential share of assessment value was approximately 45% when GA
+ was implemented in 1982.
+ As of 2003, the rate had only increased to 47%.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Residential Property Value Growth Less Non-Residential Property Value Growth
+ by County
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The residential assessment rate imposed via GA is calculated based upon
+ the aggregate assessed values in the state.
+ Thus, the rates are calculated in a manner which masks substantial variation
+ in growth profiles and the mix of properties in individual counties.
+ Indeed, we will leverage this variation in modeling the impact of reform.
+\end_layout
+
+\begin_layout Standard
+It is also important to note that TABOR has has an impact on how GA works
+ in practice.
+ Prior to TABOR's passage, if non-residential property increased in value
+ at a rate greater than residential property, residential assessment rates
+ could be adjusted upward automatically to maintain the statewide ratio
+ of residential to non-residential assessment.
+ After TABOR, assessment increases were counted as tax increases, and thus
+ required explicit voter approval.
+ In this way, TABOR not only introduces TABOR-specific asymmetric pressure
+ (it is easier to lower than raise taxes), but it also produces asymmetric
+ interaction effects with other policies.
+\end_layout
+
 \begin_layout Subsection
 How are TELs Operationalized in this Study?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:TEL-operationalization"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The focus of this study, and the common theme throughout the three empirical
+ sections, is the measurement of the impact of TELs on 
+\emph on
+individual
+\emph default
+ 
+\emph on
+counties
+\emph default
+.
+ Furthermore, this impact must be measured 
+\emph on
+conditional on each county's circumstance.
+ 
+\emph default
+To reiterate the point made in the discussion of this study's value added
+ in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ValueAdd"
+
+\end_inset
+
+, this objective represents a departure from the vast majority of literature
+ in the field.
+ In measuring the differences in impact of TELs on intra-metropolitan jurisdicti
+ons, Mullins stands out as one of the few scholars to explored this angle.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mullins2004"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+Cross-state studies have all but neglected an assessment of the effects
+ of tax and expenditure limitations on the fiscal structure within the local
+ public sector.
+ Even within the ranks of the individual state studies, there has been limited
+ attention to these types of effects.
+ While results point to the use of alternative revenue sources and intergovernme
+ntal transfers, effects on the actual composition and response of the local
+ public sector are largely absent.
+ Have tax and expenditure limitations changed the face of the local public
+ sector and its interaction with local populations? Has it done so uniformly?
+ And what are the implications of any of these structural changes for local
+ governance? [...] The outcome with regard to local discretion may be one of
+ asymmetric truncation of the ability to exercise local choice, such that
+ the variation in service availability across jurisdictions increases.
+ While this increased variation may superficially appear as Tiebout inspired,
+ it will be driven not by responsiveness to local desires, but by a reinforcemen
+t of differential abilities to respond.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mullins2004"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The author would be hard pressed to state the implications of the change
+ in focus any better.
+ In effect, incorporation of local characteristics changes the types of
+ questions that one seeks to answer.
+ Instead trying to extrapolate from average effects, conditional analysis
+ provides more actionable intelligence to local fiscal managers trying to
+ understand how tax and expenditure limitations affect their own jurisdiction,
+ and the implications for how they serve their constituents.
+ 
+\end_layout
+
+\begin_layout Standard
+Surprisingly, there has been relatively little additional work over the
+ decade since Mullins' piece that sought to evaluate differential impacts
+ based upon local conditions.
+ Subsequent research that has cited the article generally extracts the associati
+on between TELs and both the general propensity to shift revenue sources
+ outside of the jurisdiction and a difficult environment for the collection
+ of fiscal resources.
+ One Colorado focused study explored the deleterious effects of recessions
+ for jurisdictions affected by TABOR (http://onlinelibrary.wiley.com/enhanced/doi/
+10.1111/j.1540-6210.2007.00752.x/), while another surprisingly found that being
+ unable to override TABOR was not associated with increases in special districts
+ (http://onlinelibrary.wiley.com/doi/10.1111/j.1468-2257.2012.00586.x/abstract).
+ In neither case was county-specific socioeconomic context treated as a
+ primary driver.
+\end_layout
+
+\begin_layout Standard
+The author posits that this lack of work is driven in large part by the
+ limitations of the methods used to measure the impact of TELs.
+ Though we have learned a great deal from the approach, measurement has
+ largely been conducted within the 
+\begin_inset Quotes eld
+\end_inset
+
+existence paradigm
+\begin_inset Quotes erd
+\end_inset
+
+.
+ That is, TEL effect is generally represented as a binary indicator or some
+ close derivative.
+ Even Mullins (2004), path breaking though it may be, employs a refinement
+ of this technique.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This work measures TEL effect as a discrete variable which, at different
+ points in the analysis, reflects simple existence, the extent of the TEL's
+ binding nature, and/or the scope of the TEL's application.
+\end_layout
+
+\end_inset
+
+ One limitation of this approach is the inability to model certain kinds
+ of interactions between overlapping TELs.
+ This is particularly relevant, as we will see, in the context of TABOR
+ and SLPTR.
+ Another limitation is the inability to differentiate the cumulative effect
+ of a TEL regime across counties.
+ In other words, there is little reason to believe that, given differing
+ socioeconomic dynamics, five years under a TEL regime for county A will
+ have the same implications as five years under a TEL regime for county
+ B.
+ Both limitations constrain the direct applicability of findings for local
+ fiscal managers.
+\end_layout
+
+\begin_layout Standard
+The solution proposed here is abstraction away from the specific elements
+ of the TELs in Colorado (COTELs) as the basis for operationalization.
+ Rather, this study captures COTEL design indirectly, by evaluating the
+ implications of COTELs for local revenue yield.
+ By shifting the focus, we can overcome the aforementioned limitations.
+ In effect, we want to capture some measure of COTEL intensity, that captures
+ three primary characteristics of a given county at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Cumulative effect of overlapping policies;
+\end_layout
+
+\begin_layout Enumerate
+Proliferation of local overrides of TABOR and SLPTR; and,
+\end_layout
+
+\begin_layout Enumerate
+Local dynamics that might trigger a breach in the ceilings imposed by the
+ aforementioned legislation.
+\end_layout
+
+\begin_layout Subsubsection
+TABOR and SLPTR - A Composite COTEL Intensity Measure
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:TABOR-and-SLPTR-Measure"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The indicator used in a previous version of the analysis in the first empirical
+ section was simply an ordinal score that captured information on the first
+ two characteristics.
+ Effectively, the score added a point for each additional constraint.
+ For example, all counties in 1987 would have a score of two given the general
+ application of SLPTR and GA.
+ The scores were subsequently modified by deBrucing, which occurred to some
+ degree in 47 of 64 counties over the 1993-2009 time period.
+ If only one of the policies was exempted, only one point would be removed.
+ In effect, it was a cumulative indicator function.
+ The reason it has value now is because it provided a clear view of the
+ variety of policy application across counties (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Distribution-of-COTEL"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+COTEL Distribution
+\end_layout
+
+\end_inset
+
+Distribution of COTEL Policy Application by County
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Distribution-of-COTEL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While this score was a useful starting point, the subsequent measure incorporate
+s the county-specific dynamics captured in the third desired characteristic:
+ the likelihood of a binding constraint.
+ The new score was constructed based upon comparing the property tax base
+ growth to the limit imposed by the conjunction of SLPTR and TABOR limits
+ when both apply in a given year.
+ If only one or the other applies (due to deBrucing) in a given county-year,
+ then the limit is just that which is imposed by the policy in effect.
+ The construction of a composite limitation variable is useful because 
+\emph on
+only one of the limits can be binding in any given county-year.
+
+\emph default
+ To get a sense for why this occurs, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Visual-Rationale-for-Comp-Limit"
+
+\end_inset
+
+plots the limits of both TABOR and SLPTR over time for Adams County.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Need for a Composite Limit
+\end_layout
+
+\end_inset
+
+Visual Rationale for a Composite Limit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Visual-Rationale-for-Comp-Limit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the difference between the TABOR constraint and the SLPTR constraint
+ is negative (TABOR less SLPTR), it indicates that TABOR was the dominant
+ in a given county-year.
+ Visualizing the distribution of this difference across counties and years
+ reveals non-trivial variation in which policy was the effective constraint
+ (Figure ).
+ This is the kind of interaction, referenced earlier, that does not lend
+ itself to easy capture by the existence paradigm of representing TELs.
+ The TABOR/SLPTR constraint has been calculated as the minimum between the
+ two for each county-year.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Binding Constraint Switches
+\end_layout
+
+\end_inset
+
+Prevalence of Switching in the Binding Constraint - TABOR vs SLPTR
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Prevalence-of-Switching"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given this composite limit, we can consider the impact on the property tax
+ revenue raising capacity of a given county in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Property Tax Constraint
+\end_layout
+
+\end_inset
+
+Property Tax Subject to TABOR/SLPTR
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:PTR-Eq"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$PropRev_t = MRate_t* AsmtRatio_t * BaseVal_t$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+s.t.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$PropRev_t 
+\backslash
+leq (1 + 
+\backslash
+mathrm{min}(.055,CPI_t + NewConstr_t)) * PropRev_{t-1}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{PropRev_t}$
+\end_layout
+
+\end_inset
+
+ is the property revenue yield in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{MRate_t}$
+\end_layout
+
+\end_inset
+
+ is the millage rate in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{AsmtRatio_t}$
+\end_layout
+
+\end_inset
+
+ is the proportion of the asset's value that is considered taxable in year
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+, otherwise known as the assessment ratio.
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{BaseVal_t}$
+\end_layout
+
+\end_inset
+
+ is the market value of the asset in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{CPI_t}$
+\end_layout
+
+\end_inset
+
+ is the general change in prices (as indicated by the Consumer Price Index
+ change) between years 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t-1$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{NewConstr_t}$
+\end_layout
+
+\end_inset
+
+ is the change in the housing stock volume between years 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t-1$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+Note: The value of .055 refers to the 5.5% Statewide Limit on Property Tax
+ Revenue (SLPTR).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:PTR-Eq"
+
+\end_inset
+
+ governs the property tax revenue yield for each and every county subject
+ to TABOR and the SLPTR in the absence of a local override.
+ Given that the millage rate is subject to explicit voter approval and the
+ assessment ratio is set at the state level, the economic activity within
+ a county is the relevant action to focus on when questioning whether or
+ not the composite limit will be breached.
+ In other words, absent some sort of deBrucing vote which would allow for
+ increased revenue, the growth in the value of the base should be compared
+ to the composite limit to determine whether or not the limit will be breached.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The residential assessment rate was 12.86% in 1993.
+ It fell four times during the study period to 10.36% (1995), 9.74% (1997),
+ 9.15% (2001), and 7.96% (2003).
+\end_layout
+
+\end_inset
+
+ The value of the TABOR component of the constraint (second argument in
+ the minimization function) utilizes CPI-U data from the Bureau of Labor
+ Statistics and housing count information contained in the demographic profiles
+ constructed by the Colorado Department of Local Affairs.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The query tool for the database containing demographic profiles by county
+ is located here: https://dola.colorado.gov/demog_webapps/psParameters.jsf?counties
+=T.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The market value of the base (both residential and non-residential) may
+ itself be decomposed further.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Property Base Value
+\end_layout
+
+\end_inset
+
+Value of the Property Base
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Prop-Base-Val"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$BaseVal_t = BaseStock_t + AvgValue_t$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{BaseStock_t}$
+\end_layout
+
+\end_inset
+
+ is the count of property units in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{AvgValue_t}$
+\end_layout
+
+\end_inset
+
+ is the average value of property in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ideally, we would construct the value of the base of each county from the
+ components in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Prop-Base-Val"
+
+\end_inset
+
+, but we do not have this data available (particularly on the non-residential
+ side).
+ The approach taken leverages the relationship in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Market-Value-Hack"
+
+\end_inset
+
+ to back into market value, which is a useful figure for thinking about
+ economic activity in a county.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Market Value Hack
+\end_layout
+
+\end_inset
+
+Market Value Hack
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Market-Value-Hack"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$MrktVal_t = 
+\backslash
+frac{AsmtVal_t}{AsmtRate_t}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+newline$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{MarktVal_t}$
+\end_layout
+
+\end_inset
+
+ is the total market value of the base (residential or non-residential)
+ in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{AsmtVal_t}$
+\end_layout
+
+\end_inset
+
+ is the assessment base value (residential or non-residential) in year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hspace{1 cm} 
+\backslash
+bf{AsmtRate_t}$
+\end_layout
+
+\end_inset
+
+ is the assessment rate (specific to residential or non-residential) in
+ year 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Prop-Market-Value"
+
+\end_inset
+
+, the property value dynamics vary dramatically over space and time within
+ Colorado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Property Market Value
+\end_layout
+
+\end_inset
+
+Change in Market Value of Property by County
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Prop-Market-Value"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data on assessment value by property type and the assessment rates by residentia
+l and non-residential property has been collected from the Colorado Division
+ of Local Affairs, and it covers every county during the 1993-2009 period.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Thank you to Denise Castro of the Division of Property Taxation.
+\end_layout
+
+\end_inset
+
+ Ultimately, changes in the assessment base are the most relevant, insofar
+ as they are more directly limited by the composite constraint than market
+ value.
+ By comparing assessment value growth with the allowable growth under the
+ composite limit, we can construct two 
+\begin_inset Quotes eld
+\end_inset
+
+COTEL intensity
+\begin_inset Quotes erd
+\end_inset
+
+ variables.
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+bf{intensity_flow}$
+\end_layout
+
+\end_inset
+
+ is the 
+\emph on
+single-year
+\emph default
+ difference, percentage change in assessment value less the percentage of
+ allowable revenue growth under the composite limit.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+bf{intensity_stock}$
+\end_layout
+
+\end_inset
+
+ is the 
+\emph on
+cumulative 
+\emph default
+difference, percentage change in assessment value less the percentage of
+ allowable revenue growth under the composite limit.
+\end_layout
+
+\begin_layout Standard
+Both intensity variables seek to capture the fiscal stress caused by TABOR
+ and SLPTR.
+ The higher the values of either, the more binding the constraint and, therefore
+, the higher the level of fiscal stress.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity_stock$
+\end_layout
+
+\end_inset
+
+ is of particular interest, the hypothesis here being that it captures a
+ growing disparity between the economic activity that occurs in a given
+ county and the governmental capacity to facilitate and/or regulate said
+ activity.
+ For example, one would expect it to be more costly to govern a county of
+ 50,000 people relative to a county of 1,000 people.
+ There are simply more interactions, both social and economic, to mediate.
+ The need for infrastructure grows, as does the need to finance a larger
+ educational demand.
+ These constraints, then, act as an instrument to decouple the trajectories
+ of revenue potential and expenditure need.
+ The author expects this to be a dynamic effect.
+\end_layout
+
+\begin_layout Subsubsection
+The Gallagher Ratio
+\end_layout
+
+\begin_layout Standard
+Since the actions imposed by TABOR and SLPTR were conceptually similar,
+ they lent themselves to integration.
+ GA, by constrast, was modeled separately as simply the ratio between the
+ residential and non-residential tax bases within a county.
+ The idea here was to capture the impact of disparities between county ratios
+ and the statewide ratio used to calculate allowable assessment rates.
+ If a given county has a higher proportion of residential assessment value
+ in its base, we would expect it to have a more difficult time raising revenue,
+ since the residential assessment rates are held down to keep them consistent
+ across the state.
+ Conversely, higher proportions of non-residential assessment value serve
+ to subsidize residential taxpayers in a given county, since only so much
+ yield is required and their assessment ratios cannot be increased.
+ The data required to construct this ratio come from the assessment information
+ discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:TABOR-and-SLPTR-Measure"
+
+\end_inset
+
+.
+ The distribution of this Gallagher Ratio can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gallagher-Ratio-Dist"
+
+\end_inset
+
+.
+ Clearly the variation seen here suggests that county circumstances drive
+ substantial variation in the impact of the Gallagher Amendment.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Gallagher Ratio
+\end_layout
+
+\end_inset
+
+Variation in the Gallagher Ratio
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gallagher-Ratio-Dist"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -4240,16 +6784,1051 @@ name "chap:RevYieldCapacity"
 Introduction
 \end_layout
 
+\begin_layout Standard
+The economic potential of any system is not only driven by the presence
+ of natual and/or developed capital, but also the institutions that govern
+ the exploitation of these valueable assets.
+ In this sense, the term economic potential is misleadingly incomplete.
+ The mechanism that drives resource allocation is a function of both the
+ distribution of purely economic value and the feasible range of activities
+ governed by political institutions.
+ The goal of institutional design for economic growth, therefore, ought
+ to be the facilitation of those activities that increase the marginal product
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+value extraction
+\begin_inset Quotes erd
+\end_inset
+
+ efforts.
+ If the objective is the maximization of economic growth, this broad goal
+ is unlikely to draw many detractors.
+ The devil, however, is in the details.
+ 
+\end_layout
+
+\begin_layout Standard
+Among the multitude of policy innovations that have been advanced in service
+ of increasing economic growth, institutional reforms that act on the property
+ tax base have materially altered local government finance for more than
+ a century.
+ As early as the 1880s, these reforms were dominated by efforts to target
+ specific populations.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bowman2008"
+
+\end_inset
+
+ However, starting in large part with the Tax Revolt of the 1970s, more
+ interest has taken root in implementing reforms that target the base in
+ a general way: the tax and expenditure limitations discussed in the preceding
+ sections.
+ The impact of these and other measures has been noticeable.
+ While property tax revenue remains fairly buoyant with respect to the economy,
+ it has declined in importance from a proportional contribution perspective.
+ 
+\end_layout
+
+\begin_layout Standard
+This paper is the first empirical section of the study.
+ It seeks to evaluate the relationship between COTELs and homogeneity in
+ revenue behavior across counties.
+ In 1956, Tiebout suggested that choice among local jurisdictions was an
+ efficiency enhancing characteristic of a federal system.
+ Choices only exist to the extent that variety exists among the available
+ alternatives.
+ This paper intends to shed some light on whether or not COTELs affect the
+ variety among the jurisdictional choices of local residents.
+ A decrease in said variety will be referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+fiscal convergence
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We will pursue this task by employing the operationalization of COTEL intensity
+ discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:TABOR-and-SLPTR-Measure"
+
+\end_inset
+
+.
+ This concept is designed to capture the magnitude of the composite restriction
+ of both TABOR and SLPTR.
+ The impact of GA, by contrast, will enter the analysis as a standalone
+ variable.
+\end_layout
+
 \begin_layout Section
 What is the Significance of Revenue Yield and Capacity?
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+As used here, revenue yield signifies the actual, realized revenue collected
+ by a given jurisdiction.
+ Revenue capacity, by contrast, captures the economic potential of the tax
+ base.
+ We may think of this concept as the abstract revenue yield for a given
+ county at some standard level of tax effort.
+ If, for example, the property in county A is more expensive than the property
+ in county B, county A can collect more revenue than county B with the same
+ level of tax effort.
+ In this example, county A has greater revenue capacity than county B.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Rev-Significance"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This study focuses on local revenue behavior, so perhaps it behooves us
+ to ask whether or not local own-source revenues are really all that important.
+ Why can local governments not rely on intergovernmental fiscal transfers
+ from higher levels of government to satisfy their finance needs? Wallace
+ Oates considers arguments for and against the importance of local revenue
+ yield and capacity in some detail.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Oates2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For starters, from a Tiebout perspective, local revenue instruments are
+ important because they act as prices for local constituents.
+ They are the costs incurred by taxpayers in exchange for the consumption
+ of local public services.
+ Costs lead consumers to perform triage.
+ Without costs, the strong monotonicity assumption is permitted run wild.
+ In other words, constituents would seek to consume without limit.
+ It is the provision of local revenue by taxpayers that reveals opportunity
+ cost and forces them to reveal their preferences.
+ In so doing, they provide the information required by local fiscal managers
+ to make smart choices in service of satisfying voter preferences.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Monotonicity
+\end_layout
+
+\end_inset
+
+Weak and Strong Monotonicity
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Weak-and-Strong-Monotonicity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+\noun on
+Weak Monotonicity:
+\noun default
+ If 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+geq y$
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+then 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+succeq y$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+\noun on
+Strong Monotonicity: 
+\noun default
+If 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+geq y$
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+and 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+neq y$
+\end_layout
+
+\end_inset
+
+, 
+\emph on
+then 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+succ y$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+Weak monotonicity says that 'at least as much of everything is at least
+ as good'.
+ If the consumer can costlessly dispose of unwanted goods, this assumption
+ is trivial.
+ Strong monotonicity says that at least as much of every good, and strictly
+ more of some good, is better.
+ This is simply assuming that goods are good.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Varian1992"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:SubFinance-Normative-Objectives"
+
+\end_inset
+
+, local discretion over revenue sources is critical for local autonomy,
+ an ideal that has been advocated on practical and theoretical grounds.
+ Practical arguments extend back at least as far the debate over the crafting
+ of the US Constitution.
+ The so-called Anti-Federalists argued vociferously against the consolidation
+ of power in central government.
+ They believed that not only was this a sure path to a tyrannical regime,
+ but also that it was remarkably unpractical to try and govern so vast and
+ diverse a country from a single location.
+ Representatives sent to higher levels of government could not possibly
+ reflect the rich diversity of interests and needs that would inevitably
+ fall within their purview.
+ From a theoretical perspective, local autonomy facilitates the pursuit
+ of the marginal equivalence of costs and benefits, an efficiency enhancing
+ feature that naturally seeks welfare maximization for society.
+\end_layout
+
+\begin_layout Standard
+Detractors could feasibly argue that marginal equivalence is not actually
+ possible because the costs of production are often uncoupled with the means
+ of financing public goods.
+ Furthermore, given disparities in resource endowments, there are limits
+ to the volume and quality of services that can be provided for some local
+ jurisdictions, no matter what their preferences are.
+ For the sake of balance, we should also note that Federalists were greatly
+ concerned by the potential for material harm to minority 
+\begin_inset Quotes eld
+\end_inset
+
+factions
+\begin_inset Quotes erd
+\end_inset
+
+ if local autonomy was too strong.
+ Their bias towards central provision was cultivated in part because they
+ believed the multitude of opinions expressed at higher levels of government
+ would lead to fairer outcomes, in this case fairer allocations of public
+ resources.
+ 
+\end_layout
+
+\begin_layout Standard
+In the end, all that appears to be clear is that either extreme appears
+ to be undesirable.
+ Therefore, the role for local own-source revenue is an important one that
+ is worthy of study.
 \end_layout
 
 \begin_layout Section
-How is Variation in the Revenue Base Measured?
+What is the Expected Impact of TELs on Fiscal Convergence?
+\end_layout
+
+\begin_layout Standard
+Fiscal convergence in our context carries a spatial dimension.
+ When one considers the siting choice of a taxpayer, theoretically, the
+ entire set of local jurisdictions in the country is available to him or
+ her.
+ In reality, however, the costs associated with all of these choices is
+ far from equal even when staying inside Colorado.
+ Leaving aside cost of living for the purposes of our analysis, the costs
+ of mobilization are non-trivial.
+ It is much more costly for a resident of the northeastern County of Logan
+ to move to the southwestern County of Montezuma, than it would be to move
+ to the neighboring County of Morgan.
+ Thus, convergence in fiscal outcomes does not have to be uniform across
+ the entire state to have a significant impact.
+ The activity that occurs in the local neighborhood, the collection of counties
+ that are 
+\begin_inset Quotes eld
+\end_inset
+
+close
+\begin_inset Quotes erd
+\end_inset
+
+ to the county of interest, is the driving factor.
+ For this reason, we are concerned with the 
+\emph on
+clustering of fiscal behavior within the local neighborhood.
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Standard
+From a theoretical standpoint, there are two main features of COTELs that
+ would promote fiscal clustering among low-capacity jurisdictions in particular.
+ First, COTELs impose asymmetric pressure on revenue yields over time.
+ The rate of increase is limited by an explicit growth limit, but decreasing
+ yields are not so constrained.
+ Furthermore, once a drop in revenue has been experienced in one year, the
+ baseline is 
+\begin_inset Quotes eld
+\end_inset
+
+ratcheted
+\begin_inset Quotes erd
+\end_inset
+
+ down.
+ The allowable revenue in the current year is measured against only the
+ previous year's revenue, and not the long term trend.
+ Low revenue years have a disproportionate impact on the long-term revenue
+ capacity of the jurisdiction.
+\end_layout
+
+\begin_layout Standard
+The second impact is related to the first.
+ To the extent that COTELs bias revenue downward (in a manner quite uncoupled
+ with demand projections), it becomes increasingly difficult for constrained
+ jurisdictions to invest in the human and physical capital needed to support
+ robust economic growth.
+ The first effect impacts revenue generation, while the second impacts the
+ capacity of the economic base itself.
+\end_layout
+
+\begin_layout Standard
+A complicating factor is the existence of spillovers.
+ Both the provision of public goods and the economic vitality of neighboring
+ jurisdictions impact the fiscal and economic capacity of the primary jurisdicti
+on.
+ This externality network has the potential to dynamically reinforce economic
+ growth behavior, whether it be a high or low growth regime.
+ If COTELs exacerbate this effect, there could be undesirable long-term
+ consequences for low capacity counties seeking to create the conditions
+ for economic growth.
+ Insofar as the relationship between COTEL intensity and spatial dependency
+ is evaluated, this chapter explores this phenomenon directly.
 \end_layout
 
 \begin_layout Section
-What is the Expected Impact of TELs?
+How is Fiscal Clustering Measured?
+\end_layout
+
+\begin_layout Standard
+Testing whether or not the constraints imposed by COTELs lead to fiscal
+ convergence is difficult to achieve with the prevailing models in this
+ areas.
+ Most of the empirical work attempts to study TELs across states, and as
+ such, focuses on statewide definitions of TELs.
+ This tends to cover up local variation, but perhaps more interestingly,
+ this choice in geographic scope encourages certain kinds of questions.
+ What is the impact of TELs on revenue volatility?
+\begin_inset CommandInset citation
+LatexCommand cite
+key "StClair2012"
+
+\end_inset
+
+ Do TELs constrain property taxes?
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dye_McGuire1997"
+
+\end_inset
+
+ Do TELs constrain growth in public employment and wages?
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Poterba_Rueben1995"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Comparatively little research examines the within state dynamic.
+ Once one asks the question about local differences, modeling the parameter
+ of interest is a different game altogether.
+ In this case, the researcher must tease out variation among fiscal circumstance
+s for which statewide policy is a common denominator.
+ Once this issue comes to the fore, one is immediately confronted with the
+ following question: if the statewide policy does not vary cross-sectionally,
+ do we expect uniform impact across all jurisdictions at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+? Fiscal behavior is a function of economic circumstance, and given the
+ variation in economic bases across a given state, one would expect COTELs
+ to have different impacts in different jurisdictions.
+\end_layout
+
+\begin_layout Standard
+A second, and related, question is whether or not we expect a temporal element
+ in the impact of COTELs.
+ Does the constraint placed on a county increase with the amount of time
+ the county has spent operating under the COTEL? Furthermore, given the
+ fact that the COTEL environment is composed of overlapping policies, do
+ we expect interaction effects to play a role? To shed light on such questions,
+ this study employs spatial techniques to examine a panel dataset of county-leve
+l fiscal and economic data in Colorado over the 1987-2009 time period (econometr
+ic exploration begins in 1995).
+ First, we establish the existence of temporal variation in fiscal clustering,
+ and then we employ econometric techniques to uncover the impact of COTEL
+ intensity and the Gallagher Ratio.
+\end_layout
+
+\begin_layout Subsection
+Does Fiscal Clustering Occur and Does it Change Over Time?
+\end_layout
+
+\begin_layout Standard
+The hypothesis rests on the idea that not only does spatial clustering of
+ fiscal behavior occur, the nature of the clustering must vary over time.
+ Without both of these conditions, there is no basis for measuring the impact
+ of COTELs on fiscal convergence.
+ To determine whether or not these conditions are met, we will take snapshots
+ of fiscal and economic hotspots
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Hotspots
+\begin_inset Quotes erd
+\end_inset
+
+ are pockets of similar values.
+\end_layout
+
+\end_inset
+
+ every five years, starting with 1987.
+ Fiscal hotspots are evaluated via measurement of revenue yield per capita.
+ Economic hotspots are evaluated via annual payroll per capita.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+From a spatial perspective, payroll is a superior measure of activity relative
+ to income.
+ Income is a person-based measure, and thus may be derived from neighboring
+ jurisdictions if an individual commutes some distance to their place of
+ employment.
+ Payroll, by contrast, is a firm-based measure.
+ Consequently, it is not capable of mobility in the same sense.
+\end_layout
+
+\end_inset
+
+ the hotspots are identified with Local Indicators of Spatial Autocorrelation
+ (LISAs) developed initially by Getis & Ord
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Getis_Ord1992"
+
+\end_inset
+
+, with subsequent development by Anselin.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anselin1995"
+
+\end_inset
+
+ The measures are Getis & Ord's G* (GOG) and Local Moran's I (LMI), respectively.
+\end_layout
+
+\begin_layout Standard
+To evaluate clustering, LISAs require a definition of the linkages of importance
+ between jurisdictions.
+ Said differently, they require an explicitly defined local neighborhood.
+ Spatial analysis is generally sensitive to the choice of weight matrices
+ (which define the local neighborhood), so we test multiple neighborhood
+ criteria.
+ Corroboration across tests lends support to the findings.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Weight Matrices
+\end_layout
+
+\begin_layout Standard
+Weight matrices, in abstract sense, define 
+\begin_inset Quotes eld
+\end_inset
+
+closeness
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The definition of proximity can vary quite dramatically by application.
+ The most natural interpretation, the one employed in this study, is based
+ upon spatial proximity.
+ However, it is quite plausible to use other distance measures.
+ For example, one might define neighbors as those counties with similar
+ demographics, industrial bases, or any other characteristic of interest.
+ Since the focus of this study is on siting choice given the cost of mobility,
+ spatial proximity is a natural choice.
+ 
+\end_layout
+
+\begin_layout Standard
+Taking spatial proximity as the weight basis, there are a number of ways
+ to define the neighborhood.
+ This study employs two common approaches: contiguity and distance.
+ As one might expect, contiguity requires contact to be considered a neighbor.
+ Contact with the primary jurisdiction is not strictly required.
+ A second order contiguous neighborhood, for example, would include neighbors
+ that contacted a jurisdiction in contact with the primary jurisdiction.
+ Distance, by contrast, includes as neighbors all jurisdictions within some
+ distance of the primary jurisdictions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Weight Matrices
+\end_layout
+
+\end_inset
+
+Differing Weight Matrix Definitions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Def-Weight-Matrix"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/w_def.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Within the contiguity and distance classes of weight matrices, there are
+ several variations on the theme.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Def-Weight-Matrix"
+
+\end_inset
+
+ shows two types of contiguous neighborhood definitions in the first two
+ panels: rook and queen.
+ As can be seen, these definitions are taken directly from the rules of
+ chess.
+ The third panel provides a generic view of a neighborhood defined via a
+ distance metric.
+ In this instance, distance is measured from the primary jurisdictions centroid,
+ but one could envision distance from the closest border or the population's
+ center of gravity being relevant metrics as well.
+\end_layout
+
+\begin_layout Standard
+As depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Def-Weight-Matrix"
+
+\end_inset
+
+, all of the weights for each neighborhood are binary.
+ Blue squares indicate weight values of 1, so those jurisdictions are 
+\begin_inset Quotes eld
+\end_inset
+
+all in
+\begin_inset Quotes erd
+\end_inset
+
+, so to speak.
+ Binary classification of neighbors is in no way a requirement.
+ The strength of the weight may vary with proximity, and there are a number
+ of decay functions in common use.
+ This study employs three kinds: binary, inverse distance, and Gaussian.
+ Generic examples of these are depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Variance-in-Weights"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Decay Curves
+\end_layout
+
+\end_inset
+
+Variance in Weight as a Function of Distance
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Variance-in-Weights"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/decay_curves.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given this information, the neighborhoods used to identify hotspots are
+ defined by the following metrics:
+\end_layout
+
+\begin_layout Itemize
+Rook Contiguity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_rook$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Queen Contiguity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_queen$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Distance Band - Binary (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_db_b$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Distance Band - Continuous (Inverse Distance Decay; 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_db_c$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Kernel (Gaussian Decay;
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_kern$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Each of the panels in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Weight-Matrix-Cardinality"
+
+\end_inset
+
+ features a histogram of neighbor counts for each weight matrix.
+ For example, for rook contiguity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_rook$
+\end_layout
+
+\end_inset
+
+), five is the most frequent neighborhood size.
+ This is in sharp contrast to the kernel matrix (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_kern$
+\end_layout
+
+\end_inset
+
+), which hase only six counties with a neighborhood of size five.
+ Visual inspection of the neighborhood size distributions demonstrates the
+ substantive variation in the definitions employed by each weight matrix
+ and the reason for sensitivity to neighborhood definition.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Weight Matrix Cardinality
+\end_layout
+
+\end_inset
+
+Weight Matrix Cardinality for Counties in Colorado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Weight-Matrix-Cardinality"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Local Indicators of Spatial Autocorrelation
+\end_layout
+
+\begin_layout Standard
+There are two primary measures use to establish spatial clistering for each
+ weigh matrix/year combination.
+ LMI measures the global spatial autocorrelation in an attribute 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y$
+\end_layout
+
+\end_inset
+
+ over a given neighborhood.
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Local-Moran's-I"
+
+\end_inset
+
+ is calculated for each county, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+.
+ LMI permits a kind of topological view of autocorrelation.
+ Just as providing a single moment of a vector of values masks other distributio
+nal characteristics of the data, providing only a single global parameter
+ for spatial association masks regional dynamics.
+ LMI reveals these dynamics by providing values for each spatial observation
+ (e.g.
+ county), thereby enabling the analyst to take note of patterns (e.g.
+ fiscal clusters).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Local Moran's I (LMI)
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Local-Moran's-I"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+LMI returns high values when 
 \end_layout
 
 \begin_layout Section
