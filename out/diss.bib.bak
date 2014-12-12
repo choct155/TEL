@@ -178,16 +178,6 @@
   Crossref                 = {DOI: 10.1111/j.0275-1100.2004.00350.x}
 }
 
-@Book{Oates1972,
-  Title                    = {{Fiscal Federalism}},
-  Author                   = {Wallace Oates},
-  Publisher                = {Harcourt Brace Jovanovich},
-  Year                     = {1972},
-  Series                   = {Harbrace Series in Business and Economics},
-
-  Crossref                 = {http://books.google.com/books?id=nh6zAAAAIAAJ}
-}
-
 @Article{Perdue_Misiolek1987,
   Title                    = {{The Portfolio Approach to Tax Structures and Education Finance}},
   Author                   = {D. Grady Perdue and Walter S. Misiolek},
@@ -229,17 +219,6 @@
   Crossref                 = {http://www.gonzalo.depeco.econo.unlp.edu.ar/bspub/romer-rosenthal79.pdf}
 }
 
-@InBook{Ross_Yinger1999,
-  Title                    = {{Handbook of Regional and Urban Economics}},
-  Author                   = {Stephen Ross and John Yinger},
-  Chapter                  = {Chapter 47 Sorting and Voting: A Review of the Literature on Urban Public Finance},
-  Publisher                = {Elsevier},
-  Year                     = {1999},
-  Volume                   = {3},
-
-  Crossref                 = {http://www.sciencedirect.com/science/article/pii/S1574008099800169}
-}
-
 @Article{Samuelson1954,
   Title                    = {{The Pure Theory of Public Expenditure}},
   Author                   = {Paul Samuelson},
@@ -268,17 +247,6 @@
   Crossref                 = {doi:10.2307/3331014}
 }
 
-@Article{Stiglitz2012,
-  Title                    = {{The Book of Jobs}},
-  Author                   = {Joseph Stiglitz},
-  Journal                  = {Vanity Fair},
-  Year                     = {2012},
-
-  Month                    = {jan},
-
-  Crossref                 = {http://www.vanityfair.com/politics/2012/01/stiglitz-depression-201201}
-}
-
 @Article{Downes_Dye_McGuire1998,
   Title                    = {{Do Limits Matter? Evidence on the Effects of Tax Limitations on Student Performance}},
   Author                   = {Thomas A. Downes, Richard F. Dye, and Therese J. McGuire},
@@ -303,20 +271,6 @@
   Volume                   = {67},
 
   Crossref                 = {doi:10.1111/j.1540-6210.2007.00771_2.x}
-}
-
-@Article{Tiebout1956,
-  Title                    = {{A Pure Theory of Local Expenditures}},
-  Author                   = {Charles Tiebout},
-  Journal                  = {Journal of Political Economy},
-  Year                     = {1956},
-
-  Month                    = {oct},
-  Number                   = {5},
-  Pages                    = {416-424},
-  Volume                   = {64},
-
-  Crossref                 = {doi:10.2307/1826343}
 }
 
 @Article{Wildavsky61,
@@ -376,6 +330,16 @@
   Type                     = {Working Paper}
 }
 
+@TechReport{Anselin1999,
+  Title                    = {Spatial Econometrics},
+  Author                   = {Anselin, L.},
+  Institution              = {Bruton Center, School of Social Sciences, University of Texas at Dallas},
+  Year                     = {1999},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.10}
+}
+
 @Article{Anselin1995,
   Title                    = {{Local Indicators of Spatial Association - LISA}},
   Author                   = {Luc Anselin},
@@ -392,14 +356,6 @@
   Institution              = {Center for Disease Control},
   Year                     = {2012},
   Type                     = {National Vital Statistics Reports}
-}
-
-@InBook{Hamilton_Mills_Puryear1975,
-  Title                    = {{Fiscal Zoning and Land Use Controls}},
-  Author                   = {B.W. Hamilton, E.S. Mills, and D. Puryear},
-  Chapter                  = {The Tiebout Hypothesis and Residential Income Segregation},
-  Publisher                = {Lexington Books},
-  Year                     = {1975}
 }
 
 @Book{Bahl1984,
@@ -431,11 +387,22 @@
   Volume                   = {3}
 }
 
-@TechReport{NIPA,
+@TechReport{NIPA2014,
   Title                    = {{National Income and Product Accounts}},
   Author                   = {BEA},
   Institution              = {U.S. Department of Commerce},
   Year                     = {2014}
+}
+
+@Book{Bennett1980,
+  Title                    = {The Geography of Public Finance - Welfare under Fiscal Federalism and Local Government Finance},
+  Author                   = {Bennett, R.J.},
+  Editor                   = {Bennett, R.J.},
+  Publisher                = {Methuen \& Co.},
+  Year                     = {1980},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.11}
 }
 
 @Article{Besley_Case1995,
@@ -447,13 +414,6 @@
   Month                    = {mar},
   Number                   = {1},
   Volume                   = {85}
-}
-
-@Book{Honadle_Costa_Cigler2004,
-  Title                    = {{Fiscal Health for Local Governments: An Introduction to Concepts, Practical Analysis, and Strategies}},
-  Author                   = {Beth Honadle, James Costa, and Beverly Cigler},
-  Publisher                = {Elsevier Academic Press},
-  Year                     = {2004}
 }
 
 @InBook{Yuan_Cordes_Brunori_Bell2009,
@@ -520,6 +480,17 @@
   Volume                   = {51}
 }
 
+@Book{Buchanan_Tullock1962,
+  Title                    = {The Calculus of Consent - Logical Foundations of Constitutional Democracy},
+  Author                   = {Buchanan, James and Gordon Tullock},
+  Editor                   = {Rowley, Charles},
+  Publisher                = {University of Michigan Press},
+  Year                     = {1962},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.10}
+}
+
 @Book{Burkhead_Miner1971,
   Title                    = {{Public Expenditure}},
   Author                   = {Jesse Burkhead and Jerry Miner},
@@ -571,6 +542,21 @@
 
   Owner                    = {root},
   Timestamp                = {2014.11.30}
+}
+
+@Article{Cochrane_Orcutt1949,
+  Title                    = {Application of Least Squares Regression to Relationships Containing Auto-Correlated Error Terms},
+  Author                   = {Cochrane, D. and G.H. Orcutt},
+  Journal                  = {Journal of the American Statistical Association},
+  Year                     = {1949},
+
+  Month                    = {March},
+  Number                   = {245},
+  Pages                    = {32-61},
+  Volume                   = {44},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.09}
 }
 
 @TechReport{FOMC2000,
@@ -654,6 +640,21 @@
   Month                    = {jun},
   Number                   = {2},
   Volume                   = {14}
+}
+
+@Article{Durbin_Watson1950,
+  Title                    = {Testing for Serial Correlation in Least Squares Regression I},
+  Author                   = {Durbin, J. and G.S. Watson},
+  Journal                  = {Biometrika},
+  Year                     = {1950},
+
+  Month                    = {December},
+  Number                   = {3/4},
+  Pages                    = {409-428},
+  Volume                   = {37},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.09}
 }
 
 @Article{Eberts_Gronberg1981,
@@ -776,6 +777,14 @@
   Edition                  = {sixth}
 }
 
+@InBook{Hamilton_Mills_Puryear1975,
+  Title                    = {{Fiscal Zoning and Land Use Controls}},
+  Author                   = {Hamilton, B.W., E.S. Mills, and D. Puryear},
+  Chapter                  = {The Tiebout Hypothesis and Residential Income Segregation},
+  Publisher                = {Lexington Books},
+  Year                     = {1975}
+}
+
 @Article{Heikkila1996,
   Title                    = {{Are Municipalities Tieboutian Clubs?}},
   Author                   = {E.J. Heikkila},
@@ -816,6 +825,13 @@
   Owner                    = {choct155},
   Timestamp                = {2014.11.23},
   Url                      = {http://www2.census.gov/govs/cog/g12_org.pdf}
+}
+
+@Book{Honadle_Costa_Cigler2004,
+  Title                    = {{Fiscal Health for Local Governments: An Introduction to Concepts, Practical Analysis, and Strategies}},
+  Author                   = {Honadle, Beth, James Costa, and Beverly Cigler},
+  Publisher                = {Elsevier Academic Press},
+  Year                     = {2004}
 }
 
 @InBook{Hoover2008,
@@ -1029,6 +1045,14 @@
   Volume                   = {37}
 }
 
+@Book{Oates1972,
+  Title                    = {{Fiscal Federalism}},
+  Author                   = {Wallace Oates},
+  Publisher                = {Harcourt Brace Jovanovich},
+  Year                     = {1972},
+  Series                   = {Harbrace Series in Business and Economics}
+}
+
 @Article{Pack_Pack1977,
   Title                    = {{Metropolitan Fragmentation and Suburban Homogeneity}},
   Author                   = {H. Pack and J.R. Pack},
@@ -1078,11 +1102,31 @@
   Volume                   = {32}
 }
 
+@InBook{Ross_Yinger1999,
+  Title                    = {{Handbook of Regional and Urban Economics}},
+  Author                   = {Stephen Ross and John Yinger},
+  Chapter                  = {Chapter 47 Sorting and Voting: A Review of the Literature on Urban Public Finance},
+  Publisher                = {Elsevier},
+  Year                     = {1999},
+  Volume                   = {3}
+}
+
 @Book{Rubin1998,
   Title                    = {{Class, Tax, \& Power}},
   Author                   = {Irene Rubin},
   Publisher                = {Chatham House Publishers, Inc.},
   Year                     = {1998}
+}
+
+@Book{Atul_Tulasidhar1984,
+  Title                    = {Economic Impact of Government Expenditure - An Analysis in Input-Output Framework},
+  Author                   = {Sarma, Atul and V.B. Tulasidhar},
+  Editor                   = {Sarma, Atul and V.B. Tulasidhar},
+  Publisher                = {Concept Publishing Company},
+  Year                     = {1984},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.10}
 }
 
 @Article{Schelling1971,
@@ -1196,6 +1240,15 @@
   Volume                   = {17}
 }
 
+@Article{Stiglitz2012,
+  Title                    = {{The Book of Jobs}},
+  Author                   = {Joseph Stiglitz},
+  Journal                  = {Vanity Fair},
+  Year                     = {2012},
+
+  Month                    = {jan}
+}
+
 @Book{Storing1981,
   Title                    = {{What the Anti-Federalists Were For: The Political Thought of the Opponents of the Constitution}},
   Author                   = {Herbert Storing},
@@ -1213,6 +1266,47 @@
   Number                   = {5},
   Pages                    = {649-658},
   Volume                   = {72}
+}
+
+@Article{Tiebout1956,
+  Title                    = {{A Pure Theory of Local Expenditures}},
+  Author                   = {Charles Tiebout},
+  Journal                  = {Journal of Political Economy},
+  Year                     = {1956},
+
+  Month                    = {oct},
+  Number                   = {5},
+  Pages                    = {416-424},
+  Volume                   = {64}
+}
+
+@InCollection{Tobler1979,
+  Title                    = {Cellular Geography},
+  Author                   = {Tobler, W.R.},
+  Booktitle                = {Philosophy in Geography},
+  Publisher                = {Springer Netherlands},
+  Year                     = {1979},
+  Editor                   = {Gale, Stephen and Olsson, Gunnar},
+  Pages                    = {379-386},
+  Series                   = {Theory and Decision Library},
+  Volume                   = {20},
+
+  Doi                      = {10.1007/978-94-009-9394-5_18},
+  ISBN                     = {978-94-009-9396-9},
+  Language                 = {English},
+  Url                      = {http://dx.doi.org/10.1007/978-94-009-9394-5_18}
+}
+
+@Book{Tsay2005,
+  Title                    = {Analysis of Financial Time Series},
+  Author                   = {Ruey Tsay},
+  Editor                   = {Ruey Tsay},
+  Publisher                = {John Wiley \& Sons, Inc.},
+  Year                     = {2005},
+  Edition                  = {2nd},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.09}
 }
 
 @Book{Varian1992,
@@ -1233,6 +1327,18 @@
   Institution              = {World Bank},
   Year                     = {1980},
   Type                     = {Working Paper}
+}
+
+@Book{Wagner2009,
+  Title                    = {Fiscal Sociology and the Theory of Public Finance: An Exploratory Essay},
+  Author                   = {Wagner, Richard},
+  Editor                   = {Wagner, Richard},
+  Publisher                = {Edward Elgar Publishing},
+  Year                     = {2009},
+  Series                   = {New Thinking in Political Economy},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.11}
 }
 
 @Book{Wagner1983,
