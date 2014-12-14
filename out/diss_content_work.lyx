@@ -1458,6 +1458,13 @@ key "Oates1972"
 
 \begin_layout Subsubsection
 Duality in Public Finance
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Duality-in-Public-Finance"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quotation
@@ -8635,7 +8642,22 @@ nal characteristics of the data, providing only a single global parameter
  (e.g.
  county), thereby enabling the analyst to take note of patterns (e.g.
  fiscal clusters).
- 
+ LMI returns high values for a county when it is surrounded by 
+\emph on
+similar
+\emph default
+ values, and it returns low values when it is surrounded by 
+\emph on
+disimilar
+\emph default
+ values (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LMI-Values"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -8669,7 +8691,584 @@ name "alg:Local-Moran's-I"
 \end_layout
 
 \begin_layout Standard
-LMI returns high values when 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Local Moran's I Values
+\end_layout
+
+\end_inset
+
+Interpretation of Local Moran's I Values
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LMI-Values"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As noted by Anselin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anselin1995"
+
+\end_inset
+
+, the interpretation of LMI is insufficient for a comprehensive knowledge
+ of the clustering behavior of spatially related activities.
+ It can provide an analyst with knowledge of the existence of clusters,
+ but it does not provide information about the type of clustering.
+ In this regard, GOG (Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Getis-Ord-G"
+
+\end_inset
+
+) is a natural complement.
+ It is also calculated for each spatial feature (e.g.
+ county).
+ In contrast to LMI, GOG returns high values when 
+\emph on
+high
+\emph default
+ are clustered and low values when 
+\emph on
+low
+\emph default
+ values are clustered (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GOG-Values"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Getis & Ord's G* (GOG)
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Getis-Ord-G"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Getis & Ord's G* Values
+\end_layout
+
+\end_inset
+
+Interpretation of Getis & Ord's G* Values
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GOG-Values"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If one were to rely solely on LMI, the clustering of low revenue capacity
+ would be indistinguishable from the clustering of high revenue capacity.
+ If one were to rely solely on GOG, it would not be possible to detect unusual
+ patterns of discontinuity.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Unusual patterns would be those discontinuities that were beyond those which
+ would occur with a random shuffling of values.
+ In other words, they would be systemic patterns of disimilarity, also known
+ as negative spatial autocorrelation.
+\end_layout
+
+\end_inset
+
+ This would render the detection of local anomolies more difficult, and
+ in turn, the identification of spatial non-stationarity.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Stationarity is the same concept in a spatial context as it is the more
+ widespread temporal context.
+ In time series, the joint distribution of observations must be invariant
+ to a time shift to be considered strictly stationary.
+ 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+A time series 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+${r_t}$
+\end_layout
+
+\end_inset
+
+ is said to be 
+\emph on
+strictly stationary
+\emph default
+ if the joint distribution of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(r_{t_1}, ...
+ , r_{t_k})$
+\end_layout
+
+\end_inset
+
+ is identical to that of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(r_{t_1 + t}, ...
+ , r_{t_k + t})$
+\end_layout
+
+\end_inset
+
+ for all 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+, where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ is an arbitrary positive integer and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(t_1, ...
+ ,t_k)$
+\end_layout
+
+\end_inset
+
+ is a collection of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ positive integers.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Weak stationarity just requires that the mean of the reference observation
+ and the covariance between the reference and a lag of arbitrary size must
+ be invariant to a time shift.
+ In effect, the observations share a common mean, and there is some fixed
+ amount of noise.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+A time series 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+${r_t}$
+\end_layout
+
+\end_inset
+
+ is 
+\emph on
+weakly stationary
+\emph default
+ if (a) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$E(r_t) = 
+\backslash
+mu$
+\end_layout
+
+\end_inset
+
+, which is a constant, and (b) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mathrm{Cov}(r_t,r_{t-l})=
+\backslash
+gamma_l$
+\end_layout
+
+\end_inset
+
+, which only depends on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$l$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+***TSAY2005***
+\end_layout
+
+\begin_layout Plain Layout
+One may think of spatial stationarity in the same way, accept that lags
+ are not uni-directional as in the time series case.
+ Rather, lags extend in all directions.
+ In a time series, the observation in the preceding time period is a first
+ order temporal lag.
+ In a neighborhood defined by queen contiguity (see Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Weight-Matrices"
+
+\end_inset
+
+), all of the jurisdictions that touch the primary jurisdiction are first
+ order spatial lags.
+\end_layout
+
+\end_inset
+
+ Therefore, to gain a complete picture of spatial patterns in revenue yield
+ and capacity, we must use both LMI and GOG.
+\end_layout
+
+\begin_layout Standard
+The spatio-temporal plots below display spatial clustering activity over
+ time for each weight matrix.
+ The first collection (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LMI-Plots"
+
+\end_inset
+
+) features clustering as a measured by LMI while the second (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GOG-Plots"
+
+\end_inset
+
+) features GOG.
+ In both collections, the first plot matrix displays clustering of revenue
+ yield (per capita revenue) and revenue capacity (per capita annual payroll).
+ While the intensity of clustering does vary to some extent across different
+ weight matrices (as indicated by varying color intensity), the general
+ patterns persist.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spatio-Temporal Plots - Local Moran's I
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LMI-Plots"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Insert both LMI plots
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spatio-Temporal Plots - Getis & Ord's G*
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GOG-Plots"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Insert both GOG plots
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Not only does revenue yield clustering occur, the extent of the clustering
+ changes over time.
+ Furthermore, upon closer examination of the data, three main properties
+ stand out:
+\end_layout
+
+\begin_layout Enumerate
+Variation is substantially higher in GOG, which indicates relative consistency
+ in clustering activity, with larger variation in the magnitude of clustering
+ values.
+ This could mean correlated revenue capacity shifts across multiple counties
+ within given neighborhoods.
+\end_layout
+
+\begin_layout Enumerate
+Variation is generally more substantial in the higher values for both statistics.
+ For LMI, this indicates varying intensity of spatial association amongst
+ similar values.
+ For GOG, this indicates low capacity counties are more tightly coupled
+ than high capacity counties.
+\end_layout
+
+\begin_layout Enumerate
+Central tendency generally leans right of zero for LMI, and left of zero
+ for GOG.
+ This suggests a tendency towards the existence of spatial clustering, but
+ this clustering occurs more often among low capacity jurisdictions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+LISA Kernel Densities
+\end_layout
+
+\end_inset
+
+Kernel Density Estimates of Year-Specific LISA Values for Revenue Yield
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Kernel-LISA"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+These kernel density estimates capture the same information as the spatio-tempor
+al plots in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LMI-Plots"
+
+\end_inset
+
+ and Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GOG-Plots"
+
+\end_inset
+
+.
+ Instead of displaying the values by county, however, the values for all
+ counties for a given year are captured in each estimate.
+ The plots in the left column (with the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$_i$
+\end_layout
+
+\end_inset
+
+ suffix) capture LMI estimates while the plots in the right column (with
+ the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$_g$
+\end_layout
+
+\end_inset
+
+ suffix) capture GOG estimates.
+ The weight matrices used are apparent from the labeling.
+ For example, in the left plot in the first row, each kernel density estimate
+ captures Local Moran's I values for revenue yield in each year captured
+ (1987, 1992, 1997, 2002, 2007).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -8889,6 +9488,13 @@ $pcap$
 
 \begin_layout Subsubsection
 Econometrics as Observation
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Econometrics-as-Observation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9056,10 +9662,7 @@ Product
 \begin_inset space ~
 \end_inset
 
-
 (
-\lang english
-
 \begin_inset ERT
 status open
 
@@ -9471,7 +10074,7 @@ $R^2$
 \end_layout
 
 \begin_layout Subsubsection
-Pooled Ordinary Least Squares
+Baseline Estimation with Pooled Ordinary Least Squares
 \end_layout
 
 \begin_layout Standard
@@ -9615,7 +10218,8 @@ Note also the large disparity in model fit across the two models.
 \end_layout
 
 \begin_layout Subsubsection
-Local Indicators of Spatial Autocorrelation (LISAs)
+Evaluating the Impact on Fiscal Clustering with Local Indicators of Spatial
+ Autocorrelation (LISAs)
 \end_layout
 
 \begin_layout Standard
@@ -9722,6 +10326,13 @@ name "fig:LISA-Results"
 \end_layout
 
 \begin_layout Standard
+
+\emph on
+Note: Need to place these results in context.
+ What is the range of clustering values? What is a significant movement?
+\end_layout
+
+\begin_layout Standard
 When controlling for other factors, COTEL intensity (
 \begin_inset ERT
 status open
@@ -9749,26 +10360,2808 @@ $pcrev$
 ).
  Said differently, if a county is highly constrained, the constraint is
  not a significant driver of the clustering that already exists.
+ This is interesting because one could reasonably expect that the inflexibility
+ of achievable expenditures in the constrained county would force convergence
+ in fiscal behavior, thereby taking jurisdictional idiosyncrasies out of
+ the siting equation and reinforcing similar revenue preferences in the
+ local neighborhood.
+ It is possible that collaborative efforts in the local neighborhood to
+ provide wide area services free up enough revenue to still allow for some
+ base level of distinction.
+ In any event, the only reasonably clear impact of COTEL intensity is a
+ negative association with fiscal capacity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcap$
+\end_layout
+
+\end_inset
+
+) clustering values (GOG), which indicates that higher levels of COTEL constrain
+ts are related to clustering of low values of fiscal capacity.
+ This accords with the hypothesis that COTELs ultimately limit fiscal capacity
+ for low-income jurisdictions.
+\end_layout
+
+\begin_layout Standard
+On the other hand, the Gallagher Ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+) behaves precisely as we would expect from a revenue yield perspective.
+ Insofar as it increases the strength of clustering (higher values of LMI)
+ and decreases the values assoicated with said clustering (low values of
+ GOG), the evidence suggests that the measure is a limiting factor on revenue
+ yield in the local neighborhood.
+ On the fiscal capacity side, the Gallagher Ratio is neither statistically
+ or substantively relevant.
+\end_layout
+
+\begin_layout Standard
+In both the revenue yield and fiscal capacity models, the model fit is modest
+ at best (particularly with respect to the latter) and categorically lower
+ than the fit of any other model considered in this chapter.
+\end_layout
+
+\begin_layout Subsubsection
+Incorporating the Local Neighborhood with Spatial Lags
+\end_layout
+
+\begin_layout Standard
+Repeated SLM analysis allows us to incorporate the local neighborhood explicitly
+ because the spatial lag of the dependent variable is the weighted average
+ of the dependent variable value in the neighboring jurisdictions.
+ Evaluating annual cross-sections is useful insofar as it provides a view
+ of the variation in regressor impact over time, both in magnitude and significa
+nce.
+ The non-trivial downsides are two-fold:
+\end_layout
+
+\begin_layout Enumerate
+Repeated cross-sections do not permit control of year-specific factors;
+ and,
+\end_layout
+
+\begin_layout Enumerate
+To the extent that deBrucing is an ongoing phenomenon, there is temporal
+ variance in the sample properties.
+ The characteristics, namely the capacity of COTELs to constrain a given
+ jurisdiction, of the counties are changing over time.
+\end_layout
+
+\begin_layout Standard
+As a consequence, the technique can only be useful in this context as a
+ complementary component in a larger analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+SLM - Revenue Yield
+\end_layout
+
+\end_inset
+
+Spatial Lag Models by Year - Revenue Yield (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcrev$
+\end_layout
+
+\end_inset
+
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SLM-Rev"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/converge_slm_rev.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Note: the single red data points in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcap$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$vac_rate$
+\end_layout
+
+\end_inset
+
+ subplots are only artifacts of the plotting function.
+ As can be seen in the color bar, the range of p-values for these variables
+ is entirely below 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$=0.1
+\end_layout
+
+\end_inset
+
+.
+ The final version of this graphic will remedy this issue with post-hoc
+ adjsutment of the an SVG version of the plot.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With respect to revenue yield, both COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+) and the Gallagher Ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+) accord with the pooled OLS results.
+ They both materially decrease the revenue per capita in the county, even
+ after controlling for the revenue dynamics in the local neighborhood.
+ In other words, these are reductions over and above the preferences that
+ may be shared with neighboring jurisdictions.
+ 
+\end_layout
+
+\begin_layout Standard
+The interesting dynamic revealed by the repeated cross-sectional approach
+ is that COTEL intensity appears to get less significant over time, both
+ in statistical and substantive terms.
+ In contrast, the Gallagher Ratio is doing precisely the opposite.
+ This could indicate either a shift in the composition of counties subject
+ to binding COTEL constraints or a shift in the composition of the property
+ assessment base (or both).
+\end_layout
+
+\begin_layout Standard
+Evaluating fiscal capacity with the repeated SLM approach reveals the tenuous
+ nature of any direct connection between our COTEL variables and per capita
+ annual payroll.
+ COTEL intensity is insignificant in every single year, while the Gallagher
+ Ratio demonstrates substantial variation in magnitude and statistical clarity.
+ With respect to the latter, it is also worth noting that the sign of the
+ Gallagher Ratio estimate has switched from the pooled OLS run.
+ Finally, even when controlling for the other factors, the underlying positive
+ relationship between per capita annual payroll and the Gallagher Ratio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+SLM - Fiscal Capacity
+\end_layout
+
+\end_inset
+
+Spatial Lag Models by Year - Fiscal Capacity
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SLM-econ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/converge_slm_econ.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Capturing Temporal Dependency with Fixed Effects
+\end_layout
+
+\begin_layout Standard
+Pivoting from the modeling of spatial to temporal dependency, it is possible
+ to control for county-specific unobservables that may obscure the mechanism
+ by which changes in COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+) and the Gallagher Ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+) effect changes in revenue yield and fiscal capacity.
+ The panel model results plot for revenue yield reveals a consistent theme
+ for most variables, although the permitting rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$permit
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+) sign has switched.
+ Both COTEL intensity and the Gallagher Ration are modestly depressing forces
+ on revenue yield in a given county.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fixed Effect Estimation
+\end_layout
+
+\end_inset
+
+Fixed Effect Model Results - Revenue Yield (
+\emph on
+left
+\emph default
+) & Fiscal Capacity (
+\emph on
+right
+\emph default
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FE-Results"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/converge_fe_panel.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The raw coefficient estimates are provided in Tables 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:FE-Rev-Table"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:FE-Econ-Table"
+
+\end_inset
+
+ .
+ If the estimates are standardized to reflect the impact sizes as a multiple
+ of the standard deviation, a one standard deviation shift in COTEL intensity
+ accounts for a shift in revenue yield of approximately 4% of one standard
+ deviation in revenue yield (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcrev$
+\end_layout
+
+\end_inset
+
+).
+ The parallel impact for the Gallagher Ratio is 9%.
+ These figures are roughly three times as large as those reported in the
+ pooled OLS model, and twenty times as large as those reported in the spatial
+ lag models (on average).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that this is the average response to a shift of a single standard deviation
+ across the models for all years.
+ Thus, this effect would not necessarily scale linearly, 
+\emph on
+even if the impact of a change in COTEL variables were consistent through
+ the entire range of COTEL values
+\emph default
+.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+FE Results - Revenue Yield
+\end_layout
+
+\end_inset
+
+Fixed Effect Estimation - Revenue Yield (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mathrm{R}^2=.923$
+\end_layout
+
+\end_inset
+
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:FE-Rev-Table"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="decimal" decimal_point="." valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$
+\end_layout
+
+\end_inset
+
+-value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S.E.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gross State Product (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$gsp$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.112
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-05}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lagged Population Growth (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$lpop
+\backslash
+_growth$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-151.486
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.409
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-01}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+247.670
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+State Unemployment Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$st
+\backslash
+_unempr$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32.103
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.194
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-07}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.238
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Housing Permits Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$permit
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1883.634
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.178
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-02}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+746.473
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vacancy Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$vac
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.792
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.783
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-03}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.456
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fiscal Capacity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcap$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.040
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.414
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-17}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.005
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COTEL Intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-102.841
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.580
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-02}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.539
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gallagher Ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-167.069
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.137
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-02}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72.483
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+FE Results - Fiscal Capacity
+\end_layout
+
+\end_inset
+
+Fixed Effect Estimation - Fiscal Capacity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mathrm{R}^2=.947$
+\end_layout
+
+\end_inset
+
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:FE-Econ-Table"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="decimal" decimal_point="." valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="decimal" decimal_point="." valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$
+\end_layout
+
+\end_inset
+
+-value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S.E.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gross State Product (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$gsp$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.028
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.807
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-72}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+State Unemployment Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$st
+\backslash
+_unempr$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-8.535
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.381
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-01}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.753
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Housing Permits Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$permit
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-6382.604
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.949
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-01}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4921.187
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vacancy Rate (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$vac
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55.274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.603
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-04}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.367
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COTEL Intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1755.172
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.435
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-10}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+282.346
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gallagher Ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-576.022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.394
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+times 10^{-01}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+489.347
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results of the panel analysis of fiscal capacity do little to sort out
+ a pattern in the estimates reported in previous models.
+ While COTEL intensity is still positive and significant once again, the
+ Gallagher Ratio is now negative.
+ The latter result contrasts sharply with the pooled OLS and SLM models.
+ This may suggest that the other models were using the Gallagher Ratio as
+ a proxy for some of the unobserved characteristics we are now capturing
+ in the fixed effects.
+\end_layout
+
+\begin_layout Section
+Summary of Findings and Conclusion
+\end_layout
+
+\begin_layout Standard
+This analysis was designed to evaluate the impact of the cumulative, composite
+ limit imposed by TABOR and the Statewide Limit on Property Tax Revenue
+ (a.k.a.
+ COTEL intensity), as well as the Gallagher Amendment, on two fiscal indicators:
+ revenue yield (revenue per capita) and fiscal capacity (annual payroll
+ per capita).
+ To pursue this objective, the analysis employed pooled OLS, spatial lag
+ models, and panel analysis to identify patterns in the COTEL impacts from
+ a variety of perspectives.
+ While there was non-trivial variation in the magnitude of impact, COTELs
+ consistently depressed revenue yields.
+ This accords with intuition, and empirical exploration has borne this out.
+\end_layout
+
+\begin_layout Standard
+In constrast, the fiscal capacity models consistently explained less variation
+ relative to revenue yield models, and the impacts of COTELs were inconclusive
+ across models.
+ The implication is that COTELs do not have direct impacts on fiscal capacity.
+ Rather, the ultimate impact is likely a function of how individual counties
+ respond to the constraints placed on them by statewide COTEL policies.
+\end_layout
+
+\begin_layout Standard
+It should also be noted that the analysis in this paper makes clear that
+ differential impacts across counties are non-trivial.
+ These disparities in the impacts of COTELs are drive by dynamic economic
+ characteristics of each county.
+ Furthermore, the economic circumstances of counties display spatial dependency,
+ and spatial clustering occurs more strongly among low revenue/capacity
+ counties.
+ Consequently, policies that depress revenue yield or fiscal capacity exacerbate
+ this phenomenon.
+ With respect to revenue yield, it is clear that COTELs do just that.
+ The impact of COTELs on fiscal capacity, however, warrants greater study.
 \end_layout
 
 \begin_layout Chapter
 Alteration of Expenditure Patterns
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Expenditure-Patterns"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Introduction
 \end_layout
 
+\begin_layout Standard
+In Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+, the impact of COTELs on the revenue side of county finance in Colorado
+ was explored.
+ This chapter focuses on the other side of the equation: expenditure behavior.
+ This shift in focus is designed to structurally capture the duality of
+ public finance discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Duality-in-Public-Finance"
+
+\end_inset
+
+.
+ While popular discourse tends to decouple the two, revenues and expenditures
+ are instrinsically linked.
+ Each unit of revenue collected by a government is not used to cover the
+ cost of labor is redeployed as some programmatic output designed to either
+ increase the real income of constituents or increase their capacity to
+ generate income elsewhere.
+ Even though the topic of revenue could have consumed the entirety of this
+ dissertation, recognition of fiscal duality demands some level of balance
+ in topic selection.
+\end_layout
+
+\begin_layout Standard
+Whereas Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+ was concerned with the general capacity of a county to finance public services,
+ this chapter begins to explore the specific expenditure choices made in
+ the context of COTELs and fiscal clustering.
+ In particular, it seeks to understand whether or not counties that face
+ constraints under the TEL regime in Colorado make different choices about
+ how to spend public funds than they otherwise would.
+ Indeed, since we do not observe an alternative state of the world, such
+ a question raises certain difficulties.
+ The chief obstacle is the establishment of an artifical, yet defensible,
+ counterfactual scenario.
+ The analysis that follows leans on basic tools of machine learning to construct
+ such a scenario.
+ In so doing, this chapter serves two purposes.
+ First and foremost, it sheds light on the expenditure side impact of COTELs.
+ Second, it suggests that students of public finance can learn from the
+ methods of others, which sometimes have favorable characteristics that
+ help to mitigate deficiencies in more conventional methods.
+ In general, we should seek to employ complementary (but not redundant)
+ tools whenever possible, even if they are unconventional from the field's
+ perspective.
+ As discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Econometrics-as-Observation"
+
+\end_inset
+
+, consistent results from a variety of calculations lends credibility to
+ the analysis.
+\end_layout
+
 \begin_layout Section
 Why does a Shift in Expenditure Patterns Matter?
+\end_layout
+
+\begin_layout Standard
+In 
+\emph on
+The Pure Theory of Public Expenditure
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Samuelson1954"
+
+\end_inset
+
+, Paul Sameulson evaluated the implications of the joint consumption of
+ public goods.
+ This feature of public goods separates them from private goods along one
+ very important dimension: the feasibility of preference revelation.
+ Without the ability to determine what an individual would pay for the marginal
+ unit of public good 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+, there is no natural way to determine the efficient volume of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ that should be supplied to society.
+ Tiebout, on the other hand, argued that a critical variable had been omitted
+ from the analysis: mobility.
+\end_layout
+
+\begin_layout Quotation
+The consumer-voter may be viewed as picking that community which best satisfies
+ his preference pattern for public goods.
+ [...] The greater the number of communities and the greater the variance among
+ them, the closer the consumer will come to fully realizing his preference
+ position.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tiebout1956"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In effect, Tiebout was suggesting that the Samuelson model only applies
+ when only one supplier exists.
+ However, if many suppliers exist, the consumer-voter is able to choose
+ from among the set.
+ This choice provides the avenue for revealed preference.
+ That is, we can make claims about what consumers prefer based upon what
+ they choose to consume.
+ The same mechanism at work in the private sector could therefore be applied
+ to public spaces when mulitiple providers are present.
+ It is clear that returns to scale and consistency make the multi-provider
+ framework undesirable at the national level.
+ In a federal system, however, multiple providers must exist in the subnational
+ space, particularly at the local level.
+\end_layout
+
+\begin_layout Subsection
+Relevance of Tiebout in the COTEL Environment
+\end_layout
+
+\begin_layout Standard
+To further the implication of Tiebout's insight, there are two dimensions
+ along which the consumption evironment may provide the capacity for revealed
+ preference.
+ First, the ease with which preferences may be articulated increases with
+ the volume of choices, or in this case, the number of local governments
+ in the choice set.
+ For our purposes, this number is basically fixed.
+ While jurisdictions do come and go, over the study period (1993-2009) the
+ movement is negligible.
+ Second, for true options to exist, there must be differentiation across
+ the available products.
+ If one seeks something to eat and the choice is between an apple and ...
+ an identical apple, no true choice exists.
+ If a 
+\begin_inset Quotes eld
+\end_inset
+
+consumer-voter
+\begin_inset Quotes erd
+\end_inset
+
+ is to reveal his/her preference, there must be some distinction between
+ community characteristics that can elicit different return values from
+ his/her utility function.
+ The motivational hypothesis behind the analysis that follows is the idea
+ that differentiation across communities is non-trivially impacted by the
+ imposition of COTELs.
+\end_layout
+
+\begin_layout Standard
+This analysis seeks to complement the study of TEL impact on expenditure
+ behavior conducted by Daniel Mullins.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mullins2004"
+
+\end_inset
+
+ He finds that TELs do not uniformly constrain the finances of all affected
+ jurisdictions.
+ Rather, governments serving less affluent communities are most adversely
+ impacted by the limitation.
+ A looming question is, what is the role of spatial externalities emanating
+ from the local neighborhood? Spillovers can and do impact fiscal behavior
+ at the local level.
+ The question explored here is whether or not the variation in constraint
+ observed in Mullins (2004) remains when spillovers are taken into account.
+ That being said, the aim here is slightly different.
+ To reiterate, we want to compare each county to a simulated version of
+ itself to explore the impact of COTELs.
 \end_layout
 
 \begin_layout Section
 How are Shifts in Expenditure Patterns Measured?
 \end_layout
 
+\begin_layout Standard
+To fulfill the research objective, there are two major quesitons that must
+ be answered:
+\end_layout
+
+\begin_layout Enumerate
+How can one tell if a county has deflected from its preferred expenditure
+ portfolio?
+\end_layout
+
+\begin_layout Enumerate
+How can one measure how much it has deflected?
+\end_layout
+
+\begin_layout Standard
+In the ast, there have been three broad approaches taken to address such
+ problems.
+ First, the use of broad classifications have provided summary views of
+ shifts in behavior.
+ For example, on the revenue side, one may split revenues into two groups:
+ tax and non-tax.
+ The revenues can then be characterized by a single proportional value and
+ entered easily into a given model.
+ This is a useful approach, but there is a threat that disimilar cases will
+ be lumped together.
+ If we have limited resolution (only two dimensions of comparison in the
+ example), there is a limited ability to typify communities into distinct
+ groups.
+ 
+\end_layout
+
+\begin_layout Standard
+A second approach has been to highlight changes in a single function (e.g.
+ changes in infrastructure expenditure), which improves on the resolution
+ deficiency of the first approach.
+ However, the number of comparisons required to fully specify a jurisdictiona
+ across all functions and compare it with other jurisdictions quickly grows
+ unmanageable.
+ The primary reason is that, in a set of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+ jurisdictions, each function of a given jurisdiction 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n_i$
+\end_layout
+
+\end_inset
+
+ must be compared with the corresponding function of the other 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n-1$
+\end_layout
+
+\end_inset
+
+ jurisdictions.
+ One approach to this problem has been to limit comparisons to an earlier
+ version of the same jurisdiction, but this within-county scope strays from
+ our concern regarding differentiation across jurisdictions.
+\end_layout
+
+\begin_layout Standard
+A third approach is a regression decomposition framework, whereby the proportion
+al contribution of each function is represented as a regressor in the model.
+ This method is quite useful for uncovering the average effects of revenue
+ or expenditure composition on other variables of interest, but movement
+ in the expenditure profile is what we are pursuing in this case.
+ This movement must be the dependent variable, and we seek a measure that
+ tells us about the movement at the individual county level.
+\end_layout
+
+\begin_layout Standard
+The approach taken here is typification.
+ In the absence of a counterfactual, we can instead ask how counties of
+ a similar type respond to differing levels of COTEL constraint.
+ In effect, we are asking whether or not jurisdictions with similar expenditure
+ preferences at the outset still have similar behavior after COTELs have
+ been imposed.
+ If similar expenditure preferences persist, the interpretation is that
+ COTELs have not led to a change in the expenditure preferences of the county
+ in question.
+\end_layout
+
+\begin_layout Subsection
+Is It Reasonable to Construct Counterfactuals through Typification?
+\end_layout
+
+\begin_layout Standard
+The implicit assumption that comes with the typification approach is that
+ the same counties that share common preferences at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ will still share preferences at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t+l$
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$l>0$
+\end_layout
+
+\end_inset
+
+.
+ States differently, the assumption is one of constant covariance in preferences
+ across counties, over time.
+ This is certainly not a trivial assumption.
+ The relevant question is, what are the available alternatives?
+\end_layout
+
+\begin_layout Standard
+One could compare each county at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ with itself at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t+l$
+\end_layout
+
+\end_inset
+
+.
+ This approach would have the virtue of avoiding the assumption of constant
+ covariance in preferences.
+ However, it does assume that preferences 
+\emph on
+within a county
+\emph default
+ do not change at all.
+ Thus, the question becomes, which assumption is more offensive, constant
+ covariance or static preferences? To the extent that we know the macro-envirome
+nt is changing over time in Colorado, characterized at the very least by
+ significant increases in income and population, constant preferences seems
+ to fail the face validity test.
+ Furthermore, as we learned in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+, while fiscal clustering changed in intensity over time, the broad patterns
+ were fairly persistent.
+ This observation lends at least some support for the idea that the constant
+ covariance assumption does have some degree of merit.
+\end_layout
+
+\begin_layout Standard
+One could capture the evolution of preferences by comparing counties in
+ Colorado with counties in other states that do not operate in the COTEL
+ context.
+ This capture, though, is just a repackaging of the constant covariance
+ assumption.
+ The comparison in this case is just a single county instead of a county
+ type, which generally seems to be a riskier bet.
+ The potential gap between two members of a population will generally be
+ larger than the gap between a single member and some measure of the population'
+s central tendency.
+ To vary on this theme, given a population, the 
+\emph on
+expected
+\emph default
+ gap between member 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+ and any member 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i 
+\backslash
+neq j$
+\end_layout
+
+\end_inset
+
+
+\emph on
+ is the gap between member 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+$i$
+\end_layout
+
+\end_inset
+
+ and the population's measure of central tendency.
+
+\emph default
+ In a nutshell, the variance in the quality of the cross-state match over
+ time seems to generally wider than that which would be experienced via
+ the within-state typification approach.
+ This is not to mention that the cross-state match strategy would still
+ have to clear the hurdle of accommodating state-specific unobservables,
+ a hurdle that one need not grapple with when using the within-state typificatio
+n approach.
+\end_layout
+
+\begin_layout Standard
+The interval nature of the COTEL variables used in this study afford within-stat
+e matching, which would avoid the state-specific unobservable problem.
+ Such an approach, however, would not escape the single county variance
+ problem.
+ In general, measures of central tendency are more stable than individual
+ elements in a population, and thus are better suited to serve as reference
+ points.
+ In general, while constant covariance is a strong assumption, it does not
+ appear that other approaches avoid potentially more damaging assumptions.
+\end_layout
+
+\begin_layout Subsection
+Operationalizing County Types
+\end_layout
+
+\begin_layout Standard
+The challenging that arises when comparing jurisdictions to one another
+ is how one may uncover a simple comparison while still incorporating all
+ of the complexity of the entire expenditure function vector.
+ To achieve this, some form of dimensionality reduction is requires, as
+ is some method of understanding which jurisdictions are similar and which
+ ones are not.
+ The approach taken here is to place the counties in 
+\begin_inset Quotes eld
+\end_inset
+
+space
+\begin_inset Quotes erd
+\end_inset
+
+ and evaluate the distances between them.
+ Space, in this context, is the coordinate position in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+-dimensional field defined by an expenditure vector of length 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fiscal-Position-Concept"
+
+\end_inset
+
+).
+ This coordinate position will henceforth be referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+fiscal position
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fiscal Position Concept
+\end_layout
+
+\end_inset
+
+Fiscal Position Concept
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fiscal-Position-Concept"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/fisc_pos_concept.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The figure demonstrates the concept of fiscal position in two dimensions.
+ Suppose Counties A, B, and C all had only two expenditure functions: Infrastuct
+ure and Public Safety.
+ We can relate their expenditure profiles to one another by place the counties
+ in space according to the proportion of expenditures allocated to each
+ function.
+ In the figure, County A is more similar to County B in expenditure preferences
+ than County C.
+ This concept is scaleable to, if not depictable in, an aribitrary number
+ of dimensions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Counties that are 
+\begin_inset Quotes eld
+\end_inset
+
+close
+\begin_inset Quotes erd
+\end_inset
+
+ to each other in the expenditure space have similar proportional distributions
+ of expenditure.
+ We will capture county types as 
+\begin_inset Quotes eld
+\end_inset
+
+natural groupings
+\begin_inset Quotes erd
+\end_inset
+
+ of counties in this 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+-dimensional space.
+ In this framework, deflection of a given county from the group's preferences
+ will be identified by an increase in the distance between the county's
+ fiscal position and the central tendency in the group's set of fiscal positions.
+ To perform this task, two questions must be answered:
+\end_layout
+
+\begin_layout Enumerate
+How is the space defined?
+\end_layout
+
+\begin_layout Enumerate
+How are clusters recognized?
+\end_layout
+
+\begin_layout Standard
+With respect to the former, there were actually two parallel tracks taken
+ in the analysis.
+ One track proceeded as described above, in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+-dimensional space defined by the full number of expenditure functions compared.
+ While this approach facilitates interpretation of any single dimension,
+ the high number of dimensions is 1) difficult to contemplate all at once,
+ 2) impossible to visualize, and 3) vulnerable to sparsity in broad swaths
+ of the expenditure space.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall that estimation generally attempts to get at some form of local averaging.
+ To be efficient, that is, to minimize the variance in the estimate, it
+ requires that a number of observations are close to the location being
+ evaluated.
+ There are only 64 counties evaluated in any given year.
+ If they all varied in the dependent value and in only one independent dimension
+, we would likely be able to estimate with a high degree of precision.
+ As soon as a second independent dimension is added, however, the area in
+ which observations may reside increases dramatically.
+ It becomes much less likely that observations are close enough together
+ to provide the estimating precision experienced with only one independent
+ dimension.
+ This potential observation space increases yet again with a third dimension,
+ and further still with a fourth.
+ In general, each new dimension one adds to the model requires a substantial
+ increase in the number of observations needed to maintain the same estimating
+ precision.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+One approach that mitigates these concerns is the dimension-reduction technique
+ known as principal component analysis (PCA).
+ This method enables one to leverage linear combinations of the base dimension
+ set.
+ It is used here to place counties in three dimensional space, albeit at
+ a cost of a reduction in interpretability for each of the resulting dimensions.
+ In other words, moving along a given dimension in the principal component
+ space (e.g.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1=5d_1 + 3d_2 + 4d_3$
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$d_*$
+\end_layout
+
+\end_inset
+
+ could represent public safety) is much more difficult to characterize than
+ moving along a given dimension in the original 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+-dimensional space (e.g.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1=d_1$
+\end_layout
+
+\end_inset
+
+).
+ To the extent that our main concern is the magnitude of the distance between
+ a county and its start group, we can still pull useful information out
+ of this approach, even if it is difficult to explain precisely how a county
+ is different.
+ In any event, since one track's weakeness is the other's strength, the
+ parallel tracks are complementary.
+ If consistent results are seen across both, it adds strength to the findings.
+ Henceforth, the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+-dimensional track will be referred to as Track 1, while the PCA track will
+ be referred to as Track 2.
+\end_layout
+
+\begin_layout Standard
+To complicate things just a little further, Track 1 also employs a limited
+ dimensionality reduction protocol that will be known as Track 1a.
+ The protocol in Track 1a first groups the original 16 expenditure functions
+ into eight subgroups (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Subgroups-for-Track-1a"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Subgroups for Track 1a
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Subgroups-for-Track-1a"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Subgroup
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Constituent Functions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+General Government
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+General Government
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Judicial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Judicial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Public Safety
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Police, Fire, Other Public Safety
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Public Works
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Street, Trash, Other Public Works
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Health and Social Services
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Health, Social Services
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Captial Improvements and Debt Service
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capital Outlays, Principal Service, Interest Service
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Intergovernmental
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Outgoing Transfers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Miscellaneous
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recreation, Miscellaneous
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 What is the Expected Impact of TELs?
+\end_layout
+
+\begin_layout Standard
+The frame for this analysis is the 
+\begin_inset Quotes eld
+\end_inset
+
+expenditure wedge
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The
+\end_layout
+
+\begin_layout Standard
+If behavior shifts, a wedge is thrown...
 \end_layout
 
 \begin_layout Section
