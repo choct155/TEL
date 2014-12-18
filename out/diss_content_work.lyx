@@ -3,7 +3,14 @@
 \begin_document
 \begin_header
 \textclass book
+\begin_preamble
+\usepackage{amsmath}
+\end_preamble
 \use_default_options true
+\begin_modules
+boxedfloat
+modelfloat
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -575,6 +582,13 @@ In Colorado, all county fiscal years coincide with the calendar year.
 
 \begin_layout Subsection
 A Word on TELs as an Instrument of Democracy
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:TELs-as-democracy"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8685,6 +8699,45 @@ name "alg:Local-Moran's-I"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$I_i=
+\backslash
+frac{
+\backslash
+sum_j z_i w_{i,j} z_j}{
+\backslash
+sum_i z_i^2}=
+\backslash
+frac{
+\backslash
+sum_j (y_i-
+\backslash
+bar y)w_{i,j}(y_j-
+\backslash
+bar y)}{
+\backslash
+sum_i(y_i-
+\backslash
+bar y)^2}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -8718,6 +8771,17 @@ name "fig:LMI-Values"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Moran_colors.png
+	width 100text%
 
 \end_inset
 
@@ -8794,6 +8858,39 @@ name "alg:Getis-Ord-G"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$G_i(d)=
+\backslash
+frac{
+\backslash
+sum_j w_{i,j} (d) y_j - W_i 
+\backslash
+bar y(i)}{s(i)
+\backslash
+{[(n-1) S_{1i} - W_i^2]/(n-2)
+\backslash
+}^{(1/2)}},j 
+\backslash
+neq i$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -8827,6 +8924,17 @@ name "fig:GOG-Values"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/GO_colors.png
+	width 100text%
 
 \end_inset
 
@@ -9110,7 +9218,25 @@ name "fig:LMI-Plots"
 \end_layout
 
 \begin_layout Plain Layout
-Insert both LMI plots
+\align center
+\begin_inset Graphics
+	filename figures/moranIPlot_nt.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Mi_plot_ap_nt.png
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -9144,7 +9270,25 @@ name "fig:GOG-Plots"
 \end_layout
 
 \begin_layout Plain Layout
-Insert both GOG plots
+\align center
+\begin_inset Graphics
+	filename figures/goGPlot_nt.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/GO_plot_ap_nt.png
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -12391,6 +12535,13 @@ The approach taken here is typification.
 
 \begin_layout Subsection
 Is It Reasonable to Construct Counterfactuals through Typification?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Typification-Reasonable"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12542,7 +12693,6 @@ status open
 
 \begin_layout Plain Layout
 
-\emph on
 $i$
 \end_layout
 
@@ -12742,12 +12892,23 @@ How is the space defined?
 \end_layout
 
 \begin_layout Enumerate
-How are clusters recognized?
+How are clusters identified?
+\end_layout
+
+\begin_layout Subsubsection
+Defining Fiscal Space
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Defining-Fiscal-Space"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-With respect to the former, there were actually two parallel tracks taken
- in the analysis.
+To define the space in which fiscal positions were mapped, there were actually
+ two parallel tracks taken in the analysis.
  One track proceeded as described above, in the 
 \begin_inset ERT
 status open
@@ -13134,6 +13295,1328 @@ Recreation, Miscellaneous
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second step of this protocol leverages the fact that our primary concern
+ is the impact of COTEL intensity on fiscal behavior.
+ Consequently, only those dimensions that are actually affected by TEL impositio
+n are retained.
+ In other words, inclusion in the final model is determined by whether or
+ not the expenditure category has a meaningful relationship with COTEL intensity
+, as indicated by a series of bivariate regressions.
+ The procedure for selection of subgroups is discussed in Paragraph 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "par:Selection-of-Expenditure-Subgroups"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Selection of Expenditure Subgroups
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Selection-of-Expenditure-Subgroups"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To select from the subgroups identified in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Subgroups-for-Track-1a"
+
+\end_inset
+
+, there are two properties that must be identified:
+\end_layout
+
+\begin_layout Enumerate
+The extent of variation in each subgroup's proportional contribution to
+ the entire expenditure portfolio.
+\end_layout
+
+\begin_layout Enumerate
+The amount of each subgroup's variation 
+\emph on
+that can be associated with variance in COTEL intensity.
+\end_layout
+
+\begin_layout Standard
+The first conditions the findings of the second.
+ Though in reality the impact of COTEL intensity has been evaluated for
+ all subgroups, those subgroups that vary the least are not as desirable.
+ The variation in subgroup contribution can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Distribution-of-Subgroup-Proportions"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Expenditure Subgroup Proportions
+\end_layout
+
+\end_inset
+
+Distribution of Subgroup Proportional Contribution to Total Expenditures
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Distribution-of-Subgroup-Proportions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/exp_subgroup_dist.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To associate movement in each subgroup as a function of COTEL intensity,
+ a series of models have been run on two different COTEL intensity concepts:
+\end_layout
+
+\begin_layout Description
+Intensity
+\begin_inset space ~
+\end_inset
+
+flow is the gap between allowable revenue yield under TABOR/SLPTR and that
+ which would be possible based upon economic conditions within a county.
+\end_layout
+
+\begin_layout Description
+Intensity
+\begin_inset space ~
+\end_inset
+
+stock is the cumulative impact of intensity flow.
+\end_layout
+
+\begin_layout Standard
+For each intensity concept, two sets of models tested association with transform
+ed versions of the subgroup proportions.
+ These transforms, demeaning and standardization, were employed to capture
+ only within county variation due to COTEL intensity.
+ As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Intensity-vs-Exp-Subgroup"
+
+\end_inset
+
+, both sets of models yielded similar results.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+COTEL Impact on Expenditure Subgroups
+\end_layout
+
+\end_inset
+
+Impact of COTEL Intensity on Individual Expenditure Subgroups
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Intensity-vs-Exp-Subgroup"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/COTEL_intensity_vs_exp_subgroups.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficient estimates are captured as the y-axis position, the fit (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R^2$
+\end_layout
+
+\end_inset
+
+) by the size of the bubble, and the statistical significance by the color.
+ As can be seen, intensity flow had negligible impacts on the expenditure
+ subgroups.
+ The intensity stock models identified three subgroups of interest: health
+ and social services, public safety, and public works.
+\end_layout
+
+\begin_layout Standard
+It is interesting to note that the two dimension reduction procedures (PCA
+ and regression selection) highlight different aspects of the fiscal portfolio.
+ The variation in public works-related expenditures is a common theme, as
+ is health and social services.
+ However, there is some disagreement in the public safety area.
+ This underscores the need for three flights of models using the distances
+ calculated via Track 1, Track 1a, and Track 2.
+\end_layout
+
+\begin_layout Subsubsection
+Identifying County Expenditure Types
+\end_layout
+
+\begin_layout Standard
+A central pillar of this analysis involves the capacity to assign types
+ to individual counties.
+ Which rule should be used to group counties when no a priori classification
+ information exists? What is required is a classification scheme that is
+ emergent, conditional on the data.
+ The approach employed here is 
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+-means clustering
+\emph default
+.
+ The technique, implemented via the expression in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:k-Means-Clustering"
+
+\end_inset
+
+, minimizes the total distance between members of the same cluster (within-group
+ variance).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+-Means Clustering
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:k-Means-Clustering"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+mathrm{argmin}_S 
+\backslash
+sum_{i=1}^k 
+\backslash
+sum_{x_j 
+\backslash
+in S_i} 
+\backslash
+| x_j-
+\backslash
+mu_i 
+\backslash
+|^2$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The expression minimizes the sum of all distances between each point, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_j$
+\end_layout
+
+\end_inset
+
+, and its associated centroid, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu_i$
+\end_layout
+
+\end_inset
+
+, within each cluster, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_i$
+\end_layout
+
+\end_inset
+
+.
+ There are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ clusters; 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ is given as a parametric input.
+ The expression is referred to as the minimum sum of squared residuals (SSM).
+ Insofar as this approach defines groups without pre-existing classification
+ attributes, it is considered a member of the 
+\emph on
+unsupervised learning
+\emph default
+ class of estimators.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The definition of position is of central importance, and it varies with
+ context.
+ In the current case, each point (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_j$
+\end_layout
+
+\end_inset
+
+) represents the fiscal position of a county in one of the fiscal spaces
+ defined in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Defining-Fiscal-Space"
+
+\end_inset
+
+.
+ In a well behaved case, in which the clusters are reasonably well defined,
+ the clustering algorithm returns groups as seen in Figure .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Well Behaved Clusters
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Well-Behaved-Clusters"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/kmeans_ideal.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Group membership is defined here by color.
+ The centroids of each group, or cluster, are represented by the large markers
+ of each group's color.
+ Note that the centroid markers 
+\emph on
+do not represent observations.
+
+\emph default
+ Rather, they are calculated measures of within-cluster central tendency.
+ The image is attributed to the documentation of the 
+\begin_inset CommandInset href
+LatexCommand href
+name "scikit-learn library"
+target "http://scikit-learn.org/stable/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our fiscal position data is not nearly as well behaved, but 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+-means clustering still provides a framework for cluster selection.
+ From an operational perspective, the clustering analysis was performed
+ based upon fiscal positions in the PCA space.
+ The reasons for this are two-fold.
+ First, the dimension reduction techniques (PCA and regression filtering)
+ allow us to distill down to three dimensions, which facilitates visualization.
+ As it turns out, visualization is a very useful way of checking the face
+ validity of the algorithm's output.
+ Second, PCA is preferable relative to the regression filtering approach
+ because it retains nearly all of the information in the original set.
+ This is because the new dimensions are just complex combinations of the
+ old dimensions, and the first three components explain 88.5% of the variation
+ in the data (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Variation-in-Exp-PCA"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Principal Components of Expenditure
+\end_layout
+
+\end_inset
+
+Variation in Principal Components of the Expenditure Portfolio
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Variation-in-Exp-PCA"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/exp_pca.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall that the major drawback of the PCA approach is the interpretation
+ of movement along one of the compound dimensions that remain.
+ However, if all that matters for this particular operation is the proximity
+ of fiscal positions across counties, interpretation of the linear combinations
+ of underlying dimensions is not the principal concern.
+ Consequently, the space defined by PCA is unambiguously superior to the
+ space defined by regression filtering for the purpose of identifying clusters
+ of county fiscal preferences.
+\end_layout
+
+\begin_layout Paragraph
+Choosing the Appropriate Number of Clusters 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is important to reiterate that the use of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+-means clustering requires the number of groups, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, to be a parametric input.
+ Therefore, there is a certain amount of subjectivity involved, because
+ the optimal value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ is unknown.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If, for example, one were to choose 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ such that the aggregate distance between points within each cluster was
+ minimized, one would find that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k 
+\backslash
+to n$
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+ is the number of observations.
+ In other words, each cluster would shrink to contain only a single observation.
+\end_layout
+
+\end_inset
+
+ This subjectivity is particularly prominent when group boundaries are not
+ clean.
+ The fiscal positions of Colorado counties in 1975 are displayed in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fiscal-Positions-1975"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fiscal Positions - 1975
+\end_layout
+
+\end_inset
+
+Fiscal Positions of Counties in Colorado in 1975
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fiscal-Positions-1975"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+a
+\begin_inset Graphics
+	filename figures/fisc_pos1975.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Note that the fiscal positions are not as well-behaved as the ideal case
+ above.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To lessen the influence of the subjectivity in selecting the number of groups,
+ this analysis tested a range of values for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+ This allows one to evaluate the impact on SSM of additional clusters.
+ That being said, variance in group count, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, is a useful but insufficient means for identifying the correct clustering
+ profile.
+ On the one hand, SSM is 
+\emph on
+always
+\emph default
+ a non-increasing function of the number of groups 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+ On the other hand, it is simply desirable to minimize the number of required
+ groups because evaluating the dynamics of a group is less than useful if
+ it has only a few members.
+ To mitigate the tension between these two desirable properties and determine
+ the number of clusters to be used for econometric analysis, three tests
+ augmented visual inspection of clustering:
+\end_layout
+
+\begin_layout Enumerate
+The first method evaluates the marginal contribution to 
+\emph on
+between-cluster variation
+\emph default
+ of each cluster.
+ The technique seeks to understand movement in the ratio of between-cluster
+ variation to total variation in the sample.
+ The desirable number of groups is then the value, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, at which the increase in the ratio increase in the interval 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$[k-1,k]$
+\end_layout
+
+\end_inset
+
+ is significantly higher than the ratio increase in the interval 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$[k,k+1]$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The second method evaluates the marginal contribution to 
+\emph on
+within-cluster variation
+\emph default
+ of each cluster.
+ As previously indicated, this function decreases with increases in the
+ number of groups 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+ When intersected with the first method, the result is a balancing of separation
+ across clusters and similarity within clusters.
+\end_layout
+
+\begin_layout Enumerate
+The third method is a popular selection mechanism known as the 
+\begin_inset Quotes eld
+\end_inset
+
+silhouette score
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In this case, the number of clusters is identified by maximizing the aggregate
+ distances of observations in cluster 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+ from the centroid of all groups 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+ (where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i 
+\backslash
+neq j$
+\end_layout
+
+\end_inset
+
+), 
+\emph on
+relative to the points' distance from their own centroid in group 
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The test ensemble suggested that the optimal cluster count, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, lies on the interval 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$[5,8]$
+\end_layout
+
+\end_inset
+
+.
+ Within these bounds, selection proceeded via visual inspection of the clusterin
+g outcomes at each value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+ Ultimately, five clusters were found to provide the cleanest separation
+ of groups.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fiscal Clusters 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k=5$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Fiscal Clusters 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k=5$
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fiscal-Clusters-k5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/fisc_pos1975_k5.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Visual identification of clusters in 3-dimensional space is difficult with
+ static views.
+ The selection process leveraged animated rotation of several plots to facilitat
+e cluster count choice.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Do Distances to Cluster Centroids Vary?
+\end_layout
+
+\begin_layout Standard
+Just as it was necessary to establish variation in fiscal clustering in
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+, the existence of meaningful variation in the distances between individual
+ counties and their cluster's centroid must be established here.
+ Without said variation, we would be unable to associate variation in COTEL
+ intensity with variation in the distance of each county from its centroid.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall that distances to cluster centroids are how we measure wedges between
+ an individual county and the prevalent expenditure preference schedule
+ of similar counties.
+\end_layout
+
+\end_inset
+
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Within-Cluster-Variation"
+
+\end_inset
+
+ we see violinplots of cluster distances within each group, as well as the
+ coefficient of variation for county distances for each group.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Within-Cluster Variation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Within-Cluster-Variation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/clust_dist_variance.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is interesting to note differing variation profiles within each group,
+ which supports the idea that they are rightfully distinct in this analysis.
+ As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Within-Cluster-Variation-by-Year"
+
+\end_inset
+
+, the overall distance to cluster increases modestly over time.
+ In other words, there is some evidence of the variety in expenditure profiles
+ across all counties increasing over time.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Within-Cluster Variation by Year
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Within-Cluster-Variation-by-Year"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/clust_dist_variance_yr.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Caveat Emptor
+\end_layout
+
+\begin_layout Standard
+The last view considered prior to modeling is the 
+\emph on
+within-county 
+\emph default
+variation in distance to the associated centroid.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cty-clust-dist-var"
+
+\end_inset
+
+, the distribution of cluster distances across years is displayed by county.
+ On the positive side, it reinforces the idea that counties within a cluster
+ can behave quite differently over time.
+ The analysis seeks to leverage this variation in behavior to understand
+ the impact of COTELs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Within-County Variation of Distance to Cluster
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cty-clust-dist-var"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/clustDist_var_cty.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The counties are colored by type.
+ Note that these distances are not measured from the same location, but
+ rather the location of the centroid of each county's associated type.
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
@@ -13141,6 +14624,139 @@ Recreation, Miscellaneous
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+However, this view does some violence to the idea of constant covariance
+ in within-cluster expenditure preferences.
+ First, while we seek to identify within-cluster differences associated
+ with COTELs, other differences capture inherent disimilarity.
+ Second, there is an assumption that counties do not change types, but it
+ is plausible that the variation seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cty-clust-dist-var"
+
+\end_inset
+
+ would lead to different types at different times.
+ Again, if this is due to COTELs, this is a useful finding.
+ If it is do to other factors, it again highlights inherent disimilarity.
+\end_layout
+
+\begin_layout Standard
+Thus, some weaknesses of the constant covariance approach certainly exist,
+ but as discussed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Typification-Reasonable"
+
+\end_inset
+
+, it is likely to be a less costly assumption than alternative assumptions
+ that can be made.
+ In general, 
+\emph on
+there does not exist a unique approach that may reveal the fundamental nature
+ of the phenomenon in isolation.
+ 
+\emph default
+Hoover reflects usefully on the general selection of the estimation approach:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+[T]he thorough-going optimization implicit in new classicism suggests that
+ everything depends on everything else, not just in theory, but in practice.
+ [...] Thus, theory presents us with some a priori (in the sense of not 
+\emph on
+currently
+\emph default
+ questioned) restrictions on empirical investigation; while the empirical
+ results help us generate beliefs (or new theories) which are prior to further
+ investigations.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hoover1994"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In other words, we restrict the lens through which we view the observable
+ implications of some unseen phenomenon.
+ While the lens may be defensible, each choice suffers from the weakness
+ of our a priori belief about how said lens ought to be defined.
+ No single view should be evaluated as having incorporated the full complexity
+ of the system under study.
+ Rather, we take simplified cuts at the data generating process, and converge
+ on 
+\begin_inset Quotes eld
+\end_inset
+
+reality
+\begin_inset Quotes erd
+\end_inset
+
+, with confidence increasing in the number of supporting analytic outcomes.
+\end_layout
+
+\begin_layout Standard
+Given the basic establishment of statistical identification, it is important
+ to consider the impact of the boundaries imposed by a given method (e.g.
+ constant covariance).
+ The concern, from a utility standpoint, is whether or not the boundaries
+ are responsible for driving measurement outcomes, as opposed to the underlying
+ data generating process.
+ Indeed, it was with this liability in mind that the decision was made to
+ leverage data driven classification in the first place.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+-means clustering does take a single parameter, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, but it does not otherwise impose any distributional assumptions.
+\end_layout
+
+\begin_layout Standard
+In the end, the approach taken here must not be viewed as a substitute for
+ the views that would be revealed by other approaches, inclusive of those
+ considered in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Typification-Reasonable"
+
+\end_inset
+
+.
+ Rather, this approach, unique to the best of the author's knowledge, provides
+ an important view of the underlying data that should be considered in a
+ comprehensive assessment.
 \end_layout
 
 \begin_layout Section
@@ -13157,15 +14773,1552 @@ expenditure wedge
 \end_inset
 
 .
- The
+ Do constrained jurisdictions deflect from their preferred expenditure bundles?
+ It is hypothesized that any such deflection would be in the direction of
+ providing a minimum bundle of services, and it is expected that the minimum
+ bundle reflects a fairly consistent set of needs for any general purpose
+ jurisdiction (Model 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "mod:exp_impact"
+
+\end_inset
+
+).
+ Therefore, paring down to the minimum bundle would limit the capacity of
+ a given jurisdiction to distinguish itself from other jurisdictions.
+ It is further expected that the impact of this convergence will be strongest
+ in low-income jurisdictions, where resources are already constrained.
+ Indeed, the work of Mullins and Joyce 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joyce_Mullins1991"
+
+\end_inset
+
+ has revealed that binding TELs are associated with shifts of expenditure
+ responsibility to the state level, which promotes uniformity in service
+ delivery (or at least in the resources allocated).
+ This study evaluates what counties in Colorado do with the remaining resources.
+ What does their expenditure profile look like when TELs have taken effect?
 \end_layout
 
 \begin_layout Standard
-If behavior shifts, a wedge is thrown...
+\begin_inset Float model
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+COTELs and Expenditure Behavior
+\end_layout
+
+\end_inset
+
+What is the Nature of COTEL Impact on Expenditure Behavior?
+\begin_inset CommandInset label
+LatexCommand label
+name "mod:exp_impact"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Expenditure
+\begin_inset space ~
+\end_inset
+
+Differentiation = 
+\emph on
+f
+\emph default
+(Resources to Cover the Minimum Service Bundle, Excess Resources)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 5bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 5bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Resources
+\begin_inset space ~
+\end_inset
+
+to
+\begin_inset space ~
+\end_inset
+
+Cover
+\begin_inset space ~
+\end_inset
+
+the
+\begin_inset space ~
+\end_inset
+
+Minimum
+\begin_inset space ~
+\end_inset
+
+Service
+\begin_inset space ~
+\end_inset
+
+Bundle = 
+\emph on
+f
+\emph default
+(Demographic Factors, Geographic Environment)
+\end_layout
+
+\begin_layout Description
+Excess
+\begin_inset space ~
+\end_inset
+
+Resources = 
+\emph on
+f
+\emph default
+(Revenue Base Dynamics, Institutional Restrictions on Revenue)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In effect, the model in this study suggests that institutional restrictions
+ on revenue (e.g.
+ tax and expenditure limitations) restrict the resources available to cover
+ services that would allow a given jurisdiction to differentiate itself
+ from others.
+ In reality, this is a gross simplification.
+ There is no natural boundary between revenues used to cover basic services
+ and those used to cover the additional services preferred by constituents.
+ In general, this model suggests convergence in expenditure behavior would
+ stem from the imposition of COTELs.
+\end_layout
+
+\end_inset
+
+If expenditure behavior shifts, a wedge is thrown between the realized and
+ preferred tax-expenditure bundle for a given county.
+ For prospective residents, the choice set is more limited, and the properties
+ that may have drawn them to a particular county are less of a factor.
+ For existing residents, an artificial difference has been created between
+ the initial, expected utility that factored into the decision to site in
+ the county and the realized utility after the expenditure shift has occurred.
+ In practice, this may or may not lead to a reshuffling for those residents
+ that can afford to move.
+ Those that cannot simply experience a loss in utility.
+ Furthermore, if the choices in close proximity lose some of their differentiati
+on, the cost of relocating to a more 
+\begin_inset Quotes eld
+\end_inset
+
+desirable
+\begin_inset Quotes erd
+\end_inset
+
+ county increases.
+ In any event, understanding the impact of loss in differentiation is important
+ for a comprehensive view of COTEL impact.
 \end_layout
 
 \begin_layout Section
 Do TELs Shift Patterns of Expenditure?
+\end_layout
+
+\begin_layout Standard
+Our primary inquiry centers on whether or not the distance of a given county
+ from the average preference position of counties of that type can be explained
+ to some meaningful degree by the intensity of the COTEL constraint acting
+ on said county.
+ In measuring this, it is important to control for confounding economic
+ processes that may impact cluster distance.
+ These economic processes may occur in both the current observation's county,
+ and the adjoining counties that may share bases of economic activity.
+ In other words, the model must account for both the primary county, and
+ the counties in the local neighborhood.
+ Model 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "mod:clust-dist-model"
+
+\end_inset
+
+ captures this process in a general way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float model
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Determinants of Cluster Distance
+\end_layout
+
+\end_inset
+
+Modeling Determinants of Cluster Distance
+\begin_inset CommandInset label
+LatexCommand label
+name "mod:clust-dist-model"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$y_{it} = 
+\backslash
+underbrace{W y_{i_-,t} 
+\backslash
+Gamma_1}_{(1)} + 
+\backslash
+underbrace{
+\backslash
+sum_{l=1}^L y_{i,t-l}
+\backslash
+Gamma_2}_{(2)} + 
+\backslash
+underbrace{Z_{i,t}
+\backslash
+beta}_{(3)} + 
+\backslash
+epsilon_{i,t}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Z_{i,t}
+\backslash
+beta = 
+\backslash
+underbrace{W X_{i_-,t} 
+\backslash
+beta_1}_{
+\backslash
+text{(3a)}} + 
+\backslash
+underbrace{X_{i,t} 
+\backslash
+beta_2}_{
+\backslash
+text{(3b)}} + 
+\backslash
+underbrace{X_t 
+\backslash
+beta_3}_{
+\backslash
+text{(3c)}}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y_{i,t}$
+\end_layout
+
+\end_inset
+
+ is the dependent variable (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$clust
+\backslash
+_dist$
+\end_layout
+
+\end_inset
+
+), the distance of county 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+ at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ from the centroid of its cluster (a.k.a.
+ cluster distance).
+ Note that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y_{i_-,t}$
+\end_layout
+
+\end_inset
+
+ denotes the cluster distance of each county 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+ at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i 
+\backslash
+neq j$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W$
+\end_layout
+
+\end_inset
+
+ is the weight matrix that defines the 
+\begin_inset Quotes eld
+\end_inset
+
+local neighborhood
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Gamma$
+\end_layout
+
+\end_inset
+
+ represents the coefficients of autoregressive terms.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Gamma_1$
+\end_layout
+
+\end_inset
+
+ is for the spatially autoregressive effect, while 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Gamma_2$
+\end_layout
+
+\end_inset
+
+ is for the temporally autoregressive effect.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{i,t}$
+\end_layout
+
+\end_inset
+
+ is a vector of regressors that includes the primary variables of interest,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+.
+ These include factors from the local neighborhood, county-specific factors,
+ and statewide factors.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+epsilon_{i,t}$
+\end_layout
+
+\end_inset
+
+ is the error term.
+\end_layout
+
+\begin_layout Plain Layout
+The model can be broken down into components, each of which are numbered
+ above.
+ The top line equation captures spatial autoregression in cluster distance
+ (1), temporal autoregression in cluster distance (2), and forces acting
+ on the primary county at time 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ (3).
+ The second equation unpacks term 3.
+ It captures select properties of counties in the local neighborhood (3a),
+ county-specific properties (3b), and statewide variables (3c).
+ The breakdown of variables in term 3 are as follows:
+\end_layout
+
+\begin_layout Description
+Term
+\begin_inset space ~
+\end_inset
+
+3a includes total expenditures (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$EXP
+\backslash
+_TOTAL$
+\end_layout
+
+\end_inset
+
+), population growth in the preceding year (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pop
+\backslash
+_growth$
+\end_layout
+
+\end_inset
+
+), and the ratio of vacant housing units to total housing units (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$vac
+\backslash
+_rate$
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Term
+\begin_inset space ~
+\end_inset
+
+3b includes total expenditures (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$EXP
+\backslash
+_TOTAL$
+\end_layout
+
+\end_inset
+
+), population growth in the preceding year (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pop
+\backslash
+_growth$
+\end_layout
+
+\end_inset
+
+), intergovernmental revenue per capita (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcintgov$
+\end_layout
+
+\end_inset
+
+), total revenue per capita (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcrev$
+\end_layout
+
+\end_inset
+
+), annual payroll per capita 
+(
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcap$
+\end_layout
+
+\end_inset
+
+), COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+), and the Gallagher ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+).
+ The term also includes an interaction between COTEL intensity and total
+ expenditures (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$exp_intensity$
+\end_layout
+
+\end_inset
+
+) to capture variance in intensity impact along the fiscal resources dimension.
+ 
+\end_layout
+
+\begin_layout Description
+Term
+\begin_inset space ~
+\end_inset
+
+3c includes a single variable, gross state product in the previous year
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$gsp.L$
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In practice, Model 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "mod:clust-dist-model"
+
+\end_inset
+
+ is captured in two separate model classes.
+ The first is the spatially autoregressive, cross-sectional model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$y_i = Wy_{i_-}
+\backslash
+Gamma + Z
+\backslash
+beta + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second is the conventional temporally autoregressive model; it is generally
+ known as an AR(1) model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$y_{i,t} = y_{i,t-1}
+\backslash
+Gamma + Z_{i,t}
+\backslash
+beta + 
+\backslash
+epsilon_{i,t}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This split is largely due to the relative lack of spatial panel estimators
+ at the time of analysis.
+\end_layout
+
+\begin_layout Subsection
+Variable Properties
+\end_layout
+
+\begin_layout Standard
+As can be seen in Figure , the model terms have very different variation
+ profiles.
+ While cluster distance (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$dist
+\backslash
+_clust$
+\end_layout
+
+\end_inset
+
+) does vary, the normalized view offered by the coefficient of variation
+ indicates that cluster distance does not vary nearly as much as the other
+ variables included in the analysis.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that any of the variables names preceded by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$SL
+\backslash
+_$
+\end_layout
+
+\end_inset
+
+ indicate spatial lag versions of the base variable.
+ That is, the value captures the weighted average of all values in the local
+ neighborhood as defined by weight matrix 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W$
+\end_layout
+
+\end_inset
+
+, except for the primary county 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Full Expenditure Portfolio Variables
+\end_layout
+
+\end_inset
+
+Variation in Model Variables - Full Expenditure Portfolio Distance
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Var-Variation-Full"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/ExpDiv_varCorr.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Note that COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+) is significantly correlated only with the Gallagher ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+) and economic capacity (as measured by annual payroll per capita; 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pcap$
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our measure of similarity, or disimilarity as the case may be, is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$clust
+\backslash
+_dist$
+\end_layout
+
+\end_inset
+
+.
+ It proves to be useful, but it would be more so if it varied over a greater
+ range.
+ Marginal impacts of regressors are easier to identify when they are associated
+ with larger absolute spans in the range of dependent values.
+ If a given dependent variable takes one of only two values, the contributions
+ of each regressor is more difficult to distinguish relative to the case
+ in which a dependent variable 
+\emph on
+with the same support 
+\emph default
+(that is, the same range of feasible values) takes any one of 100 values.
+\end_layout
+
+\begin_layout Standard
+It would be interesting to know if the correlation dynamics shift based
+ upon the definition of cluster distance (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Var-Variation-Alt-Dist"
+
+\end_inset
+
+).
+ Recall that while all three distances are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+ell^2$
+\end_layout
+
+\end_inset
+
+ norms (a.k.a.
+ Euclidean distance), the dimensionality of the space in which these distances
+ are calculated varies in number and concept.
+ For example, the full expenditure portfolio set has 16 dimensions, one
+ for each expenditure concept.
+ In the PCA set, there are three dimensions, and each is a linear combination
+ of some subset of the original 16.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Alternative Distance Variables
+\end_layout
+
+\end_inset
+
+Variation in Model Variables - Alternative Distance Measures
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Var-Variation-Alt-Dist"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/ExpDiv_varCorr_PCA.png
+	width 40text%
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 2bp
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/ExpDiv_varCorr_bivFilt.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The significance of assosciation between cluster distance (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$dist
+\backslash
+_clust$
+\end_layout
+
+\end_inset
+
+) and all other variables changes dramatically when distance is measured
+ in the PCA space.
+ With respect to the regression filtered space, the relationship between
+ cluster distance and COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+) is quite similar to full portfolio case.
+ Furthermore, the relationship between cluster distance and the Gallagher
+ ratio (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$prop
+\backslash
+_ratio$
+\end_layout
+
+\end_inset
+
+) is virtually identical.
+ This suggests that the three dimensions that remain were driving association
+ in the full portfolio case anyway, so paring down to them did not have
+ as dramatic an effect as the switch to the PCA case.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While the statistical significance of association between cluster distance
+ and the COTEL variables does not meaningfully change, the magnitude of
+ association dropped in both cases.
+ Moreover, the PCA distance has fairly low association magnitudes with nearly
+ all variables.
+ This suggests a substantially different variation profile for PCA distance.
+ One way to get a sense of how distance behavior varies across the three
+ frames is to observe the distribution of distance values by county and
+ basis for distance calculation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cluster Distance by Calculation Method
+\end_layout
+
+\end_inset
+
+Cluster Distance by Calculation Method by County
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:clust-dist-by-method"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/ExpDiv_ctyVar_distCalc.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The space in which cluster distance was measured is indicated by color.
+ The 
+\color red
+red boxplots indicate the distance was calculated across the entire expenditure
+ portfolio
+\color inherit
+.
+ The 
+\color blue
+bivariate regression filtering space is show in blue
+\color inherit
+, and the 
+\color green
+PCA is shown in green
+\color inherit
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The boxplot in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:clust-dist-by-method"
+
+\end_inset
+
+ is certainly a busy visual display of variation in cluster distances.
+ The takeway, however, is not a precise estimation of variation.
+ Rather, this chart shows that the distribution of values differs markedly
+ by calculation method.
+ To the extent that these distributions neither perfectly overlap nor exhibit
+ fixed relationships observed in all counties, it can be inferred that the
+ results of this analysis may be sensitive to calculation methods.
+ That being said, consistent findings from these models in spite of this
+ variation would be strong evidence in support of a real relationship existing
+ inthe underlying data generating process (see Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Econometrics-as-Observation"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Cross-Sectional Models
+\end_layout
+
+\begin_layout Standard
+The abstract and operational versions of the cross-sectional specification
+ are provided in Model .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float model
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+SLM - Expenditure Divergence
+\end_layout
+
+\end_inset
+
+Cross-Sectional Estimation of Expenditure Divergence
+\begin_inset CommandInset label
+LatexCommand label
+name "mod:Cross-Sectional-Estimation-of-Exp-Diverg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$y_i = 
+\backslash
+underbrace{W y_{i_-}
+\backslash
+Gamma}_{(1)} + 
+\backslash
+underbrace{Z
+\backslash
+beta}_{(3)} + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Z
+\backslash
+beta = 
+\backslash
+underbrace{WX_{i_-}
+\backslash
+beta_1}_{(3a)} + 
+\backslash
+underbrace{X_i
+\backslash
+beta_2}_{(3b)}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In terms of the variables, the model is as follows:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$dist
+\backslash
+_clust_i = 
+\backslash
+underbrace{W 
+\backslash
+times (dist
+\backslash
+_clust 
+\backslash
+hspace{3bp} 
+\backslash
+forall 
+\backslash
+hspace{3bp} j)}_{(1)} +$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+underbrace{SL
+\backslash
+_EXP
+\backslash
+_TOTAL + SL
+\backslash
+_pop
+\backslash
+_growth + SL
+\backslash
+_vac
+\backslash
+_rate}_{(3a)} +$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+underbrace{EXP
+\backslash
+_TOTAL + pop
+\backslash
+_growth + pcintgov + pcrev + pcap + }_{(3b)}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+underbrace{prop
+\backslash
+_ratio + intensity
+\backslash
+_stock + EXP
+\backslash
+_TOTAL*intensity
+\backslash
+_stock}_{(3b)}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i 
+\backslash
+neq j 
+\backslash
+hspace{3bp} 
+\backslash
+forall 
+\backslash
+hspace{3bp} i 
+\backslash
+in S$
+\end_layout
+
+\end_inset
+
+ and the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$SL
+\backslash
+_$
+\end_layout
+
+\end_inset
+
+ prefix indicates the spatial lag (the average value in the local neighborhood,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S$
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -13189,6 +16342,89 @@ name "chap:DeBrucing"
 
 \begin_layout Section
 Introduction
+\end_layout
+
+\begin_layout Standard
+It is clear that COTELs have changed the operating space for local fiscal
+ managers in Colorado.
+ The designers did, however, leave room for local autonomy.
+ Local jurisdictions retained the right to exempt themselves from limitation,
+ making room for a useful social inquiry.
+ If local jurisdictions had the freedom to opt out, was the imposition of
+ COTELs actually a means to better align constituent preferences and fiscal
+ outcomes? Had the absence of COTELs enabled a disconnect between constituent
+ desires and the actions of local public finance officials? 
+\end_layout
+
+\begin_layout Standard
+These motivating questions harken back to the discussion of TELs as instruments
+ of democracy in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:TELs-as-democracy"
+
+\end_inset
+
+.
+ TELs are generally blunt objects, but they may serve as an attractive way
+ to circumvent regular order, which may suffer from perceived deficiencies.
+ As such, they may very well push fiscal outcomes towards accordance with
+ constituent preferences.
+ The question is whether or not the cure is worse than the disease.
+ Chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Expenditure-Patterns"
+
+\end_inset
+
+ explored limited aspects of this question.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter partially explores the same question from a different angle.
+ Before one can compare the 
+\begin_inset Quotes eld
+\end_inset
+
+cure
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+disease
+\begin_inset Quotes erd
+\end_inset
+
+, one must understand the extent to which the diseases is a problem.
+ In other words, we must identify voter preferences before we know if COTELs
+ lead fiscal outcomes to converge on them.
+ Since we do not directly observe voter preferences, identifying them is
+ no small ask.
+ It requires 
+\end_layout
+
+\begin_layout Standard
+It explores whether or not the outcomes of local overrides, or 
+\begin_inset Quotes eld
+\end_inset
+
+deBrucing
+\begin_inset Quotes erd
+\end_inset
+
+ attempts, can be anticipated based upon county conditions and ballot design.
 \end_layout
 
 \begin_layout Section
