@@ -582,6 +582,13 @@ In Colorado, all county fiscal years coincide with the calendar year.
 
 \begin_layout Subsection
 A Word on TELs as an Instrument of Democracy
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:TELs-as-democracy"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -16337,16 +16344,102 @@ name "chap:DeBrucing"
 Introduction
 \end_layout
 
-\begin_layout Section
-Can TELs Align Fiscal Outcomes and Voter Preferences?
+\begin_layout Standard
+It is clear that COTELs have changed the operating space for local fiscal
+ managers in Colorado.
+ The designers did, however, leave room for local autonomy.
+ Local jurisdictions retained the right to exempt themselves from limitation,
+ making room for a useful social inquiry.
+ If local jurisdictions had the freedom to opt out, was the imposition of
+ COTELs actually a means to better align constituent preferences and fiscal
+ outcomes? Had the absence of COTELs enabled a disconnect between constituent
+ desires and the actions of local public finance officials? 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+These motivating questions harken back to the discussion of TELs as instruments
+ of democracy in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:TELs-as-democracy"
+
+\end_inset
+
+.
+ TELs are generally blunt objects, but they may serve as an attractive way
+ to circumvent regular order, which may suffer from perceived deficiencies.
+ As such, they may very well push fiscal outcomes towards accordance with
+ constituent preferences.
+ The question is whether or not the cure is worse than the disease.
+ Chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Expenditure-Patterns"
+
+\end_inset
+
+ explored limited aspects of this question.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter partially explores the same question from a different angle.
+ Before one can compare the 
+\begin_inset Quotes eld
+\end_inset
+
+cure
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+disease
+\begin_inset Quotes erd
+\end_inset
+
+, one must understand the extent to which the disease is a problem.
+ In other words, we must identify voter preferences before we know if COTELs
+ lead fiscal outcomes to converge on them.
+ Since we do not directly observe voter preferences, identifying them is
+ no small ask.
+ It requires assumptions about how to synthesize the events that we can
+ observe, and even then it is a multi-stage research program.
+ This chapter tales only the first step.
+ It explores whether or not the outcomes of local overrides, or 
+\begin_inset Quotes eld
+\end_inset
+
+deBrucing
+\begin_inset Quotes erd
+\end_inset
+
+ attempts, can be anticipated based upon county conditions and ballot design.
+\end_layout
+
+\begin_layout Section
 How Can Voter Preferences be Revealed?
 \end_layout
 
+\begin_layout Subsection
+The Revealed Preference Construct
+\end_layout
+
+\begin_layout Subsection
+Ballot Initiatives as Observations of Choice
+\end_layout
+
 \begin_layout Section
-What is the Expected Impact of TELs?
+What is the Expected Impact of COTELs?
 \end_layout
 
 \begin_layout Section

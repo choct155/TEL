@@ -4382,6 +4382,14 @@ reference "sec:COTELs"
 .
 \end_layout
 
+\begin_layout Section
+Do TELs Alter Local Fiscal Behavior?
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Chapter
 Fiscal Behavior in Colorado
 \begin_inset CommandInset label
@@ -16407,11 +16415,14 @@ disease
 \begin_inset Quotes erd
 \end_inset
 
-, one must understand the extent to which the diseases is a problem.
+, one must understand the extent to which the disease is a problem.
  In other words, we must identify voter preferences before we know if COTELs
  lead fiscal outcomes to converge on them.
  Since we do not directly observe voter preferences, identifying them is
  no small ask.
+ It requires assumptions about how to synthesize the events that we can
+ observe, and even then it is a multi-stage research program.
+ This chapter tales only the first step.
  It explores whether or not the outcomes of local overrides, or 
 \begin_inset Quotes eld
 \end_inset
@@ -16424,15 +16435,19 @@ deBrucing
 \end_layout
 
 \begin_layout Section
-Can TELs Align Fiscal Outcomes and Voter Preferences?
-\end_layout
-
-\begin_layout Subsection
 How Can Voter Preferences be Revealed?
 \end_layout
 
+\begin_layout Subsection
+The Revealed Preference Construct
+\end_layout
+
+\begin_layout Subsection
+Ballot Initiatives as Observations of Choice
+\end_layout
+
 \begin_layout Section
-What is the Expected Impact of TELs?
+What is the Expected Impact of COTELs?
 \end_layout
 
 \begin_layout Section

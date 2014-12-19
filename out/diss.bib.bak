@@ -842,6 +842,21 @@
   Year                     = {2008}
 }
 
+@Article{Hoover1994,
+  Title                    = {Econometrics as Observation: The Lucas Critique and the Nature of Econometric Inference},
+  Author                   = {Hoover, Kevin D.},
+  Journal                  = {Journal of Economic Methodology},
+  Year                     = {1994},
+
+  Month                    = {June},
+  Number                   = {1},
+  Pages                    = {65-80},
+  Volume                   = {1},
+
+  Owner                    = {root},
+  Timestamp                = {2014.12.11}
+}
+
 @Article{IAAO2005,
   Title                    = {{Standard on Property Tax Policy}},
   Author                   = {IAAO},
