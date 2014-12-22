@@ -4387,7 +4387,352 @@ Do TELs Alter Local Fiscal Behavior?
 \end_layout
 
 \begin_layout Standard
+In their study of Proposition 2
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+ in Massachusetts, Cutler, Elmendorf, and Zeckhauser 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cutler1999restraining"
+
+\end_inset
+
+ noted that 
+\begin_inset Quotes eld
+\end_inset
+
+[c]itizens have increasingly resorted to referenda when they do not trust
+ their elected officials to serve their interests.
+\begin_inset Quotes erd
+\end_inset
+
+ The situation appears to be a classic agency problem
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It is important to note that Cutler, Elmendorf, and Zeckhauser examine a
+ range of theoretical models of behavior.
+\end_layout
+
+\end_inset
+
+, insofar as constituents often have insufficient information to evaluate
+ the implications of changes in local fiscal policy.
+ The same study references survey data related to Proposition 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ladd1982voters"
+
+\end_inset
+
+ The data suggest that voters largely did not want to change the basket
+ of local services they enjoyed prior to its passage.
+ Cutler et al.
+ found empirical support for very different motivations:
+\end_layout
+
+\begin_layout Itemize
+Due to the difficulty in closely monitoring government activity, voters
+ assumed waste must exist.
+\end_layout
+
+\begin_layout Itemize
+Voters believed waste was rampant, but came to regret the cuts associated
+ with Proposition 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Voters believed their property taxes were too high, irrespective of their
+ satisfaction with current service levels.
+\end_layout
+
+\begin_layout Standard
+In general, the sentiment seemed to suggest a widespread belief that taxes
+ could be limited without substantial implications for fiscal operations.
+ In reality, the literature suggests that TELs have very real impacts on
+ local revenue and expenditure behavior.
+\end_layout
+
+\begin_layout Subsection
+Revenue Implications
+\end_layout
+
+\begin_layout Standard
+TELs are often motivated by dissatisfaction with the property tax.
+ Alm and Skidmore 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alm1999tax"
+
+\end_inset
+
+ find that states with increasing levels of property taxation and/or increasing
+ ratios of local to state revenue are more likely to pass TELs.
+ The focus on the property tax may be a consequence of the visibility of
+ associated tax prices, another significant predictor of TEL passage.
+ To this end, TELs have been quite productive in reducing the growth in
+ property tax revenue 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shadbegian1998tax,rown2000constitutional,Dye_McGuire1997"
+
+\end_inset
+
+ and tax revenue generally.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shadbegian1999effect,mullins1996tax,skidmore1999tax"
+
+\end_inset
+
+ Ballal and Rubenstein conducted a meta-analysis of the literature, and
+ concluded that more recent studies are in strong agreement about the depressing
+ impact of TELs, in contrast to the older literature.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ballal2009effect"
+
+\end_inset
+
+ They posit that this shift is likely due to either better measurement technique
+s, or constraints that are increasingly binding over time.
+ This study finds support for both explanations.
+ Accounting for spatial dependency across counties in Colorado does alter
+ the depressive impact of TELs on local revenues.
+ Furthermore, TELs in Colorado have a dynamic, cumulative effect due to
+ the ratcheting property of TABOR.
+\end_layout
+
+\begin_layout Standard
+The impact on resources for local service delivery is a more complicated
+ matter.
+ The reductions in tax revenue are partially offset by a shift in the local
+ revenue portfolio.
+ TEL-constrained local governments are more likely to increase reliance
+ on miscellaneous revenue, fees, and charges.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mullins1996tax,shadbegian1999effect"
+
+\end_inset
+
+ Such a shift does promote a benefit-based finance structure, insofar as
+ constituents are increasingly asked to directly incur the marginal cost
+ of service provision.
+ There are also, however, distributional implications.
+ Although it is less of a concern at the state and local level, fees and
+ charges are generally more regressive than broad-based taxation that may
+ be tied to indicators of income.
+ Local governments are also limited in their ability to completely offset
+ the loss in tax revenue.
+ The more stringent the TEL, the more difficult the offset becomes.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shadbegian1999effect"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To help address the shortfall, TEL-constrained local governments are increasingl
+y reliant on state transfers.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mullins1996tax,skidmore1999tax"
+
+\end_inset
+
+ Such a shift implies a reduction in local autonomy, which has implications
+ for the ability of local officials to respond to the preferences of constituent
+s.
+ To the extent that local officials can negotiate with state officials instead
+ of ask constituents to raise more revenue, the link between local preferences
+ and local service delivery is weakened.
+ Direct connection between own-source revenue and services rendered promotes
+ better assessment of the opportunity costs associated with local policies.
+ That being said, the extent of this offset is limited when TELs operate
+ on both state and local governments
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joyce_Mullins1991"
+
+\end_inset
+
+, which is the case with TABOR in Colorado.
+ In these cases, states are more reluctant to provide enough aid to fill
+ the void.
+\end_layout
+
+\begin_layout Standard
+It should also be noted that TELs impose constraints that vary widely across
+ jurisdictions.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bradbury2001property,rown2000constitutional"
+
+\end_inset
+
+ In particular, they are more constraining on urban jurisdictions, which
+ have greater numbers of disadvantaged constituents.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mullins2004"
+
+\end_inset
+
+ Thus, the imposition of TELs raises important questions related to equity.
+ Indeed, it is this differential impact that serves as the motivational
+ basis for this study.
+\end_layout
+
+\begin_layout Subsection
+Expenditure Implications
+\end_layout
+
+\begin_layout Standard
+While it has been shown that TELs and related policies are associated with
+ declines in local spending generally 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shadbegian1998tax,bails2000impact,feld2003budget"
+
+\end_inset
+
+, most studies have focused on implications for the dominant service delivered
+ at the local level: education.
+ Educational resources are increasingly coming from the state level.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shadbegian2003did,ballal2009effect"
+
+\end_inset
+
+ In Michigan, for example, the state proportion of K-12 education funding
+ jumped from 30% to 70% between 1993 and 1995, once local approval for tax
+ increases was required.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sokolow1998"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Variance in implications for local service delivery is heavily dependent
+ upon macroeconomic conditions.
+ In their review of Proposition 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+, Cutler et al.
+ found that the impacts of the TEL were smaller than anticipated during
+ the 1980s.
+ The intended reduction in local revenue collection were offset by an increase
+ in the tax base from new construction, and increased state aid to municipal
+ governments.
+ However, when a recession hit in the early 1990s, new construction slowed
+ and the state was less willing to provide offsetting transfers.
+ The impact of Proposition 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+ became much more pronounced.
+ Indeed, the strength of the policy in general has been explicitly weakened
+ with amendments.
+ One such amendment increased the levy limit to account for new construction.
+ Another permitted local voters to choose to collect more revenue.
+ In Colorado, TABOR features both of these innovations.
+\end_layout
+
+\begin_layout Standard
+Bradbury, Mayer, and Case also studied Proposition 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bradbury2001property"
+
+\end_inset
+
+ They found that communities constrained by the limit were unable to finance
+ increases in school expenditures.
+ Moreover, they showed that school expenditures were capitalized into the
+ home prices within a given community.
+ Communities that could not match these increases experienced adverse impacts
+ on the value of their housing stock.
+ Thus, in addition to the equity concerns associated with the differential
+ impact of TELs across communities, there are downstream effects that may
+ exacerbate preexisting inequity.
 \end_layout
 
 \begin_layout Chapter
@@ -4884,8 +5229,20 @@ Which Revenue Sources are Employed?
 \end_layout
 
 \begin_layout Standard
-From a revenue perspective, in real terms, Colorado has experienced consistent
- growth over the 1975-2009 time period.
+In 2011, the Census Bureau estimates that local governments in Colorado
+ raised $29.7 billion in revenue from all sources.
+ Tax revenue, the source most directly affected by TELs, amounted to $12.3
+ billion.
+ The largest single source of tax revenue was the property tax.
+ Local governments collected over $8 billion in property tax revenue, approximat
+ely 67.5% of tax revenue and 28.0% of total revenue.
+ Sales and gross receipts revenue, the next largest source of own-source
+ revenue, accounted for $3.3 billion.
+\end_layout
+
+\begin_layout Standard
+In real terms, Colorado experienced consistent growth over the 1975-2009
+ time period.
  Overall, county revenue increased by 72% over the period on average (from
  $1,013 to $1,741).
  These measures of central tendency, however, mask considerable variation
@@ -4965,7 +5322,7 @@ key "Joyce_Mullins1991"
  Moreover, the growth in sales revenue as a percentage of all tax revenues
  has increased dramatically (+30%).
  It has also stood out as the fastest growing revenue source (+273%).
- Although it remains a small portion of the overall portfolio, license revenu
+ Although it remains a small portion of the overall portfolio, license revenue
  grew faster than all other sources (+489%), followed by revenue from charges
  (+406%).
  This growth is consistent with the expected impacts of TEL policies.
@@ -5030,9 +5387,88 @@ Which Expenditure Responsibilities Exist?
 \end_layout
 
 \begin_layout Standard
-On the expenditure side, both growth in average (+65%) and median (+61%)
- liabilities per capita has remarkably lagged growth in revenues over the
- 1975-2009 period (Figure 
+On the expenditure side, local governments spent $29.5 billion in 2011.
+ Virtually all expenses were direct expenditures (99.8%).
+ As is typically the case, the single largest line item was elementary and
+ secondary education, amounting to $8.1 billion (27.7% of total expenditures).
+ At $4.2 billion and $4.0 billion, environment/housing and public safety are
+ the next two dominant functions from a budgetary perspective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+County and Municipal Finances
+\end_layout
+
+\end_inset
+
+Summary of County and Municipal Finances in Colorado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cty-muni-fin-summary"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/cty_muni_fin_summary.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The Colorado Division of Local Affairs provides 2010 fiscal data for counties
+ and municipalities.
+ Relative to the Census data, these data permit a more nuanced view of the
+ functions served by general purpose jurisdictions in the state.
+ There are three particularly noteworthy insights revealed by the data.
+ First, property taxes are the revenue source most directly impacted by
+ TELs, and they are predominately levied by county level governments.
+ Second, taxes in general are far and away the dominant sources of revenue
+ for general purpose jurisdictions.
+ Third, counties play a major role in the direct delivery of services.
+ All three of these facts suggest that policies that impact the property
+ tax, in particular, have substantial potential to directly affect the public
+ services consumed by Colorado residents.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+both growth in average (+65%) and median (+61%) liabilities per capita has
+ remarkably lagged growth in revenues over the 1975-2009 period (Figure
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:County-Expenditure-Growth"
@@ -15465,10 +15901,7 @@ $pcrev$
 
 \end_inset
 
-), annual payroll per capita 
-(
-\lang english
-
+), annual payroll per capita (
 \begin_inset ERT
 status open
 
@@ -16422,7 +16855,7 @@ disease
  no small ask.
  It requires assumptions about how to synthesize the events that we can
  observe, and even then it is a multi-stage research program.
- This chapter tales only the first step.
+ This chapter takes only the first step.
  It explores whether or not the outcomes of local overrides, or 
 \begin_inset Quotes eld
 \end_inset
@@ -16438,12 +16871,1366 @@ deBrucing
 How Can Voter Preferences be Revealed?
 \end_layout
 
+\begin_layout Standard
+Since we cannot observe the preference schedules of constituents, we are
+ compelled to rely on phenomenon that we can observe.
+ This study assumes that ballot outcomes are valid observations of the utility
+ mechanism that underlies political expression in a county, and the preference
+ schedules of all its residents.
+ This is, to be sure, a strong assumption if for no other reason than voting
+ participation rates being nowhere near 100%.
+ These initiatives, however, do provide our best information.
+ They can be made to perform some work with some additional assumptions
+ about the structural properties of the preferences that serve as inputs
+ into voting outcomes.
+ Given this framework, the path forward is understanding the drivers of
+ ballot outcomes.
+\end_layout
+
+\begin_layout Standard
+Anticipation of ballot outcomes is a composite inquiry because there are
+ two components to a county's decision to exempt itself from TABOR and/or
+ SLPTR.
+ First, what is the baseline propensity to exempt? That counties differ
+ in their desire to raise and spend public funds is a natural corollary
+ to Tiebout's hypothesis.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tiebout1956"
+
+\end_inset
+
+ To extend this view by positing that this preference differential could
+ be manifested in differing baseline propensities to exempt is not an unreasonab
+le prior belief.
+ This study chapter seeks to update this prior belief with empirical observation
+ of the actual outcomes of exemption votes.
+\end_layout
+
+\begin_layout Standard
+Second, given an estimated baseline propensity to exempt, to what extent
+ does the construction of the exemption impact the likelihood of success?
+ It turns out that exemptions are far from identical.
+ Each of them is uniquely constructed -- each is a function of both the
+ needs of the jurisdiction and the designer's estimated chances of successful
+ passage.
+ To state the question differently, given the county's political environment,
+ which aspects of the ballot are likely to garner sufficient support? Which
+ aspects are most problematic?
+\end_layout
+
+\begin_layout Standard
+To understand whether or not exemption votes can be anticipated, this study
+ takes a two part estimation approach.
+ It does so in an effort to provide actionable intelligence for local policymake
+rs.
+ In this light, the sole objective of the establishment of a baseline propensity
+ to exempt is to determine whether or not it can be identified from practically
+ intrinsic features of the county.
+ Characteristics of a constituent population do not change rapidly.
+ From the perspective of a local official, policy options take the current
+ population's sentiment as a given property.
+ From a methodological perspective, this is constraining and liberating
+ at the same time.
+ It is constraining insofar as we cannot use policy actions (like previous
+ votes, or lack thereof) as regressors in the prediction of future vote
+ outcomes.
+ To do so would conflate underlying constituent preferences with the design
+ elements in the proposals tested in previous votes.
+ On the other hand, it is liberating insofar as policymakers can focus on
+ ballot design.
+ Thus, as researchers, we can focus on predictive accuracy.
+ Among other things, this facilitates the use of a larger suite of predictive
+ tools, including those that operate well in high-dimensional space.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In addition to superior performance in high-dimensional regressor space,
+ it ultimately became apparent that votes on the 
+\begin_inset Quotes eld
+\end_inset
+
+wrong
+\begin_inset Quotes erd
+\end_inset
+
+ side of the decision boundary also had to be accommodated.
+ In this regard, not all classification approaches are created equal.
+ The details of decisions made on this front will be elaborated on in Subsection
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Ballot-as-Choice"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the second stage, we can use the first stage result to condition the
+ analysis of ballot design.
+ In traditional policy literature, this is done by inserting the result
+ of a probit model as a regressor in the second stage equation.
+ We will parallel this approach by including a probability estimate of support
+ vector classification in the second stage.
+\end_layout
+
 \begin_layout Subsection
 The Revealed Preference Construct
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Revealed-Preference"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To use historical ballot initiative outcomes as the basis for understanding
+ the preferences of voters, one must grapple with the nature of choice.
+ Without some minimal structure, the past choices of individuals or groups
+ is quickly rendered meaningless for the purpose of predicting future choices.
+ Consider a scenario in which an individual must select from a set of three
+ choices, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S = 
+\backslash
+{A,B,C
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+.
+ In the absence of any other information, we must assign equal probabilities
+ to the choice among items 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$B$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+.
+ That is, in predicting the individual's choice or understanding the individual'
+s expected utility form among the options, we can do no better than apply
+ a uniform prior belief.
+ Suppose now that the individual selected item 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$B$
+\end_layout
+
+\end_inset
+
+, and is tasked with selecting from the original set, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S = 
+\backslash
+{A,B,C
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+, a second time.
+ We now have a situation in which we have knowledge of the set and additional
+ information which may be used to affect our prior belief about the individual's
+ bias towards a particular item.
+ The question is, to what extent do we allow the supplementary information
+ to affect our anticipation of the impending choice and our understanding
+ of the individual's preference schedule.
+\end_layout
+
+\begin_layout Standard
+One might reasonably inquire into the value of taking pains to precisely
+ define the relationship between historical information and the current
+ choice.
+ Is it not obvious that a reasonable person would expect the consistent
+ selection of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$B$
+\end_layout
+
+\end_inset
+
+ given the same set? In fact, that a prior choice controls is a nontrivial
+ assumption.
+ There are any number of reasons that that choices may be inconsistent.
+ For a truly random number generator, it is not desirable to have a consistent
+ choice of an item from a set.
+ For an offensive coordinator on a football team's coaching staff, the element
+ of surprise is actually an asset.
+ Alternatively, in choosing the policies under which a voter must live,
+ consistency seems to be more of a virtue, insofar as it confers benefits
+ in siting and investment decisions.
+ It is, however, important to 1) be explicit about the assumption, 2) be
+ cognizant of the manner in which it can affect interpretation, and 3) be
+ cautious about the results one obtains by way of the assumption.
+ Furthermore, being precise about this relationship allows for clearer analysis
+ of more complicated scenarios.
+\end_layout
+
+\begin_layout Standard
+With this in mind, the analysis here leans on Samuelson's rather famous
+ weak axiom of revealed preference (Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:WARP"
+
+\end_inset
+
+).***SAMUELSON*** In effect, the axiom says that past choices do control
+ when one seeks to construct a preference schedule.
+ Said differently, the preferences of an individual do not change as a consequen
+ce of the available choices or the number of selections that may be made.
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Weak Axiom of Revealed Preference
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:WARP"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The choice structure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(
+\backslash
+Omega,C(
+\backslash
+cdot))$
+\end_layout
+
+\end_inset
+
+ satisfies the weak axiom of revealed preference if the following property
+ holds:
+\end_layout
+
+\begin_layout Plain Layout
+If for some 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S 
+\backslash
+in 
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x,y 
+\backslash
+in S$
+\end_layout
+
+\end_inset
+
+ we have 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+in C(S)$
+\end_layout
+
+\end_inset
+
+, then for any 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S' 
+\backslash
+in 
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x,y 
+\backslash
+in S'$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y 
+\backslash
+in C(S')$
+\end_layout
+
+\end_inset
+
+, we must also have 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+in C(S')$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In words, the weak axiom says that if 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ is ever chosen when 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y$
+\end_layout
+
+\end_inset
+
+ is available, then there can be no budget set containing both alternatives
+ for which 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y$
+\end_layout
+
+\end_inset
+
+ is chosen and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ is not.
+ ***MAS-COLELL*** In this case, we say that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+succeq y$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The consequence of permitting this kind of learning is that repeated observation
+s of choice with varying compositions of the choice set can be related to
+ one another to build an arbitrarily complex system of preferences.
+ The property of revealed preference that allows this construction is called
+ 
+\emph on
+transitive closure
+\emph default
+.***VARIAN*** Suppose we have two sets, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_1 = 
+\backslash
+{x,y
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_2 = 
+\backslash
+{y,z
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+, from which two choices have been made, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C(S_1)=x$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C(S_2)=y$
+\end_layout
+
+\end_inset
+
+.
+ It can be seen that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+succeq y$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y 
+\backslash
+succeq z$
+\end_layout
+
+\end_inset
+
+.
+ Transitive closure allows us to then assert that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+succeq z$
+\end_layout
+
+\end_inset
+
+.
+ In this way, choices can be linked together and a preference schedule construct
+ed.
 \end_layout
 
 \begin_layout Subsection
 Ballot Initiatives as Observations of Choice
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Ballot-as-Choice"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the context of deBrucing efforts in Colorado, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ is the space that captures the full range of values along every dimension
+ that may be included in a ballot initiative.
+ These dimensions may be categorical (e.g.
+ the target of expenditure) or continuous (e.g.
+ the size of the requested increase in a given levy).
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S$
+\end_layout
+
+\end_inset
+
+ may be conceived of as each ballot initiative, which contains two choices,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y$
+\end_layout
+
+\end_inset
+
+.
+ For purposes of demonstration, assume that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ is always the status quo, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y$
+\end_layout
+
+\end_inset
+
+ is the proposed change.
+ A complicating factor is that the status quo does not remain constant,
+ insofar as environmental factors that are not on the ballot play a role
+ in valuation of the status quo.
+ Nevertheless, we may say that given two sets, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_1 = 
+\backslash
+{x_1,y_1
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_2 = 
+\backslash
+{x_2,y_2
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+, so long as the distance between 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_2$
+\end_layout
+
+\end_inset
+
+ can be evaluated, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C(S_1)$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C(S_2)$
+\end_layout
+
+\end_inset
+
+ can identify the preference relation between 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y_1$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y_2$
+\end_layout
+
+\end_inset
+
+.
+ In other words, as long as we know how the status quo for the first vote
+ is different from the status quo in the second vote, we can construct a
+ preference schedule of arbitrary complexity by relating votes through transitiv
+e closure.
+\end_layout
+
+\begin_layout Standard
+This is surely great news if the representative county voter is choosing
+ between eating an apple or eating an orange.
+ The analysis of deBrucing efforts, however, is complicated significantly
+ by two factors.
+ First, establishment of the representative voter is far from a simple task.
+ Much of voting literature is built upon the concept of the median voter.
+ ***DOWNS*** The reversing the dimensionality reduction required to make
+ this approach tractable has proven remarkably difficult.
+ Even if a voter's preferences can be placed in space, strong assumptions
+ about the way that space is constructed across voters are required to develop
+ a distribution of positions for a given population.
+ This, of course, assumes that we can observe all of the relevant dimensions.
+\end_layout
+
+\begin_layout Standard
+The second complication concerns not the dimensionality of the voter's preferenc
+es, but rather the dimensionality of the choices 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x,y 
+\backslash
+in S$
+\end_layout
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Utility-Functions"
+
+\end_inset
+
+ depicts hypothetical utility functions for Goods 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$B$
+\end_layout
+
+\end_inset
+
+, both of which can vary in value along dimension 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+.
+ The choice an individual makes between the two goods in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S = 
+\backslash
+{A,B
+\backslash
+}$
+\end_layout
+
+\end_inset
+
+ depends on the utility provided at a given value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ in this very basic example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+1-D Utility Functions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Utility-Functions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/utility_1d_goods_compare.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In the graphic above, there are two single dimensional utility profiles
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u = f(x)$
+\end_layout
+
+\end_inset
+
+).
+ The composite hull (the path of maximum utility across both goods) controls
+ the decision.
+ In the context of the graphic above, an individual would choose Item A
+ if consuming a volume 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ contained approximately in the interval [-34,50].
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2-D-Utility-Functions"
+
+\end_inset
+
+, adding even a single dimension to this case complicates the intersection
+ of the utility functions for these goods.
+ There are over 30 dimensions in the operationalized form of the ballot
+ initiatives used in this analysis.
+ From a theoretical standpoint, no attempt to define the functional relationship
+ between dimensions of alternatives is made.
+ Furthermore, from an estimation standpoint, assumptions must be made to
+ deal with the curse of dimensionality.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The curse of dimensionality refers to the idea that observations tend to
+ get further away from the point being estimated in high dimensions.
+ For example, consider a unit square that is with observations that are
+ uniformly distributed.
+ Suppose one is concerned with only one dimension, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X1$
+\end_layout
+
+\end_inset
+
+.
+ Essentially, everything in the square is projected down to the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X1$
+\end_layout
+
+\end_inset
+
+ axis.
+ In this case, 10% of the observations may be captured by capturing the
+ values within 10% of the range of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X1$
+\end_layout
+
+\end_inset
+
+.
+ Call this range interval 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$r_1$
+\end_layout
+
+\end_inset
+
+.
+ If 10% of the observations must be captured in the two dimensions
+ (
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X1$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X2$
+\end_layout
+
+\end_inset
+
+) of the original unit square, the radius of the circle required to do so
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$r_2$
+\end_layout
+
+\end_inset
+
+) will generally be larger than 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$r_1$
+\end_layout
+
+\end_inset
+
+.
+ To state the same phenomenon from a different perspective, to keep the
+ same level of estimating precision, the number of observations required
+ jumps significantly with each additional dimension.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hastie_Tibshirani_Friedman2008"
+
+\end_inset
+
+ Indeed, accuracy in high dimensions is the motivating factor behind the
+ use of support vector machines in this chapter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2-D Utility Functions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2-D-Utility-Functions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/utility_itemA_frontier.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 2bp
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/utility_itemB_frontier.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/utility_itemsAB_frontier.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+These graphics use the same hypothetical utility functions used in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Utility-Functions"
+
+\end_inset
+
+, but they are projected in two directions instead of one.
+ In the case of two dimensional utility profiles, the composite hull still
+ controls, but the information required for estimation jumps dramatically.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These complications represent obstacles to a fuller articulation of preferences.
+ Instead, we seek only to estimate likelihood of prediction with the greatest
+ achievable accuracy.
+ It is for this reason that the introduction to this chapter claims to only
+ scratch the surface in the effort to identify voter preferences.
+\end_layout
+
+\begin_layout Subsection
+Methodological Approach and Data
+\end_layout
+
+\begin_layout Standard
+This chapter seeks to explore exemption behavior from the perspective of
+ ballot design.
+ For local policymakers, it asks which components should a ballot include
+ to increase the probability of successful passage? In practice, this is
+ a composite inquiry.
+ To understand the marginal impact of ballot components, one must first
+ understand how likely a given community is to pass 
+\emph on
+any
+\emph default
+ ballot.
+\end_layout
+
+\begin_layout Standard
+Consequently, the analysis employs a two-stage estimation routine, a common
+ approach when dealing with latent factors.
+ In the first stage, we will seek to establish a baseline propensity to
+ pass exemptions for each county in Colorado.
+ This baseline propensity is necessarily separated from elements of ballot
+ design.
+ It is a function of only socioeconomic indicators.
+ Once this baseline propensity is established for each county, it serves
+ as an instrument in the second stage equation, which evaluates the marginal
+ impact of ballot components (e.g.
+ an increase in the property tax rate) on successful passage.
+\end_layout
+
+\begin_layout Standard
+The time period considered covers all counties in Colorado between 1993
+ and 2009.
+ This time period primarily reflects the scope of available exemption vote
+ data compiled by 
+\begin_inset CommandInset href
+LatexCommand href
+name "Colorado Counties, Inc."
+target "http://ccionline.org/"
+
+\end_inset
+
+.
+ These data capture the contents of each exemption vote proposal and the
+ vote outcome.
+ The socioeconomic data are taken from the 
+\begin_inset CommandInset href
+LatexCommand href
+name "USA Counties database"
+target "http://censtats.census.gov/"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This database is no longer maintained, but the available data do cover the
+ study window.
+\end_layout
+
+\end_inset
+
+ They cover a wide variety of indicators, collected from the following US
+ agencies and departments:
+\end_layout
+
+\begin_layout Itemize
+Census Bureau
+\end_layout
+
+\begin_layout Itemize
+Bureau of Economic Analysis
+\end_layout
+
+\begin_layout Itemize
+Bureau of Labor Statistics
+\end_layout
+
+\begin_layout Itemize
+Department of Education
+\end_layout
+
+\begin_layout Itemize
+Federal Bureau of Investigation
+\end_layout
+
+\begin_layout Itemize
+Federal Deposit Insurance Corporation
+\end_layout
+
+\begin_layout Itemize
+Internal Revenue Service
+\end_layout
+
+\begin_layout Itemize
+Social Security Administration
+\end_layout
+
+\begin_layout Itemize
+Geological Survey
+\end_layout
+
+\begin_layout Standard
+Over the 17 years in question, counties in Colorado held 527 votes, 305
+ (57.9%) of which were passed.
+ Every county had at least one vote, and the average for all counties was
+ 8.23 votes.
+ The single vote county was Gilpin.
+ The most active county, with 35 votes, was Boulder.
+ As can be seen in Figure , the vote data provides a view into the wide
+ variation in exemption activity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DeBrucing Votes (1993-2009)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DeBrucing-Votes-(1993-2009)"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
