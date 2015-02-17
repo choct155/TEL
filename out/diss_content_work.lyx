@@ -150,10 +150,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Caption Standard
 
@@ -180,10 +176,6 @@ Outcome of the TABOR Ballot Initiative
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -607,7 +599,7 @@ Canonical public finance is taught from a perspective of the state as an
  outcomes.
  Public policy is typically proposed
 \emph on
-to counteract these market failures.
+ to counteract these market failures.
 
 \emph default
  The very idea that such a thing is possible requires a belief in our ability
@@ -616,20 +608,20 @@ to counteract these market failures.
  from the outside.
  The orthodox question is
 \emph on
-should the state act
+ should the state act
 \emph default
-given the existence of both market and government failures? It is not
+ given the existence of both market and government failures? It is not
 \emph on
-can the state act
+ can the state act
 \emph default
-on the market?
+ on the market?
 \end_layout
 
 \begin_layout Standard
 Buchanan and Tullock, acting as critics of state action, begin to depart
  from this premise in the
 \emph on
-Calculus of Consent.
+ Calculus of Consent.
 \begin_inset Foot
 status collapsed
 
@@ -681,19 +673,19 @@ The orthodox approach does not, however, lend itself well to a comparative
  and especially if we want to analyze various collective decision-making
  rules, we need, even at the conceptual level, some means of comparing the
 \emph on
-net
+ net
 \emph default
  direct gains or the
 \emph on
 net
 \emph default
-direct costs of collective action with the
+ direct costs of collective action with the
 \emph on
-costs of organization
+ costs of organization
 \emph default
-itself, that is, with
+ itself, that is, with
 \emph on
-the costs of organizing decisions collectively [...].
+ the costs of organizing decisions collectively [...].
 \emph default
 
 \begin_inset Quotes erd
@@ -730,7 +722,7 @@ key "Wagner2009"
 \begin_layout Standard
 When viewed from this angle,
 \emph on
-the state can only
+ the state can only 
 \begin_inset Quotes eld
 \end_inset
 
@@ -739,8 +731,9 @@ act
 \end_inset
 
  on the market if the two fora are populated bydifferent people.
+
 \emph default
-The ability to separate these groups is a function of the governance structure
+ The ability to separate these groups is a function of the governance structure
  that prevails in a society at a given time.
  Monarchy serves as the primary example of a governance structure that allows
  for separability.
@@ -824,7 +817,7 @@ name "sec:Layout"
 \begin_layout Standard
 Before any empirical testing, it is important to provide information about
  the operating context.
- Chapter
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SubFinUS"
@@ -836,7 +829,7 @@ reference "chap:SubFinUS"
  for studying subnational fiscal institutions.
  Furthermore, it will provide an overview fiscal institutions in general,
  prior to focusing in on tax and expenditure limitations specifically.
- Chapter
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:CO-FiscBehavior"
@@ -851,7 +844,7 @@ reference "chap:CO-FiscBehavior"
 
 \begin_layout Standard
 Given the context, the next three chapters address aspects of the research
- objectives detailed in Subsection
+ objectives detailed in Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ResearchObjectives"
@@ -859,7 +852,7 @@ reference "sub:ResearchObjectives"
 \end_inset
 
 .
- Chapter
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:RevYieldCapacity"
@@ -870,7 +863,7 @@ reference "chap:RevYieldCapacity"
  and capacity at the county level.
  To the extent that COTELs modify the ability to collect revenue, these
  policies impact a county's capacity to deliver public services.
- Chapter
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:ExpPatterns"
@@ -881,22 +874,22 @@ reference "chap:ExpPatterns"
  a deflection in the expenditure behavior of a given county.
  Such a deflection would affect the ability of a county to provide services
  that are consistent with constituent preferences.
- Both Chapter
+ Both Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:RevYieldCapacity"
 
 \end_inset
 
- and Chapter
+ and Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:ExpPatterns"
+reference "chap:Expenditure-Patterns"
 
 \end_inset
 
  are essentially explorations of the transactional nature of local public
- service consumption, the
+ service consumption, the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -905,7 +898,7 @@ duality
 \end_inset
 
  of public finance at the local level.
- Chapter
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:DeBrucing"
@@ -913,7 +906,7 @@ reference "chap:DeBrucing"
 \end_inset
 
  changes directions to partially explore TELs as an instrument of democracy.
- The big question, as identified in Subsection
+ The big question, as identified in Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ResearchObjectives"
@@ -924,6 +917,7 @@ reference "sub:ResearchObjectives"
  Before such a question can be answered, we must know what voter preferences
  are.
  This last empirical chapter tests local overrides (i.e.
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -935,7 +929,7 @@ DeBrucing
 \end_layout
 
 \begin_layout Standard
-Chapter
+Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Conclusion"
@@ -1000,9 +994,9 @@ Why are the Fiscal Affairs of States and Localities Important?
 \begin_layout Standard
 In his treatise,
 \emph on
-The Theory of Public Finaince
+ The Theory of Public Finaince
 \emph default
-(
+ (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Musgrave59"
@@ -1140,7 +1134,7 @@ Direct service provision serves as the nexus at which the taxpayer realizes
  predates Musgraves' revelation.
  The nascent stages of our republic were characterized by fierce deliberation
  over the capacity to govern such a geographically expansive jurisdiction.
- The concern raised by so-called
+ The concern raised by so-called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1294,7 +1288,7 @@ If the means of finance is not available, with what resources can policymakers
  respond to the demands of their constituents? Fiscal autonomy requires
  the freedom to set expenditures
 \emph on
-and
+ and
 \emph default
  raise revenues to finance said expenditures.
 \begin_inset CommandInset citation
@@ -1306,7 +1300,7 @@ key "Bird1993"
  Furthermore, autonomy is driven less by the overall adequacy of revenue
  as the control over
 \emph on
-marginal
+ marginal
 \emph default
  sources of revenue.
 \begin_inset CommandInset citation
@@ -1330,7 +1324,7 @@ Establishing a local tax requires an awareness of both general tax design
  Bird identifies the properties of a good local tax and suggests consumers
  of his research seek to equalize benefits and costs at the margin
 \emph on
-when possible
+ when possible
 \emph default
 .
 \begin_inset Foot
@@ -1475,7 +1469,7 @@ The classical approach to the theory of Public Finance - with its neglect
 Professor Musgrave described here a concept that dates at least as far back
  as Adam Smith's
 \emph on
-Wealth of Nations.
+ Wealth of Nations.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Smith1776"
@@ -1502,7 +1496,7 @@ Adam Smith, himself, did not actually support the neglect of the expenditure
  While ability-to-pay does well to explicitly address equity concerns, using
  the concept as an analytic base facilitates neglect of a fundamental characteri
 stic of public finance.
- Musgrave's
+ Musgrave's 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1510,7 +1504,7 @@ revenue-expenditure process
 \begin_inset Quotes erd
 \end_inset
 
-, Wagner's
+, Wagner's 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1518,7 +1512,7 @@ quid pro quo
 \begin_inset Quotes erd
 \end_inset
 
- or
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1533,7 +1527,7 @@ key "Wagner1983"
 
 \end_inset
 
-, and Burkhead & Miner's
+, and Burkhead & Miner's 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1541,7 +1535,7 @@ general equilibrium analysis
 \begin_inset Quotes erd
 \end_inset
 
- or
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1576,7 +1570,7 @@ What does Subnational Finance Look Like in Practice?
 \end_layout
 
 \begin_layout Standard
-Theoretical knowledge of
+Theoretical knowledge of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1670,7 +1664,7 @@ name "fig:Tot-Gov-Size"
 \end_layout
 
 \begin_layout Standard
-This growth reflects the rise of what Dwight Waldo referred to as the
+This growth reflects the rise of what Dwight Waldo referred to as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1773,10 +1767,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1840,7 +1830,7 @@ ntal transfers.
 \end_inset
 
  Amongst all revenue options, taxes dominate the space.
- That being said, as Figure
+ That being said, as Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sub-Taxes"
@@ -1857,10 +1847,6 @@ reference "fig:Sub-Taxes"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1925,7 +1911,7 @@ The property tax as an object of study is an immense topic worthy of the
  less than clear.
  It is not known, for example, whether or not these deviations make the
  property tax a more palatable revenue instrument for taxpayers.
- As noted by Glenn Fisher
+ As noted by Glenn Fisher 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fisher1996"
@@ -1944,7 +1930,7 @@ Property taxes have managed to maintain strong yields over time, and still
  remain the single largest revenue source for local governments.
  This compositional prominence, however, has experienced a notable decline.
  Between 1959 and 2012, property tax revenue declined as a percentage of
- local current receipts from 53% to 36% (Figure
+ local current receipts from 53% to 36% (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:prop-tax"
@@ -1959,10 +1945,6 @@ reference "fig:prop-tax"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2019,7 +2001,7 @@ name "fig:prop-tax"
 \begin_layout Standard
 As with the entire state and local sector, we see that the declining importance
  of property taxes for local governments coincides with the declining importance
- of local taxes generally (Figure
+ of local taxes generally (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Local-Receipts"
@@ -2041,10 +2023,6 @@ reference "fig:Local-Receipts"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2102,7 +2080,7 @@ The decline of the property tax is quite marked beginning in the 1970s.
 This so-called tax revolt was the product of a confluence of economic and
  social factors.
  The 1970s saw two recessions, a marked decline in real GDP growth, and
- a sharp increase in inflation (Figure
+ a sharp increase in inflation (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Macroeconomic-Turmoil-in-1970s"
@@ -2141,10 +2119,6 @@ The consequence was a wave of reforms, designed to aggressively lower taxpayers'
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2232,10 +2206,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2280,7 +2250,7 @@ name "fig:Loc-Fisc-Strategy"
 \end_layout
 
 \begin_layout Quotation
-Figure
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Loc-Fisc-Strategy"
@@ -2309,7 +2279,7 @@ key "Smith_Thoolen1980"
  changes in the operations of his/her jurisdiction.
  The size of each circle reflects the amount of opportunity the manager
  has to pursue such a strategy.
- Note that the smallest circle contains the
+ Note that the smallest circle contains the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2326,7 +2296,7 @@ Control
  tax authority.
  With each successively larger circle, the subset of variables controlled
  by the manager for a given policy outcome decreases.
- The largest circle, the
+ The largest circle, the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2338,7 +2308,7 @@ Appreciation
  at all.
  A decision by the state to cut state aid to local governments would likely
  fall into this category.
- The implication of the small area allocated to
+ The implication of the small area allocated to 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2354,7 +2324,7 @@ Control
 \end_layout
 
 \begin_layout Quotation
-Tax and expenditure limitations would fall within the
+Tax and expenditure limitations would fall within the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2438,7 +2408,7 @@ key "Cutler_Sahni2013"
 \end_inset
 
 , the point is still a salient one with respect to drivers of fiscal exposure.
- Furthermore, provision of economic security in the
+ Furthermore, provision of economic security in the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2478,10 +2448,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2494,7 +2460,7 @@ Age Distribution
 
 \end_inset
 
-***Replace this with a custom image.
+Trends in the US Age Distribution
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Age-Distribution"
@@ -2512,7 +2478,7 @@ name "fig:Age-Distribution"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Demographic-profile-US-by-age.png
+	filename figures/Ch2_pop_trend.png
 	width 100text%
 
 \end_inset
@@ -2533,7 +2499,7 @@ Medicare is essentially a healthcare-specific variant of the same concept.
  Both Social Security and Medicare have grown substantially as a function
  of improving health outcomes, and this effect is exacerbated by bulges
  in the age distribution.
- In particular, the
+ In particular, the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2578,7 +2544,7 @@ key "Stiglitz2012"
  As mentioned previously, one of the most critical aspects of a local revenue
  portfolio is a reliable, and preferably,
 \emph on
-immobile
+ immobile
 \emph default
  revenue source.
  The immobility of the property tax base, for instance, derives much of
@@ -2643,7 +2609,7 @@ Macroeconomic Events
 One of the lessons learned from analysis of local fiscal capacity is the
  following:
 \emph on
-successful fiscal operations require anticipation of, and responsiveness
+ successful fiscal operations require anticipation of, and responsiveness
  to, macroeconomic shifts.
 
 \emph default
@@ -2710,15 +2676,38 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Volume of Intergovernmental Fiscal Transfers to Local Governments
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Transfers to Local Governments
 \end_layout
+
+\end_inset
+
+Volume of Intergovernmental Fiscal Transfers to Local Governments
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Volume-of-IntGov-transfers-to-local"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/IntGov2Loc.png
+	width 100text%
 
 \end_inset
 
@@ -2741,37 +2730,7 @@ For good cause, the intergovernmental transfer system has emerged as a method
  When the economy enters a recession, while the impacts on own source revenue
  may differ as a function of revenue base disparities, a certain amount
  of conditional correlation in revenue yield occurs.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Coefficient of Variation for Changes in Local Receipts
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Not only are local fund sources depressed, but state and national governments
+ Not only are local fund sources depressed, but state and national governments
  are far less able to provide the same contribution via transfers.
  States are far more constrained given prevailing balanced budget requirements,
  but national governments can also be constrained (particularly given pre-existi
@@ -2829,12 +2788,42 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Binding TELs in the US (Mullins)
+Binding TELs in the US
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Binding-TELs"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/TEL_bind_states_lab.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+These data describe the variance in TEL regimes across the country.
+ Not all TELs bind the revenue raising capacity of local governments.
+ If, for example, a TEL restricts growth in assessment ratios, local fiscal
+ managers can still use rate increases to grow property tax revenue.
+ Type 1 TELs are vulnerable to circumvention, while Type 2 TELs are binding.
+ Some states have neither, while others have both.
+ These data have been compiled by Daniel Mullins over a number of years.
+ They reflect qualified judgments about the capacity of each TEL to bind
+ local fiscal managers because statutory information is not a reliable indicator.
 \end_layout
 
 \end_inset
@@ -2884,7 +2873,7 @@ This quote captures a prevalent view among academics in the late 19th and
  Edward Seligman of Columbia University constructed a multi-facted attack
  in his
 \emph on
-Essays on Taxation.
+ Essays on Taxation.
 \emph default
 
 \begin_inset CommandInset citation
@@ -2973,14 +2962,14 @@ Double Taxation
 \begin_layout Standard
 Property is taxed in practice based upon the value of the asset,
 \emph on
-not the value of the property owned by the taxpayer.
+ not the value of the property owned by the taxpayer.
 
 \emph default
  Insofar as the development of modern finance techniques has bifurcated
  equity stakes in a given piece of property, the individual that physically
  holds the asset is being taxed on his/her property
 \emph on
-and the property which is owned by the financial entity that has provided
+ and the property which is owned by the financial entity that has provided
  the liquidity for the taxpayer to buy the asset.
 
 \emph default
@@ -3051,7 +3040,7 @@ To understand the impact of tax and expenditure limitations, it is critical
  Furthermore, in setting the stage for the institutional reforms that have
  beset the property tax in modern practice, it is critical to understand
  the social context that permitted such reforms to take place.
- As discussed in Section
+ As discussed in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Motivations-for-Limiting-Property-Tax"
@@ -3098,7 +3087,7 @@ key "Wildavsky61"
 
  To paraphrase,
 \emph on
-a theory of public finance is a theory of politics also.
+ a theory of public finance is a theory of politics also.
 
 \emph default
  Social dynamics and political developments are fundamental arguments in
@@ -3143,7 +3132,7 @@ Thus, while we can advance the economic critique of reform movements and
  outcomes, we cannot lose sight of the fact that the economic calculations
  reveal only a part of the broader tapestry of social interactions.
  There is an emerging literature that has sought to shed light on this perspecti
-ve which Oates has referred to as the
+ve which Oates has referred to as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3202,7 +3191,7 @@ This view of political economy of public finaince is salient in the current
  Some limited efficacy can arguably be tolerated in the service of prolonged
  use
 \emph on
-so long as the reforms do not result in fiscal impotence.
+ so long as the reforms do not result in fiscal impotence.
 
 \emph default
  It is thus critical to evaluate each of the institutional reform classes
@@ -3269,7 +3258,7 @@ Sliding Scale Circuit Breakers
 
 \begin_layout Standard
 An example will clarify the need to define these items explicitly.
- Tennessee has enacted a
+ Tennessee has enacted a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3326,7 +3315,7 @@ The homestead exemption was a product of the housing issues experienced
  property tax liabilities for much of the citizenry.
  The response to this issue in 14 states was an exemption on a predefined
  portion of property value.
- (Walker(1964) via
+ (Walker(1964) via 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bowman2009"
@@ -3558,7 +3547,7 @@ on of the tax rate, creating automatic increases in liabilities for homeowners
 
 \begin_layout Standard
 In his appraisal of the tax revolt, truth-in-taxation topped Musgrave's
- list of
+ list of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3574,7 +3563,7 @@ key "Musgrave1979"
 
 \end_inset
 
- In his words, he felt it prudent to
+ In his words, he felt it prudent to 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3618,7 +3607,7 @@ key "Cornia_Walters2006"
 
 \end_inset
 
- They found the measures to be
+ They found the measures to be 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3658,7 +3647,7 @@ In Colorado, TABOR provides a framework for truth-in-taxation practices.
  limit.
  In contrast, revenue reductions need not be voted upon,
 \emph on
-but they do set a new baseline for subsequent years.
+ but they do set a new baseline for subsequent years.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3666,7 +3655,7 @@ Deferral Payment Systems
 \end_layout
 
 \begin_layout Standard
-Deferral programs
+Deferral programs 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3761,13 +3750,13 @@ There are two broad operational regimes in the US that govern state-local
  The origin of this doctrine dates back to 1868 when John Forrest Dillon,
  then sitting on the Iowa State Supreme Court, issued an opinion in the
 \emph on
-Clinton v Cedar Rapids & Missouri River Railroad Company
+ Clinton v Cedar Rapids & Missouri River Railroad Company
 \emph default
  case.
  The component of that opininon that has had lasting effect in subnational
  governance, and which was elaborated upon extensively in his treatise
 \emph on
-Municipal Corporations
+ Municipal Corporations
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dillon1873"
@@ -3802,7 +3791,7 @@ This view was not universally held.
  A contrasting opinion was penned by Thomas Cooley of the Michigan State
  Supreme Court in his opinion relating to
 \emph on
-People v Hurlbut
+ People v Hurlbut
 \emph default
  (1871):
 \end_layout
@@ -3823,7 +3812,7 @@ People v Hurlbut
 In support of fewer restrictions on local government, Cooley went on to
  argue in the
 \emph on
-General Principles of Constitutional Law in the United States of America
+ General Principles of Constitutional Law in the United States of America
 \emph default
 
 \begin_inset CommandInset citation
@@ -3864,11 +3853,11 @@ In effect, Cooley believe that relying on the positive list concept of state
  Dillon's Rule ultimately prevailed at the national level, gaining support
  from the Supreme Court rulings in
 \emph on
-Merrill v Monticello
+ Merrill v Monticello
 \emph default
-(1891) and
+ (1891) and
 \emph on
-Hunter v Pittsburgh
+ Hunter v Pittsburgh
 \emph default
  (1907).
 \end_layout
@@ -3985,10 +3974,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -4055,15 +4040,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Distribution of Median Home Values by County (2010)
+Logged Median Home Values by County (2007-2011 5-Year ACS)
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/mhv_by_cty.png
+	width 100text%
 
 \end_inset
 
@@ -4081,7 +4073,7 @@ The practical effect is an institutional arrangement that tends to widen
  to access the same advantages of their wealthier counterparts.
  Concern over this issue in California seems to have influenced the
 \emph on
-Serrano v Priest
+ Serrano v Priest
 \emph default
  decision, which proclaimed that this arrangement violated the equal protection
  clause of the 14th amendment.
@@ -4106,17 +4098,17 @@ key "Fischel1989"
 From the perspective of this study, the Colorado Supreme Court did not move
  on this issue until 2011 (after our study period) in
 \emph on
-Labato v the State of Colorado
+ Labato v the State of Colorado
 \emph default
 .
  Although
 \emph on
-Labato
+ Labato
 \emph default
  declared the funding mechanism unconstitutional in Colorado, this decision
  was overturned in the 2013
 \emph on
-State of Colorado v Labato
+ State of Colorado v Labato
 \emph default
  case.
 \end_layout
@@ -4145,7 +4137,7 @@ key "Joyce_Mullins1991"
 \emph on
 Overall Property Tax Rate Limits
 \emph default
-set a ceiling on the property tax rate for all jurisdictions in the state;
+ set a ceiling on the property tax rate for all jurisdictions in the state;
 \end_layout
 
 \begin_layout Enumerate
@@ -4153,7 +4145,7 @@ set a ceiling on the property tax rate for all jurisdictions in the state;
 \emph on
 Specific Property Tax Rate Limits
 \emph default
-set a rate ceiling for particular types of government or different service
+ set a rate ceiling for particular types of government or different service
  areas;
 \end_layout
 
@@ -4162,7 +4154,7 @@ set a rate ceiling for particular types of government or different service
 \emph on
 Assessment Increase Limits
 \emph default
-cap the growth rate of the assessment base;
+ cap the growth rate of the assessment base;
 \end_layout
 
 \begin_layout Enumerate
@@ -4170,7 +4162,7 @@ cap the growth rate of the assessment base;
 \emph on
 Property Tax Levy Limits
 \emph default
-cap the growth of property tax revenue;
+ cap the growth of property tax revenue;
 \end_layout
 
 \begin_layout Enumerate
@@ -4178,7 +4170,7 @@ cap the growth of property tax revenue;
 \emph on
 General Revenue or Expenditure Limits
 \emph default
-cap the growth rate of total revenues or expenditures for the state; and,
+ cap the growth rate of total revenues or expenditures for the state; and,
 \end_layout
 
 \begin_layout Enumerate
@@ -16753,10 +16745,7 @@ reference "sub:Defining-Fiscal-Space"
 .
  The second three are transformations of the first three.
  They are change measures that capture the difference in cluster differences
- between the current year (
-year 
-\lang english
-
+ between the current year (year 
 \begin_inset ERT
 status open
 
@@ -16767,10 +16756,7 @@ $t$
 
 \end_inset
 
-) and the next year (
-year 
-\lang english
-
+) and the next year (year 
 \begin_inset ERT
 status open
 
