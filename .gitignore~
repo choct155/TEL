@@ -1,0 +1,3 @@
+#Ignore county shapefiles
+*.shp
+*.dbf
