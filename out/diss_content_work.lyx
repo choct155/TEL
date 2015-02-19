@@ -1993,6 +1993,19 @@ name "fig:prop-tax"
 
 \end_layout
 
+\begin_layout Plain Layout
+Confirm base does actually include intergovernmental transfers....
+ Include 
+\begin_inset Quotes eld
+\end_inset
+
+local
+\begin_inset Quotes erd
+\end_inset
+
+ tag in exhibit/
+\end_layout
+
 \end_inset
 
 
@@ -2061,6 +2074,18 @@ name "fig:Local-Receipts"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+Confirm what 
+\begin_inset Quotes eld
+\end_inset
+
+Income Receipts on Assets
+\begin_inset Quotes erd
+\end_inset
+
+ is....
 \end_layout
 
 \end_inset
@@ -2484,6 +2509,10 @@ name "fig:Age-Distribution"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+Replace with dependency ratio (include children)....
 \end_layout
 
 \end_inset
@@ -3005,6 +3034,13 @@ key "Netzer1966"
  source of a new lease on life.
 \end_layout
 
+\begin_layout Standard
+WHAT ABOUT PERIODICITY? BURDEN IS HIGH IN A SHORT WINDOW, AND PARTICULARLY
+ SO FOR PEOPLE WITH FIXED INCOMES AND LIVE IN PROPERTY THEY OWN.
+ THERE IS A GENERATIONAL COMPONENT.
+ REF DC LIENS SCANDAL
+\end_layout
+
 \begin_layout Section
 What are Fiscal Institutions?
 \end_layout
@@ -3200,6 +3236,13 @@ This view of political economy of public finaince is salient in the current
 
 \begin_layout Subsection
 Targeted Non-Neutralities
+\end_layout
+
+\begin_layout Standard
+DISCUSS THE FACT THAT THESE ARE ATTEMPTS TO DEAL WITH SPECIFIC ISSUES RAISED
+ ABOVE.
+ CITE MULLINS (CHAPTER IN SALLY'S BOOK) TO CAPTURE THESE MOTIVATIONS.
+ HE IS EMAILING IT TO ME.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4009,6 +4052,10 @@ name "fig:Dillons-Rule"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+Need to fix short title (to Home Rule)
 \end_layout
 
 \end_inset
@@ -4921,6 +4968,10 @@ name "fig:County-Population-Dynamics"
 
 \end_layout
 
+\begin_layout Plain Layout
+Fix axis labels
+\end_layout
+
 \end_inset
 
 
@@ -5078,6 +5129,10 @@ name "fig:Distribution-of-Income"
 
 \end_layout
 
+\begin_layout Plain Layout
+Need a key...
+\end_layout
+
 \end_inset
 
 
@@ -5160,7 +5215,11 @@ name "fig:Economic-Stress"
 \end_layout
 
 \begin_layout Plain Layout
+Need a key...
+\end_layout
 
+\begin_layout Plain Layout
+Create an index (product of both above graphs)
 \end_layout
 
 \end_inset
@@ -5472,6 +5531,10 @@ name "fig:County-Expenditure-Growth"
 
 \end_layout
 
+\begin_layout Plain Layout
+Confirm that this is real?
+\end_layout
+
 \end_inset
 
 
@@ -5541,6 +5604,10 @@ name "fig:Expenditure-Composition"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+Go stacked area on these compositional charts...
 \end_layout
 
 \end_inset
@@ -5814,6 +5881,10 @@ name "fig:TABOR-Ratchet-Effect"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+Compare hypothetical ratched county and an unconstrained county...
 \end_layout
 
 \end_inset
@@ -6102,6 +6173,10 @@ on between TELs and both the general propensity to shift revenue sources
  (http://onlinelibrary.wiley.com/doi/10.1111/j.1468-2257.2012.00586.x/abstract).
  In neither case was county-specific socioeconomic context treated as a
  primary driver.
+\end_layout
+
+\begin_layout Standard
+NEED TO FIX CITATIONS ABOVE 
 \end_layout
 
 \begin_layout Standard
@@ -6901,6 +6976,7 @@ $t$
 \end_inset
 
 .
+ JUST GO WITH STOCK (NOT BASE)...
 \end_layout
 
 \begin_layout Description
@@ -6933,7 +7009,7 @@ $t$
 \end_layout
 
 \begin_layout Plain Layout
-
+FIX ALL BOXES...
 \end_layout
 
 \end_inset
@@ -7144,7 +7220,13 @@ $t$
 \end_layout
 
 \begin_layout Plain Layout
+NEED TO TALK ABOUT THE LIMITATIONS OF BACKING INTO THIS (TALK ABOUT LACK
+ OF EXEMPTIONS)
+\end_layout
 
+\begin_layout Plain Layout
+IS THERE AN ASSESSMENT/SALES RATIO ANALYSIS FOR COLORADO? ADD FACTOR TO
+ FORMULA...
 \end_layout
 
 \end_inset
@@ -7634,6 +7716,22 @@ beta X_t$
 
 \end_layout
 
+\begin_layout Plain Layout
+SEE IF THE AUTOREGRESSIVE EFFECT CHANGES ACROSS TABOR PASSAGE WITH A COUPLE
+ KEY VARIABLES OF INTEREST.
+ DISCONTINUITY REGRESSION...
+\end_layout
+
+\begin_layout Plain Layout
+ALLOWS US TO ISOLATE THE WEDGE BETWEEN REGIMES, THAT'S WHAT SHOULD BE TAKEN
+ OUT INSTEAD OF THE ENTIRE AUTOREGRESSIVE TERM...
+\end_layout
+
+\begin_layout Plain Layout
+IF THERE IS NO DIFFERENCE, IGNORE IT.
+ IF THERE IS, THAT'S GRAVY...
+\end_layout
+
 \end_inset
 
 
@@ -7814,6 +7912,12 @@ name "fig:Space-Time-Memory"
 
 \end_layout
 
+\begin_layout Plain Layout
+DISCUSS FURTHER WHAT SPATIAL LAGS MEAN IN THE CONTEXT OF FIXED OR RANDOM
+ EFFECTS.
+ WHY DIDN'T I USE FIXED OR RANDOM EFFECTS?
+\end_layout
+
 \end_inset
 
 
@@ -7989,7 +8093,7 @@ The economic potential of any system is not only driven by the presence
  governed by political institutions.
  The goal of institutional design for economic growth, therefore, ought
  to be the facilitation of those activities that increase the marginal product
- of
+ of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -10328,6 +10432,10 @@ _rate$
 \end_layout
 
 \begin_layout Description
+DEMARCATE VARIABLES OF INTEREST
+\end_layout
+
+\begin_layout Description
 Ratio
 \begin_inset space ~
 \end_inset
@@ -11168,6 +11276,10 @@ name "fig:SLM-econ"
 
 \end_layout
 
+\begin_layout Plain Layout
+WHY IS THERE A DIP IN 2002? IS IT RECESSION RELATED?
+\end_layout
+
 \end_inset
 
 
@@ -11980,6 +12092,11 @@ times 10^{-02}$
 
 \end_layout
 
+\begin_layout Plain Layout
+DO TELS REDUCE REV YIELD MORE IN DISTRESSED COUNTIES? MUST BE IN PROPORTIONAL
+ TERMS
+\end_layout
+
 \end_inset
 
 
@@ -12495,6 +12612,25 @@ times 10^{-01}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+TELS ARE ACTUALLY CONSTRAINING THE COUNTIES WITH THE GREATEST GROWTH, WHICH
+ IS DIFFERENT THAN STRESS INDUCEMENT.
+ ELABORATE
+\end_layout
+
+\begin_layout Plain Layout
+THEY MORE STRONGLY CONSTRAIN RICHER COUNTIES, BUT DON'T NECESSARILY KILL
+ THEIR CAPACITY TO PRODUCE?
+\end_layout
+
+\begin_layout Plain Layout
+WHAT IS WORSE? POOR ENDOWMENT OR POOR CAPACITY TO GROW REVENUE?
+\end_layout
+
+\begin_layout Plain Layout
+EXHIBIT: SUMMARY TABLE - TEL INTENSITY FOR STRESSED VS NOT STRESSED COUNTIES
 \end_layout
 
 \end_inset

@@ -4043,8 +4043,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Distribution of Median Home Values by County (2010)
+Logged Median Home Values by County (2007-2011 5-Year ACS)
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/mhv_by_cty.png
+	width 100text%
 
 \end_inset
 
@@ -4062,7 +4073,7 @@ The practical effect is an institutional arrangement that tends to widen
  to access the same advantages of their wealthier counterparts.
  Concern over this issue in California seems to have influenced the
 \emph on
-Serrano v Priest
+ Serrano v Priest
 \emph default
  decision, which proclaimed that this arrangement violated the equal protection
  clause of the 14th amendment.
@@ -4087,17 +4098,17 @@ key "Fischel1989"
 From the perspective of this study, the Colorado Supreme Court did not move
  on this issue until 2011 (after our study period) in
 \emph on
-Labato v the State of Colorado
+ Labato v the State of Colorado
 \emph default
 .
  Although
 \emph on
-Labato
+ Labato
 \emph default
  declared the funding mechanism unconstitutional in Colorado, this decision
  was overturned in the 2013
 \emph on
-State of Colorado v Labato
+ State of Colorado v Labato
 \emph default
  case.
 \end_layout
@@ -4126,7 +4137,7 @@ key "Joyce_Mullins1991"
 \emph on
 Overall Property Tax Rate Limits
 \emph default
-set a ceiling on the property tax rate for all jurisdictions in the state;
+ set a ceiling on the property tax rate for all jurisdictions in the state;
 \end_layout
 
 \begin_layout Enumerate
@@ -4134,7 +4145,7 @@ set a ceiling on the property tax rate for all jurisdictions in the state;
 \emph on
 Specific Property Tax Rate Limits
 \emph default
-set a rate ceiling for particular types of government or different service
+ set a rate ceiling for particular types of government or different service
  areas;
 \end_layout
 
@@ -4143,7 +4154,7 @@ set a rate ceiling for particular types of government or different service
 \emph on
 Assessment Increase Limits
 \emph default
-cap the growth rate of the assessment base;
+ cap the growth rate of the assessment base;
 \end_layout
 
 \begin_layout Enumerate
@@ -4151,7 +4162,7 @@ cap the growth rate of the assessment base;
 \emph on
 Property Tax Levy Limits
 \emph default
-cap the growth of property tax revenue;
+ cap the growth of property tax revenue;
 \end_layout
 
 \begin_layout Enumerate
@@ -4159,7 +4170,7 @@ cap the growth of property tax revenue;
 \emph on
 General Revenue or Expenditure Limits
 \emph default
-cap the growth rate of total revenues or expenditures for the state; and,
+ cap the growth rate of total revenues or expenditures for the state; and,
 \end_layout
 
 \begin_layout Enumerate
