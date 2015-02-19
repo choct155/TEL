@@ -1,5 +1,5 @@
 #Ignore county shapefiles (XML files are too common for other uses)
-*.shp
-*.dbf
-*.prj
-*.shx
+out/figures/shp/*.shp
+out/figures/shp/*.dbf
+out/figures/shp/*.prj
+out/figures/shp/*.shx
