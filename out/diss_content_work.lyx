@@ -2,10 +2,12 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass book
+\textclass authesis
 \begin_preamble
 \usepackage{amsmath}
+\usepackage{url}
 \end_preamble
+\options titlepage
 \use_default_options true
 \begin_modules
 boxedfloat
@@ -46,8 +48,8 @@ modelfloat
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type numerical
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -76,9 +78,121 @@ modelfloat
 
 \begin_body
 
+\begin_layout Title
+DOES ONE SIZE FIT ALL?
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+AN ANALYSIS OF
+\begin_inset Newline newline
+\end_inset
+
+TAX AND EXPENDITURE LIMITATIONS
+\begin_inset Newline newline
+\end_inset
+
+IN COLORADO
+\end_layout
+
+\begin_layout Author
+Marvin Ward Jr.
+\end_layout
+
+\begin_layout DegreeYear
+2015
+\end_layout
+
+\begin_layout Degree
+Doctor of Philosophy
+\end_layout
+
+\begin_layout Chair
+Dr.
+ Daniel Mullins
+\end_layout
+
+\begin_layout SecondReader
+Dr.
+ Rene Aubourg
+\end_layout
+
+\begin_layout ThirdReader
+Dr.
+ Jocelyn Johnston
+\end_layout
+
+\begin_layout DegreeField
+Public Administration/Finance
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyrightpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AbstractN
+This analysis evaluates three tax and expenditure limitation (TEL) policies
+ in Colorado: the Taxpayers' Bill of Rights (TABOR), the Statewide Limitation
+ on Property Tax Revenue (SLPTR), and the Gallagher Amendment (GA).
+ It extends previous research in two novel ways.
+ First, it enables analysis of overlapping policies while incorporating
+ county-specific characteristics by abstracting away from specific policies.
+ Rather, the focus rests on the impacts of these policies on property tax
+ levies.
+ Second, it incorporates spatial dependency to account for overlapping populatio
+ns and economic activity.
+ Within this framework, the revenue and expenditure implications of TEL
+ policies are evaluated, and TELs are found to have material impacts in
+ both cases.
+ TELs are associated with depressed revenues and measurable changes in expenditu
+re behavior.
+ With this context, the final empirical section evaluates the drivers of
+ successful 
+\begin_inset Quotes eld
+\end_inset
+
+DeBrucing
+\begin_inset Quotes erd
+\end_inset
+
+ efforts, in which localities are able to exempt themselves from components
+ of TABOR and SLPTR.
+ The analysis demonstrates that socioeconomic factors are the dominant determina
+nt of voting outcomes.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
 
 \end_inset
 
@@ -97,10 +211,10 @@ name "chap:Overview"
 \end_layout
 
 \begin_layout Subsection
-Statement of Purpose
+The Taxpayers' Bill of Rights
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Statement-of-Purpose"
+name "sub:TABOR"
 
 \end_inset
 
@@ -134,13 +248,13 @@ In 1992, by a vote of 812,308 to 700,906, Colorado voters chose to amend
 status collapsed
 
 \begin_layout Plain Layout
-The population of Colorado was 3,489,832 in 1992
+The population of Colorado was 3,489,832 in 1992.
 \end_layout
 
 \end_inset
 
- (3,489,832) turned out to weigh in on the incorporation of an additional
- TEL into an increasing complicated scheme of subnational finance.
+ turned out to weigh in on the incorporation of an additional TEL into an
+ increasing complicated scheme of subnational finance.
 \end_layout
 
 \begin_layout Standard
@@ -204,7 +318,7 @@ The purpose of this study writ large is to explore the endogenous role of
  These institutions, however, are generally enacted as a response to dissatisfac
 tion with realized fiscal outcomes.
  It would be reasonable to push this point further: the magnitude of the
- restriction bears some relationship to extent of the dissatisfaction.
+ restriction bears some relationship to the extent of the dissatisfaction.
 \end_layout
 
 \begin_layout Standard
@@ -240,6 +354,36 @@ Explore whether or not TELs help to align voter preferences with fiscal
  outcomes.
 \end_layout
 
+\begin_layout Standard
+In general, it would be reasonable to classify this analysis as firmly in
+ the political economic arena.
+ As will be discussed, TELs are blunt instruments.
+ Their popularity, given this lack of surgical precision, is curious to
+ say the least.
+ This study aims to shed light on why these policies are enacted.
+ The upfront material and even the first two empirical sections (revenue
+ and expenditure impacts, respectively) may be viewed as context for this
+ motivating inquiry.
+ The approach taken seeks to understand the drivers of votes that exempt
+ counties from the strictures of TABOR, but these drivers cannot be comprehended
+ without understanding the impacts of TELs on local public finance 
+\emph on
+and how those impacts vary across counties with differing socioeconomic
+ circumstances.
+
+\emph default
+ The fiscal circumstances of a given county contain information not only
+ about the material resources available to that county, but also information
+ about the preferences of county voters.
+ These two informational inputs are difficult to separate from each other
+ and voter outcomes.
+ What follows does not speak to the separation of resources and preference,
+ but it does attempt to address the endogeneity issue by using a predictive
+ framework that incorporates the county-specific stress faced by the counties
+ in the sample.
+ 
+\end_layout
+
 \begin_layout Subsection
 What is the Value Added?
 \begin_inset CommandInset label
@@ -268,7 +412,11 @@ s, or built an index score based upon factors like method of passage (statutory
  Unless we believe that the impacts of TELs are additive, binary approaches
  lack the informational resolution to model the joint impacts of overlapping
  policies.
- Index methods, on the other hand, have a commensurability problem.
+ 
+\end_layout
+
+\begin_layout Standard
+Index methods, on the other hand, have a commensurability problem.
  Just because one TEL has a statutory authorization and another has a constituti
 onal authorization, is the former fundamentally less restrictive than the
  latter in all cases? Even if we roll all elements of the index into the
@@ -281,11 +429,10 @@ onal authorization, is the former fundamentally less restrictive than the
 \end_layout
 
 \begin_layout Standard
-For all of these reasons, this study attacks the issue from a different
- perspective.
+For all of these reasons, this study attacks the issue from a novel perspective.
  To operationalize these policies,
 \emph on
-the focus is shifted from program design to program impact
+ the focus is shifted from program design to program impact
 \emph default
 .
  Instead of asking how a TEL was passed, for example, we ask what is the
@@ -304,8 +451,8 @@ n to the extent possible.
 \end_layout
 
 \begin_layout Standard
-The second major innovation in the world TEL research is the explicit acknowledg
-ement of spatial dependency.
+The second major innovation in the world of TEL research is the explicit
+ acknowledgement of spatial dependency.
  No jurisdiction operates in a vacuum.
  By virtue of the fact that this study evaluates the impact of state-enacted
  policies on local governments, the very design suggests that vertical relations
@@ -318,7 +465,7 @@ hips across governmental entities matter.
 status collapsed
 
 \begin_layout Plain Layout
-The local neighborhood represents jurisdictions that are
+The local neighborhood represents jurisdictions that are 
 \begin_inset Quotes eld
 \end_inset
 
@@ -327,7 +474,7 @@ close
 \end_inset
 
  to the jurisdiction in question.
- What it means to be
+ What it means to be 
 \begin_inset Quotes eld
 \end_inset
 
@@ -338,7 +485,7 @@ close
  varies by analytic objective.
  For our purposes, we use local neighborhood to mean the jurisdictions that
  are spatially proximate.
- For a different purpose, one might alternatively define
+ For a different purpose, one might alternatively define 
 \begin_inset Quotes eld
 \end_inset
 
@@ -361,7 +508,11 @@ ng populations, commercial activity, and shared resources.
 \end_layout
 
 \begin_layout Standard
-Whether or not these innovations change the picture painted by previous
+The flexibility afforded by policy abstraction and the reduction in error
+ associated with county-specific stress indicators along with the modeling
+ of spatial dependence clearly separate this analysis from those that have
+ preceded it.
+ Whether or not these innovations change the picture painted by previous
  literature, they seek to account for potentially confounding elements in
  the measurement space.
  In so doing, agreement would serve only to bolster the robustness of earlier
@@ -461,7 +612,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Switching from categorical to interval data is effectively equivalent to
- increasing the number of categories,
+ increasing the number of categories, 
 \begin_inset ERT
 status open
 
@@ -526,7 +677,7 @@ The third reason, and perhaps the most important, relates to the allocation
 \begin_layout Standard
 Finally, counties are also analytically convenient from a data availability
  standpoint.
- Data is collected extensively at the county-level by both state and federal
+ Data are collected extensively at the county-level by both state and federal
  statistical authorities.
  At the state level, the information used in this study is collected by
  the Colorado State Division of Local Affairs.
@@ -631,7 +782,8 @@ Their viewpoint could still be framed in a public versus private context.
  It is convenient to frame the tradeoffs between private and public action
  as two forces acting against each other, but Buchanan did in fact view
  the state as solely a collection of rules and institutions, as is made
- clear in the appendix of 2004 reprinting of the book by Liberty Fund, Inc.
+ clear in the appendix of the 2004 reprinting of the book (published by
+ Liberty Fund, Inc).
  This conception was critical to his distinction between positive and normative
  theories of politics.
 \end_layout
@@ -677,7 +829,7 @@ The orthodox approach does not, however, lend itself well to a comparative
 \emph default
  direct gains or the
 \emph on
-net
+ net
 \emph default
  direct costs of collective action with the
 \emph on
@@ -730,7 +882,7 @@ act
 \begin_inset Quotes erd
 \end_inset
 
- on the market if the two fora are populated bydifferent people.
+ on the market if the two fora are populated by different people.
 
 \emph default
  The ability to separate these groups is a function of the governance structure
@@ -753,15 +905,16 @@ Viewed from this angle, the task of the state does not exist.
  of rules
 \emph on
 .
+
 \emph default
-Institutional rules are complex and, importantly, are not conducive to smooth
- adjustment as a function of societal welfare.
+ Institutional rules are complex and, importantly, are not conducive to
+ smooth adjustment as a function of societal welfare.
  That is, there is no straightforward way to change the rules in a way that
  maps exactly to the optimal welfare value for a collection of people.
  If a jurisdiction increases taxes on cigarettes, the measurement of the
  welfare impact must take into account consumers, producers, and all of
- the participants auxiliary activity related to the production and consumption
- of cigarettes.
+ the market participants' auxiliary activity related to the production and
+ consumption of cigarettes.
  This view is complicated by knock on effects, as well as the existence
  and regulation of many other products and services.
  Furthermore, it turns out that welfare is difficult to measure to begin
@@ -778,7 +931,7 @@ Choice of rules must also contend with the issue of degradation.
  of equal representation is fairly unclear.
  At the base, we can all agree on a single vote for each voter.
  The ability, however, to influence the agenda confers great benefits on
- those who execute the task successfully.
+ those who successfully leverage said influence.
  Attempts to limit that power, however, are hamstrung by the need to apply
  rules in a general way.
  Designing rules that do not also abridge basic rights is a significant
@@ -815,6 +968,10 @@ name "sec:Layout"
 \end_layout
 
 \begin_layout Standard
+***CHAPTER REFS AREN'T WORKING???
+\end_layout
+
+\begin_layout Standard
 Before any empirical testing, it is important to provide information about
  the operating context.
  Chapter 
@@ -827,8 +984,9 @@ reference "chap:SubFinUS"
  provides an overview of subnational finance in the US.
  In particular, the presented perspective seeks to provide broad justification
  for studying subnational fiscal institutions.
- Furthermore, it will provide an overview fiscal institutions in general,
- prior to focusing in on tax and expenditure limitations specifically.
+ Furthermore, the Appendix extends this discussion with an overview fiscal
+ institutions in general.
+ This study, of course, focuses on tax and expenditure limitations specifically.
  Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -898,7 +1056,7 @@ duality
 \end_inset
 
  of public finance at the local level.
- Chapter 
+ With this context, Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:DeBrucing"
@@ -925,7 +1083,31 @@ DeBrucing
 \begin_inset Quotes erd
 \end_inset
 
-) as an instrument of revealed voter preference.
+)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Douglas Bruce is a former lawmaker in Colorado, and the principal author
+ of the Taxpayers' Bill of Rights (TABOR).
+ Having been remarkably persistent in pushing the policy through, he has
+ largely been seen as the public face of TABOR.
+ Consequently, votes conducted by localities to exempt themselves from the
+ strictures of TABOR for at least a limited amount of time have come to
+ be known as 
+\begin_inset Quotes eld
+\end_inset
+
+DeBrucing
+\begin_inset Quotes erd
+\end_inset
+
+ efforts.
+\end_layout
+
+\end_inset
+
+ as an instrument of revealed voter preference.
 \end_layout
 
 \begin_layout Standard
@@ -944,6 +1126,22 @@ reference "chap:Conclusion"
  as well as thoughts on what may be explored with future research.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Subnational Finance in the United States
 \begin_inset CommandInset label
@@ -958,12 +1156,13 @@ name "chap:SubFinUS"
 \begin_layout Standard
 The federal system of government in the United States is arguably among
  the most complex social coordinating mechanisms in the world.
- It is comprosised of over 90,000 individual governmental entitites
+ It is comprised of over 90,000 individual governmental entitites
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-As of 2012, there were 90,106 state and local governments.
+According to the US Census Bureau, as of 2012, there were 90,106 state and
+ local governments.
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "COG_Summary2012"
@@ -1106,13 +1305,13 @@ key "Oates2008"
 \begin_inset Quotes eld
 \end_inset
 
-For a public good - the consumption of which defined over geographical subsets
- of the total population, and for which the costs of providing each level
- of the good are the same for the central or for the respective local government
- - it will always be more efficient (or at least as efficient) for local
- governments to provide Pareto-efficient levels of output for their respective
- jurisdictions than for the central government to provide any specified
- and uniform level of output across all jurisdictions.
+For a public good - the consumption of which is defined over geographical
+ subsets of the total population, and for which the costs of providing each
+ level of the good are the same for the central or for the respective local
+ government - it will always be more efficient (or at least as efficient)
+ for local governments to provide Pareto-efficient levels of output for
+ their respective jurisdictions than for the central government to provide
+ any specified and uniform level of output across all jurisdictions.
 \begin_inset Quotes erd
 \end_inset
 
@@ -1120,9 +1319,9 @@ For a public good - the consumption of which defined over geographical subsets
 \end_layout
 
 \begin_layout Standard
-Perusal of budgets across the three levels of government (national, state,
- and local) will affirm that direct service provision constitutes larger
- portions of the budget the closer one gets to the citizens.
+Perusal of budgets across the three levels of government will affirm that
+ direct service provision constitutes larger portions of the budget the
+ closer one gets to the citizens.
  This is a good thing because the capacity to choose among local menus is
  welfare enhancing.
 \end_layout
@@ -1331,7 +1530,7 @@ Establishing a local tax requires an awareness of both general tax design
 status collapsed
 
 \begin_layout Plain Layout
-Bird captures the latter suggestion directly:
+Bird captures the latter suggestion directly: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1367,7 +1566,7 @@ Local collection; and,
 \end_layout
 
 \begin_layout Enumerate
-Proceeds accrue to the local entity.
+Accrual of proceeds to the local entity.
 \begin_inset Foot
 status collapsed
 
@@ -1385,7 +1584,7 @@ n is simply an activity, while the absorption of proceeds dictates where
 \begin_layout Standard
 Having established the operational handles of an abstract local tax, the
  choice of specific taxes should strive to capture the ideal elements of
- a local tax: immobility, adequacy/buoyancy, stabilty/predictability, fairness,
+ such a tax: immobility, adequacy/buoyancy, stabilty/predictability, fairness,
  administrative ease, non-exportality, and visibility (i.e.
  transparency).
  For the most part, these characteristics are goals for any tax at any level.
@@ -1478,7 +1677,7 @@ key "Smith1776"
 
 
 \emph default
-Smith's work is probably among the most prominent writings in economics
+ Smith's work is probably among the most prominent writings in economics
  that advocates for the ability-to-pay principle.
 \begin_inset Foot
 status collapsed
@@ -1599,7 +1798,7 @@ The role of government, as measured by its size relative to the total economy,
  Given the comparatively low-level of resources allocated to the judicial
  and legislative branches, this growth has been driven by increases in the
  executive and regulatory capacity of government at all levels.
- Figure
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Tot-Gov-Size"
@@ -1745,7 +1944,7 @@ key "Cleveland1906"
 Although the federal government has expanded more rapidly than the state
  and local sector, subnational finance still increased its share of the
  economy over the course of the past century.
- Over the 1929-2013 period, Figure
+ Over the 1929-2013 period, Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SL-Gov-Size"
@@ -2136,7 +2335,7 @@ Citizens have often endorsed or even demanded rapid expansion, but when
 
 \begin_layout Standard
 The consequence was a wave of reforms, designed to aggressively lower taxpayers'
- most visible local revenue instrument, the property tax.
+ most visible local liability, the property tax.
 \end_layout
 
 \begin_layout Standard
@@ -2300,7 +2499,7 @@ key "Smith_Thoolen1980"
 
 \end_inset
 
- represents the strategies that a local fiscal manager can tak to effect
+ represents the strategies that a local fiscal manager can take to effect
  changes in the operations of his/her jurisdiction.
  The size of each circle reflects the amount of opportunity the manager
  has to pursue such a strategy.
@@ -2560,7 +2759,7 @@ The Evolution of the Economy
 \end_layout
 
 \begin_layout Standard
-One of th greatest challenges facing local jurisdictions is the evolution
+One of the greatest challenges facing local jurisdictions is the evolution
  of the economy.
  The well-recognized trend away from hard goods production to services
 \begin_inset CommandInset citation
@@ -2673,7 +2872,7 @@ Economic activity, as used here, captures both the value generated from
 
 \end_inset
 
- The second front involves the
+ The second front involves the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2686,8 +2885,16 @@ automatic
 status collapsed
 
 \begin_layout Plain Layout
-In this context, dependency ration captures increased expenditures that
- occur with growth in the impoverished portion of the resident population.
+In this context, 
+\begin_inset Quotes eld
+\end_inset
+
+dependency ratio
+\begin_inset Quotes erd
+\end_inset
+
+ cost captures increased expenditures that occur with growth in the impoverished
+ portion of the resident population.
  This is in contrast to the traditional age-related definition, which is
  defined by the proportion of children and seniors.
 \end_layout
@@ -2754,7 +2961,7 @@ For good cause, the intergovernmental transfer system has emerged as a method
  expenditure responsibility.
  Local governments must contend with mobile tax bases, and often expenditure
  needs that are geographically out of phase with revenue capacity.
- The downside of thei development is a strong dependency by local governments
+ The downside of this development is a strong dependency by local governments
  on transfers from both state and national coffers.
  When the economy enters a recession, while the impacts on own source revenue
  may differ as a function of revenue base disparities, a certain amount
@@ -2862,6 +3069,13 @@ These data describe the variance in TEL regimes across the country.
 
 \begin_layout Subsection
 The Argument Against the Property Tax
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Against-Property-Tax"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2911,7 +3125,7 @@ key "Seligman1913"
 
 \end_inset
 
- In his view, there were five damning features that made the tax
+ In his view, there were five damning features that made the tax 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2971,8 +3185,8 @@ Regressivity
 Seligman's context for this complaint involved his observance of the transition
  away from the agrarian social context that characterized the early period
  in US history.
- In particular, famers were disadvantaged in the practical taxation of property
- because their assets were quite intangible and visible.
+ In particular, farmers were disadvantaged in the practical taxation of
+ property because their assets were quite intangible and visible.
  In contrast, holdings derived from trade often enjoyed tax exempted status,
  either de facto or de jure, as a consequence of their intractability as
  administratively feasible tax handles.
@@ -2980,7 +3194,7 @@ Seligman's context for this complaint involved his observance of the transition
  this feature was a regressive one.
  This framework holds today in the sense that personal property can drive
  a tremendous wedge in aggregate asset holdings across homeowners.
- To the extent that personal property is taxes inconsistently at best, Seligman'
+ To the extent that personal property is taxed inconsistently at best, Seligman'
 s concerns are still valid.
 \end_layout
 
@@ -3007,19 +3221,84 @@ Property is taxed in practice based upon the value of the asset,
  from an individual's ability to pay.
 \end_layout
 
+\begin_layout Subsubsection
+Periodicity
+\end_layout
+
 \begin_layout Standard
-For all of these reasons, the property tax endured an aggressive movement
- to develop other sources of revenue.
+Unlike the sales tax which is levied at the point of sale, and the income
+ tax which is largely withheld, the property tax stands out for the timing
+ of payments.
+ Property tax payments are collected rarely and are correspondingly large
+ when collected.
+ This creates a very high level of visibility of property tax liability,
+ and the economic pain of payment is comparatively acute.
+ From a theoretical standpoint, 
+\emph on
+this is actually a positive feature.
+
+\emph default
+ The nature of property tax payment promotes transparency, as taxpayers
+ cannot avoid thinking about the liability.
+ In the real world, however, it is largely this feature that has contributed
+ to widespread popular disdain for the tax.
+ This is partciularly so for taxpayers with fixed incomes that reside in
+ property they own.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In 2013, the Washington Post published a four-part series (
+\emph on
+Homes for the Taking)
+\emph default
+ detailing the circumstances by which many fixed income residents fell behind
+ on their property taxes.
+ In many cases, these leins led to eviction.
+ Such stories grow the disdain for the tax.
+ A more nuanced consumption of the information revealed that challenges
+ in administration may have been more influential than the city's property
+ taxation regime.
+\end_layout
+
+\end_inset
+
+ That being said, in practice, the ability to leverage escrow accounts has
+ attenuated the 
+\begin_inset Quotes eld
+\end_inset
+
+pain
+\begin_inset Quotes erd
+\end_inset
+
+ issue to a limited extent.
+\end_layout
+
+\begin_layout Subsection
+The Argument For the Property Tax
+\end_layout
+
+\begin_layout Standard
+For all of the reasons detailed in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Against-Property-Tax"
+
+\end_inset
+
+, the property tax endured an aggressive movement to develop other sources
+ of revenue.
  Furthermore, there were widespread statutory and constitutional efforts
  to narrow the property tax base and reduce its role in financing public
  expenditures in the early 20th century.
  These efforts were, however, undermined by changing fiscal circumstances.
  The same period saw a sharp increase in public expenditure responsibilities
- as a consequence of a growing, urbanizing population and a
+ as a consequence of a growing, urbanizing population and a 
 \begin_inset Quotes eld
 \end_inset
 
-lengthening of the period of cumpulsory schools attendance.
+lengthening of the period of cumpulsory school attendance.
 \begin_inset Quotes erd
 \end_inset
 
@@ -3032,13 +3311,47 @@ key "Netzer1966"
 
  In particular, the productivity of the property tax as practiced was the
  source of a new lease on life.
+ That is, the expanding role for the state was well-served by the reliable
+ revenue provided by the property tax.
+ It should also be noted that the property tax, due to the timing of the
+ assessment/collection cycle, has favorable cyclical properties.
+ As a practical matter, local officials must be concerned with the decline
+ in revenue associated with economic downturns.
+ As a consequence of assessment lag, the property tax will typically not
+ decline in yield immediately (as would income and sales taxes).
+ The delay helps to smooth local revenue profiles and lessen the impact
+ of macro-level shocks.
 \end_layout
 
 \begin_layout Standard
-WHAT ABOUT PERIODICITY? BURDEN IS HIGH IN A SHORT WINDOW, AND PARTICULARLY
- SO FOR PEOPLE WITH FIXED INCOMES AND LIVE IN PROPERTY THEY OWN.
- THERE IS A GENERATIONAL COMPONENT.
- REF DC LIENS SCANDAL
+Bolstered by the strong practical rationale for continued reliance on the
+ property tax, scholars have taken note of strong theoretical arguments.
+ As previously mentioned, the immobility of the property tax base reduces
+ concerns regarding the flight of the tax base from a given jurisdiction.
+ Furthermore, the property tax can be supported from a benefits received
+ perspective.
+ While there are difficulties coupling liability to home value, on the public
+ consumption of services side, the property tax can be viewed as the price
+ of services rendered in the jurisdiction.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Oates1999"
+
+\end_inset
+
+ School finance, in particular, features a significantly interdependent
+ relationship with home values.
+ Home values drive the 
+\emph on
+capacity
+\emph default
+ of the revenue base, but these home values simultaneously incorporate school
+ availability via capitalization.
+ From an ability to pay perspective, to the extent that home values are
+ at least partially correlated with incomes, the instrument does have a
+ progressive component to it (non-neutralities notwithstanding).
+ In general, despite Seligman's critique, there is a strong rationale for
+ the property tax's continued use.
 \end_layout
 
 \begin_layout Section
@@ -3088,7 +3401,7 @@ reference "sec:Motivations-for-Limiting-Property-Tax"
  These fundamental concerns are complex and in many ways require a nuanced
  understanding of taxation in general to sufficiently comprehend and design
  constructive reform in practice.
- In the real world, however, students of public finance are all to rare.
+ In the real world, however, students of public finance are all too rare.
  Admiteedly, the author's bias shines through here, but there is a kernel
  of truth in the sense that the motivating factors for reform are often
  discordant with constructive progress.
@@ -3135,6 +3448,7 @@ key "Wildavsky61"
  governance opinions, and make siting decisions.
  The link between welfare potential and political structure lies in the
  latter serving as an input into the cost structure of the permissible and
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3142,7 +3456,7 @@ prohibited
 \begin_inset Quotes erd
 \end_inset
 
- activities avaialble to the citizen.
+ activities available to the citizen.
 \begin_inset Foot
 status collapsed
 
@@ -3224,943 +3538,21 @@ This view of political economy of public finaince is salient in the current
  on the idea of fiscal institutions as an instrument of democracy.
  This is not to imply that the operational impacts of the day are to be
  ignored.
- Some limited efficacy can arguably be tolerated in the service of prolonged
- use
+ Some limitation of efficacy can arguably be tolerated in the service of
+ prolonged use
 \emph on
  so long as the reforms do not result in fiscal impotence.
 
 \emph default
  It is thus critical to evaluate each of the institutional reform classes
  that have taken a foothold in the modern US subnational finance environment.
+ However, in the interests of continuity, the detailed discussion of non-TEL
+ fiscal institutions has been relegated to the Appendix.
+ Only generally applicable tax and expenditure limitations are discussed
+ here.
 \end_layout
 
 \begin_layout Subsection
-Targeted Non-Neutralities
-\end_layout
-
-\begin_layout Standard
-DISCUSS THE FACT THAT THESE ARE ATTEMPTS TO DEAL WITH SPECIFIC ISSUES RAISED
- ABOVE.
- CITE MULLINS (CHAPTER IN SALLY'S BOOK) TO CAPTURE THESE MOTIVATIONS.
- HE IS EMAILING IT TO ME.
-\end_layout
-
-\begin_layout Subsubsection
-Circuit Breakers
-\end_layout
-
-\begin_layout Standard
-One of the challenges in researching relief mechanisms is the establishment
- of definitions that provide clear delineations across different policy
- alternatives.
- The variety in implementation that occurs for these relief mechanisms creates
- an environment in which considerable grey areas arise in classification.
- Bowman notes that these arise because all property tax relief measures
- necessarily act on one of three things: the tax base, the tax rate, or
- the income of the taxpayer.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bowman2009"
-
-\end_inset
-
- In particular, the potential to confuse homestead exemptions and circuit
- breakers is particularly high.
- For this reason, this section will use Bowman's definition of circuit breakers.
- The key criterion for qualification as a circuit breaker is
-\begin_inset Quotes eld
-\end_inset
-
-an inverse relationship, over a significant range of income, between income
- and tax relief amounts for a givene property tax amount.
-\begin_inset Quotes erd
-\end_inset
-
- There are two classes of circuit breakers that exist:
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Threshold Circuit Breakers
-\emph default
- exempt all property tax liability that exceeds a given percentage of income;
- and,
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Sliding Scale Circuit Breakers
-\emph default
- exempt a given percentage of the property tax liability based upon the
- income bracket in which the taxpayer resides.
- The exemption level decreases with each successively higher income bracket
- and it phases out entirely at a statutorily defined threshold.
-\end_layout
-
-\begin_layout Standard
-An example will clarify the need to define these items explicitly.
- Tennessee has enacted a 
-\begin_inset Quotes eld
-\end_inset
-
-circuit breaker
-\begin_inset Quotes erd
-\end_inset
-
- relief program that reimbursed senior citizens for taxes paid on the first
- $250,000 of market value.
- There is no phase out, nor is there a reference to income.
- This is actually a targeted homestead deduction.
-\end_layout
-
-\begin_layout Standard
-The impact of circuit breakers on property tax revenues requires empirical
- discovery.
- On the one hand, circuit breakers can increase the propensity of the constituen
-t base to accept tax increases.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bowman2008"
-
-\end_inset
-
- To the extent that a voter already owes the maximum allowable percentage
- of their property value, votes for increased property taxes carry no additional
- cost.
- On the other hand, circuit breakers directly decrease the property tax
- base, thereby potentially increasing liabilities for everyone else.
- Consequently, this instrument does particularly well to stoke tensions
- in the politicial space (voters abover the threshold versus voters below
- the threshold) that serve as an instrinsic characteristic of public finance.
-\end_layout
-
-\begin_layout Standard
-Colorado has no general statewide circuit breaker
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lyons_Farkas_Johnson2007"
-
-\end_inset
-
-, but some relief is provided conditional on senior status.
-\end_layout
-
-\begin_layout Subsubsection
-Homestead Exemptions
-\end_layout
-
-\begin_layout Standard
-The homestead exemption was a product of the housing issues experienced
- during the Great Depression.
- At the time, the incomes of taxpayers were plummeting, creating untenable
- property tax liabilities for much of the citizenry.
- The response to this issue in 14 states was an exemption on a predefined
- portion of property value.
- (Walker(1964) via 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bowman2009"
-
-\end_inset
-
-).
- The proliferation of the instrument slowed as macroeconomic conditions
- eased, and criticism mounted.
- Unlike circuit breakers, homestead exemptions were poorly targeted and
- conferred arguably undue relief on relatively affluent individuals.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fisher1996"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Homestead exemptions generally apply to owner-occupied housing.
- The vehicle for relief is a fixed portion of the property value.
- This portion can either be measured in a static dollar amount, or it can
- be structured as a percentage of home value.
- The choice among these two definitions carries significant implications
- for vertical equity.
- The former is more progressive because it does not permit an increase in
- the size of the benefit as a function of increasing home values (which
- are typically associated with higher incomes).
- This distinction also drives the political economy dynamic in the sense
- that those that reside in a jurisdiction that defines homestead exemptions
- as a percentage of home value are explicitly impacting the marginal cost
- of additional expenditure.
- Insofar as the prices is reduced by the homestead percentage, individuals
- will have a higher propensity to seek additional public services even as
- the exemption narrows the base.
-\end_layout
-
-\begin_layout Standard
-In Colorado, the homestead exemption currently stands at $60,000 for non-elderly
-/disabled filers and $90,000 for the elderly/disabled subgroup of the population.
-\end_layout
-
-\begin_layout Subsubsection
-Preferential Classification
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-In those states with a legal classification system, business property is
- assessed or taxed higher in proportion to value than residential or farm
- property.
- Within the business class, utility property is usually assesses or taxed
- higher than other business property.
- Clearly this reflects the reality of electoral and legislative politics.
- Every home and every farm is represented by one or more voters.
- Utility companies are far less represented in the electorate.
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fisher1996"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fisher succinctly captures the essence of property tax relief, generally.
- Measures which benefit politically privileged or motivated classes tend
- to prevail.
- In the context of classification, this occurs via differential assessment.
-\end_layout
-
-\begin_layout Standard
-Clearly the motivation behind classification is the direct benefit.
- To the extent that businesses shoulder a disproportionate share of the
- taxable base, residential property taxpayers are benefiting from public
- services at a discounted price.
- Gervais notes that the return to housing capital exceeds the return to
- business capital.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Gervais2002"
-
-\end_inset
-
- Gervais is actually studying the wedge caused by the failure to tax imputed
- rent and the mortgage interest deduction.
- however, preferential classification necessarily increases the size of
- said wedge, which generally implies underprovision of capital for businesses
- within the jurisdiction in question, which in turn implies lower commercial
- productivity.
- Dye et al.
- look directly at the property tax classification dynamic in the Chicago
- area.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dye_McGuire_Merriman2001"
-
-\end_inset
-
- In particular, they evaluated the impact of classification in Cook County
- versus property tax rate regimes in the peripheral counties.
- They found that higher commercial property tax rates 1) hampered the growth
- of industrial value and employment, and 2) inhibited commercial property
- value growth as well.
-\end_layout
-
-\begin_layout Standard
-This is, of course, the static assessment.
- The dynamic impact is far less clear.
- To the extent that commercial taxpayers can secure deferred or reduced
- tax liability in exchange for increased capital investment in the area,
- measuring the distribution of liability on balance is an empirical imperative.
- The bottom line is that artificial obstacles to equitable to equitable
- taxation have the potential to reduce long-term welfare for resident income
- groups across the economic spectrum.
-\end_layout
-
-\begin_layout Standard
-Colorado has a two-tier classification scheme.
- All non-residential property is taxed on 29% of the property value as of
- 2014, while the residential rate is calculated each year (pursuant to the
- Gallagher Amendment) so that the residential share of the overall property
- tax burden is held constant.
-\end_layout
-
-\begin_layout Subsubsection
-Relief for Seniors
-\end_layout
-
-\begin_layout Standard
-Perhaps the single largest complaint about the homestead exemption is poor
- targeting.
- The relief provided simply does not focus on those who have a difficult
- time accommodating the property tax liabilities associated with their home.
- A partial response to this criticism has been manifested as a movement
- to provide relief specifically to low-income seniors.
-\end_layout
-
-\begin_layout Standard
-The rationale for the low-income component is evident given the targeting
- criticism.
- The age component requires another critical contextual element.
- This movement began in the 1950s, a couple decafes after the passage of
- Social Security.
- The country was accumulating evidence that this program was changing the
- prevalent life cycle sequence.
- In particular, Social Security was facilitating retirement for older Americans,
- albeit on limited income.
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-In the 1950s, a sharp drop occurre in labor force participation for men
- 65 and older, as Social Security retirements affected labor force participation
- rates.
- [...] Another reason for the decline in men's labor force participation rates,
- mainly older men, is that pensions and disability awards became more available.
- The decrease in participation for men 65 and older was 29.3 percentage points
- over the 1950-80 period, with most of the decrease occurring in the 1950s.
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fullerton1999"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This method of property tax relief was designed specifically for this group.
- Evidence of this motivation is apparent in the definition of income that
- was considered pertinent for this relief.
- The definition was sufficiently broad to contain all sources of income
- (including Social Security), making it a far broader definition than that
- which is used for the income tax.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bowman2009"
-
-\end_inset
-
- This method of relief, like other targeted reforms provides acute benefits
- for a particular segment of the population.
- Thus, it creates a strong incentive for political mobilization and pushes
- yet more political elements to the forefront.
- This type of action, no doubt, led to Colorado's adoption of the quasi-
-\begin_inset Quotes erd
-\end_inset
-
-circuit breaker
-\begin_inset Quotes erd
-\end_inset
-
- mentioned above.
-\end_layout
-
-\begin_layout Subsection
-Neutral Reforms
-\end_layout
-
-\begin_layout Subsubsection
-Truth-in-Taxation
-\end_layout
-
-\begin_layout Standard
-Truth-in-taxation reforms were one of the less caustic responses to the
- environmental elements that led to the tax revolts of the 1970s.
- Among the most pressing concerns at the time was the rapid increase in
- housing values and the subsequent rise in assessment values.
- This enabled jurisdictions to increase property tax revenues without modificati
-on of the tax rate, creating automatic increases in liabilities for homeowners
- who, in many cases, were not experiencing commensurate increases in income.
-\end_layout
-
-\begin_layout Standard
-In his appraisal of the tax revolt, truth-in-taxation topped Musgrave's
- list of 
-\begin_inset Quotes eld
-\end_inset
-
-remedial measures
-\begin_inset Quotes erd
-\end_inset
-
- designed to improve administration and avoid the problematic consequences
- of more stringent reforms.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Musgrave1979"
-
-\end_inset
-
- In his words, he felt it prudent to 
-\begin_inset Quotes eld
-\end_inset
-
-[i]dex the tax system, therby removing hidden tax increases in tax rates
- that permit the government to receive windfall revenue gains without having
- to ask explicitly for tax rate increases.
-\begin_inset Quotes erd
-\end_inset
-
- The operational mechanisms involved are identified by Florestano.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Florestano1981"
-
-\end_inset
-
- To set a new rate assessors must advertise the proposed yield and submit
- the information to public explicitly, by way of formal hearings and a subsequen
-t vote.
- Mullins found that such provisions had spread to 22 states, or 44% of states
- with some form of TEL.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mullins2002"
-
-\end_inset
-
- Cornia and Walters found full disclosure initiatives to be helpful in supportin
-g convergence in tax administration.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cornia_Walters2005"
-
-\end_inset
-
- They also evaluated the revenue impact of disclosure laws in Utah over
- time.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cornia_Walters2006"
-
-\end_inset
-
- They found the measures to be 
-\begin_inset Quotes eld
-\end_inset
-
-effective at restraining growth in the property tax without imposing hard
- statutory or constitutional limitations on local governments.
-\begin_inset Quotes erd
-\end_inset
-
- While property yields grew over the study period, they did not grow as
- fast as property values.
- The effectiveness of these measures also received strong support from Springer
- et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Springer_Lusby_Leatherman_Featherstone2009"
-
-\end_inset
-
- They utilized a natural experiment in Kansas to conclude that, contrary
- to popular belief, truth-in-taxation was a more effective fiscal constraint
- than a general property tax levy limit.
- Per capita property taxes, own-source revenues, and own-source expenditures
- were all lower during the full disclosure regime relative to the period
- characterized by the explicit levy limit.
- ***[Insert Mullins and Mikesell NTA work.]*** These empirical results suggest
- that the impact of full disclosure is varied, but in any case they serve
- as a high value informational tool.
- The informational detail offered by such provisions cannot be matched by
- blanket rules that hold constant no matter what environmental circumstance
- may prevail at a given time.
-\end_layout
-
-\begin_layout Standard
-In Colorado, TABOR provides a framework for truth-in-taxation practices.
- In general, all tax rate increases must be explicitly voted on in non-exempt
- local governments, as does any increase in revenues that exceeds the TABOR
- limit.
- In contrast, revenue reductions need not be voted upon,
-\emph on
- but they do set a new baseline for subsequent years.
-\end_layout
-
-\begin_layout Subsubsection
-Deferral Payment Systems
-\end_layout
-
-\begin_layout Standard
-Deferral programs 
-\begin_inset Quotes eld
-\end_inset
-
-allow certain citizens to postpone payment of all or a portion of their
- property tax until they die, give up their property, or sell it.
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Gold1981"
-
-\end_inset
-
- Sexton notes that the amount of liabilitthat can be deferred is typically
- restricted to 80-85%.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sexton2003"
-
-\end_inset
-
- Gold argues that there are two general classes of relief measures, those
- that are automatic and those that are induced.
- The former group seeks to correct what is perceived to be a standing issue,
- while the latter group may be characterized as a response to environmental
- conditions.
- While it may initially seem that these deferral programs would have been
- a result of the rising property values that catalyzed the so-called tax
- revolt, Gold argues that these programs are in fact automatic reforms seeking
- to mitigate cash flow problems due to property tax burdens.
- In particular, they are designed to assist seniors that may have benefited
- from home appreciation that far outstrips the growth in their incomes (particul
-arly after retirement).
- These programs serve as a method to utilize the capital value accumulated
- in their home to handle their tax liability, albeit at subsidized rates.
-\end_layout
-
-\begin_layout Standard
-Although deferral payment systems are reasonably common,
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Mullins and Mikesell note that they exist in 22 states, the District of
- Columbia, and a number of local governments.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mikesell_Mullins2008"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- constituents often do not take advantage because they seek to avoid the
- new liability.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "IAAO2005"
-
-\end_inset
-
- Furthermore, from the administration perspective, deferral payments complicate
- fiscal accounting by adding uncertainty to the system.
- Nevertheless, they serve as an important relief valve for a targeted constituen
-cy.
-\end_layout
-
-\begin_layout Standard
-In Colorado, a state program exists for seniors and military personnel.
- The State Treasury actually pays the tax on the beneficiary's behalf, and
- then scores the payment as a lien against the property, to be repaid when
- a qualifying event (death or sale) occurs.
-\end_layout
-
-\begin_layout Subsection
-General Restrictions
-\end_layout
-
-\begin_layout Subsubsection
-Dillon's Rule
-\end_layout
-
-\begin_layout Standard
-There are two broad operational regimes in the US that govern state-local
- relations in the context of local autonomy.
- The first is known as Dillon's Rule.
- The origin of this doctrine dates back to 1868 when John Forrest Dillon,
- then sitting on the Iowa State Supreme Court, issued an opinion in the
-\emph on
- Clinton v Cedar Rapids & Missouri River Railroad Company
-\emph default
- case.
- The component of that opininon that has had lasting effect in subnational
- governance, and which was elaborated upon extensively in his treatise
-\emph on
- Municipal Corporations
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dillon1873"
-
-\end_inset
-
-
-\emph default
-, is the following:
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-It is a general and undisputed proposition that a municipal corporation
- possesses and can erxercise the following powers, and no others: first,
- those granted in express words; second, those necessarily or fairly implied
- in or incident to the powers expressly granted; third, those essential
- to the accomplishment of the declared objects and purposes of the corporation
- - not simply inconvenient, but indispensible.
- Any fair, reasonable, substantial doubt concerning the existence of a power
- is resolved by the courts against a corporation, and the power is denied.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This view was not universally held.
- A contrasting opinion was penned by Thomas Cooley of the Michigan State
- Supreme Court in his opinion relating to
-\emph on
- People v Hurlbut
-\emph default
- (1871):
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-[L]ocal government is a matter of absolute right; and the state cannot take
- it away.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In support of fewer restrictions on local government, Cooley went on to
- argue in the
-\emph on
- General Principles of Constitutional Law in the United States of America
-\emph default
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cooley_McLaughlin1898"
-
-\end_inset
-
- the following:
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-It is axiomatic that the management of purely local affairs belongs to the
- people concerned, not only because of being their own affairs, but because
- they will best understand, and be most competent to manage them.
- The continued and permanent existence of local government is, therefore,
- assumed in all state constitutions, and is a matter of constitutional right,
- even when not in terms expressly provided for.
- It would not be competent to dispense it by statute.
- [...] Nevertheless there is no constitutional form or model of local government,
- or a standard or measure of local powers; and these need to be different
- according to the circumstances.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In effect, Cooley believe that relying on the positive list concept of state
- enumerated powers advanced by Dillon would unnecessarily constrain the
- local capacity to govern.
- He advocated for a negative list framework, a perspective that coincides
- with the modern theory of Home Rule.
- Dillon's Rule ultimately prevailed at the national level, gaining support
- from the Supreme Court rulings in
-\emph on
- Merrill v Monticello
-\emph default
- (1891) and
-\emph on
- Hunter v Pittsburgh
-\emph default
- (1907).
-\end_layout
-
-\begin_layout Standard
-In the context of the current study, these competing doctrines have implications
- for local tax policy.
- Localities with Home Rule status have far greater discretion in designing
- the local revenue portfolio.
- Dillon's Rule became the de facto standard for states, whith Home Rule
- statutes being implemented as deviations from it.
- The first departure was enacted by Missouri in 1875, but it was not a general
- repudiation of the doctrine.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Rooney2002"
-
-\end_inset
-
- Rather, the statute permitted the possibility of granting Home Rule, and
- over the following 75 years, only St.
- Louis and Kansas City achieved that status.
- Conceptually similar, but statutorily distinct, provisions proliferate
- throughout the country, capturing 45 states by the year 2001.
-\end_layout
-
-\begin_layout Standard
-Although state legislatures enacted these Home Rule provisions, they were
- typically written in such a way as to avoid universal application within
- states.
- This intra-state heterogeneity is an important analytic characteristic
- of the system.
- It provides a handle for assessing the impact of such provisions while
- holding state and spatially proximate economic characteristics constant,
- thus enabling the study of both revenue composition and revenue growth.
- With respect to the former, Rooney finds that the elimination of Home Rule
- does not create differences in reliance on property tax revenue or average
- burden.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Rooney2002"
-
-\end_inset
-
- With respect to revenue growth, affected residents generally do not feel
- that Home Rule corresponds with a higher propensity for local officials
- to tax at greater levels.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Banovetz2002"
-
-\end_inset
-
- Furthermore, in Illinois, property tax revenue actually increased faster
- in jurisdictions bound by Dillon's Rule.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dye_McGuire1997"
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-This finding may be an artifact of restrictions on the ability to leverage
- previously unauthorized revenue handles.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Note that in the state of Colorado, Home Rule does not exempt local governments
- from the restrictions of TABOR
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mamet_Allen2012"
-
-\end_inset
-
-, but it may have implications for mitigation strategies.
- The state level authorization to permit the exercise of Home Rule was passed
- in 1902 and strengthened in 1912.
- By 2009, 100 cities and towns had adopted some form of it.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-In 2007, 90% of the municipal population lived in municipalities with Home
- Rule charters.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bueche2009"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- By contrast, only two counties have acquired Home Rule charters: Pitken
- and Weld.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Dillon's Rule Counties
-\end_layout
-
-\end_inset
-
-Pitken and Weld Counties
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Dillons-Rule"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/pitken_weld.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Need to fix short title (to Home Rule)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Educational Mandates
-\end_layout
-
-\begin_layout Standard
-Educational mandates are a product of a constitutional conflict over the
- appropriate method to finance education.
- Education is among the most costly expenditure responsibilities at the
- local level.
- Consequently, it is unsurprising that such a large expenditure depends
- heavily on the property tax.
- The problem arose in tying property wealth to the resources available to
- finance the education of children within the jurisdiction in question.
- Unsurprisingly, variation in real estate wealth is substantial, necessarily
- leading to wide variation in educational resources across jurisdictions.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Logged Median Home Values by County (2007-2011 5-Year ACS)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/mhv_by_cty.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The practical effect is an institutional arrangement that tends to widen
- divides in economic potential as children from poor neighborhoods are unable
- to access the same advantages of their wealthier counterparts.
- Concern over this issue in California seems to have influenced the
-\emph on
- Serrano v Priest
-\emph default
- decision, which proclaimed that this arrangement violated the equal protection
- clause of the 14th amendment.
- The court mandated a more equitable distribution of resources managed by
- the state, a decision echoed in subsequent cases around the country.
- The implication for local property taxation was an effective divorce of
- the tax from local funding for schools.
- Fischel argues that this obscured the price link between local taxes and
- educational services, transforming the property tax into a more abstract
- instrument.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fischel1989"
-
-\end_inset
-
- With reduced direct benefits linked to the tax, the extant disdain for
- the tax grew, perhaps furthering efforts to limit its application.
-\end_layout
-
-\begin_layout Standard
-From the perspective of this study, the Colorado Supreme Court did not move
- on this issue until 2011 (after our study period) in
-\emph on
- Labato v the State of Colorado
-\emph default
-.
- Although
-\emph on
- Labato
-\emph default
- declared the funding mechanism unconstitutional in Colorado, this decision
- was overturned in the 2013
-\emph on
- State of Colorado v Labato
-\emph default
- case.
-\end_layout
-
-\begin_layout Subsubsection
 Tax and Expenditure Limitations
 \end_layout
 
@@ -4346,7 +3738,7 @@ key "Edwards2006"
 \end_inset
 
  have observed that TELs encourage greater reliance on non-tax revenue,
- but this sources has been insufficient to cover the gap.
+ but this source has been insufficient to cover the gap.
  The consequence is greater reliance on state funding for local services.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4354,9 +3746,9 @@ key "Sokolow1998,Sokolow2000"
 
 \end_inset
 
- The increase reliance has resulted in an upward shift in the locus of authority
- for local services, and a proliferation of special districts at the local
- level.
+ The increased reliance has resulted in an upward shift in the locus of
+ authority for local services, and a proliferation of special districts
+ at the local level.
 \end_layout
 
 \begin_layout Standard
@@ -4364,7 +3756,7 @@ While Colorado's TEL regime is not quite as extreme as California's, it
  still features overlapping policies.
  In particular, there is the SLPTR, TABOR, and the Gallagher Amendment.
  The impact of these policies is the focus of this study, and their characterist
-ics will be explored in detail in Section
+ics will be explored in detail in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:COTELs"
@@ -4399,7 +3791,7 @@ key "cutler1999restraining"
 
 \end_inset
 
- noted that
+ noted that 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4669,7 +4061,7 @@ frac{1}{2}$
 , Cutler et al.
  found that the impacts of the TEL were smaller than anticipated during
  the 1980s.
- The intended reduction in local revenue collection were offset by an increase
+ The intended reduction in local revenue collection was offset by an increase
  in the tax base from new construction, and increased state aid to municipal
  governments.
  However, when a recession hit in the early 1990s, new construction slowed
@@ -4725,6 +4117,22 @@ key "bradbury2001property"
  Thus, in addition to the equity concerns associated with the differential
  impact of TELs across communities, there are downstream effects that may
  exacerbate preexisting inequity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -4982,77 +4390,10 @@ With respect to the tax base, as expected, the number of housing units scales
  tightly with population.
  Interestingly enough, however, the highest value housing tends to reside
  in the comparatively smaller counties.
- Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Growth-in-Housing"
-
-\end_inset
-
- shows the relationship between county population and housing units in Colorado.
- The color captures the median home value.
- The home values clearly do not scale with population, which may suggest
- that the desire for land scales with income.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Colorado Housing
-\end_layout
-
-\end_inset
-
-Growth in Housing Units
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Growth-in-Housing"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/cty_pop_vs_hu2010.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As can be seen, most counties contain less than 100,000 people, further
- supporting the notion that outlier counties are driving the population
- growth.
+ Home values do not scale tightly with population, which may suggest that
+ the desire for land scales with income.
+ Most counties contain less than 100,000 people, further supporting the
+ notion that outlier counties are driving the population growth.
  The distribution of housing stock value is characterized by a high level
  of variance, which is highlighted in the second panel of the plot.
  As may be expected, the income base also exhibits a great deal of variation.
@@ -5077,7 +4418,7 @@ Blue indicates higher values while red indicates lower values.
  as well.
  Wealther counties reside disproportionately in the northern and northwestern
  portions of the state.
- Median Houshold incomes range from $25,309 to $101,108.
+ Median houshold incomes range from $25,309 to $101,108.
 \end_layout
 
 \begin_layout Standard
@@ -5153,78 +4494,9 @@ Although the data are collected from the 5-year ACS over the 2008-2012 period,
 
  Unemployment and poverty rates exhibit wide variation.
  Unemployment rates varied from 2.4% to 20.1% during the survey period (2008-2012)
-, while poverty rates varied from 3.9% to 22.5% (Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Economic-Stress"
-
-\end_inset
-
-).
+, while poverty rates varied from 3.9% to 22.5%.
  The inverse relationshp between median household income and measures of
- economic stress is apparent.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Economic Stress
-\end_layout
-
-\end_inset
-
-Economic Stress by County
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Economic-Stress"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/CO_unemp_pov_cty_map.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Need a key...
-\end_layout
-
-\begin_layout Plain Layout
-Create an index (product of both above graphs)
-\end_layout
-
-\end_inset
-
-
+ economic stress is material.
 \end_layout
 
 \begin_layout Section
@@ -5837,61 +5109,6 @@ ratchet effect
  This becomes problematic when expenditures are out of phase with revenues.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Ratchet Effect
-\end_layout
-
-\end_inset
-
-TABOR
-\begin_inset Quotes eld
-\end_inset
-
-Ratchet Effect
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:TABOR-Ratchet-Effect"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Compare hypothetical ratched county and an unconstrained county...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 DeBrucing
 \end_layout
@@ -6009,8 +5226,8 @@ In addition to the residential assessment rate reduction, GA provided a
  That being said, modification is allowed in the event of new construction.
  In other words,
 \emph on
-the residential share of property taxes in Colorado cannot increase as a
- consequence of an increase in tax unit value, but it can increase when
+ the residential share of property taxes in Colorado cannot increase as
+ a consequence of an increase in tax unit value, but it can increase when
  the number of tax units increases.
 
 \emph default
@@ -6018,34 +5235,6 @@ the residential share of property taxes in Colorado cannot increase as a
  The residential share of assessment value was approximately 45% when GA
  was implemented in 1982.
  As of 2003, the rate had only increased to 47%.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Residential Property Value Growth Less Non-Residential Property Value Growth
- by County
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6070,7 +5259,11 @@ It is also important to note that TABOR has has an impact on how GA works
  interaction effects with other policies.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Chapter
+Methodological Innovations
+\end_layout
+
+\begin_layout Section
 How are TELs Operationalized in this Study?
 \begin_inset CommandInset label
 LatexCommand label
@@ -6255,7 +5448,7 @@ Local dynamics that might trigger a breach in the ceilings imposed by the
  aforementioned legislation.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 TABOR and SLPTR - A Composite COTEL Intensity Measure
 \begin_inset CommandInset label
 LatexCommand label
@@ -6326,6 +5519,17 @@ name "fig:Distribution-of-COTEL"
 
 \end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/choct155/projects/TEL/ipynb/TEL_intensity_2009.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -6342,7 +5546,7 @@ s the county-specific dynamics captured in the third desired characteristic:
  then the limit is just that which is imposed by the policy in effect.
  The construction of a composite limitation variable is useful because
 \emph on
-only one of the limits can be binding in any given county-year.
+ only one of the limits can be binding in any given county-year.
 
 \emph default
  To get a sense for why this occurs, Figure
@@ -6393,6 +5597,17 @@ name "fig:Visual-Rationale-for-Comp-Limit"
 
 \end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/choct155/projects/TEL/ipynb/TABOR_vs_SLPTR.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -6402,56 +5617,10 @@ name "fig:Visual-Rationale-for-Comp-Limit"
 If the difference between the TABOR constraint and the SLPTR constraint
  is negative (TABOR less SLPTR), it indicates that TABOR was the dominant
  in a given county-year.
- Visualizing the distribution of this difference across counties and years
- reveals non-trivial variation in which policy was the effective constraint
- (Figure ).
  This is the kind of interaction, referenced earlier, that does not lend
  itself to easy capture by the existence paradigm of representing TELs.
  The TABOR/SLPTR constraint has been calculated as the minimum between the
  two for each county-year.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Binding Constraint Switches
-\end_layout
-
-\end_inset
-
-Prevalence of Switching in the Binding Constraint - TABOR vs SLPTR
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Prevalence-of-Switching"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -7235,67 +6404,10 @@ IS THERE AN ASSESSMENT/SALES RATIO ANALYSIS FOR COLORADO? ADD FACTOR TO
 \end_layout
 
 \begin_layout Standard
-As can be seen in Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Prop-Market-Value"
-
-\end_inset
-
-, the property value dynamics vary dramatically over space and time within
+The property value dynamics vary dramatically over space and time within
  Colorado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Property Market Value
-\end_layout
-
-\end_inset
-
-Change in Market Value of Property by County
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Prop-Market-Value"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Data on assessment value by property type and the assessment rates by residentia
-l and non-residential property has been collected from the Colorado Division
+ Data on assessment value by property type and the assessment rates by residenti
+al and non-residential property has been collected from the Colorado Division
  of Local Affairs, and it covers every county during the 1993-2009 period.
 \begin_inset Foot
 status collapsed
@@ -7392,7 +6504,7 @@ $intensity_stock$
  The author expects this to be a dynamic effect.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 The Gallagher Ratio
 \end_layout
 
@@ -7459,6 +6571,17 @@ name "fig:Gallagher-Ratio-Dist"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/choct155/projects/TEL/ipynb/prop_ratio_dist.png
+	width 100text%
 
 \end_inset
 
@@ -8066,6 +7189,22 @@ s violates the absoluteness of non-excludability and non-rivalry.
  that is facilitated by spatial proximity.
  For all of these reasons, the case against at least exploring spatial effects
  in the analysis of fiscal behavior becomes increasingly untenable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -8996,14 +8135,8 @@ $w_kern$
 \end_layout
 
 \begin_layout Standard
-Each of the panels in Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Weight-Matrix-Cardinality"
-
-\end_inset
-
- features a histogram of neighbor counts for each weight matrix.
+Each choice features differing county-specific neighbor counts for each
+ weight matrix.
  For example, for rook contiguity (
 \begin_inset ERT
 status open
@@ -9028,52 +8161,9 @@ $w_kern$
 \end_inset
 
 ), which hase only six counties with a neighborhood of size five.
- Visual inspection of the neighborhood size distributions demonstrates the
- substantive variation in the definitions employed by each weight matrix
- and the reason for sensitivity to neighborhood definition.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Weight Matrix Cardinality
-\end_layout
-
-\end_inset
-
-Weight Matrix Cardinality for Counties in Colorado
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Weight-Matrix-Cardinality"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ The inconsistent neighborhood size distributions demonstrates the substantive
+ variation in the definitions employed by each weight matrix and the reason
+ for sensitivity to neighborhood definition.
 \end_layout
 
 \begin_layout Subsubsection
@@ -12691,6 +11781,22 @@ It should also be noted that the analysis in this paper makes clear that
  The impact of COTELs on fiscal capacity, however, warrants greater study.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Alteration of Expenditure Patterns
 \begin_inset CommandInset label
@@ -15038,7 +14144,7 @@ name "fig:Within-Cluster-Variation-by-Year"
 
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 Caveat Emptor
 \end_layout
 
@@ -16544,6 +15650,22 @@ reference "sub:Econometrics-as-Observation"
 ).
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Cross-Sectional Models
 \begin_inset CommandInset label
@@ -17156,6 +16278,22 @@ reference "fig:Spatial-Lag-Model"
 .
  In light of these findings, an alternative approach was pursued: LASSO
  regression.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -17833,10 +16971,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -17868,6 +17002,22 @@ name "fig:LASSO-Estimates-by-measure"
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
 \end_layout
 
 \end_inset
@@ -18947,6 +18097,22 @@ While it is also true that there are a number of other, often more important,
  be gleaned from the analysis.
  In all likelihood, institutional restrictions matter for local fiscal choices.
  Policy officials must, and measurably do, adapt to these constraints.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -23008,6 +22174,22 @@ This chapter represents only a single step in research that aims to provide
  fiscal stress can be accommodated.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Conclusion
 \begin_inset CommandInset label
@@ -23178,6 +22360,897 @@ Ultimately, the analysis presented here has only scratched the surface of
  in the hopes that future work may provide fresh insights that may have
  previously been hidden by prevailing practice.
  With any luck, it has at least partially succeeded on these fronts.
+\end_layout
+
+\begin_layout Chapter
+Appendix
+\end_layout
+
+\begin_layout Standard
+As discussed in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:SubFinUS"
+
+\end_inset
+
+, comprehension of TELs is well served by understanding the additional reforms
+ in play before and during the growth in the TEL movement.
+ The discussion of these reforms is continued here, stratified into three
+ groups: targeted on-neutralities, neutral reforms, and general restrictions.
+\end_layout
+
+\begin_layout Subsection
+Targeted Non-Neutralities
+\end_layout
+
+\begin_layout Standard
+DISCUSS THE FACT THAT THESE ARE ATTEMPTS TO DEAL WITH SPECIFIC ISSUES RAISED
+ ABOVE.
+ CITE MULLINS (CHAPTER IN SALLY'S BOOK) TO CAPTURE THESE MOTIVATIONS.
+ HE IS EMAILING IT TO ME.
+\end_layout
+
+\begin_layout Subsubsection
+Circuit Breakers
+\end_layout
+
+\begin_layout Standard
+One of the challenges in researching relief mechanisms is the establishment
+ of definitions that provide clear delineations across different policy
+ alternatives.
+ The variety in implementation that occurs for these relief mechanisms creates
+ an environment in which considerable grey areas arise in classification.
+ Bowman notes that these arise because all property tax relief measures
+ necessarily act on one of three things: the tax base, the tax rate, or
+ the income of the taxpayer.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bowman2009"
+
+\end_inset
+
+ In particular, the potential to confuse homestead exemptions and circuit
+ breakers is particularly high.
+ For this reason, this section will use Bowman's definition of circuit breakers.
+ The key criterion for qualification as a circuit breaker is
+\begin_inset Quotes eld
+\end_inset
+
+an inverse relationship, over a significant range of income, between income
+ and tax relief amounts for a givene property tax amount.
+\begin_inset Quotes erd
+\end_inset
+
+ There are two classes of circuit breakers that exist:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Threshold Circuit Breakers
+\emph default
+ exempt all property tax liability that exceeds a given percentage of income;
+ and,
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Sliding Scale Circuit Breakers
+\emph default
+ exempt a given percentage of the property tax liability based upon the
+ income bracket in which the taxpayer resides.
+ The exemption level decreases with each successively higher income bracket
+ and it phases out entirely at a statutorily defined threshold.
+\end_layout
+
+\begin_layout Standard
+An example will clarify the need to define these items explicitly.
+ Tennessee has enacted a 
+\begin_inset Quotes eld
+\end_inset
+
+circuit breaker
+\begin_inset Quotes erd
+\end_inset
+
+ relief program that reimbursed senior citizens for taxes paid on the first
+ $250,000 of market value.
+ There is no phase out, nor is there a reference to income.
+ This is actually a targeted homestead deduction.
+\end_layout
+
+\begin_layout Standard
+The impact of circuit breakers on property tax revenues requires empirical
+ discovery.
+ On the one hand, circuit breakers can increase the propensity of the constituen
+t base to accept tax increases.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bowman2008"
+
+\end_inset
+
+ To the extent that a voter already owes the maximum allowable percentage
+ of their property value, votes for increased property taxes carry no additional
+ cost.
+ On the other hand, circuit breakers directly decrease the property tax
+ base, thereby potentially increasing liabilities for everyone else.
+ Consequently, this instrument does particularly well to stoke tensions
+ in the politicial space (voters abover the threshold versus voters below
+ the threshold) that serve as an instrinsic characteristic of public finance.
+\end_layout
+
+\begin_layout Standard
+Colorado has no general statewide circuit breaker
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lyons_Farkas_Johnson2007"
+
+\end_inset
+
+, but some relief is provided conditional on senior status.
+\end_layout
+
+\begin_layout Subsubsection
+Homestead Exemptions
+\end_layout
+
+\begin_layout Standard
+The homestead exemption was a product of the housing issues experienced
+ during the Great Depression.
+ At the time, the incomes of taxpayers were plummeting, creating untenable
+ property tax liabilities for much of the citizenry.
+ The response to this issue in 14 states was an exemption on a predefined
+ portion of property value.
+ (Walker(1964) via 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bowman2009"
+
+\end_inset
+
+).
+ The proliferation of the instrument slowed as macroeconomic conditions
+ eased, and criticism mounted.
+ Unlike circuit breakers, homestead exemptions were poorly targeted and
+ conferred arguably undue relief on relatively affluent individuals.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fisher1996"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Homestead exemptions generally apply to owner-occupied housing.
+ The vehicle for relief is a fixed portion of the property value.
+ This portion can either be measured in a static dollar amount, or it can
+ be structured as a percentage of home value.
+ The choice among these two definitions carries significant implications
+ for vertical equity.
+ The former is more progressive because it does not permit an increase in
+ the size of the benefit as a function of increasing home values (which
+ are typically associated with higher incomes).
+ This distinction also drives the political economy dynamic in the sense
+ that those that reside in a jurisdiction that defines homestead exemptions
+ as a percentage of home value are explicitly impacting the marginal cost
+ of additional expenditure.
+ Insofar as the prices is reduced by the homestead percentage, individuals
+ will have a higher propensity to seek additional public services even as
+ the exemption narrows the base.
+\end_layout
+
+\begin_layout Standard
+In Colorado, the homestead exemption currently stands at $60,000 for non-elderly
+/disabled filers and $90,000 for the elderly/disabled subgroup of the population.
+\end_layout
+
+\begin_layout Subsubsection
+Preferential Classification
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+In those states with a legal classification system, business property is
+ assessed or taxed higher in proportion to value than residential or farm
+ property.
+ Within the business class, utility property is usually assesses or taxed
+ higher than other business property.
+ Clearly this reflects the reality of electoral and legislative politics.
+ Every home and every farm is represented by one or more voters.
+ Utility companies are far less represented in the electorate.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fisher1996"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fisher succinctly captures the essence of property tax relief, generally.
+ Measures which benefit politically privileged or motivated classes tend
+ to prevail.
+ In the context of classification, this occurs via differential assessment.
+\end_layout
+
+\begin_layout Standard
+Clearly the motivation behind classification is the direct benefit.
+ To the extent that businesses shoulder a disproportionate share of the
+ taxable base, residential property taxpayers are benefiting from public
+ services at a discounted price.
+ Gervais notes that the return to housing capital exceeds the return to
+ business capital.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gervais2002"
+
+\end_inset
+
+ Gervais is actually studying the wedge caused by the failure to tax imputed
+ rent and the mortgage interest deduction.
+ however, preferential classification necessarily increases the size of
+ said wedge, which generally implies underprovision of capital for businesses
+ within the jurisdiction in question, which in turn implies lower commercial
+ productivity.
+ Dye et al.
+ look directly at the property tax classification dynamic in the Chicago
+ area.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dye_McGuire_Merriman2001"
+
+\end_inset
+
+ In particular, they evaluated the impact of classification in Cook County
+ versus property tax rate regimes in the peripheral counties.
+ They found that higher commercial property tax rates 1) hampered the growth
+ of industrial value and employment, and 2) inhibited commercial property
+ value growth as well.
+\end_layout
+
+\begin_layout Standard
+This is, of course, the static assessment.
+ The dynamic impact is far less clear.
+ To the extent that commercial taxpayers can secure deferred or reduced
+ tax liability in exchange for increased capital investment in the area,
+ measuring the distribution of liability on balance is an empirical imperative.
+ The bottom line is that artificial obstacles to equitable to equitable
+ taxation have the potential to reduce long-term welfare for resident income
+ groups across the economic spectrum.
+\end_layout
+
+\begin_layout Standard
+Colorado has a two-tier classification scheme.
+ All non-residential property is taxed on 29% of the property value as of
+ 2014, while the residential rate is calculated each year (pursuant to the
+ Gallagher Amendment) so that the residential share of the overall property
+ tax burden is held constant.
+\end_layout
+
+\begin_layout Subsubsection
+Relief for Seniors
+\end_layout
+
+\begin_layout Standard
+Perhaps the single largest complaint about the homestead exemption is poor
+ targeting.
+ The relief provided simply does not focus on those who have a difficult
+ time accommodating the property tax liabilities associated with their home.
+ A partial response to this criticism has been manifested as a movement
+ to provide relief specifically to low-income seniors.
+\end_layout
+
+\begin_layout Standard
+The rationale for the low-income component is evident given the targeting
+ criticism.
+ The age component requires another critical contextual element.
+ This movement began in the 1950s, a couple decafes after the passage of
+ Social Security.
+ The country was accumulating evidence that this program was changing the
+ prevalent life cycle sequence.
+ In particular, Social Security was facilitating retirement for older Americans,
+ albeit on limited income.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+In the 1950s, a sharp drop occurre in labor force participation for men
+ 65 and older, as Social Security retirements affected labor force participation
+ rates.
+ [...] Another reason for the decline in men's labor force participation rates,
+ mainly older men, is that pensions and disability awards became more available.
+ The decrease in participation for men 65 and older was 29.3 percentage points
+ over the 1950-80 period, with most of the decrease occurring in the 1950s.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fullerton1999"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This method of property tax relief was designed specifically for this group.
+ Evidence of this motivation is apparent in the definition of income that
+ was considered pertinent for this relief.
+ The definition was sufficiently broad to contain all sources of income
+ (including Social Security), making it a far broader definition than that
+ which is used for the income tax.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bowman2009"
+
+\end_inset
+
+ This method of relief, like other targeted reforms provides acute benefits
+ for a particular segment of the population.
+ Thus, it creates a strong incentive for political mobilization and pushes
+ yet more political elements to the forefront.
+ This type of action, no doubt, led to Colorado's adoption of the quasi-
+\begin_inset Quotes erd
+\end_inset
+
+circuit breaker
+\begin_inset Quotes erd
+\end_inset
+
+ mentioned above.
+\end_layout
+
+\begin_layout Subsection
+Neutral Reforms
+\end_layout
+
+\begin_layout Subsubsection
+Truth-in-Taxation
+\end_layout
+
+\begin_layout Standard
+Truth-in-taxation reforms were one of the less caustic responses to the
+ environmental elements that led to the tax revolts of the 1970s.
+ Among the most pressing concerns at the time was the rapid increase in
+ housing values and the subsequent rise in assessment values.
+ This enabled jurisdictions to increase property tax revenues without modificati
+on of the tax rate, creating automatic increases in liabilities for homeowners
+ who, in many cases, were not experiencing commensurate increases in income.
+\end_layout
+
+\begin_layout Standard
+In his appraisal of the tax revolt, truth-in-taxation topped Musgrave's
+ list of 
+\begin_inset Quotes eld
+\end_inset
+
+remedial measures
+\begin_inset Quotes erd
+\end_inset
+
+ designed to improve administration and avoid the problematic consequences
+ of more stringent reforms.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Musgrave1979"
+
+\end_inset
+
+ In his words, he felt it prudent to 
+\begin_inset Quotes eld
+\end_inset
+
+[i]dex the tax system, therby removing hidden tax increases in tax rates
+ that permit the government to receive windfall revenue gains without having
+ to ask explicitly for tax rate increases.
+\begin_inset Quotes erd
+\end_inset
+
+ The operational mechanisms involved are identified by Florestano.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Florestano1981"
+
+\end_inset
+
+ To set a new rate assessors must advertise the proposed yield and submit
+ the information to public explicitly, by way of formal hearings and a subsequen
+t vote.
+ Mullins found that such provisions had spread to 22 states, or 44% of states
+ with some form of TEL.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mullins2002"
+
+\end_inset
+
+ Cornia and Walters found full disclosure initiatives to be helpful in supportin
+g convergence in tax administration.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cornia_Walters2005"
+
+\end_inset
+
+ They also evaluated the revenue impact of disclosure laws in Utah over
+ time.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cornia_Walters2006"
+
+\end_inset
+
+ They found the measures to be 
+\begin_inset Quotes eld
+\end_inset
+
+effective at restraining growth in the property tax without imposing hard
+ statutory or constitutional limitations on local governments.
+\begin_inset Quotes erd
+\end_inset
+
+ While property yields grew over the study period, they did not grow as
+ fast as property values.
+ The effectiveness of these measures also received strong support from Springer
+ et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Springer_Lusby_Leatherman_Featherstone2009"
+
+\end_inset
+
+ They utilized a natural experiment in Kansas to conclude that, contrary
+ to popular belief, truth-in-taxation was a more effective fiscal constraint
+ than a general property tax levy limit.
+ Per capita property taxes, own-source revenues, and own-source expenditures
+ were all lower during the full disclosure regime relative to the period
+ characterized by the explicit levy limit.
+ ***[Insert Mullins and Mikesell NTA work.]*** These empirical results suggest
+ that the impact of full disclosure is varied, but in any case they serve
+ as a high value informational tool.
+ The informational detail offered by such provisions cannot be matched by
+ blanket rules that hold constant no matter what environmental circumstance
+ may prevail at a given time.
+\end_layout
+
+\begin_layout Standard
+In Colorado, TABOR provides a framework for truth-in-taxation practices.
+ In general, all tax rate increases must be explicitly voted on in non-exempt
+ local governments, as does any increase in revenues that exceeds the TABOR
+ limit.
+ In contrast, revenue reductions need not be voted upon,
+\emph on
+ but they do set a new baseline for subsequent years.
+\end_layout
+
+\begin_layout Subsubsection
+Deferral Payment Systems
+\end_layout
+
+\begin_layout Standard
+Deferral programs 
+\begin_inset Quotes eld
+\end_inset
+
+allow certain citizens to postpone payment of all or a portion of their
+ property tax until they die, give up their property, or sell it.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gold1981"
+
+\end_inset
+
+ Sexton notes that the amount of liabilitthat can be deferred is typically
+ restricted to 80-85%.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sexton2003"
+
+\end_inset
+
+ Gold argues that there are two general classes of relief measures, those
+ that are automatic and those that are induced.
+ The former group seeks to correct what is perceived to be a standing issue,
+ while the latter group may be characterized as a response to environmental
+ conditions.
+ While it may initially seem that these deferral programs would have been
+ a result of the rising property values that catalyzed the so-called tax
+ revolt, Gold argues that these programs are in fact automatic reforms seeking
+ to mitigate cash flow problems due to property tax burdens.
+ In particular, they are designed to assist seniors that may have benefited
+ from home appreciation that far outstrips the growth in their incomes (particul
+arly after retirement).
+ These programs serve as a method to utilize the capital value accumulated
+ in their home to handle their tax liability, albeit at subsidized rates.
+\end_layout
+
+\begin_layout Standard
+Although deferral payment systems are reasonably common,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Mullins and Mikesell note that they exist in 22 states, the District of
+ Columbia, and a number of local governments.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mikesell_Mullins2008"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ constituents often do not take advantage because they seek to avoid the
+ new liability.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAAO2005"
+
+\end_inset
+
+ Furthermore, from the administration perspective, deferral payments complicate
+ fiscal accounting by adding uncertainty to the system.
+ Nevertheless, they serve as an important relief valve for a targeted constituen
+cy.
+\end_layout
+
+\begin_layout Standard
+In Colorado, a state program exists for seniors and military personnel.
+ The State Treasury actually pays the tax on the beneficiary's behalf, and
+ then scores the payment as a lien against the property, to be repaid when
+ a qualifying event (death or sale) occurs.
+\end_layout
+
+\begin_layout Subsection
+General Restrictions
+\end_layout
+
+\begin_layout Subsubsection
+Dillon's Rule
+\end_layout
+
+\begin_layout Standard
+There are two broad operational regimes in the US that govern state-local
+ relations in the context of local autonomy.
+ The first is known as Dillon's Rule.
+ The origin of this doctrine dates back to 1868 when John Forrest Dillon,
+ then sitting on the Iowa State Supreme Court, issued an opinion in the
+\emph on
+ Clinton v Cedar Rapids & Missouri River Railroad Company
+\emph default
+ case.
+ The component of that opininon that has had lasting effect in subnational
+ governance, and which was elaborated upon extensively in his treatise
+\emph on
+ Municipal Corporations
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dillon1873"
+
+\end_inset
+
+
+\emph default
+, is the following:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+It is a general and undisputed proposition that a municipal corporation
+ possesses and can erxercise the following powers, and no others: first,
+ those granted in express words; second, those necessarily or fairly implied
+ in or incident to the powers expressly granted; third, those essential
+ to the accomplishment of the declared objects and purposes of the corporation
+ - not simply inconvenient, but indispensible.
+ Any fair, reasonable, substantial doubt concerning the existence of a power
+ is resolved by the courts against a corporation, and the power is denied.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This view was not universally held.
+ A contrasting opinion was penned by Thomas Cooley of the Michigan State
+ Supreme Court in his opinion relating to
+\emph on
+ People v Hurlbut
+\emph default
+ (1871):
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+[L]ocal government is a matter of absolute right; and the state cannot take
+ it away.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In support of fewer restrictions on local government, Cooley went on to
+ argue in the
+\emph on
+ General Principles of Constitutional Law in the United States of America
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cooley_McLaughlin1898"
+
+\end_inset
+
+ the following:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+It is axiomatic that the management of purely local affairs belongs to the
+ people concerned, not only because of being their own affairs, but because
+ they will best understand, and be most competent to manage them.
+ The continued and permanent existence of local government is, therefore,
+ assumed in all state constitutions, and is a matter of constitutional right,
+ even when not in terms expressly provided for.
+ It would not be competent to dispense it by statute.
+ [...] Nevertheless there is no constitutional form or model of local government,
+ or a standard or measure of local powers; and these need to be different
+ according to the circumstances.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In effect, Cooley believe that relying on the positive list concept of state
+ enumerated powers advanced by Dillon would unnecessarily constrain the
+ local capacity to govern.
+ He advocated for a negative list framework, a perspective that coincides
+ with the modern theory of Home Rule.
+ Dillon's Rule ultimately prevailed at the national level, gaining support
+ from the Supreme Court rulings in
+\emph on
+ Merrill v Monticello
+\emph default
+ (1891) and
+\emph on
+ Hunter v Pittsburgh
+\emph default
+ (1907).
+\end_layout
+
+\begin_layout Standard
+In the context of the current study, these competing doctrines have implications
+ for local tax policy.
+ Localities with Home Rule status have far greater discretion in designing
+ the local revenue portfolio.
+ Dillon's Rule became the de facto standard for states, whith Home Rule
+ statutes being implemented as deviations from it.
+ The first departure was enacted by Missouri in 1875, but it was not a general
+ repudiation of the doctrine.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rooney2002"
+
+\end_inset
+
+ Rather, the statute permitted the possibility of granting Home Rule, and
+ over the following 75 years, only St.
+ Louis and Kansas City achieved that status.
+ Conceptually similar, but statutorily distinct, provisions proliferate
+ throughout the country, capturing 45 states by the year 2001.
+\end_layout
+
+\begin_layout Standard
+Although state legislatures enacted these Home Rule provisions, they were
+ typically written in such a way as to avoid universal application within
+ states.
+ This intra-state heterogeneity is an important analytic characteristic
+ of the system.
+ It provides a handle for assessing the impact of such provisions while
+ holding state and spatially proximate economic characteristics constant,
+ thus enabling the study of both revenue composition and revenue growth.
+ With respect to the former, Rooney finds that the elimination of Home Rule
+ does not create differences in reliance on property tax revenue or average
+ burden.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rooney2002"
+
+\end_inset
+
+ With respect to revenue growth, affected residents generally do not feel
+ that Home Rule corresponds with a higher propensity for local officials
+ to tax at greater levels.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Banovetz2002"
+
+\end_inset
+
+ Furthermore, in Illinois, property tax revenue actually increased faster
+ in jurisdictions bound by Dillon's Rule.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dye_McGuire1997"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This finding may be an artifact of restrictions on the ability to leverage
+ previously unauthorized revenue handles.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that in the state of Colorado, Home Rule does not exempt local governments
+ from the restrictions of TABOR
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mamet_Allen2012"
+
+\end_inset
+
+, but it may have implications for mitigation strategies.
+ The state level authorization to permit the exercise of Home Rule was passed
+ in 1902 and strengthened in 1912.
+ By 2009, 100 cities and towns had adopted some form of it.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In 2007, 90% of the municipal population lived in municipalities with Home
+ Rule charters.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bueche2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ By contrast, only two counties have acquired Home Rule charters: Pitken
+ and Weld.
+\end_layout
+
+\begin_layout Subsubsection
+Educational Mandates
+\end_layout
+
+\begin_layout Standard
+Educational mandates are a product of a constitutional conflict over the
+ appropriate method to finance education.
+ Education is among the most costly expenditure responsibilities at the
+ local level.
+ Consequently, it is unsurprising that such a large expenditure depends
+ heavily on the property tax.
+ The problem arose in tying property wealth to the resources available to
+ finance the education of children within the jurisdiction in question.
+ Unsurprisingly, variation in real estate wealth is substantial, necessarily
+ leading to wide variation in educational resources across jurisdictions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Logged Median Home Values by County (2007-2011 5-Year ACS)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/mhv_by_cty.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The practical effect is an institutional arrangement that tends to widen
+ divides in economic potential as children from poor neighborhoods are unable
+ to access the same advantages of their wealthier counterparts.
+ Concern over this issue in California seems to have influenced the
+\emph on
+ Serrano v Priest
+\emph default
+ decision, which proclaimed that this arrangement violated the equal protection
+ clause of the 14th amendment.
+ The court mandated a more equitable distribution of resources managed by
+ the state, a decision echoed in subsequent cases around the country.
+ The implication for local property taxation was an effective divorce of
+ the tax from local funding for schools.
+ Fischel argues that this obscured the price link between local taxes and
+ educational services, transforming the property tax into a more abstract
+ instrument.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fischel1989"
+
+\end_inset
+
+ With reduced direct benefits linked to the tax, the extant disdain for
+ the tax grew, perhaps furthering efforts to limit its application.
+\end_layout
+
+\begin_layout Standard
+From the perspective of this study, the Colorado Supreme Court did not move
+ on this issue until 2011 (after our study period) in
+\emph on
+ Labato v the State of Colorado
+\emph default
+.
+ Although
+\emph on
+ Labato
+\emph default
+ declared the funding mechanism unconstitutional in Colorado, this decision
+ was overturned in the 2013
+\emph on
+ State of Colorado v Labato
+\emph default
+ case.
 \end_layout
 
 \begin_layout Standard
