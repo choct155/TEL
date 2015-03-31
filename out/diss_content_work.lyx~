@@ -123,23 +123,6 @@ Dr.
  Jocelyn Johnston
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fourthreader{Dr.
- John Mikesell}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout DegreeField
 Public Administration/Finance
 \end_layout
@@ -4154,6 +4137,27 @@ clearpage
 
 \begin_layout Chapter
 Fiscal Behavior in Colorado
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For long-term price changes, this analysis uses the Chained Personal Consumer
+ Expenditures Index.
+ The primary reason is that the PCE, in contrast to the Consumer Price Index,
+ accounts for changes in the basket of consumed goods over time and substitution
+ for less expensive alternatives when the price of a particular good increases.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FOMC2000"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:CO-FiscBehavior"
@@ -4219,13 +4223,13 @@ reference "fig:Colorado-GSP"
 
 \end_inset
 
-, although economic clearly stagnated during national recession periods,
+, although economic growth clearly stagnated during national recession periods,
  the Colorado economy grew dramatically in real terms over the study period.
  Between 1993 and 2009, the real gross state product grew over 90%.
  Nevertheless, the recessionary periods had outsized influence.
  Insofar as revenues declined in those years, the baseline against which
  future revenues were to be compared was reduced.
- This
+ The 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4233,8 +4237,8 @@ ratcheting
 \begin_inset Quotes erd
 \end_inset
 
- process will be discussed in further detail when the TEL policies are presented
- in more detail.
+ implications of this process will be discussed further when the TEL policies
+ are presented in more detail.
 \end_layout
 
 \begin_layout Standard
@@ -4256,7 +4260,7 @@ CO GSP
 
 \end_inset
 
-Colorado Gross State Product (1963-2013)
+Colorado's Real Gross State Product (1963-2013)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Colorado-GSP"
@@ -4291,7 +4295,7 @@ name "fig:Colorado-GSP"
 Over the 1975-2009 time period, according to demographic information acquired
  directly from the Colorado Division of Local Affairs, the population across
  all counties grew 93.4% (2,589,171 to 5,008,427).
- Figure
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:County-Population-Dynamics"
@@ -4485,10 +4489,6 @@ name "fig:Distribution-of-Income"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-Need a key...
 \end_layout
 
 \end_inset
