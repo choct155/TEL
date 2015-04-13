@@ -4794,7 +4794,7 @@ County Expenditures
 
 \end_inset
 
-County Expenditure Growth
+Real County Expenditure Growth
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:County-Expenditure-Growth"
@@ -4818,10 +4818,6 @@ name "fig:County-Expenditure-Growth"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-Confirm that this is real?
 \end_layout
 
 \end_inset
@@ -4895,10 +4891,6 @@ name "fig:Expenditure-Composition"
 
 \end_layout
 
-\begin_layout Plain Layout
-Go stacked area on these compositional charts...
-\end_layout
-
 \end_inset
 
 
@@ -4935,7 +4927,7 @@ The state property tax was eliminated in 1964.
 
 \end_inset
 
- growth
+
 \end_layout
 
 \begin_layout Itemize
@@ -4971,7 +4963,7 @@ Kadlecek Amendment
 \end_layout
 
 \begin_layout Itemize
-1984: The Kadlecek Amendment increased the limit ot 7%, plus the costs of
+1984: The Kadlecek Amendment increased the limit to 7%, plus the costs of
  property tax reappraisals.
 \end_layout
 
@@ -5005,7 +4997,7 @@ TABOR is, in and of itself, a composite measure that acts on individual
  Tax districts in this case represent local jurisdictions that raise revenue,
  such as general purposes municipalities, counties, and school districts.
  It features three major elements that work in concert to limit revenue
- growth: voter approaval for tax increases, a limitation on the growth in
+ growth: voter approval for tax increases, a limitation on the growth in
  revenue, and protection of the existing limits.
 \end_layout
 
@@ -5044,7 +5036,7 @@ If any of the above are proposed, they must be validated by explicit voter
  On the other side, no voter approval is required for a tax decrease.
  Note, however, that such a decrease resets the baseline to a new, lower
  level.
- This is one manifestation of the so-called
+ This is one manifestation of the so-called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5086,10 +5078,20 @@ The Consumer Price Index serves as the inflation measure.
  School districts, by contrast, are bound by CPI growth plus growth in school
  enrollment.
  Any surplus revenue must be returned to taxpayers as credits or refunds.
- Note that at the state level, the revenue subject to TABOR (a.k.a.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that at the state level, the revenue subject to TABOR (a.k.a.
  the TABOR base) constituted only 58.5% of the entire budget in the FY02-03
  fiscal cycle.
  The two largest sources were the individual income, sales, and use taxes.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5103,7 +5105,7 @@ TABOR also raised the bar for efforts to modify existing limitations.
 \end_layout
 
 \begin_layout Standard
-Perhaps the most restrictive feature of TABOR is the implicit
+Perhaps the most restrictive feature of TABOR is the implicit 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5132,7 +5134,7 @@ DeBrucing
 
 \begin_layout Standard
 One characteristic of TABOR that appears to be a confounding element initially
- is the capacity of local jurisdictions to
+ is the capacity of local jurisdictions to 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5159,7 +5161,7 @@ Ultimately, despite initially appearing to be an analytic liability, the
  variation, allowing us to more cleanly separate macroeconomic conditions
  from the policy structure.
  The nature of this separation will be considered in further detail in Subsectio
-n
+n 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:TEL-operationalization"
@@ -5244,8 +5246,9 @@ In addition to the residential assessment rate reduction, GA provided a
  In other words,
 \emph on
  the residential share of property taxes in Colorado cannot increase as
- a consequence of an increase in tax unit value, but it can increase when
- the number of tax units increases.
+ a consequence of an increase in tax unit value (the intensive margin),
+ but it can increase when the number of tax units increases (the extensive
+ margin).
 
 \emph default
  Modification of the rate for new construction has been limited in practice.
@@ -5295,12 +5298,12 @@ name "sub:TEL-operationalization"
 The focus of this study, and the common theme throughout the three empirical
  sections, is the measurement of the impact of TELs on
 \emph on
-individualcounties
+ individual counties
 \emph default
 .
  Furthermore, this impact must be measured
 \emph on
-conditional on each county's circumstance.
+ conditional on each county's circumstance.
 \emph default
 To reiterate the point made in the discussion of this study's value added
  in Subsection
@@ -5313,7 +5316,8 @@ reference "sub:ValueAdd"
 , this objective represents a departure from the vast majority of literature
  in the field.
  In measuring the differences in impact of TELs on intra-metropolitan jurisdicti
-ons, Mullins stands out as one of the few scholars to explored this angle.
+ons, Mullins stands out as one of the few scholars to have explored this
+ angle.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mullins2004"
@@ -5377,23 +5381,30 @@ on between TELs and both the general propensity to shift revenue sources
  outside of the jurisdiction and a difficult environment for the collection
  of fiscal resources.
  One Colorado focused study explored the deleterious effects of recessions
- for jurisdictions affected by TABOR (http://onlinelibrary.wiley.com/enhanced/doi/
-10.1111/j.1540-6210.2007.00752.x/), while another surprisingly found that being
- unable to override TABOR was not associated with increases in special districts
- (http://onlinelibrary.wiley.com/doi/10.1111/j.1468-2257.2012.00586.x/abstract).
+ for jurisdictions affected by TABOR 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martell2007"
+
+\end_inset
+
+, while another surprisingly found that being unable to override TABOR was
+ not associated with increases in special districts.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Billings2012"
+
+\end_inset
+
  In neither case was county-specific socioeconomic context treated as a
  primary driver.
-\end_layout
-
-\begin_layout Standard
-NEED TO FIX CITATIONS ABOVE 
 \end_layout
 
 \begin_layout Standard
 The author posits that this lack of work is driven in large part by the
  limitations of the methods used to measure the impact of TELs.
  Though we have learned a great deal from the approach, measurement has
- largely been conducted within the
+ largely been conducted within the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5437,8 +5448,8 @@ The solution proposed here is abstraction away from the specific elements
  Rather, this study captures COTEL design indirectly, by evaluating the
  implications of COTELs for local revenue yield.
  By shifting the focus, we can overcome the aforementioned limitations.
- In effect, we want to capture some measure of COTEL intensity, that captures
- three primary characteristics of a given county at time
+ In effect, we want to capture some measure of COTEL intensity that captures
+ three primary characteristics of a given county at time 
 \begin_inset ERT
 status open
 
@@ -5503,10 +5514,6 @@ reference "fig:Distribution-of-COTEL"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
