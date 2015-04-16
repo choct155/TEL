@@ -21,7 +21,9 @@ library(ggplot2)
 ##  Read in flat and spatial data ##
 
 #Establish working directory
-workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+#workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+workdir<-'/home/choct155/projects/TEL/ipynb/'
+shpdir<-'/home/choct155/projects/TEL/shp/'
 #Read in data
 data<-read.csv(paste(workdir,'h1_exp_model_in.csv',sep=''))
 #Rename a few variables
@@ -29,7 +31,7 @@ names(data)[1]<-'NAME'
 names(data)[2]<-'year'
 names(data)[12]<-'exp_total'
 #Read in CO shapefile
-c<-readShapeSpatial('/home/choct155/Google Drive/Dissertation/Data/spatial/US/co_county.shp',IDvar='NAME')
+c<-readShapeSpatial(paste(shpdir,'co_county.shp',sep=''),IDvar='NAME')
 #Set projection (from docs)
 projection(c)<-'+proj=longlat +datum=NAD83'
 ##Convert to nb object
@@ -40,17 +42,17 @@ c_lw<-nb2listw(c_nb)
 print(paste('County Count Equivalent:',length(c_lw$weights)==dim(data[which(data$year==2000),])[1]))
 
 ##  Define Model Specifications ##
-tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
-bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
-pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
 
-tot2<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
-bvf2<-dist_clust_bf ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
-pca2<-dist_clust_pca ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+tot2<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+bvf2<-dist_clust_bf ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+pca2<-dist_clust_pca ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
 
-tot3<-dist_clust ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
-bvf3<-dist_clust_bf ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
-pca3<-dist_clust_pca ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+tot3<-dist_clust ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+bvf3<-dist_clust_bf ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+pca3<-dist_clust_pca ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
 
 mlist2<-list(tot2,bvf2,pca2)
 mlist3<-list(tot3,bvf3,pca3)
@@ -84,7 +86,7 @@ slm<-function(ml,yr){
   return(df)
 }
 
-test<-rbind(slm(2000),slm(2001))
+#test<-rbind(slm(2000),slm(2001))
 
 #Evaluate SLM for all three models over the 1993-2009 range
 slm_dfs<-list()

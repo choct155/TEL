@@ -19,7 +19,8 @@ library(stargazer)
 ##  Read in data ##
 
 #Establish working directory
-workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+#workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+workdir<-'/home/choct155/projects/TEL/ipynb/'
 #Read in data
 data<-read.csv(paste(workdir,'h1_exp_model_in.csv',sep=''))
 #Rename a few variables
@@ -34,14 +35,14 @@ pdata$ldist_clust<-lag(pdata$dist_clust)
 
 
 ##  Define Model Specifications ##
-tot<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock)
-tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
-bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
-pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+tot<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + cty_exp_prop
+tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
 
-totd<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + lag(dist_clust)
-bvfd<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
-pcad<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+totd<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + lag(dist_clust) + cty_exp_prop
+bvfd<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+pcad<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
 
 ##  Set up test models ##
 test_fe<-plm(tot,data=pdata,model='within')

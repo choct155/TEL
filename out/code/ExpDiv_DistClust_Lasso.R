@@ -10,14 +10,16 @@ library(reshape2)
 
 print('***LOADING DATA***')
 #Establish working directory
-workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+#workdir<-'/home/choct155/dissertation/TEL/ipynb/'
+workdir<-'/home/choct155/projects/TEL/ipynb/'
 #Read in cluster distance data
 cd<-read.csv(paste(workdir,'h1_exp_model_in.csv',sep=''))
 #Rename a few variables
 names(cd)[1]<-'cty'
 names(cd)[2]<-'year'
 #Establish data dir
-data_dir<-'/home/choct155/Google Drive/Dissertation/Data/'
+#data_dir<-'/home/choct155/Google Drive/Dissertation/Data/'
+data_dir='/home/choct155/projects/gdrive_data/Google Drive/Google Drive/Dissertation/Data/'
 #Read in main set
 data<-read.csv(paste(data_dir,'CO_CTY_REAL.csv',sep=''))
 
@@ -29,13 +31,16 @@ print('***JOINING DATA***')
 left_vars<-c(names(cd)[!names(cd) %in% names(data)],'cty','year')
 #Join data
 cd2<-join(cd[,left_vars],data,by=c('year','cty'),type='left')
+cd2<-cd2[,!(names(cd2) %in% c("cty_rev_prop.1","cty_exp_prop.1"))]
 
 ##  Impute Missing Data ##
 
 print('***IMPUTING MISSING DATA***')
 #Impute data (dropping variables that do not vary)
+colinear_vars<-c('est_unclass','july_pop','nat_pop_inc','r_REV_OCCUPATION_TAX','r_REV_UNCLASS_TAX')
+newvars<-c('cty_exp_prop','cty_rev_prop')
 cd2_mi<-amelia(cd2[,names(cd2)[!names(cd2) %in% c('nonres_rate','r_REV_REAL_ESTATE_TRANSFER_TAX')]],
-                   m=5,ts='year',cs='cty',polytime=2,intercs=TRUE,p2s=2,empri=0.1*nrow(cd2))
+                   m=5,ts='year',cs='cty',polytime=2,intercs=TRUE,p2s=2,empri=0.1*nrow(cd2),incheck=FALSE)
 
 
 ## Define a function to run lasso on each imputed set ##
@@ -101,11 +106,11 @@ print('***LASSO EVAL - IMPUTATION 5***')
 imp5<-lasso_func(cd2_mi$imputations$imp5,lasso_vars,cd_f1,cd2_mi$imputations$imp5$dist_clust)
 
 #Write imputed sets to disk
-write.csv(cd2_mi$imputations$imp1,file='/home/choct155/dissertation/TEL/ExpDiv/dist_clust_lasso_imp1.csv')
-write.csv(cd2_mi$imputations$imp2,file='/home/choct155/dissertation/TEL/ExpDiv/dist_clust_lasso_imp2.csv')
-write.csv(cd2_mi$imputations$imp3,file='/home/choct155/dissertation/TEL/ExpDiv/dist_clust_lasso_imp3.csv')
-write.csv(cd2_mi$imputations$imp4,file='/home/choct155/dissertation/TEL/ExpDiv/dist_clust_lasso_imp4.csv')
-write.csv(cd2_mi$imputations$imp5,file='/home/choct155/dissertation/TEL/ExpDiv/dist_clust_lasso_imp5.csv')
+write.csv(cd2_mi$imputations$imp1,file='/home/choct155/projects/TEL/ExpDiv/dist_clust_lasso_imp1.csv')
+write.csv(cd2_mi$imputations$imp2,file='/home/choct155/projects/TEL/ExpDiv/dist_clust_lasso_imp2.csv')
+write.csv(cd2_mi$imputations$imp3,file='/home/choct155/projects/TEL/ExpDiv/dist_clust_lasso_imp3.csv')
+write.csv(cd2_mi$imputations$imp4,file='/home/choct155/projects/TEL/ExpDiv/dist_clust_lasso_imp4.csv')
+write.csv(cd2_mi$imputations$imp5,file='/home/choct155/projects/TEL/ExpDiv/dist_clust_lasso_imp5.csv')
 
 
 
@@ -343,18 +348,23 @@ for (var in deps_nm){
   coef_estm[coef_estm$variable==var,]$size<-score_size[var,]  
 }
 
-#Plot data
+#Plot data (apparently geom_vline only accepts 3 lines before throwing a hissy fit)
 coef_plot<-ggplot(coef_estm,aes(order,value)) + geom_point(aes(colour=variable),size=5,alpha=.5) + coord_flip() +
             theme(panel.background = element_rect(fill='white'),
                   panel.grid.major = element_line(colour = "grey",linetype='dotted'),
                   axis.text.x = element_text(angle = 90, hjust = 1,face='bold'),
-                  text = element_text(size=6)) +
+                  text = element_text(size=10)) +
             xlab('Variables') + ylab('Coefficient Estimate') + #ggtitle('LASSO Coefficients by Variable and Distance Measure') +
             scale_x_discrete(labels=coef_est$var) + 
             scale_colour_brewer(palette='Set1') +
-            geom_vline(aes(xintercept=c(1,2,3,4,5,6)),colour='black',linetype='dotted') +
-            geom_vline(aes(xintercept=c(49,50,51,52,53,54)),colour='black',linetype='dotted')
+            geom_vline(aes(xintercept=c(1,2,3)),colour='black',linetype='dotted') + 
+            geom_vline(aes(xintercept=c(4,5,6)),colour='black',linetype='dotted') +
+            geom_vline(aes(xintercept=c(7,44,45)),colour='black',linetype='dotted') +
+            geom_vline(aes(xintercept=c(46,47,48)),colour='black',linetype='dotted') +
+            geom_vline(aes(xintercept=c(49,50,63)),colour='black',linetype='dotted')
+            #geom_vline(aes(xintercept=c(1,2,3,4,5,6,7)),colour='black',linetype='dotted') +
+            #geom_vline(aes(xintercept=c(49,50,51,52,53,54)),colour='black',linetype='dotted')
             
 print(coef_plot)
-ggsave('ExpDiv_lasso_coef_by_dist.svg')
+ggsave('../figures/ExpDiv_lasso_coef_by_dist.svg')
 

@@ -77,6 +77,18 @@
   Volume                   = {27}
 }
 
+@TechReport{Anselin2011,
+  Title                    = {Spatial Fixed Effects and Spatial Dependence},
+  Author                   = {Luc Anselin and Daniel Arribas-Bel},
+  Institution              = {GeoDa Center for Geospatial Analysis and Computation, Arizona State University},
+  Year                     = {2011},
+  Number                   = {2011-04},
+  Type                     = {Working Paper},
+
+  Owner                    = {root},
+  Timestamp                = {2015.04.14}
+}
+
 @TechReport{Arias2012,
   Title                    = {{United States Life Tables, 2008}},
   Author                   = {Elizabeth Arias},
@@ -186,8 +198,7 @@
 
   Doi                      = {10.1111/j.1468-2257.2012.00586.x},
   ISSN                     = {1468-2257},
-  Publisher                = {Blackwell Publishing Inc},
-  Url                      = {http://dx.doi.org/10.1111/j.1468-2257.2012.00586.x}
+  Publisher                = {Blackwell Publishing Inc}
 }
 
 @Article{Birch_Sundermean_Smith2004,

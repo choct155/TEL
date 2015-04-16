@@ -1,0 +1,258 @@
+\select@language {english}
+\contentsline {chapter}{Abstract}{2}{chapter*.1}
+\addvspace {10\p@ }
+\contentsline {chapter}{List of Figures}{4}{chapter*.3}
+\addvspace {10\p@ }
+\contentsline {chapter}{List of Tables}{5}{chapter*.4}
+\addvspace {10\p@ }
+\hspace {-0.55in}{ }\par 
+\hspace {-0.35in}{Chapter}\par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {1.}Overview}{6}{chapter.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.1}The Taxpayers' Bill of Rights}{6}{subsection.1.0.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.2}What is the Purpose of this Inquiry?}{6}{subsection.1.0.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.3}What is the Value Added?}{8}{subsection.1.0.3}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.4}What is the Spatial Scope of Analysis?}{9}{subsection.1.0.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.5}What is the Significance of the Study Period?}{11}{subsection.1.0.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {1.0.6}A Word on TELs as an Instrument of Democracy}{11}{subsection.1.0.6}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {1.1}Layout of the Inquiry}{13}{section.1.1}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {2.}Subnational Finance in the United States}{15}{chapter.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.1}Why are the Fiscal Affairs of States and Localities Important?}{15}{section.2.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.1.1}What Normative Objectives Should be Pursued in a System of Subnational Finance?}{17}{subsection.2.1.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.1.1.1}The Importance of Local Autonomy}{17}{subsubsection.2.1.1.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.1.1.2}Local Tax Design}{18}{subsubsection.2.1.1.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.1.1.3}Duality in Public Finance}{19}{subsubsection.2.1.1.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.2}What does Subnational Finance Look Like in Practice?}{19}{section.2.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.1}The Economic Significance of the State and Local Government Sector}{20}{subsection.2.2.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.2}The Role of the Property Tax in Financing Local Government}{21}{subsection.2.2.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.3}Growth and Volatility Factors in Local Public Finance}{24}{subsection.2.2.3}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.4}The Importance of Demography}{25}{subsection.2.2.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.5}The Evolution of the Economy}{26}{subsection.2.2.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.2.6}Macroeconomic Events}{27}{subsection.2.2.6}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.3}Motivations for Limiting the Property Tax}{29}{section.2.3}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.3.1}The Argument Against the Property Tax}{29}{subsection.2.3.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.1}Lack of Uniformity}{29}{subsubsection.2.3.1.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.2}Lack of Universality}{30}{subsubsection.2.3.1.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.3}Incentive for Dishonesty}{30}{subsubsection.2.3.1.3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.4}Regressivity}{30}{subsubsection.2.3.1.4}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.5}Double Taxation}{30}{subsubsection.2.3.1.5}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {2.3.1.6}Periodicity}{31}{subsubsection.2.3.1.6}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.3.2}The Argument For the Property Tax}{31}{subsection.2.3.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.4}What are Fiscal Institutions?}{32}{section.2.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.4.1}Tax and Expenditure Limitations}{34}{subsection.2.4.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {2.5}Do TELs Alter Local Fiscal Behavior?}{35}{section.2.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.5.1}Revenue Implications}{36}{subsection.2.5.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {2.5.2}Expenditure Implications}{37}{subsection.2.5.2}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {3.}Fiscal Behavior in Colorado\footnote {For long-term price changes, this analysis uses the Chained Personal Consumer Expenditures Index. The primary reason is that the PCE, in contrast to the Consumer Price Index, accounts for changes in the basket of consumed goods over time and substitution for less expensive alternatives when the price of a particular good increases.\citep {FOMC2000}}}{40}{chapter.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.1}Which Socioeconomic Dynamics Characterize the Study Period (1993-2009)?}{40}{section.3.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.2}Which Revenue Sources are Employed?}{42}{section.3.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.3}Which Expenditure Responsibilities Exist?}{44}{section.3.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {3.4}What is the TEL Landscape in Colorado?}{45}{section.3.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.4.1}Taxpayer's Bill of Rights}{46}{subsection.3.4.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {3.4.1.1}DeBrucing}{48}{subsubsection.3.4.1.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.4.2}Statewide Limitation of Property Tax Revenue}{48}{subsection.3.4.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {3.4.3}Gallagher Amendment}{48}{subsection.3.4.3}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {4.}Methodological Innovations}{54}{chapter.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {4.1}How are TELs Operationalized in this Study?}{54}{section.4.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {4.1.1}TABOR and SLPTR - A Composite COTEL Intensity Measure}{55}{subsection.4.1.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {4.1.2}The Gallagher Ratio}{61}{subsection.4.1.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {4.2}The Implications of Space}{62}{section.4.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {4.2.1}Space as a Factor in Inference}{62}{subsection.4.2.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {4.2.2}Space as a Factor in Public Financial Theory}{66}{subsection.4.2.2}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {5.}Implications for Revenue Yield and Capacity}{68}{chapter.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.1}Introduction}{68}{section.5.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.2}What is the Significance of Revenue Yield and Capacity?\footnote {As used here, revenue yield signifies the actual, realized revenue collected by a given jurisdiction. Revenue capacity, by contrast, captures the economic potential of the tax base. We may think of this concept as the abstract revenue yield for a given county at some standard level of tax effort. If, for example, the property in county A is more expensive than the property in county B, county A can collect more revenue than county B with the same level of tax effort. In this example, county A has greater revenue capacity than county B.}}{69}{section.5.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.3}What is the Expected Impact of TELs on Fiscal Convergence?}{70}{section.5.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.4}How is Fiscal Clustering Measured?}{71}{section.5.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {5.4.1}Does Fiscal Clustering Occur and Does it Change Over Time?}{72}{subsection.5.4.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.4.1.1}Weight Matrices}{72}{subsubsection.5.4.1.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.4.1.2}Local Indicators of Spatial Autocorrelation}{74}{subsubsection.5.4.1.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.5}Do TELs Depress Revenue Yield and Capacity?}{77}{section.5.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {5.5.1}Modeling Approaches}{77}{subsection.5.5.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.1.1}Econometrics as Observation}{78}{subsubsection.5.5.1.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {5.5.2}Members of the Regressor Set}{79}{subsection.5.5.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.2.1}Variable of Interest}{80}{subsubsection.5.5.2.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {5.5.3}Results}{81}{subsection.5.5.3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.3.1}Baseline Estimation with Pooled Ordinary Least Squares}{81}{subsubsection.5.5.3.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.3.2}Evaluating the Impact on Fiscal Clustering with Local Indicators of Spatial Autocorrelation (LISAs)}{82}{subsubsection.5.5.3.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.3.3}Incorporating the Local Neighborhood with Spatial Lags}{83}{subsubsection.5.5.3.3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {5.5.3.4}Capturing Temporal Dependency with Fixed Effects}{84}{subsubsection.5.5.3.4}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {5.6}Summary of Findings and Conclusion}{85}{section.5.6}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {6.}Alteration of Expenditure Patterns}{92}{chapter.6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.1}Introduction}{92}{section.6.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.2}Why does a Shift in Expenditure Patterns Matter?}{93}{section.6.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.2.1}Relevance of Tiebout in the COTEL Environment}{93}{subsection.6.2.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.3}How are Shifts in Expenditure Patterns Measured?}{94}{section.6.3}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.3.1}Is It Reasonable to Construct Counterfactuals through Typification?}{95}{subsection.6.3.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.3.2}Operationalizing County Types}{96}{subsection.6.3.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {6.3.2.1}Defining Fiscal Space}{97}{subsubsection.6.3.2.1}
+\addvspace {10\p@ }
+\contentsline {paragraph}{Selection of Expenditure Subgroups}{98}{section*.5}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {6.3.2.2}Identifying County Expenditure Types}{99}{subsubsection.6.3.2.2}
+\addvspace {10\p@ }
+\contentsline {paragraph}{Choosing the Appropriate Number of Clusters $k$}{100}{section*.6}
+\addvspace {10\p@ }
+\contentsline {paragraph}{Do Distances to Cluster Centroids Vary?}{101}{section*.7}
+\addvspace {10\p@ }
+\contentsline {paragraph}{Caveat Emptor}{101}{section*.8}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.4}What is the Expected Impact of TELs?}{103}{section.6.4}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.5}Do TELs Shift Patterns of Expenditure?}{104}{section.6.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.5.1}Variable Properties}{104}{subsection.6.5.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.5.2}Cross-Sectional Models}{116}{subsection.6.5.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {6.5.2.1}LASSO Regression}{121}{subsubsection.6.5.2.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {6.5.2.2}LASSO Results}{122}{subsubsection.6.5.2.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {6.5.3}Panel Analysis}{126}{subsection.6.5.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {6.6}Conclusion}{129}{section.6.6}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {7.}Partial Revelation of Preferences via Local Overrides (``De-Brucing'')}{131}{chapter.7}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.1}Introduction}{131}{section.7.1}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.2}How Can Voter Preferences be Revealed?}{132}{section.7.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.2.1}The Revealed Preference Construct}{133}{subsection.7.2.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.2.2}Ballot Initiatives as Observations of Choice}{134}{subsection.7.2.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.2.3}Methodological Approach and Data}{136}{subsection.7.2.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.3}What is the Expected Impact of COTELs?}{137}{section.7.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.4}What is the Estimated Propensity to Override?}{139}{section.7.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.4.1}The Problem Set Up}{139}{subsection.7.4.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.4.2}Selection of a Classifier}{140}{subsection.7.4.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.4.3}Usefulness of Prediction}{141}{subsection.7.4.3}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.5}What is the Impact of Ballot Design?}{142}{section.7.5}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.5.1}Operationalizing Ballot Elements}{142}{subsection.7.5.1}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {7.5.2}Measuring the Impact of Ballot Design}{142}{subsection.7.5.2}
+\addvspace {10\p@ }
+\contentsline {section}{\numberline {7.6}Conclusion}{145}{section.7.6}
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {8.}Conclusion}{153}{chapter.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {chap}{\numberline {9.}Appendix}{155}{chapter.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {9.0.1}Targeted Non-Neutralities}{155}{subsection.9.0.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.1.1}Circuit Breakers}{155}{subsubsection.9.0.1.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.1.2}Homestead Exemptions}{156}{subsubsection.9.0.1.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.1.3}Preferential Classification}{157}{subsubsection.9.0.1.3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.1.4}Relief for Seniors}{158}{subsubsection.9.0.1.4}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {9.0.2}Neutral Reforms}{158}{subsection.9.0.2}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.2.1}Truth-in-Taxation}{158}{subsubsection.9.0.2.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.2.2}Deferral Payment Systems}{159}{subsubsection.9.0.2.2}
+\addvspace {10\p@ }
+\contentsline {subsection}{\numberline {9.0.3}General Restrictions}{160}{subsection.9.0.3}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.3.1}Dillon's Rule}{160}{subsubsection.9.0.3.1}
+\addvspace {10\p@ }
+\contentsline {subsubsection}{\numberline {9.0.3.2}Educational Mandates}{162}{subsubsection.9.0.3.2}
+\contentsline {chapter}{Bibliography}{163}{figure.9.1}

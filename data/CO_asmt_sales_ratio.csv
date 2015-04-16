@@ -1,0 +1,65 @@
+County,Commercial,Condominium,Single Family,Vacant
+Adams,0.972,,1.103,1
+Alamosa,0.985,,0.967,1
+Arapahoe,0.996,,1,1.009
+Archuleta,0.988,,1.003,1
+Baca,,,0.989,
+Bent,,,0.996,
+Boulder,0.991,,1.014,1.007
+Broomfield,0.979,,0.989,
+Chaffee,0.998,,0.993,1
+Cheyenne,,,1.016,
+Clear Creek,0.98,,1.003,1
+Conejos,,,0.987,1
+Costilla,,,0.961,0.959
+Crowley,,,1.014,
+Custer,0.994,,0.995,0.998
+Delta,0.986,,1.007,1
+Denver,0.991,1.001,1.002,0.953
+Dolores,,,1.007,
+Douglas,0.975,,1,1
+Eagle,0.997,0.999,1,0.999
+Elbert,0.972,,1.013,1
+El Paso,0.95,,0.98,0.995
+Fremont,0.967,,0.977,1
+Garfield,0.998,,0.999,1
+Gilpin,,,0.997,0.979
+Grand,0.982,0.998,0.998,0.994
+Gunnison,1.002,0.981,0.994,1
+Hinsdale,,,0.998,
+Huerfano,,,0.971,0.992
+Jackson,,,0.953,
+Jefferson,0.963,,0.983,0.997
+Kiowa,,,0.995,
+Kit Carson,0.978,,0.986,
+Lake,,,0.991,0.994
+La Plata,0.995,,1.003,0.998
+Larimer,0.953,,0.994,1
+Las Animas,0.993,,0.983,1.024
+Lincoln,,,1.014,
+Logan,0.982,,1.007,
+Mesa,0.982,,0.986,1
+Mineral,,,0.967,
+Moffat,0.962,,1.002,0.964
+Montezuma,0.963,,0.968,0.96
+Montrose,1.003,,1.003,0.998
+Morgan,1.019,,0.993,
+Otero,0.957,,0.996,
+Ouray,,,1.023,1
+Park,1.042,,1.025,1.019
+Phillips,0.972,,1.007,
+Pitkin,0.998,1.001,1.005,
+Prowers,0.967,,0.991,
+Pueblo,0.951,,1.021,1
+Rio Blanco,0.959,,0.995,
+Rio Grande,0.983,,0.989,1
+Routt,0.974,1.02,1.01,1
+Saguache,,,0.988,0.95
+San Juan,,,1.045,
+San Miguel,1.006,1,0.992,0.991
+Sedgwick,,,1.022,
+Summit,0.978,1,1,0.991
+Teller,0.997,,1.002,0.985
+Washington,,,0.979,
+Weld,1,,0.977,1
+Yuma,0.963,,1,
