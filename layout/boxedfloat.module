@@ -1,0 +1,22 @@
+#\DeclareLyXModule{Boxed Float}
+#DescriptionBegin
+#Defines a new type of (framed) float.
+#DescriptionEnd
+
+# Author: Jürgen Spitzmüller <spitz@lyx.org>
+
+Format 35
+
+Float
+        Type                  boxfloat
+        GuiName               "Box"
+        Placement             tbp
+        Extension             lob
+        NumberWithin          none
+        Style                 boxed
+        ListName              "List of Boxes"
+        IsPredefined false
+        UsesFloatPkg true
+End
+
+

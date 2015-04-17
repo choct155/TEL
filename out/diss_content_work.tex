@@ -44,6 +44,10 @@
 \newfloat{model}{tbp}{lol}
 \providecommand{\modelname}{Model}
 \floatname{model}{\protect\modelname}
+\floatstyle{}
+\newfloat{}{}{}
+\providecommand{\name}{}
+\floatname{}{\protect\name}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 \usepackage{amsmath}
@@ -2425,7 +2429,7 @@ restrictions in 2002.
 \begin{figure}
 
 
-\caption{COPY}
+\caption{COTEL Intensity in Adams County}
 
 
 \begin{centering}
@@ -3501,10 +3505,7 @@ which have higher relative levels of residential property in the assessment
 base.
 
 \begin{figure}
-
-
-\caption[Pooled OLS Results]{Pooled OLS Results - Fiscal Capacity (\emph{left}) \& Revenue Yield
-(\emph{right})\label{fig:Pooled-OLS-Results}}
+\caption[Pooled OLS Results]{Pooled OLS Results - Fiscal Capacity (\emph{left}) \& Revenue Yield(\emph{right})\label{fig:Pooled-OLS-Results}}
 
 
 \centering{}\includegraphics[width=1\textwidth]{figures/converge_pooled_ols}
@@ -3526,15 +3527,39 @@ of Spatial Autocorrelation (LISAs)}
 Using the LISAs as dependents provides some notion of how the variables
 in the model impact spatial clustering of revenue yield and fiscal
 capacity. Counties experiencing higher levels of COTEL intensity are
-expected to converge in the revenue yield and fiscal capacity incomes.
+expected to converge in the revenue yield and fiscal capacity measures.
 In effect, the COTELs are expected to retard their revenue growth,
 which will create a wedge between constrained and unconstrained counties.
 It has already been shown that spatial clustering of fiscal behavior
-occurs, so this wedge is expected to be spatiall relevant. The visualization
+occurs, so this wedge is expected to be spatially relevant. The visualization
 of these results employs averages across the five weight matrices
-used in this analysis (see Subsecton\ref{sub:Weight-Matrices}). Again,
-this is to limit the sensitivity of interpretation to choice of the
-local neighborhood,$W$.
+used in this analysis (see Subsecton \ref{sub:Weight-Matrices}).
+Again, this is to limit the sensitivity of interpretation to choice
+of the local neighborhood, $W$.
+
+The results of the LISA models can be placed in context by getting
+a sense of the distribution of clustering values. Figure X shows the
+kernel densities of each LISA dependent variable. They are grouped
+by clustering concept (e.g. Local Moran's I, or LMI) and clustering
+value (e.g. per capita revenue, or $pcrev$). Within each group, the
+densities are shown for all five weight matrix definitions used in
+this analysis (see Subsection \ref{sub:Weight-Matrices}). Take note
+of the reported standard deviations. They range from $\sigma = 0.56$
+to $\sigma = 2.47$, although the latter is a bit of an outlier. The
+median is $\sigma = 1.16$.
+
+\begin{figure}
+
+
+\caption{Distribution of Clustering Values\label{fig:Distribution-of-Clustering-Values}}
+
+
+\begin{centering}
+\includegraphics[width=1\textwidth]{figures/cluster_wt_dist}
+\par\end{centering}
+
+\end{figure}
+
 
 To reiterate, high values of LMI indicate the clustering of similar
 values, while low values indicate the clustering of disimilar values.
@@ -3554,9 +3579,6 @@ clustering.
 \end{figure}
 
 
-\emph{Note: Need to place these results in context. What is the range
-of clustering values? What is a significant movement?}
-
 When controlling for other factors, COTEL intensity ($intensity\_stock$)
 has very limited impact on the clustering of revenue yield ($pcrev$).
 Said differently, if a county is highly constrained, the constraint
@@ -3567,13 +3589,13 @@ in fiscal behavior, thereby taking jurisdictional idiosyncrasies out
 of the siting equation and reinforcing similar revenue preferences
 in the local neighborhood. It is possible that collaborative efforts
 in the local neighborhood to provide wide area services free up enough
-revenue to still allow for some base level of distinction. In any
-event, the only reasonably clear impact of COTEL intensity is a negative
-association with fiscal capacity ($pcap$) clustering values (GOG),
-which indicates that higher levels of COTEL constraints are related
-to clustering of low values of fiscal capacity. This accords with
-the hypothesis that COTELs ultimately limit fiscal capacity for low-income
-jurisdictions.
+revenue to still allow for some base level of distinction. Further,
+COTEL intensity has a rather ambivalent relationship with fiscal capacity
+($pcap$) clustering values (GOG), which speaks little to the idea
+that higher levels of COTEL constraints are related to clustering
+of low values of fiscal capacity. In other words, this view provides
+no support for the hypothesis that COTELs ultimately limit fiscal
+capacity for low-income jurisdictions.
 
 On the other hand, the Gallagher Ratio ($prop\_ratio$) behaves precisely
 as we would expect from a revenue yield perspective. Insofar as it
@@ -3582,7 +3604,6 @@ the values assoicated with said clustering (low values of GOG), the
 evidence suggests that the measure is a limiting factor on revenue
 yield in the local neighborhood. On the fiscal capacity side, the
 Gallagher Ratio is neither statistically or substantively relevant.
-
 In both the revenue yield and fiscal capacity models, the model fit
 is modest at best (particularly with respect to the latter) and categorically
 lower than the fit of any other model considered in this chapter.
@@ -3601,9 +3622,9 @@ two-fold:
 \item Repeated cross-sections do not permit control of year-specific factors;
 and,
 \item To the extent that deBrucing is an ongoing phenomenon, there is temporal
-variance in the sample properties. The characteristics, namely the
-capacity of COTELs to constrain a given jurisdiction, of the counties
-are changing over time.
+variance in the sample properties. The characteristics of the counties,
+namely the capacity of COTELs to constrain a given jurisdiction, are
+changing over time.
 \end{enumerate}
 As a consequence, the technique can only be useful in this context
 as a complementary component in a larger analysis.
@@ -3643,13 +3664,15 @@ both).
 
 Evaluating fiscal capacity with the repeated SLM approach reveals
 the tenuous nature of any direct connection between our COTEL variables
-and per capita annual payroll. COTEL intensity is insignificant in
-every single year, while the Gallagher Ratio demonstrates substantial
-variation in magnitude and statistical clarity. With respect to the
-latter, it is also worth noting that the sign of the Gallagher Ratio
-estimate has switched from the pooled OLS run. Finally, even when
-controlling for the other factors, the underlying positive relationship
-between per capita annual payroll and the Gallagher Ratio.
+and per capita annual payroll. COTEL intensity and the Gallagher Ratio
+are both statististically insignificant in every single year. For
+the most part, COTEL intensity is also substantively insignificant
+while the Gallagher Ratio demonstrates substantial variation in magnitude.
+With respect to the latter, it is also worth noting that the sign
+of the Gallagher Ratio estimate remains at least directionally consistent
+with the pooled OLS run. Even when controlling for the other factors,
+the underlying positive relationship between per capita annual payroll
+and the Gallagher Ratio.
 
 \begin{figure}
 
@@ -3657,11 +3680,7 @@ between per capita annual payroll and the Gallagher Ratio.
 \caption[SLM - Fiscal Capacity]{Spatial Lag Models by Year - Fiscal Capacity\label{fig:SLM-econ}}
 
 
-\begin{centering}
-\includegraphics[width=1\textwidth]{figures/converge_slm_econ}
-\par\end{centering}
-
-WHY IS THERE A DIP IN 2002? IS IT RECESSION RELATED?
+\centering{}\includegraphics[width=1\textwidth]{figures/converge_slm_econ}
 \end{figure}
 
 
@@ -3674,9 +3693,9 @@ the mechanism by which changes in COTEL intensity ($intensity\_stock$)
 and the Gallagher Ratio ($prop\_ratio$) effect changes in revenue
 yield and fiscal capacity. The panel model results plot for revenue
 yield reveals a consistent theme for most variables, although the
-permitting rate ($permit\_rate$) sign has switched. Both COTEL intensity
-and the Gallagher Ration are modestly depressing forces on revenue
-yield in a given county.
+permitting rate ($permit\_rate$) sign has switched from the OLS flight.
+Both COTEL intensity and the Gallagher Ratio are modestly depressing
+forces on revenue yield in a given county.
 
 \begin{figure}
 \caption[Fixed Effect Estimation]{Fixed Effect Model Results - Revenue Yield (\emph{left}) \& Fiscal
@@ -3704,7 +3723,7 @@ values}.}
 \begin{table}
 
 
-\caption[FE Results - Revenue Yield]{Fixed Effect Estimation - Revenue Yield ($\mathrm{R}^2=.923$)\label{tab:FE-Rev-Table}}
+\caption[FE Results - Revenue Yield]{Fixed Effect Estimation - Revenue Yield ($\mathrm{R}^2=.959$)\label{tab:FE-Rev-Table}}
 
 
 \vspace{10bp}
@@ -3715,14 +3734,16 @@ values}.}
 Variable & \multicolumn{2}{c}{$\beta$} & $p$-value & S.E.\tabularnewline
 \hline 
 \hline 
-Gross State Product ($gsp$) & 0&001 & 3.112$\times 10^{-05}$ & 0.000\tabularnewline
-Lagged Population Growth ($lpop\_growth$) & -151&486 & 5.409$\times 10^{-01}$ & 247.670\tabularnewline
-State Unemployment Rate ($st\_unempr$) & 32&103 & 3.194$\times 10^{-07}$ & 6.238\tabularnewline
-Housing Permits Rate ($permit\_rate$) & 1883&634 & 1.178$\times 10^{-02}$ & 746.473\tabularnewline
-Vacancy Rate ($vac\_rate$) & 6&792 & 5.783$\times 10^{-03}$ & 2.456\tabularnewline
-Fiscal Capacity ($pcap$) & 0&040 & 6.414$\times 10^{-17}$ & 0.005\tabularnewline
-COTEL Intensity ($intensity\_stock$) & -102&841 & 1.580$\times 10^{-02}$ & 42.539\tabularnewline
-Gallagher Ratio ($prop\_ratio$) & -167&069 & 2.137$\times 10^{-02}$ & 72.483\tabularnewline
+Gross State Product ($gsp$) & 0&001 & 5.888$\times 10^{-03}$ & 0.000\tabularnewline
+Lagged Population Growth ($lpop\_growth$) & -29&018 & 6.007$\times 10^{-01}$ & 55.424\tabularnewline
+State Unemployment Rate ($st\_unempr$) & 17&772 & 1.310$\times 10^{-04}$ & 4.629\tabularnewline
+Housing Permits Rate ($permit\_rate$) & 2911&950 & 8.086$\times 10^{-08}$ & 538.725\tabularnewline
+Vacancy Rate ($vac\_rate$) & 3&969 & 2.701$\times 10^{-02}$ & 1.792\tabularnewline
+Fiscal Capacity ($pcap$) & 0&033 & 3.097$\times 10^{-19}$ & 0.000\tabularnewline
+COTEL Intensity ($intensity\_stock$) & -41&543 & 4.145$\times 10^{-03}$ & 14.457\tabularnewline
+Gallagher Ratio ($prop\_ratio$) & -16&785 & 7.537$\times 10^{-01}$ & 53.489\tabularnewline
+County Govt. Revenue Proportion ($cty\_rev\_prop$) & 2973&786 & 1.056$\times 10^{-128}$ & 105.799\tabularnewline
+Revenue from All Govt in County ($r\_all\_gov\_rev$) & -0&000 & 1.046$\times 10^{-02}$ & 0.000\tabularnewline
 \end{tabular}
 \par\end{centering}
 
@@ -3732,7 +3753,7 @@ TERMS
 
 
 \begin{table}
-\caption[FE Results - Fiscal Capacity]{Fixed Effect Estimation - Fiscal Capacity ($\mathrm{R}^2=.947$)\label{tab:FE-Econ-Table}}
+\caption[FE Results - Fiscal Capacity]{Fixed Effect Estimation - Fiscal Capacity ($\mathrm{R}^2=.952$)\label{tab:FE-Econ-Table}}
 
 
 \vspace{10bp}
@@ -3743,12 +3764,15 @@ TERMS
 Variable & \multicolumn{2}{c}{$\beta$} & $p$-value & S&E.\tabularnewline
 \hline 
 \hline 
-Gross State Product ($gsp$) & 0&028 & 3.807$\times 10^{-72}$ & 0&001\tabularnewline
-State Unemployment Rate ($st\_unempr$) & -8&535 & 8.381$\times 10^{-01}$ & 41&753\tabularnewline
-Housing Permits Rate ($permit\_rate$) & -6382&604 & 1.949$\times 10^{-01}$ & 4921&187\tabularnewline
-Vacancy Rate ($vac\_rate$) & 55&274 & 7.603$\times 10^{-04}$ & 16&367\tabularnewline
-COTEL Intensity ($intensity\_stock$) & 1755&172 & 7.435$\times 10^{-10}$ & 282&346\tabularnewline
-Gallagher Ratio ($prop\_ratio$) & -576&022 & 2.394$\times 10^{-01}$ & 489&347\tabularnewline
+Gross State Product ($gsp$) & 0&024 & 5.753$\times 10^{-58}$ & 0&001\tabularnewline
+Lagged Population Growth ($lpop\_growth$) & -535&619 & 2.690$\times 10^{-01}$ & 484&246\tabularnewline
+State Unemployment Rate ($st\_unempr$) & -61&950 & 1.257$\times 10^{-01}$ & 40&419\tabularnewline
+Housing Permits Rate ($permit\_rate$) & -2625&838 & 5.772$\times 10^{-01}$ & 4709&004\tabularnewline
+Vacancy Rate ($vac\_rate$) & 44&088 & 4.826$\times 10^{-03}$ & 15&608\tabularnewline
+COTEL Intensity ($intensity\_stock$) & 604&101 & 1.540$\times 10^{-06}$ & 124&945\tabularnewline
+Gallagher Ratio ($prop\_ratio$) & -74&558 & 8.734$\times 10^{-01}$ & 467&619\tabularnewline
+County Govt. Revenue Proportion ($cty\_rev\_prop$) & 4222&329 & 4.479$\times 10^{-06}$ & 915&293\tabularnewline
+Revenue from All Govt in County ($r\_all\_gov\_rev$) & 0&000 & 1.522$\times 10^{-27}$ & 0&000\tabularnewline
 \end{tabular}
 \par\end{centering}
 
@@ -3768,10 +3792,11 @@ COUNTIES
 The results of the panel analysis of fiscal capacity do little to
 sort out a pattern in the estimates reported in previous models. While
 COTEL intensity is still positive and significant once again, the
-Gallagher Ratio is now negative. The latter result contrasts sharply
-with the pooled OLS and SLM models. This may suggest that the other
-models were using the Gallagher Ratio as a proxy for some of the unobserved
-characteristics we are now capturing in the fixed effects.
+Gallagher Ratio is now negative for fiscal capacity. The latter result
+contrasts sharply with the pooled OLS and SLM models. This may suggest
+that the other models were using the Gallagher Ratio as a proxy for
+some of the unobserved characteristics we are now capturing in the
+fixed effects.
 
 
 \section{Summary of Findings and Conclusion}
@@ -3812,11 +3837,11 @@ impact of COTELs on fiscal capacity, however, warrants greater study.
 
 \section{Introduction}
 
-In Chapter\ref{chap:RevYieldCapacity}, the impact of COTELs on the
+In Chapter \ref{chap:RevYieldCapacity}, the impact of COTELs on the
 revenue side of county finance in Colorado was explored. This chapter
 focuses on the other side of the equation: expenditure behavior. This
 shift in focus is designed to structurally capture the duality of
-public finance discussed in Subsection\ref{sub:Duality-in-Public-Finance}.
+public finance discussed in Subsection \ref{sub:Duality-in-Public-Finance}.
 While popular discourse tends to decouple the two, revenues and expenditures
 are instrinsically linked. Each unit of revenue collected by a government
 not used to cover the cost of labor is redeployed as some programmatic
@@ -3850,7 +3875,7 @@ from a variety of calculations lends credibility to the analysis.
 
 \section{Why does a Shift in Expenditure Patterns Matter?}
 
-In\emph{The Pure Theory of Public Expenditure}\citep{Samuelson1954},
+In\emph{ The Pure Theory of Public Expenditure}\citep{Samuelson1954},
 Paul Sameulson evaluated the implications of the joint consumption
 of public goods. This feature of public goods separates them from
 private goods along one very important dimension: the feasibility
@@ -3860,11 +3885,11 @@ is no natural way to determine the efficient volume of $x$ that should
 be supplied to society. Tiebout, on the other hand, argued that a
 critical variable had been omitted from the analysis: mobility.
 \begin{quotation}
-The consumer-voter may be viewed as picking that community which best
-satisfies his preference pattern for public goods. {[}...{]} The greater
-the number of communities and the greater the variance among them,
-the closer the consumer will come to fully realizing his preference
-position.''\citep{Tiebout1956}
+``The consumer-voter may be viewed as picking that community which
+best satisfies his preference pattern for public goods. {[}...{]}
+The greater the number of communities and the greater the variance
+among them, the closer the consumer will come to fully realizing his
+preference position.''\citep{Tiebout1956}
 \end{quotation}
 In effect, Tiebout was suggesting that the Samuelson model only applies
 when only one supplier exists. However, if many suppliers exist, the
@@ -3878,9 +3903,6 @@ undesirable at the national level. In a federal system, however, multiple
 providers must exist in the subnational space, particularly at the
 local level.
 
-
-\subsection{Relevance of Tiebout in the COTEL Environment}
-
 To further the implication of Tiebout's insight, there are two dimensions
 along which the consumption evironment may provide the capacity for
 revealed preference. First, the ease with which preferences may be
@@ -3893,10 +3915,11 @@ available products. If one seeks something to eat and the choice is
 between an apple and ... an identical apple, no true choice exists.
 If a ``consumer-voter'' is to reveal his/her preference, there must
 be some distinction between community characteristics that can elicit
-different return values from his/her utility function. The motivational
-hypothesis behind the analysis that follows is the idea that differentiation
-across communities is non-trivially impacted by the imposition of
-COTELs.
+different return values from his/her utility function. While it must
+be made clear that this chapter in no way seeks to evaluate mobility,
+this idea of differentiation is critical to this analysis. The motivational
+hypothesis behind it is the idea that differentiation across communities
+is non-trivially impacted by the imposition of COTELs.
 
 This analysis seeks to complement the study of TEL impact on expenditure
 behavior conducted by Daniel Mullins.\citep{Mullins2004} He finds
@@ -3914,7 +3937,7 @@ of itself to explore the impact of COTELs.
 
 \section{How are Shifts in Expenditure Patterns Measured?}
 
-To fulfill the research objective, there are two major quesitons that
+To fulfill the research objective, there are two major questions that
 must be answered:
 \begin{enumerate}
 \item How can one tell if a county has deflected from its preferred expenditure
@@ -3934,7 +3957,7 @@ there is a limited ability to typify communities into distinct groups.
 A second approach has been to highlight changes in a single function
 (e.g. changes in infrastructure expenditure), which improves on the
 resolution deficiency of the first approach. However, the number of
-comparisons required to fully specify a jurisdictiona across all functions
+comparisons required to fully specify a jurisdiction across all functions
 and compare it with other jurisdictions quickly grows unmanageable.
 The primary reason is that, in a set of $n$ jurisdictions, each function
 of a given jurisdiction $n_i$ must be compared with the corresponding
@@ -3978,11 +4001,12 @@ which assumption is more offensive, constant covariance or static
 preferences? To the extent that we know the macro-enviroment is changing
 over time in Colorado, characterized at the very least by significant
 increases in income and population, constant preferences seems to
-fail the face validity test. Furthermore, as we learned in Chapter\ref{chap:RevYieldCapacity},
-while fiscal clustering changed in intensity over time, the broad
-patterns were fairly persistent. This observation lends at least some
-support for the idea that the constant covariance assumption does
-have some degree of merit.
+fail the face validity test. Furthermore, as we learned in Chapter
+\ref{chap:RevYieldCapacity}, while fiscal clustering changed in intensity
+over time, the broad patterns were fairly persistent. This observation
+lends at least some support for the idea that the constant covariance
+assumption does have some degree of merit. It should also be reiterated
+here that we are concerned also with differences across counties.
 
 One could capture the evolution of preferences by comparing counties
 in Colorado with counties in other states that do not operate in the
@@ -3992,7 +4016,7 @@ a single county instead of a county type, which generally seems to
 be a riskier bet. The maximum gap between two members of a population
 will generally be larger than the maximum gap between a single member
 and some measure of the population's central tendency. To vary on
-this theme, given a population, the\emph{expected} gap between member
+this theme, given a population, the\emph{ expected} gap between member
 $i$ and any member $j$ (where $i\neq j$)\emph{ is the gap between
 member $i$ and the population's measure of central tendency.} In
 a nutshell, the variance in the quality of the cross-state match over
@@ -4015,7 +4039,7 @@ potentially more damaging assumptions.
 
 \subsection{Operationalizing County Types}
 
-The challenging that arises when comparing jurisdictions to one another
+The challenge that arises when comparing jurisdictions to one another
 is how one may uncover a simple comparison while still incorporating
 all of the complexity of the entire expenditure function vector. To
 achieve this, some form of dimensionality reduction is required, as
@@ -4023,7 +4047,7 @@ is some method of understanding which jurisdictions are similar and
 which ones are not. The approach taken here is to place the counties
 in ``space'' and evaluate the distances between them. Space, in
 this context, is the coordinate position in the $n$-dimensional field
-defined by an expenditure vector of length $n$ (Figure\ref{fig:Fiscal-Position-Concept}).
+defined by an expenditure vector of length $n$ (Figure \ref{fig:Fiscal-Position-Concept}).
 This coordinate position will henceforth be referred to as ``fiscal
 position''.
 
@@ -4040,7 +4064,7 @@ position''.
 The figure demonstrates the concept of fiscal position in two dimensions.
 Suppose Counties A, B, and C all had only two expenditure functions:
 Infrastucture and Public Safety. We can relate their expenditure profiles
-to one another by place the counties in space according to the proportion
+to one another by placing the counties in space according to the proportion
 of expenditures allocated to each function. In the figure, County
 A is more similar to County B in expenditure preferences than County
 C. This concept is scaleable to, if not depictable in, an aribitrary
@@ -4050,7 +4074,7 @@ number of dimensions.
 
 Counties that are ``close'' to each other in the expenditure space
 have similar proportional distributions of expenditure. We will capture
-county types as ``natural'' groupings of counties in this$n$-dimensional
+county types as ``natural'' groupings of counties in this $n$-dimensional
 space. In this framework, deflection of a given county from the group's
 preferences will be identified by an increase in the distance between
 the county's fiscal position and the central tendency in the group's
@@ -4110,8 +4134,6 @@ limited dimensionality reduction protocol that will be known as Track
 functions into eight subgroups (Table \ref{tab:Subgroups-for-Track-1a}).
 
 \begin{table}
-
-
 \caption{Subgroups for Track 1a\label{tab:Subgroups-for-Track-1a}}
 
 
@@ -4161,8 +4183,6 @@ those subgroups that vary the least are not as desirable. The variation
 in subgroup contribution can be seen in Figure \ref{fig:Distribution-of-Subgroup-Proportions}.
 
 \begin{figure}
-
-
 \caption[Expenditure Subgroup Proportions]{Distribution of Subgroup Proportional Contribution to Total Expenditures\label{fig:Distribution-of-Subgroup-Proportions}}
 
 
@@ -4187,8 +4207,6 @@ county variation due to COTEL intensity. As can be seen in Figure
 similar results.
 
 \begin{figure}
-
-
 \caption[COTEL Impact on Expenditure Subgroups]{Impact of COTEL Intensity on Individual Expenditure Subgroups\label{fig:Intensity-vs-Exp-Subgroup}}
 
 
@@ -4224,8 +4242,6 @@ minimizes the total distance between members of the same cluster (within-group
 variance).
 
 \begin{algorithm}
-
-
 \caption{$k$-Means Clustering\label{alg:k-Means-Clustering}}
 
 
@@ -4259,8 +4275,6 @@ Our fiscal position data is not nearly as well behaved, but $k$-means
 clustering still provides a framework for cluster selection. 
 
 \begin{figure}
-
-
 \caption{Well Behaved Clusters\label{fig:Well-Behaved-Clusters}}
 
 
@@ -4285,7 +4299,7 @@ of checking the face validity of the algorithm's output. Second, PCA
 is preferable relative to the regression filtering approach because
 it retains nearly all of the information in the original set. This
 is because the new dimensions are just complex combinations of the
-old dimensions, and the first three components explain 88.5\% of the
+old dimensions, and the first three components explain 75.3\% of the
 variation in the data (Figure \ref{fig:Variation-in-Exp-PCA}).
 
 \begin{figure}
@@ -4352,9 +4366,8 @@ visual inspection of clustering:
 variation} of each cluster. The technique seeks to understand movement
 in the ratio of between-cluster variation to total variation in the
 sample. The desirable number of groups is then the value,$k$, at
-which the increase in the ratio increase over the interval $[k-1,k]$
-is significantly higher than the ratio increase over the interval
-$[k,k+1]$.
+which the ratio increase over the interval $[k-1,k]$ is significantly
+higher than the ratio increase over the interval $[k,k+1]$.
 \item The second method evaluates the marginal contribution to\emph{ within-cluster
 variation} of each cluster. As previously indicated, this function
 decreases with increases in the number of groups $k$. When intersected
@@ -4433,7 +4446,7 @@ across all counties increasing over time.
 \paragraph{Caveat Emptor}
 
 The last view considered prior to modeling is the\emph{ within-county}
-variation in distance to the associated centroid. In Figure\ref{fig:cty-clust-dist-var},
+variation in distance to the associated centroid. In Figure \ref{fig:cty-clust-dist-var},
 the distribution of cluster distances across years is displayed by
 county. On the positive side, it reinforces the idea that counties
 within a cluster can behave quite differently over time. The analysis
@@ -4641,10 +4654,12 @@ housing units to total housing units ($vac\_rate$).
 growth in the preceding year ($pop\_growth$), intergovernmental revenue
 per capita ($pcintgov$), total revenue per capita ($pcrev$), annual
 payroll per capita ($pcap$), COTEL intensity ($intensity\_stock$),
-and the Gallagher ratio ($prop\_ratio$). The term also includes an
-interaction between COTEL intensity and total expenditures ($exp\_intensity$)
-to capture variance in intensity impact along the fiscal resources
-dimension.
+and the Gallagher ratio ($prop\_ratio$). The proportion of expenditures
+from all governments in the county that are undertaken by the county
+government ($cty\_exp\_prop$) is included to speak the scope of county
+government application. The term also includes an interaction between
+COTEL intensity and total expenditures ($exp\_intensity$) to capture
+variance in intensity impact along the fiscal resources dimension.
 \item [{Term~3c}] includes a single variable, gross state product in the
 previous year ($gsp.L$).\end{description}
 \end{model}
@@ -4679,7 +4694,11 @@ by weight matrix $W$, except for the primary county $i$.}
 \begin{figure}
 \begin{centering}
 \caption[Full Expenditure Portfolio Variables]{Variation in Model Variables - Full Expenditure Portfolio Distance\label{fig:Var-Variation-Full}}
-\includegraphics[width=1\textwidth]{figures/ExpDiv_varCorr}
+
+\par\end{centering}
+
+\begin{centering}
+\includegraphics[width=0.5\textwidth]{figures/ExpDiv_CoV}\includegraphics[width=0.5\textwidth]{figures/ExpDiv_Corr}
 \par\end{centering}
 
 Note that COTEL intensity ($intensity\_stock$) is significantly correlated
@@ -4714,38 +4733,36 @@ each is a linear combination of some subset of the original 16.
 
 
 \begin{centering}
-\includegraphics[width=0.4\textwidth]{figures/ExpDiv_varCorr_PCA}\hspace{2bp}\includegraphics[width=0.4\textwidth]{figures/ExpDiv_varCorr_bivFilt}
+\includegraphics[width=0.4\textwidth]{figures/ExpDiv_varCorr_PCA}\includegraphics[width=0.4\textwidth]{figures/ExpDiv_varCorr_bivFilt}
 \par\end{centering}
 
 The significance of assosciation between cluster distance ($dist\_clust$)
-and all other variables changes dramatically when distance is measured
-in the PCA space. With respect to the regression filtered space, the
-relationship between cluster distance and COTEL intensity ($intensity\_stock$)
-is quite similar to full portfolio case. Furthermore, the relationship
-between cluster distance and the Gallagher ratio ($prop\_ratio$)
-is virtually identical. This suggests that the three dimensions that
-remain were driving association in the full portfolio case anyway,
-so paring down to them did not have as dramatic an effect as the switch
-to the PCA case.
+and all other variables changes notably when distance is measured
+in the reduced dimensionality space. With respect to the regression
+filtered space, the relationship between cluster distance and COTEL
+intensity ($intensity\_stock$) is quite similar to full portfolio
+case. Furthermore, the relationship between cluster distance and the
+Gallagher ratio ($prop\_ratio$) is similar. This suggests that the
+three dimensions that remain were driving association in the full
+portfolio case anyway.
 \end{figure}
 
 
 While the statistical significance of association between cluster
 distance and the COTEL variables does not meaningfully change, the
-magnitude of association dropped in both cases. Moreover, the PCA
-distance has fairly low association magnitudes with nearly all variables.
-This suggests a substantially different variation profile for PCA
-distance. One way to get a sense of how distance behavior varies across
-the three frames is to observe the distribution of distance values
-by county and basis for distance calculation.
+magnitude of association increased in both cases. Note that differences
+in association strength imply different variation profiles. One way
+to get a sense of how distance behavior varies across the three frames
+is to observe the distribution of distance values by county and basis
+for distance calculation.
 
 \begin{figure}
-
-
 \caption[Cluster Distance by Calculation Method]{Cluster Distance by Calculation Method by County\label{fig:clust-dist-by-method}}
 
 
+\begin{centering}
 \includegraphics[width=1\textwidth]{figures/ExpDiv_ctyVar_distCalc}
+\par\end{centering}
 
 The space in which cluster distance was measured is indicated by color.
 The\textcolor{red}{{} red boxplots indicate the distance was calculated
@@ -4914,21 +4931,21 @@ Mill hints at the natural tension between those at either end of the
 inquiry spectrum, while simultanesouly recognizing that the differences
 between the poles are matters of degree, not concept. This is, in
 fact, an instructive point for the current situation. The a priori
-theoretical relationships hypothesized in top of this section must
-be converted in an operational specification, which involves the selection
-and form of the variables used to represent said relationships. Ultimately,
-however, transformations can only make so much of a difference. In
-this case, the low explanatory power of the model presented was reasonably
-robust to an array of transformations of the variables presented.
-One must consider the implication: important elements are missing
-from the specification.
+theoretical relationships hypothesized at the top of this section
+must be converted in an operational specification, which involves
+the selection and form of the variables used to represent said relationships.
+Ultimately, however, transformations can only make so much of a difference.
+In this case, the low explanatory power of the model presented was
+reasonably robust to an array of transformations of the variables
+presented. One must consider the implication: important elements are
+missing from the specification.
 
 Fortunately, the context of this analysis is conducive to alternative
 methods of model selection. Specifically, a class of estimators has
 been developed to deal specifically with the problem of dealing with
 a model that contains a number of regressors , $p$, that greatly
 exceeds the number of observations, $n$. These approaches are referred
-to shrinkage, or regularization, methods (Algorithm \ref{alg:Shrinkage-Methods}).
+to as shrinkage, or regularization, methods (Algorithm \ref{alg:Shrinkage-Methods}).
 Their utility extends beyond the specific use case for which they
 were designed. In general, they are useful for identifying the components
 of a dataset that are the best predictors. In contrast to filtering
@@ -4940,7 +4957,7 @@ they penalize the sizes of the coefficient estimates. Since the loss
 function must now account for this penalty, the effect is to ``shrink''
 the estimates down until many of them are no longer meaningfully distinguished
 from zero. Those that remain yield effects in spite of the penalty
-interacted with the effects of all other variables.
+interacted with the impacts of all other variables.
 
 \begin{algorithm}
 
@@ -5143,7 +5160,7 @@ time.
 \caption{Pooled OLS Results\label{tab:Pooled-OLS-Results}}
 
 
-\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000 & 0.000$^{***}$ & $-$0.000$^{*}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & 0.076 & $-$0.041 & 0.111$^{*}$ \\    & (0.058) & (0.051) & (0.061) \\    pcintgov & $-$0.00003$^{***}$ & $-$0.00002$^{**}$ & 0.00001 \\    & (0.00001) & (0.00001) & (0.00001) \\    pcrev & 0.00001$^{*}$ & 0.00000 & 0.00000 \\    & (0.00000) & (0.00000) & (0.00001) \\    pcap & 0.00000$^{***}$ & $-$0.00000 & 0.00000$^{***}$ \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & $-$0.003 & 0.00003 & $-$0.008 \\    & (0.006) & (0.005) & (0.006) \\    intensity\_stock & 0.040$^{***}$ & 0.038$^{***}$ & 0.006 \\    & (0.008) & (0.007) & (0.009) \\    exp\_intensity & $-$0.000 & $-$0.000 & 0.000 \\    & (0.000) & (0.000) & (0.000) \\    Constant & 0.173$^{***}$ & 0.153$^{***}$ & 0.148$^{***}$ \\    & (0.006) & (0.005) & (0.006) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.206 & 0.141 & 0.071 \\  Adjusted R$^{2}$ & 0.204 & 0.140 & 0.070 \\  F Statistic (df = 8; 1079) & 35.007$^{***}$ & 22.089$^{***}$ & 10.277$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular}  
+\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & $-$0.036 & $-$0.050 & 0.010 \\    & (0.079) & (0.072) & (0.074) \\    pcintgov & 0.0001$^{***}$ & 0.0001$^{***}$ & 0.0002$^{***}$ \\    & (0.00001) & (0.00001) & (0.00001) \\    pcrev & $-$0.00003$^{***}$ & $-$0.0001$^{***}$ & $-$0.0001$^{***}$ \\    & (0.00001) & (0.00001) & (0.00001) \\    pcap & 0.00001$^{***}$ & 0.00001$^{***}$ & 0.00001$^{***}$ \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & 0.032$^{***}$ & 0.035$^{***}$ & 0.040$^{***}$ \\    & (0.008) & (0.008) & (0.008) \\    intensity\_stock & 0.007 & 0.018$^{*}$ & 0.017 \\    & (0.011) & (0.010) & (0.011) \\    exp\_intensity & $-$0.000 & $-$0.000$^{**}$ & $-$0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    cty\_exp\_prop & $-$0.082$^{**}$ & $-$0.016 & $-$0.054 \\    & (0.035) & (0.032) & (0.033) \\    Constant & 0.183$^{***}$ & 0.142$^{***}$ & 0.119$^{***}$ \\    & (0.009) & (0.008) & (0.009) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.360 & 0.481 & 0.483 \\  Adjusted R$^{2}$ & 0.357 & 0.476 & 0.479 \\  F Statistic (df = 9; 1078) & 67.440$^{***}$ & 110.926$^{***}$ & 111.900$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular}  
 \end{table}
 
 
@@ -5171,7 +5188,7 @@ relevant, negative impact seen in the LASSO models of Subsection \ref{sub:ExpDiv
 \caption{Fixed Effect Results - County\label{tab:Fixed-Effect-Results-county}}
 
 
-\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000$^{**}$ & 0.000 & 0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & $-$0.007 & $-$0.096$^{***}$ & 0.035 \\    & (0.052) & (0.033) & (0.054) \\    pcintgov & $-$0.00001 & 0.00001 & $-$0.00001 \\    & (0.00002) & (0.00001) & (0.00002) \\    pcrev & 0.00002$^{*}$ & $-$0.00000 & 0.00001 \\    & (0.00001) & (0.00001) & (0.00001) \\    pcap & 0.00000 & 0.00000$^{***}$ & $-$0.00000 \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & $-$0.0003 & 0.019$^{**}$ & 0.009 \\    & (0.015) & (0.009) & (0.015) \\    intensity\_stock & 0.022$^{**}$ & 0.014$^{**}$ & 0.003 \\    & (0.009) & (0.006) & (0.009) \\    exp\_intensity & $-$0.000 & $-$0.000 & $-$0.000 \\    & (0.000) & (0.000) & (0.000) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.034 & 0.091 & 0.028 \\  Adjusted R$^{2}$ & 0.031 & 0.085 & 0.026 \\  F Statistic (df = 8; 1016) & 4.416$^{***}$ & 12.757$^{***}$ & 3.673$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000$^{**}$ & 0.000$^{***}$ & 0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024 \\    & (0.060) & (0.047) & (0.047) \\    pcintgov & $-$0.00003 & $-$0.00003$^{**}$ & $-$0.00002 \\    & (0.00002) & (0.00001) & (0.00001) \\    pcrev & 0.00000 & 0.00003$^{***}$ & 0.00003$^{***}$ \\    & (0.00001) & (0.00001) & (0.00001) \\    pcap & 0.00000$^{***}$ & 0.00000$^{***}$ & 0.00000$^{***}$ \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & $-$0.014 & 0.015 & $-$0.010 \\    & (0.017) & (0.013) & (0.013) \\    intensity\_stock & $-$0.010 & 0.003 & $-$0.006 \\    & (0.010) & (0.008) & (0.008) \\    exp\_intensity & 0.000$^{*}$ & 0.000$^{**}$ & 0.000 \\    & (0.000) & (0.000) & (0.000) \\    cty\_exp\_prop & 0.246$^{***}$ & 0.013 & 0.023 \\    & (0.038) & (0.030) & (0.030) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.127 & 0.175 & 0.139 \\  Adjusted R$^{2}$ & 0.118 & 0.163 & 0.129 \\  F Statistic (df = 9; 1015) & 16.336$^{***}$ & 23.907$^{***}$ & 18.153$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular} 
 \end{table}
 
 
@@ -5181,7 +5198,7 @@ relevant, negative impact seen in the LASSO models of Subsection \ref{sub:ExpDiv
 \caption{Fixed Effect Results - County \& Year\label{tab:Fixed-Effect-Results-county-year}}
 
 
-\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000 & $-$0.000 & 0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & 0.106$^{**}$ & $-$0.0002 & 0.085 \\    & (0.053) & (0.033) & (0.057) \\    pcintgov & $-$0.00002 & 0.00000 & $-$0.00001 \\    & (0.00002) & (0.00001) & (0.00002) \\    pcrev & 0.00001 & $-$0.00001 & 0.00001 \\    & (0.00001) & (0.00001) & (0.00001) \\    pcap & $-$0.00000$^{**}$ & $-$0.00000 & $-$0.00000$^{*}$ \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & $-$0.030$^{**}$ & $-$0.006 & $-$0.002 \\    & (0.015) & (0.009) & (0.016) \\    intensity\_stock & $-$0.006 & $-$0.010$^{*}$ & $-$0.010 \\    & (0.009) & (0.006) & (0.010) \\    exp\_intensity & 0.000 & 0.000 & $-$0.000 \\    & (0.000) & (0.000) & (0.000) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.018 & 0.008 & 0.024 \\  Adjusted R$^{2}$ & 0.016 & 0.008 & 0.022 \\  F Statistic (df = 8; 1000) & 2.242$^{**}$ & 1.063 & 3.114$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc}  \\[-1.8ex]\hline  \hline \\[-1.8ex]   & \multicolumn{3}{c}{\textit{Dependent variable:}} \\  \cline{2-4}  \\[-1.8ex] & dist\_clust & dist\_clust\_bf & dist\_clust\_pca \\  \\[-1.8ex] & (1) & (2) & (3)\\  \hline \\[-1.8ex]   exp\_total & 0.000 & 0.000 & 0.000$^{**}$ \\    & (0.000) & (0.000) & (0.000) \\    pop\_growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$ \\    & (0.061) & (0.047) & (0.048) \\    pcintgov & $-$0.00004$^{**}$ & $-$0.00004$^{***}$ & $-$0.00003$^{**}$ \\    & (0.00002) & (0.00001) & (0.00001) \\    pcrev & $-$0.00000 & 0.00002$^{***}$ & 0.00002$^{***}$ \\    & (0.00001) & (0.00001) & (0.00001) \\    pcap & 0.00000 & 0.00000 & 0.00000 \\    & (0.00000) & (0.00000) & (0.00000) \\    prop\_ratio & $-$0.048$^{***}$ & $-$0.018 & $-$0.034$^{**}$ \\    & (0.017) & (0.013) & (0.014) \\    intensity\_stock & $-$0.043$^{***}$ & $-$0.031$^{***}$ & $-$0.031$^{***}$ \\    & (0.011) & (0.008) & (0.009) \\    exp\_intensity & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ \\    & (0.000) & (0.000) & (0.000) \\    cty\_exp\_prop & 0.231$^{***}$ & $-$0.005 & 0.014 \\    & (0.037) & (0.029) & (0.029) \\   \hline \\[-1.8ex]  Observations & 1,088 & 1,088 & 1,088 \\  R$^{2}$ & 0.088 & 0.071 & 0.083 \\  Adjusted R$^{2}$ & 0.081 & 0.065 & 0.076 \\  F Statistic (df = 9; 999) & 10.672$^{***}$ & 8.478$^{***}$ & 10.033$^{***}$ \\  \hline  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\  \end{tabular}
 \end{table}
 
 

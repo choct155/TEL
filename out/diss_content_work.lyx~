@@ -18158,7 +18158,7 @@ hline
 \backslash
 [-1.8ex]   exp
 \backslash
-_total & 0.000 & 0.000$^{***}$ & $-$0.000$^{*}$ 
+_total & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ 
 \backslash
 
 \backslash
@@ -18168,15 +18168,15 @@ _total & 0.000 & 0.000$^{***}$ & $-$0.000$^{*}$
 \backslash
     pop
 \backslash
-_growth & 0.076 & $-$0.041 & 0.111$^{*}$ 
+_growth & $-$0.036 & $-$0.050 & 0.010 
 \backslash
 
 \backslash
-    & (0.058) & (0.051) & (0.061) 
+    & (0.079) & (0.072) & (0.074) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00003$^{***}$ & $-$0.00002$^{**}$ & 0.00001 
+    pcintgov & 0.0001$^{***}$ & 0.0001$^{***}$ & 0.0002$^{***}$ 
 \backslash
 
 \backslash
@@ -18184,15 +18184,15 @@ _growth & 0.076 & $-$0.041 & 0.111$^{*}$
 \backslash
 
 \backslash
-    pcrev & 0.00001$^{*}$ & 0.00000 & 0.00000 
+    pcrev & $-$0.00003$^{***}$ & $-$0.0001$^{***}$ & $-$0.0001$^{***}$ 
 \backslash
 
 \backslash
-    & (0.00000) & (0.00000) & (0.00001) 
+    & (0.00001) & (0.00001) & (0.00001) 
 \backslash
 
 \backslash
-    pcap & 0.00000$^{***}$ & $-$0.00000 & 0.00000$^{***}$ 
+    pcap & 0.00001$^{***}$ & 0.00001$^{***}$ & 0.00001$^{***}$ 
 \backslash
 
 \backslash
@@ -18202,27 +18202,27 @@ _growth & 0.076 & $-$0.041 & 0.111$^{*}$
 \backslash
     prop
 \backslash
-_ratio & $-$0.003 & 0.00003 & $-$0.008 
+_ratio & 0.032$^{***}$ & 0.035$^{***}$ & 0.040$^{***}$ 
 \backslash
 
 \backslash
-    & (0.006) & (0.005) & (0.006) 
+    & (0.008) & (0.008) & (0.008) 
 \backslash
 
 \backslash
     intensity
 \backslash
-_stock & 0.040$^{***}$ & 0.038$^{***}$ & 0.006 
+_stock & 0.007 & 0.018$^{*}$ & 0.017 
 \backslash
 
 \backslash
-    & (0.008) & (0.007) & (0.009) 
+    & (0.011) & (0.010) & (0.011) 
 \backslash
 
 \backslash
     exp
 \backslash
-_intensity & $-$0.000 & $-$0.000 & 0.000 
+_intensity & $-$0.000 & $-$0.000$^{**}$ & $-$0.000$^{***}$ 
 \backslash
 
 \backslash
@@ -18230,11 +18230,23 @@ _intensity & $-$0.000 & $-$0.000 & 0.000
 \backslash
 
 \backslash
-    Constant & 0.173$^{***}$ & 0.153$^{***}$ & 0.148$^{***}$ 
+    cty
+\backslash
+_exp
+\backslash
+_prop & $-$0.082$^{**}$ & $-$0.016 & $-$0.054 
 \backslash
 
 \backslash
-    & (0.006) & (0.005) & (0.006) 
+    & (0.035) & (0.032) & (0.033) 
+\backslash
+
+\backslash
+    Constant & 0.183$^{***}$ & 0.142$^{***}$ & 0.119$^{***}$ 
+\backslash
+
+\backslash
+    & (0.009) & (0.008) & (0.009) 
 \backslash
 
 \backslash
@@ -18248,15 +18260,15 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.206 & 0.141 & 0.071 
+  R$^{2}$ & 0.360 & 0.481 & 0.483 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.204 & 0.140 & 0.070 
+  Adjusted R$^{2}$ & 0.357 & 0.476 & 0.479 
 \backslash
 
 \backslash
-  F Statistic (df = 8; 1079) & 35.007$^{***}$ & 22.089$^{***}$ & 10.277$^{***}$
+  F Statistic (df = 9; 1078) & 67.440$^{***}$ & 110.926$^{***}$ & 111.900$^{***}$
  
 \backslash
 
@@ -18430,7 +18442,7 @@ hline
 \backslash
 [-1.8ex]   exp
 \backslash
-_total & 0.000$^{**}$ & 0.000 & 0.000$^{***}$ 
+_total & 0.000$^{**}$ & 0.000$^{***}$ & 0.000$^{***}$ 
 \backslash
 
 \backslash
@@ -18440,23 +18452,23 @@ _total & 0.000$^{**}$ & 0.000 & 0.000$^{***}$
 \backslash
     pop
 \backslash
-_growth & $-$0.007 & $-$0.096$^{***}$ & 0.035 
+_growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024 
 \backslash
 
 \backslash
-    & (0.052) & (0.033) & (0.054) 
+    & (0.060) & (0.047) & (0.047) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00001 & 0.00001 & $-$0.00001 
+    pcintgov & $-$0.00003 & $-$0.00003$^{**}$ & $-$0.00002 
 \backslash
 
 \backslash
-    & (0.00002) & (0.00001) & (0.00002) 
+    & (0.00002) & (0.00001) & (0.00001) 
 \backslash
 
 \backslash
-    pcrev & 0.00002$^{*}$ & $-$0.00000 & 0.00001 
+    pcrev & 0.00000 & 0.00003$^{***}$ & 0.00003$^{***}$ 
 \backslash
 
 \backslash
@@ -18464,7 +18476,7 @@ _growth & $-$0.007 & $-$0.096$^{***}$ & 0.035
 \backslash
 
 \backslash
-    pcap & 0.00000 & 0.00000$^{***}$ & $-$0.00000 
+    pcap & 0.00000$^{***}$ & 0.00000$^{***}$ & 0.00000$^{***}$ 
 \backslash
 
 \backslash
@@ -18474,31 +18486,43 @@ _growth & $-$0.007 & $-$0.096$^{***}$ & 0.035
 \backslash
     prop
 \backslash
-_ratio & $-$0.0003 & 0.019$^{**}$ & 0.009 
+_ratio & $-$0.014 & 0.015 & $-$0.010 
 \backslash
 
 \backslash
-    & (0.015) & (0.009) & (0.015) 
+    & (0.017) & (0.013) & (0.013) 
 \backslash
 
 \backslash
     intensity
 \backslash
-_stock & 0.022$^{**}$ & 0.014$^{**}$ & 0.003 
+_stock & $-$0.010 & 0.003 & $-$0.006 
 \backslash
 
 \backslash
-    & (0.009) & (0.006) & (0.009) 
+    & (0.010) & (0.008) & (0.008) 
 \backslash
 
 \backslash
     exp
 \backslash
-_intensity & $-$0.000 & $-$0.000 & $-$0.000 
+_intensity & 0.000$^{*}$ & 0.000$^{**}$ & 0.000 
 \backslash
 
 \backslash
     & (0.000) & (0.000) & (0.000) 
+\backslash
+
+\backslash
+    cty
+\backslash
+_exp
+\backslash
+_prop & 0.246$^{***}$ & 0.013 & 0.023 
+\backslash
+
+\backslash
+    & (0.038) & (0.030) & (0.030) 
 \backslash
 
 \backslash
@@ -18512,15 +18536,15 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.034 & 0.091 & 0.028 
+  R$^{2}$ & 0.127 & 0.175 & 0.139 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.031 & 0.085 & 0.026 
+  Adjusted R$^{2}$ & 0.118 & 0.163 & 0.129 
 \backslash
 
 \backslash
-  F Statistic (df = 8; 1016) & 4.416$^{***}$ & 12.757$^{***}$ & 3.673$^{***}$
+  F Statistic (df = 9; 1015) & 16.336$^{***}$ & 23.907$^{***}$ & 18.153$^{***}$
  
 \backslash
 
@@ -18543,7 +18567,7 @@ multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
 \backslash
   
 \backslash
-end{tabular}
+end{tabular} 
 \end_layout
 
 \end_inset
@@ -18651,7 +18675,7 @@ hline
 \backslash
 [-1.8ex]   exp
 \backslash
-_total & 0.000 & $-$0.000 & 0.000$^{***}$ 
+_total & 0.000 & 0.000 & 0.000$^{**}$ 
 \backslash
 
 \backslash
@@ -18661,23 +18685,23 @@ _total & 0.000 & $-$0.000 & 0.000$^{***}$
 \backslash
     pop
 \backslash
-_growth & 0.106$^{**}$ & $-$0.0002 & 0.085 
+_growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$ 
 \backslash
 
 \backslash
-    & (0.053) & (0.033) & (0.057) 
+    & (0.061) & (0.047) & (0.048) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00002 & 0.00000 & $-$0.00001 
+    pcintgov & $-$0.00004$^{**}$ & $-$0.00004$^{***}$ & $-$0.00003$^{**}$ 
 \backslash
 
 \backslash
-    & (0.00002) & (0.00001) & (0.00002) 
+    & (0.00002) & (0.00001) & (0.00001) 
 \backslash
 
 \backslash
-    pcrev & 0.00001 & $-$0.00001 & 0.00001 
+    pcrev & $-$0.00000 & 0.00002$^{***}$ & 0.00002$^{***}$ 
 \backslash
 
 \backslash
@@ -18685,7 +18709,7 @@ _growth & 0.106$^{**}$ & $-$0.0002 & 0.085
 \backslash
 
 \backslash
-    pcap & $-$0.00000$^{**}$ & $-$0.00000 & $-$0.00000$^{*}$ 
+    pcap & 0.00000 & 0.00000 & 0.00000 
 \backslash
 
 \backslash
@@ -18695,31 +18719,43 @@ _growth & 0.106$^{**}$ & $-$0.0002 & 0.085
 \backslash
     prop
 \backslash
-_ratio & $-$0.030$^{**}$ & $-$0.006 & $-$0.002 
+_ratio & $-$0.048$^{***}$ & $-$0.018 & $-$0.034$^{**}$ 
 \backslash
 
 \backslash
-    & (0.015) & (0.009) & (0.016) 
+    & (0.017) & (0.013) & (0.014) 
 \backslash
 
 \backslash
     intensity
 \backslash
-_stock & $-$0.006 & $-$0.010$^{*}$ & $-$0.010 
+_stock & $-$0.043$^{***}$ & $-$0.031$^{***}$ & $-$0.031$^{***}$ 
 \backslash
 
 \backslash
-    & (0.009) & (0.006) & (0.010) 
+    & (0.011) & (0.008) & (0.009) 
 \backslash
 
 \backslash
     exp
 \backslash
-_intensity & 0.000 & 0.000 & $-$0.000 
+_intensity & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ 
 \backslash
 
 \backslash
     & (0.000) & (0.000) & (0.000) 
+\backslash
+
+\backslash
+    cty
+\backslash
+_exp
+\backslash
+_prop & 0.231$^{***}$ & $-$0.005 & 0.014 
+\backslash
+
+\backslash
+    & (0.037) & (0.029) & (0.029) 
 \backslash
 
 \backslash
@@ -18733,15 +18769,16 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.018 & 0.008 & 0.024 
+  R$^{2}$ & 0.088 & 0.071 & 0.083 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.016 & 0.008 & 0.022 
+  Adjusted R$^{2}$ & 0.081 & 0.065 & 0.076 
 \backslash
 
 \backslash
-  F Statistic (df = 8; 1000) & 2.242$^{**}$ & 1.063 & 3.114$^{***}$ 
+  F Statistic (df = 9; 999) & 10.672$^{***}$ & 8.478$^{***}$ & 10.033$^{***}$
+ 
 \backslash
 
 \backslash
@@ -18763,7 +18800,7 @@ multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
 \backslash
   
 \backslash
-end{tabular} 
+end{tabular}
 \end_layout
 
 \end_inset

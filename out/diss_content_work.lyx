@@ -17428,7 +17428,44 @@ _ratio$
  behaviors, as measured by distance to the average position of similar counties.
  In fact, most of the theoretical model is contained as a subset of the
  variables identified by the LASSO procedure.
- There are, however, significant departures from the initial model, most
+ The dominant force from model variables is clearly the impact of the proportion
+ of fiscal activity from all governments in the county that is handled by
+ the county government (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_rev
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_exp
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+There are, however, significant departures from the initial model, most
  notably the impact of the size of government employment.
  Government employment is captured by the proportion of annual payroll in
  a county allocated to the federal (
@@ -17498,15 +17535,15 @@ _yrs$
 
 \end_inset
 
-), and the poverty rate (
+), and current year population growth (
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$pov
+$pop
 \backslash
-_pop$
+_growth$
 \end_layout
 
 \end_inset

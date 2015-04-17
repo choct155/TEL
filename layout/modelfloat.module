@@ -1,0 +1,20 @@
+#\DeclareLyXModule{Model Float}
+#DescriptionBegin
+#Defines a new model float.
+#DescriptionEnd
+
+# Author: Marvin Ward Jr.
+
+
+Float
+    Type                  model
+    GuiName               Model Float
+    Placement             tbp
+    Extension             lol
+    NumberWithin          none
+    Style                 ruled
+    ListName              "List of Models"
+    LaTeXBuiltin          false
+End
+
+

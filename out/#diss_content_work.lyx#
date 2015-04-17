@@ -17428,7 +17428,44 @@ _ratio$
  behaviors, as measured by distance to the average position of similar counties.
  In fact, most of the theoretical model is contained as a subset of the
  variables identified by the LASSO procedure.
- There are, however, significant departures from the initial model, most
+ The dominant force from model variables is clearly the impact of the proportion
+ of fiscal activity from all governments in the county that is handled by
+ the county government (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_rev
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_exp
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+There are, however, significant departures from the initial model, most
  notably the impact of the size of government employment.
  Government employment is captured by the proportion of annual payroll in
  a county allocated to the federal (
@@ -17498,15 +17535,15 @@ _yrs$
 
 \end_inset
 
-), and the poverty rate (
+), and current year population growth (
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$pov
+$pop
 \backslash
-_pop$
+_growth$
 \end_layout
 
 \end_inset
@@ -18675,7 +18712,7 @@ hline
 \backslash
 [-1.8ex]   exp
 \backslash
-_total & 0.000 & $-$0.000 & 0.000$^{***}$ 
+_total & 0.000 & 0.000 & 0.000$^{**}$ 
 \backslash
 
 \backslash
@@ -18685,23 +18722,23 @@ _total & 0.000 & $-$0.000 & 0.000$^{***}$
 \backslash
     pop
 \backslash
-_growth & 0.106$^{**}$ & $-$0.0002 & 0.085 
+_growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$ 
 \backslash
 
 \backslash
-    & (0.053) & (0.033) & (0.057) 
+    & (0.061) & (0.047) & (0.048) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00002 & 0.00000 & $-$0.00001 
+    pcintgov & $-$0.00004$^{**}$ & $-$0.00004$^{***}$ & $-$0.00003$^{**}$ 
 \backslash
 
 \backslash
-    & (0.00002) & (0.00001) & (0.00002) 
+    & (0.00002) & (0.00001) & (0.00001) 
 \backslash
 
 \backslash
-    pcrev & 0.00001 & $-$0.00001 & 0.00001 
+    pcrev & $-$0.00000 & 0.00002$^{***}$ & 0.00002$^{***}$ 
 \backslash
 
 \backslash
@@ -18709,7 +18746,7 @@ _growth & 0.106$^{**}$ & $-$0.0002 & 0.085
 \backslash
 
 \backslash
-    pcap & $-$0.00000$^{**}$ & $-$0.00000 & $-$0.00000$^{*}$ 
+    pcap & 0.00000 & 0.00000 & 0.00000 
 \backslash
 
 \backslash
@@ -18719,31 +18756,43 @@ _growth & 0.106$^{**}$ & $-$0.0002 & 0.085
 \backslash
     prop
 \backslash
-_ratio & $-$0.030$^{**}$ & $-$0.006 & $-$0.002 
+_ratio & $-$0.048$^{***}$ & $-$0.018 & $-$0.034$^{**}$ 
 \backslash
 
 \backslash
-    & (0.015) & (0.009) & (0.016) 
+    & (0.017) & (0.013) & (0.014) 
 \backslash
 
 \backslash
     intensity
 \backslash
-_stock & $-$0.006 & $-$0.010$^{*}$ & $-$0.010 
+_stock & $-$0.043$^{***}$ & $-$0.031$^{***}$ & $-$0.031$^{***}$ 
 \backslash
 
 \backslash
-    & (0.009) & (0.006) & (0.010) 
+    & (0.011) & (0.008) & (0.009) 
 \backslash
 
 \backslash
     exp
 \backslash
-_intensity & 0.000 & 0.000 & $-$0.000 
+_intensity & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ 
 \backslash
 
 \backslash
     & (0.000) & (0.000) & (0.000) 
+\backslash
+
+\backslash
+    cty
+\backslash
+_exp
+\backslash
+_prop & 0.231$^{***}$ & $-$0.005 & 0.014 
+\backslash
+
+\backslash
+    & (0.037) & (0.029) & (0.029) 
 \backslash
 
 \backslash
@@ -18757,15 +18806,16 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.018 & 0.008 & 0.024 
+  R$^{2}$ & 0.088 & 0.071 & 0.083 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.016 & 0.008 & 0.022 
+  Adjusted R$^{2}$ & 0.081 & 0.065 & 0.076 
 \backslash
 
 \backslash
-  F Statistic (df = 8; 1000) & 2.242$^{**}$ & 1.063 & 3.114$^{***}$ 
+  F Statistic (df = 9; 999) & 10.672$^{***}$ & 8.478$^{***}$ & 10.033$^{***}$
+ 
 \backslash
 
 \backslash
@@ -18787,7 +18837,7 @@ multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
 \backslash
   
 \backslash
-end{tabular} 
+end{tabular}
 \end_layout
 
 \end_inset

@@ -1,0 +1,90 @@
+#% Do not delete the line below; configure depends on this #
+#\DeclareLaTeXClass{authesis}
+
+# Read the definitions from book.layout
+Input book.layout
+
+Style DegreeYear
+       CopyStyle       Author
+       LatexName       degreeyear
+       Font
+               Size    Normal
+       EndFont
+       Align Left
+       LabelType Static
+       LabelFont
+               Series Bold
+       EndFont
+       LabelString "Year of Degree: "
+       Margin Dynamic
+End
+
+Style Degree
+       CopyStyle DegreeYear
+       LabelString "Degree: "
+       LatexName degree
+End
+
+Style Chair
+       CopyStyle DegreeYear
+       LabelString "Chair: "
+       LatexName chair
+End
+
+
+Style SecondReader
+       CopyStyle DegreeYear
+       LabelString "Second Reader: "
+       LatexName secondreader
+End
+
+
+Style ThirdReader
+       CopyStyle DegreeYear
+       LabelString "Third Reader: "
+       LatexName thirdreader
+End
+
+Style DegreeField
+       CopyStyle DegreeYear
+       LabelString "Field of Degree: "
+       LatexName degreefield
+End
+
+Style Abstract
+       Margin                Static
+       LatexType             Command
+       LatexName             abstract
+       NextNoIndent          1
+       LeftMargin            MMM
+       RightMargin           MMM
+       ParIndent             MM
+       ItemSep               0
+       TopSep                0.7
+       BottomSep             0.7
+       ParSep                0
+       Align                 Block
+       AlignPossible         Block
+       LabelType             Centered_Top_Environment
+       LabelString           "Abstract"
+       LabelBottomSep    0.5
+       Font
+         Size                Small
+       EndFont
+       LabelFont
+         Series              Bold
+         Size                Large
+       EndFont
+End
+
+Style AbstractN
+       CopyStyle Abstract
+       LabelString           "Numbered Abstract"
+       LatexName abstractn
+End
+
+Style Acknowledgements
+       CopyStyle Abstract
+       LabelString           "Acknowledgements"
+       LatexName acknowledgements
+End
