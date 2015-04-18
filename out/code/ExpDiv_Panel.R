@@ -11,6 +11,7 @@
 
 #Spatial econometrics
 library(plm)
+library(lmtest)
 #Visualization
 library(ggplot2)
 #Reporting
@@ -35,14 +36,14 @@ pdata$ldist_clust<-lag(pdata$dist_clust)
 
 
 ##  Define Model Specifications ##
-tot<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + cty_exp_prop
-tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
-bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
-pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+tot<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock)
+tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
 
-totd<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + lag(dist_clust) + cty_exp_prop
-bvfd<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
-pcad<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+totd<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + lag(intensity_stock) + lag(dist_clust)
+bvfd<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+pcad<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
 
 ##  Set up test models ##
 test_fe<-plm(tot,data=pdata,model='within')
@@ -113,16 +114,16 @@ res_pool_density<-ggplot(res_pool,aes(x=test_pool.resid))+geom_density(fill='red
   xlab('Residuals') + ylab('Density') + ggtitle('Distribution of Pooled Residuals')
 
 print(res_fe_density)
-ggsave('ExpDiv_res_fe_density.svg')
+ggsave('../figures/ExpDiv_res_fe_density.svg')
 
 print(res_pool_density)
-ggsave('ExpDiv_res_pool_density.svg')
+ggsave('../figures/ExpDiv_res_pool_density.svg')
 
 print(res_pool_plot_yr)
-ggsave('ExpDiv_res_pool_plot_yr.svg')
+ggsave('../figures/ExpDiv_res_pool_plot_yr.svg')
 
 print(res_pool_plot_cty)
-ggsave('ExpDiv_res_pool_plot_cty.svg')
+ggsave('../figures/ExpDiv_res_pool_plot_cty.svg')
 
 attr(test_fe$model,"index")
 
@@ -150,7 +151,7 @@ dist_distr<-ggplot(dist_stack,aes(x=Measure)) +
               geom_density(aes(fill=Space),alpha=.5) +
               theme(panel.background = element_rect(fill='white'))
 print(dist_distr)
-ggsave('ExpDiv_Dist_Distributions.svg')
+ggsave('../figures/ExpDiv_Dist_Distributions.svg')
 
 #Create LaTeX output tables
 stargazer(test_pool,bvf_pool,pca_pool,no.space=TRUE)

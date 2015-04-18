@@ -33,6 +33,7 @@ modelfloat
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement !tph
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -193,6 +194,14 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList model
 
 \end_inset
 
@@ -1850,6 +1859,7 @@ name "fig:Tot-Gov-Size"
 \align center
 \begin_inset Graphics
 	filename figures/tot_gov_GDP_perc.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -1997,6 +2007,7 @@ name "fig:SL-Gov-Size"
 \align center
 \begin_inset Graphics
 	filename figures/sl_gov_GDP_perc.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -2079,6 +2090,7 @@ name "fig:Sub-Taxes"
 \align center
 \begin_inset Graphics
 	filename figures/sl_tax_perc.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -2703,6 +2715,7 @@ name "fig:Age-Distribution"
 \align center
 \begin_inset Graphics
 	filename figures/Ch2_pop_trend.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -2943,6 +2956,7 @@ name "fig:Volume-of-IntGov-transfers-to-local"
 \align center
 \begin_inset Graphics
 	filename figures/IntGov2Loc.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -3043,6 +3057,7 @@ name "fig:Binding-TELs"
 \align center
 \begin_inset Graphics
 	filename figures/TEL_bind_states_lab.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -4279,6 +4294,7 @@ name "fig:Colorado-GSP"
 \align center
 \begin_inset Graphics
 	filename figures/CO_gsp.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -4390,6 +4406,7 @@ name "fig:County-Population-Dynamics"
 \align center
 \begin_inset Graphics
 	filename figures/CO_pop_growth.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -4484,6 +4501,7 @@ name "fig:Distribution-of-Income"
 \align center
 \begin_inset Graphics
 	filename figures/CO_med_inc_cty_map.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -4583,6 +4601,7 @@ name "fig:County-Revenue-Growth"
 \align center
 \begin_inset Graphics
 	filename figures/CTY_rev_growth.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -4662,6 +4681,7 @@ name "fig:Revenue-Composition"
 \align center
 \begin_inset Graphics
 	filename figures/CO_cty_rev_comp.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -4729,6 +4749,7 @@ name "fig:cty-muni-fin-summary"
 \align center
 \begin_inset Graphics
 	filename figures/cty_muni_fin_summary.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -4813,6 +4834,7 @@ name "fig:County-Expenditure-Growth"
 \align center
 \begin_inset Graphics
 	filename figures/CTY_exp_growth.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -4884,6 +4906,7 @@ name "fig:Expenditure-Composition"
 \align center
 \begin_inset Graphics
 	filename figures/CO_cty_exp_comp.png
+	lyxscale 40
 	width 100text%
 
 \end_inset
@@ -5546,7 +5569,8 @@ name "fig:Distribution-of-COTEL"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/choct155/projects/TEL/ipynb/TEL_intensity_2009.png
+	filename figures/TEL_intensity_2009.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -5629,7 +5653,8 @@ name "fig:Visual-Rationale-for-Comp-Limit"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/choct155/projects/TEL/ipynb/TABOR_vs_SLPTR.png
+	filename figures/TABOR_vs_SLPTR.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -5670,10 +5695,6 @@ $t$
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6037,10 +6058,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -6268,7 +6285,8 @@ name "fig:Assessment-to-Sales"
 \align center
 \begin_inset Graphics
 	filename figures/med_asmt_sales_ratio.png
-	height 100pheight%
+	lyxscale 50
+	width 80text%
 
 \end_inset
 
@@ -6591,6 +6609,13 @@ status open
 
 \begin_layout Plain Layout
 COTEL Intensity in Adams County
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:COTEL-Intensity-Adams"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6602,6 +6627,7 @@ COTEL Intensity in Adams County
 \align center
 \begin_inset Graphics
 	filename figures/adams_cty_intensity.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -6709,7 +6735,8 @@ name "fig:Gallagher-Ratio-Dist"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/choct155/projects/TEL/ipynb/prop_ratio_dist.png
+	filename figures/prop_ratio_dist.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -7157,6 +7184,7 @@ name "fig:Space-Time-Memory"
 \align center
 \begin_inset Graphics
 	filename figures/space_time_memory.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -7594,14 +7622,10 @@ For starters, from a Tiebout perspective, local revenue instruments are
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float tabular
+\begin_inset Float model
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -8132,6 +8156,7 @@ name "fig:Def-Weight-Matrix"
 \align center
 \begin_inset Graphics
 	filename figures/w_def.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -8239,6 +8264,7 @@ name "fig:Variance-in-Weights"
 \align center
 \begin_inset Graphics
 	filename figures/decay_curves.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -8552,6 +8578,7 @@ name "fig:LMI-Values"
 \align center
 \begin_inset Graphics
 	filename figures/Moran_colors.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -8705,6 +8732,7 @@ name "fig:GOG-Values"
 \align center
 \begin_inset Graphics
 	filename figures/GO_colors.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -8998,6 +9026,7 @@ name "fig:LMI-Plots"
 \align center
 \begin_inset Graphics
 	filename figures/moranIPlot_nt.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -9009,6 +9038,7 @@ name "fig:LMI-Plots"
 \align center
 \begin_inset Graphics
 	filename figures/Mi_plot_ap_nt.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -9050,6 +9080,7 @@ name "fig:GOG-Plots"
 \align center
 \begin_inset Graphics
 	filename figures/goGPlot_nt.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -9061,6 +9092,7 @@ name "fig:GOG-Plots"
 \align center
 \begin_inset Graphics
 	filename figures/GO_plot_ap_nt.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -9320,7 +9352,14 @@ _ap$
 .
  There are two LISAs (LMI and GOG), two fiscal indicators (per capita revenue
  and per capita annual payroll), and five weight matrix definitions (see
- Subsection WMATRIX).
+ Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Weight-Matrices"
+
+\end_inset
+
+).
  Therefore, there are 20 LISA models.
 \end_layout
 
@@ -9406,6 +9445,7 @@ $pcap$
 \end_inset
 
 .
+ A Hausman test was used to select fixed as opposed to random effects.
 \end_layout
 
 \begin_layout Subsubsection
@@ -9982,6 +10022,7 @@ name "fig:Correlation-Plot-Rev"
 \align center
 \begin_inset Graphics
 	filename figures/converge_indep_corrplot.png
+	lyxscale 50
 	width 85text%
 
 \end_inset
@@ -10385,6 +10426,7 @@ name "fig:Distribution-of-Clustering-Values"
 \align center
 \begin_inset Graphics
 	filename figures/cluster_wt_dist.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -10459,6 +10501,7 @@ name "fig:LISA-Results"
 \align center
 \begin_inset Graphics
 	filename figures/converge_LISAs.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -10636,6 +10679,7 @@ name "fig:SLM-Rev"
 \align center
 \begin_inset Graphics
 	filename figures/converge_slm_rev.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -10803,6 +10847,7 @@ name "fig:SLM-econ"
 \align center
 \begin_inset Graphics
 	filename figures/converge_slm_econ.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -10914,6 +10959,7 @@ name "fig:FE-Results"
 \align center
 \begin_inset Graphics
 	filename figures/converge_fe_panel.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -13192,6 +13238,7 @@ name "fig:Fiscal-Position-Concept"
 \align center
 \begin_inset Graphics
 	filename figures/fisc_pos_concept.png
+	lyxscale 80
 	width 70text%
 
 \end_inset
@@ -13396,10 +13443,7 @@ $n$
 
 -dimensional track will be referred to as Track 1, while the PCA track will
  be referred to as Track 2.
-\end_layout
-
-\begin_layout Standard
-To complicate things just a little further, Track 1 also employs a limited
+ To complicate things just a little further, Track 1 also employs a limited
  dimensionality reduction protocol that will be known as Track 1a.
  The protocol in Track 1a first groups the original 16 expenditure functions
  into eight subgroups (Table 
@@ -13766,6 +13810,7 @@ name "fig:Distribution-of-Subgroup-Proportions"
 \align center
 \begin_inset Graphics
 	filename figures/exp_subgroup_dist.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -13853,6 +13898,7 @@ name "fig:Intensity-vs-Exp-Subgroup"
 \align center
 \begin_inset Graphics
 	filename figures/COTEL_intensity_vs_exp_subgroups.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -13892,6 +13938,33 @@ It is interesting to note that the two dimension reduction procedures (PCA
  However, there is some disagreement in the public safety area.
  This underscores the need for three flights of models using the distances
  calculated via Track 1, Track 1a, and Track 2.
+ 
+\end_layout
+
+\begin_layout Standard
+In all Tracks, the final component dimension is the proportion of all government
+ expenditures in the county that are specifically attributed to the county
+ government (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_exp
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+).
+ To the extent that counties may vary in their propensity to leverage municipali
+ties or school districts for the delivery of services, this is a material
+ dimension that will lead to differing behaviors across counties.
+ As such, it is included in the type definition array.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -14159,6 +14232,7 @@ name "fig:Well-Behaved-Clusters"
 \align center
 \begin_inset Graphics
 	filename figures/kmeans_ideal.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -14256,6 +14330,7 @@ name "fig:Variation-in-Exp-PCA"
 \align center
 \begin_inset Graphics
 	filename figures/exp_pca.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -14432,6 +14507,7 @@ name "fig:Fiscal-Positions-1975"
 \align center
 \begin_inset Graphics
 	filename figures/fisc_pos1975.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -14737,6 +14813,7 @@ name "fig:Fiscal-Clusters-k5"
 \align center
 \begin_inset Graphics
 	filename figures/fisc_pos1975_k5.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -14828,6 +14905,7 @@ name "fig:Within-Cluster-Variation"
 \align center
 \begin_inset Graphics
 	filename figures/clust_dist_variance.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -14888,6 +14966,7 @@ name "fig:Within-Cluster-Variation-by-Year"
 \align center
 \begin_inset Graphics
 	filename figures/clust_dist_variance_yr.png
+	lyxscale 80
 	width 100text%
 
 \end_inset
@@ -14957,6 +15036,7 @@ name "fig:cty-clust-dist-var"
 \align center
 \begin_inset Graphics
 	filename figures/clustDist_var_cty.png
+	lyxscale 50
 	width 80text%
 
 \end_inset
@@ -15848,23 +15928,6 @@ _ratio$
 \end_inset
 
 ).
- The proportion of expenditures from all governments in the county that
- are undertaken by the county government (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$cty
-\backslash
-_exp
-\backslash
-_prop$
-\end_layout
-
-\end_inset
-
-) is included to speak the scope of county government application.
  The term also includes an interaction between COTEL intensity and total
  expenditures (
 \begin_inset ERT
@@ -15900,6 +15963,30 @@ $gsp.L$
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Plain Layout
+Recall that the proportion of expenditures from all governments in the county
+ that are undertaken by the county government (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cty
+\backslash
+_exp
+\backslash
+_prop$
+\end_layout
+
+\end_inset
+
+) is included to speak the scope of county government application, but it
+ is modeled as part of the definition of county positions used to measure
+ cluster distance.
+ To include it here as a regressor would be to capture the equation in both
+ the dependent and independent sides of the specification.
 \end_layout
 
 \end_inset
@@ -16085,14 +16172,16 @@ name "fig:Var-Variation-Full"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/ExpDiv_CoV.png
+	filename figures/ExpDiv_CoV.svg
+	lyxscale 50
 	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename figures/ExpDiv_Corr.png
+	filename figures/ExpDiv_Corr.svg
+	lyxscale 50
 	width 50text%
 
 \end_inset
@@ -16247,14 +16336,16 @@ name "fig:Var-Variation-Alt-Dist"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/ExpDiv_varCorr_PCA.png
+	filename figures/ExpDiv_varCorr_PCA.svg
+	lyxscale 50
 	width 40text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename figures/ExpDiv_varCorr_bivFilt.png
+	filename figures/ExpDiv_varCorr_bivFilt.svg
+	lyxscale 50
 	width 40text%
 
 \end_inset
@@ -16365,7 +16456,8 @@ name "fig:clust-dist-by-method"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/ExpDiv_ctyVar_distCalc.png
+	filename figures/ExpDiv_ctyVar_distCalc.svg
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -16809,10 +16901,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -16835,6 +16923,7 @@ name "fig:Moran's-I-dist_clust-yr"
 \align center
 \begin_inset Graphics
 	filename figures/ExpDiv_CD_Moran.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -16928,6 +17017,7 @@ name "fig:Distribution-of-Distance-Measures"
 \align center
 \begin_inset Graphics
 	filename figures/ExpDiv_Dist_Distributions.png
+	lyxscale 60
 	width 100text%
 
 \end_inset
@@ -17428,39 +17518,6 @@ _ratio$
  behaviors, as measured by distance to the average position of similar counties.
  In fact, most of the theoretical model is contained as a subset of the
  variables identified by the LASSO procedure.
- The dominant force from model variables is clearly the impact of the proportion
- of fiscal activity from all governments in the county that is handled by
- the county government (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$cty
-\backslash
-_rev
-\backslash
-_prop$
-\end_layout
-
-\end_inset
-
- and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$cty
-\backslash
-_exp
-\backslash
-_prop$
-\end_layout
-
-\end_inset
-
-).
  
 \end_layout
 
@@ -17657,6 +17714,7 @@ name "fig:LASSO-Scores-by-measure"
 \align center
 \begin_inset Graphics
 	filename figures/ExpDiv_Lasso_Scores_by_imp.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
@@ -17682,8 +17740,9 @@ reference "fig:LASSO-Estimates-by-measure"
 
 \end_inset
 
- directly compares the estimates from both versions of all three distance
- measures.
+ directly compares the estimates from both versions (leading change and
+ current level) of all three distance measures (full portfolio, regression
+ filtered, and PCA).
  Estimates on the zero line have been virtually eliminated in the shrinkage
  process, and may thus be interpreted as immaterial predictors.
  Agreement across models is captured by estimates appearing on the same
@@ -17745,8 +17804,7 @@ _growth$
 
 \end_inset
 
- in the local neighborhood), the estimates of the institutional variables
- (
+ in the local neighborhood), the estimates of the COTEL intensity (
 \begin_inset ERT
 status open
 
@@ -17765,14 +17823,21 @@ status open
 
 \begin_layout Plain Layout
 
-$prop
+$intensity
 \backslash
-_ratio$
+_flow$
 \end_layout
 
 \end_inset
 
 ) point consistently in the same direction across models.
+ In general, they are associated with larger distances between a county
+ and the centroid of its type, though the magnitude of the effect is not
+ as substantial as other model components.
+ In other words, they are associated with deviations in the expenditure
+ trajectory of a given county.
+ The Gallagher Ratio, on the other hand, seems to be more sensitive to distance
+ measure.
 \end_layout
 
 \begin_layout Standard
@@ -17895,7 +17960,8 @@ reference "fig:Comparison-of-Residual-behavior"
  models.
  The separation of central tendency from the zero line in the pooled case
  is a measurement of the bias in the estimates.
- Note that it does not occur in the fixed effect case.
+ Note that this bias is markedly reduced in the fixed effect case, and variance
+ is reduced as well.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -17964,6 +18030,7 @@ name "fig:Comparison-of-Residual-behavior"
 \align center
 \begin_inset Graphics
 	filename figures/ExpDiv_res_pool_density.png
+	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -17975,6 +18042,7 @@ name "fig:Comparison-of-Residual-behavior"
 
 \begin_inset Graphics
 	filename figures/ExpDiv_res_fe_density.png
+	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -18020,6 +18088,7 @@ name "fig:Pooled-Residuals-by-county"
 \align center
 \begin_inset Graphics
 	filename figures/ExpDiv_res_pool_plot_cty.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -18035,52 +18104,14 @@ name "fig:Pooled-Residuals-by-county"
 \begin_layout Standard
 Despite the problems with pooled analysis, OLS is often a useful starting
  point for building a narrative.
- In T,able 
+ In Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Pooled-OLS-Results"
 
 \end_inset
 
-, it can be seen that population growth (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$pop
-\backslash
-_growth$
-\end_layout
-
-\end_inset
-
-) and COTEL intensity (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$intensity
-\backslash
-_stock$
-\end_layout
-
-\end_inset
-
-) remain the dominant elements of the original model.
- The latter does so with a high degree of precision, which supports the
- belief that greater constraints placed on county revenue will force them
- to change expenditure behavior.
- Note that this relationship between COTEL intensity and expenditure behavior
- is not supported in the model that uses the PCA distance measure as the
- dependent.
- This is a curious result, insofar as most of the variation in the portfolio
- is captured in the first three principal components.
- The implication is that some expenditure functions (those not captured
- in the first three components) may play an outsized role in understanding
- the impact of COTEL intensity.
- On the other hand, the Gallagher ratio (
+, it can be seen that the Gallagher Ratio (
 \begin_inset ERT
 status open
 
@@ -18093,11 +18124,26 @@ _ratio$
 
 \end_inset
 
-) is decidedly less important over the entire study period than the earlier
- models would suggest.
- Obviously this runs counter to the idea that counties with greater residential
- property tax shares will be more likely to change expenditure behavior
- over time.
+) is really the only consistent driver of increases in cluster distance
+ across models.
+ The sign of the COTEL intensity (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$intensity
+\backslash
+_stock$
+\end_layout
+
+\end_inset
+
+) estimates suggest that it is also associated with larger cluster distances,
+ although not with the same magnitude or precision as the Gallagher Ratio.
+ These results, even if only weakly supported in the COTEL intensity case,
+ suggest that COTELs are associated with forcing counties to make different
+ decisions.
 \end_layout
 
 \begin_layout Standard
@@ -18205,15 +18251,15 @@ _total & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$
 \backslash
     pop
 \backslash
-_growth & $-$0.036 & $-$0.050 & 0.010 
+_growth & $-$0.050 & $-$0.053 & 0.0004 
 \backslash
 
 \backslash
-    & (0.079) & (0.072) & (0.074) 
+    & (0.078) & (0.072) & (0.074) 
 \backslash
 
 \backslash
-    pcintgov & 0.0001$^{***}$ & 0.0001$^{***}$ & 0.0002$^{***}$ 
+    pcintgov & 0.0001$^{***}$ & 0.0001$^{***}$ & 0.0001$^{***}$ 
 \backslash
 
 \backslash
@@ -18221,7 +18267,7 @@ _growth & $-$0.036 & $-$0.050 & 0.010
 \backslash
 
 \backslash
-    pcrev & $-$0.00003$^{***}$ & $-$0.0001$^{***}$ & $-$0.0001$^{***}$ 
+    pcrev & $-$0.00004$^{***}$ & $-$0.0001$^{***}$ & $-$0.0001$^{***}$ 
 \backslash
 
 \backslash
@@ -18239,17 +18285,17 @@ _growth & $-$0.036 & $-$0.050 & 0.010
 \backslash
     prop
 \backslash
-_ratio & 0.032$^{***}$ & 0.035$^{***}$ & 0.040$^{***}$ 
+_ratio & 0.028$^{***}$ & 0.034$^{***}$ & 0.038$^{***}$ 
 \backslash
 
 \backslash
-    & (0.008) & (0.008) & (0.008) 
+    & (0.008) & (0.007) & (0.008) 
 \backslash
 
 \backslash
     intensity
 \backslash
-_stock & 0.007 & 0.018$^{*}$ & 0.017 
+_stock & 0.002 & 0.017$^{*}$ & 0.014 
 \backslash
 
 \backslash
@@ -18267,23 +18313,11 @@ _intensity & $-$0.000 & $-$0.000$^{**}$ & $-$0.000$^{***}$
 \backslash
 
 \backslash
-    cty
-\backslash
-_exp
-\backslash
-_prop & $-$0.082$^{**}$ & $-$0.016 & $-$0.054 
+    Constant & 0.173$^{***}$ & 0.140$^{***}$ & 0.112$^{***}$ 
 \backslash
 
 \backslash
-    & (0.035) & (0.032) & (0.033) 
-\backslash
-
-\backslash
-    Constant & 0.183$^{***}$ & 0.142$^{***}$ & 0.119$^{***}$ 
-\backslash
-
-\backslash
-    & (0.009) & (0.008) & (0.009) 
+    & (0.008) & (0.008) & (0.008) 
 \backslash
 
 \backslash
@@ -18297,15 +18331,15 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.360 & 0.481 & 0.483 
+  R$^{2}$ & 0.357 & 0.481 & 0.482 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.357 & 0.476 & 0.479 
+  Adjusted R$^{2}$ & 0.354 & 0.477 & 0.478 
 \backslash
 
 \backslash
-  F Statistic (df = 9; 1078) & 67.440$^{***}$ & 110.926$^{***}$ & 111.900$^{***}$
+  F Statistic (df = 8; 1079) & 74.858$^{***}$ & 124.849$^{***}$ & 125.352$^{***}$
  
 \backslash
 
@@ -18328,7 +18362,7 @@ multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
 \backslash
   
 \backslash
-end{tabular}  
+end{tabular} 
 \end_layout
 
 \end_inset
@@ -18360,32 +18394,112 @@ reference "tab:Fixed-Effect-Results-county-year"
 \end_inset
 
 ).
- The marginal impact of each fixed effect on explained variation is negative
- and significant.
- Nevertheless, county fixed effects do not alter the central story with
- regards to COTEL intensity: higher levels lead to changes in expenditure
+ These flights paint a very different story for COTELs.
+ In the county fixed effect model, neither COTEL intensity nor the Gallagher
+ Ratio is a meaningful predictor of cluster distance.
+ In the two-way model, both measures go negative! The effect can dissipate
+ when utilizing fixed effects for at least two reasons.
+ The first is that COTELs do not actually lead to changes in expenditure
  behavior.
- That being said, once year effects are included, the impact dissipates.
- This may speak to both the median cluster distance and COTEL intensity
- (which is cumulative) increasing over time, although the increase in the
- former is modest.
-\end_layout
-
-\begin_layout Standard
-The Gallagher ratio interestingly becomes a more important driver of expenditure
- behavior over time, as measured by a statistically clear impact in at least
- one model.
- However, there is discord in direction, both within and across models.
- It is not until both county and fixed effects are included that the Gallgher
- ratio has the statistically relevant, negative impact seen in the LASSO
- models of Subsection 
+ Rather, they are correlated in the pooled case because of action in a third
+ variable.
+ For example, counties that capture a higher proportion of all government
+ expenditure may simply be more likely to be constrained by COTELs because
+ these jurisdictions are, in fact, trying to do more at the county level.
+ Expenditure proportion is the only component of our fiscal space definition
+ that does not speak to expenditure patterns, and most counties exhibit
+ a relatively narrow range of variation in this proportion.
+ Fixed effects wash out consistent differences across units, so we may have
+ washed out the impact of expenditure proportion to a large extent, which
+ would drop the amount of variation COTELs can explain.
+ For this to hold, however, a strong level of association between county
+ expenditure proportions and COTEL measures.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:ExpDiv-Cross-Sectional-Models"
+reference "fig:County-Fiscal-Proportion-Assoc-COTEL"
 
 \end_inset
 
-.
+ demonstrates that the association between these concepts is quite unremarkable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+County Fiscal Proportion Association With COTELs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:County-Fiscal-Proportion-Assoc-COTEL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/prop_COTEL_corr.svg
+	lyxscale 70
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alternatively, fixed effects may be washing out too much variation in general
+ across counties.
+ This lack of variation would increase the difficulty in measuring the significa
+nce of any model component.
+ Indeed, we see that the model fit has dropped dramatically, as has the
+ impact of nearly all independent variables.
+ This is, however, tough to square with the clarity of signal for our COTEL
+ variables in the two-way model, which explains even less total variation
+ in cluster distance than the county fixed effect model.
+ In the two-way model, COTELs are consistently a driver of smaller cluster
+ differences.
+\end_layout
+
+\begin_layout Standard
+The author posits that these findings reflect a mechanism that violates
+ the original hypothesis.
+ COTELs may well force counties to change expenditures in a way that conflicts
+ with underlying preferences, but this change may actually mean that counties
+ are not free to differentiate themselves as they otherwise would.
+ Said differently, COTELs push counties that want to change types to stay
+ put.
+ How is it then, that the OLS model showed a positive relationship? This
+ is likely due to the fact that both the median cluster distance and COTEL
+ values are increasing over time, although the increase in the former is
+ modest.
 \end_layout
 
 \begin_layout Standard
@@ -18479,7 +18593,7 @@ hline
 \backslash
 [-1.8ex]   exp
 \backslash
-_total & 0.000$^{**}$ & 0.000$^{***}$ & 0.000$^{***}$ 
+_total & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ 
 \backslash
 
 \backslash
@@ -18489,15 +18603,15 @@ _total & 0.000$^{**}$ & 0.000$^{***}$ & 0.000$^{***}$
 \backslash
     pop
 \backslash
-_growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024 
+_growth & $-$0.064 & $-$0.136$^{***}$ & $-$0.027 
 \backslash
 
 \backslash
-    & (0.060) & (0.047) & (0.047) 
+    & (0.061) & (0.047) & (0.047) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00003 & $-$0.00003$^{**}$ & $-$0.00002 
+    pcintgov & $-$0.00002 & $-$0.00003$^{**}$ & $-$0.00002 
 \backslash
 
 \backslash
@@ -18505,7 +18619,7 @@ _growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024
 \backslash
 
 \backslash
-    pcrev & 0.00000 & 0.00003$^{***}$ & 0.00003$^{***}$ 
+    pcrev & 0.00002$^{**}$ & 0.00003$^{***}$ & 0.00003$^{***}$ 
 \backslash
 
 \backslash
@@ -18513,7 +18627,7 @@ _growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024
 \backslash
 
 \backslash
-    pcap & 0.00000$^{***}$ & 0.00000$^{***}$ & 0.00000$^{***}$ 
+    pcap & 0.00000$^{**}$ & 0.00000$^{***}$ & 0.00000$^{***}$ 
 \backslash
 
 \backslash
@@ -18523,7 +18637,7 @@ _growth & $-$0.037 & $-$0.134$^{***}$ & $-$0.024
 \backslash
     prop
 \backslash
-_ratio & $-$0.014 & 0.015 & $-$0.010 
+_ratio & $-$0.010 & 0.016 & $-$0.010 
 \backslash
 
 \backslash
@@ -18533,33 +18647,21 @@ _ratio & $-$0.014 & 0.015 & $-$0.010
 \backslash
     intensity
 \backslash
-_stock & $-$0.010 & 0.003 & $-$0.006 
+_stock & 0.002 & 0.003 & $-$0.005 
 \backslash
 
 \backslash
-    & (0.010) & (0.008) & (0.008) 
+    & (0.011) & (0.008) & (0.008) 
 \backslash
 
 \backslash
     exp
 \backslash
-_intensity & 0.000$^{*}$ & 0.000$^{**}$ & 0.000 
+_intensity & 0.000 & 0.000$^{**}$ & 0.000 
 \backslash
 
 \backslash
     & (0.000) & (0.000) & (0.000) 
-\backslash
-
-\backslash
-    cty
-\backslash
-_exp
-\backslash
-_prop & 0.246$^{***}$ & 0.013 & 0.023 
-\backslash
-
-\backslash
-    & (0.038) & (0.030) & (0.030) 
 \backslash
 
 \backslash
@@ -18573,15 +18675,15 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.127 & 0.175 & 0.139 
+  R$^{2}$ & 0.090 & 0.175 & 0.138 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.118 & 0.163 & 0.129 
+  Adjusted R$^{2}$ & 0.084 & 0.163 & 0.129 
 \backslash
 
 \backslash
-  F Statistic (df = 9; 1015) & 16.336$^{***}$ & 23.907$^{***}$ & 18.153$^{***}$
+  F Statistic (df = 8; 1016) & 12.522$^{***}$ & 26.893$^{***}$ & 20.356$^{***}$
  
 \backslash
 
@@ -18604,7 +18706,7 @@ multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
 \backslash
   
 \backslash
-end{tabular} 
+end{tabular}
 \end_layout
 
 \end_inset
@@ -18722,15 +18824,15 @@ _total & 0.000 & 0.000 & 0.000$^{**}$
 \backslash
     pop
 \backslash
-_growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$ 
+_growth & 0.100 & 0.011 & 0.079$^{*}$ 
 \backslash
 
 \backslash
-    & (0.061) & (0.047) & (0.048) 
+    & (0.062) & (0.047) & (0.048) 
 \backslash
 
 \backslash
-    pcintgov & $-$0.00004$^{**}$ & $-$0.00004$^{***}$ & $-$0.00003$^{**}$ 
+    pcintgov & $-$0.00003$^{*}$ & $-$0.00004$^{***}$ & $-$0.00003$^{**}$ 
 \backslash
 
 \backslash
@@ -18738,7 +18840,7 @@ _growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$
 \backslash
 
 \backslash
-    pcrev & $-$0.00000 & 0.00002$^{***}$ & 0.00002$^{***}$ 
+    pcrev & 0.00001 & 0.00002$^{***}$ & 0.00002$^{***}$ 
 \backslash
 
 \backslash
@@ -18746,7 +18848,7 @@ _growth & 0.115$^{*}$ & 0.011 & 0.080$^{*}$
 \backslash
 
 \backslash
-    pcap & 0.00000 & 0.00000 & 0.00000 
+    pcap & $-$0.00000 & 0.00000 & 0.00000 
 \backslash
 
 \backslash
@@ -18766,7 +18868,7 @@ _ratio & $-$0.048$^{***}$ & $-$0.018 & $-$0.034$^{**}$
 \backslash
     intensity
 \backslash
-_stock & $-$0.043$^{***}$ & $-$0.031$^{***}$ & $-$0.031$^{***}$ 
+_stock & $-$0.034$^{***}$ & $-$0.031$^{***}$ & $-$0.030$^{***}$ 
 \backslash
 
 \backslash
@@ -18776,23 +18878,11 @@ _stock & $-$0.043$^{***}$ & $-$0.031$^{***}$ & $-$0.031$^{***}$
 \backslash
     exp
 \backslash
-_intensity & 0.000$^{***}$ & 0.000$^{***}$ & 0.000$^{***}$ 
+_intensity & 0.000$^{**}$ & 0.000$^{***}$ & 0.000$^{**}$ 
 \backslash
 
 \backslash
     & (0.000) & (0.000) & (0.000) 
-\backslash
-
-\backslash
-    cty
-\backslash
-_exp
-\backslash
-_prop & 0.231$^{***}$ & $-$0.005 & 0.014 
-\backslash
-
-\backslash
-    & (0.037) & (0.029) & (0.029) 
 \backslash
 
 \backslash
@@ -18806,15 +18896,15 @@ hline
 \backslash
 
 \backslash
-  R$^{2}$ & 0.088 & 0.071 & 0.083 
+  R$^{2}$ & 0.052 & 0.071 & 0.083 
 \backslash
 
 \backslash
-  Adjusted R$^{2}$ & 0.081 & 0.065 & 0.076 
+  Adjusted R$^{2}$ & 0.048 & 0.065 & 0.076 
 \backslash
 
 \backslash
-  F Statistic (df = 9; 999) & 10.672$^{***}$ & 8.478$^{***}$ & 10.033$^{***}$
+  F Statistic (df = 8; 1000) & 6.926$^{***}$ & 9.543$^{***}$ & 11.265$^{***}$
  
 \backslash
 
@@ -18896,12 +18986,17 @@ $dist_clust*$
 
 \end_inset
 
-) was a fairly consistent phenomenon.
+) was a fairly consistent phenomenon until time was addressed.
  This accords with intuition.
  It makes theoretical sense that jurisdictions that experience greater constrain
 ts on the ability to raise revenue will be forced to modify the menu of
- services they can feasibly finance.
- The relationship to the Gallagher ratio, however, is a bit more murky in
+ services they can feasibly finance, and that the cumulative effect over
+ time would make this more acute.
+ 
+\end_layout
+
+\begin_layout Standard
+The relationship to the Gallagher ratio, however, is a bit more murky in
  both theoretical and empirical contexts.
  From a theoretical standpoint, it is difficult to parse the residential
  share of the property tax burden from a prevailing preference for or against
@@ -19000,7 +19095,7 @@ It is clear that COTELs have changed the operating space for local fiscal
 
 \begin_layout Standard
 These motivating questions harken back to the discussion of TELs as instruments
- of democracy in Subsection
+ of democracy in Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:TELs-as-democracy"
@@ -19013,14 +19108,14 @@ reference "sub:TELs-as-democracy"
  As such, they may very well push fiscal outcomes towards accordance with
  constituent preferences.
  The question is whether or not the cure is worse than the disease.
- Chapters
+ Chapters 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:RevYieldCapacity"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Expenditure-Patterns"
@@ -19147,7 +19242,7 @@ status collapsed
 
 \begin_layout Plain Layout
 In addition to superior performance in high-dimensional regressor space,
- it ultimately became apparent that votes on the
+ it ultimately became apparent that votes on the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -19158,6 +19253,7 @@ wrong
  side of the decision boundary also had to be accommodated.
  In this regard, not all classification approaches are created equal.
  The details of decisions made on this front will be elaborated on in Subsection
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Ballot-as-Choice"
@@ -19198,7 +19294,7 @@ To use historical ballot initiative outcomes as the basis for understanding
  Without some minimal structure, the past choices of individuals or groups
  is quickly rendered meaningless for the purpose of predicting future choices.
  Consider a scenario in which an individual must select from a set of three
- choices,
+ choices, 
 \begin_inset ERT
 status open
 
@@ -19215,7 +19311,7 @@ $S =
 
 .
  In the absence of any other information, we must assign equal probabilities
- to the choice among items
+ to the choice among items 
 \begin_inset ERT
 status open
 
@@ -19227,6 +19323,9 @@ $A$
 \end_inset
 
 ,
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19238,6 +19337,9 @@ $B$
 \end_inset
 
  and
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19252,7 +19354,7 @@ $C$
  That is, in predicting the individual's choice or understanding the individual'
 s expected utility form among the options, we can do no better than apply
  a uniform prior belief.
- Suppose now that the individual selected item
+ Suppose now that the individual selected item 
 \begin_inset ERT
 status open
 
@@ -19263,7 +19365,7 @@ $B$
 
 \end_inset
 
-, and is tasked with selecting from the original set,
+, and is tasked with selecting from the original set, 
 \begin_inset ERT
 status open
 
@@ -19292,7 +19394,7 @@ One might reasonably inquire into the value of taking pains to precisely
  define the relationship between historical information and the current
  choice.
  Is it not obvious that a reasonable person would expect the consistent
- selection of
+ selection of 
 \begin_inset ERT
 status open
 
@@ -19329,8 +19431,9 @@ reference "alg:WARP"
 
 \end_inset
 
-).***SAMUELSON*** In effect, the axiom says that past choices do control
- when one seeks to construct a preference schedule.
+).
+ In effect, the axiom says that past choices do control when one seeks to
+ construct a preference schedule.
  Said differently, the preferences of an individual do not change as a consequen
 ce of the available choices or the number of selections that may be made.
 \begin_inset Float algorithm
@@ -19369,7 +19472,7 @@ name "alg:WARP"
 \end_layout
 
 \begin_layout Plain Layout
-The choice structure
+The choice structure 
 \begin_inset ERT
 status open
 
@@ -19389,7 +19492,7 @@ cdot))$
 \end_layout
 
 \begin_layout Plain Layout
-If for some
+If for some 
 \begin_inset ERT
 status open
 
@@ -19404,7 +19507,7 @@ Omega$
 
 \end_inset
 
- with
+ with 
 \begin_inset ERT
 status open
 
@@ -19417,7 +19520,7 @@ in S$
 
 \end_inset
 
- we have
+ we have 
 \begin_inset ERT
 status open
 
@@ -19430,7 +19533,7 @@ in C(S)$
 
 \end_inset
 
-, then for any
+, then for any 
 \begin_inset ERT
 status open
 
@@ -19445,7 +19548,7 @@ Omega$
 
 \end_inset
 
- with
+ with 
 \begin_inset ERT
 status open
 
@@ -19459,6 +19562,9 @@ in S'$
 \end_inset
 
  and
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19471,7 +19577,7 @@ in C(S')$
 
 \end_inset
 
-, we must also have
+, we must also have 
 \begin_inset ERT
 status open
 
@@ -19496,6 +19602,9 @@ in C(S')$
 
 \begin_layout Plain Layout
 In words, the weak axiom says that if
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19507,6 +19616,9 @@ $x$
 \end_inset
 
  is ever chosen when
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19518,7 +19630,7 @@ $y$
 \end_inset
 
  is available, then there can be no budget set containing both alternatives
- for which
+ for which 
 \begin_inset ERT
 status open
 
@@ -19529,7 +19641,7 @@ $y$
 
 \end_inset
 
- is chosen and
+ is chosen and 
 \begin_inset ERT
 status open
 
@@ -19541,7 +19653,14 @@ $x$
 \end_inset
 
  is not.
- ***MAS-COLELL*** In this case, we say that
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mas_collel1995"
+
+\end_inset
+
+ In this case, we say that 
 \begin_inset ERT
 status open
 
@@ -19568,9 +19687,16 @@ s of choice with varying compositions of the choice set can be related to
  one another to build an arbitrarily complex system of preferences.
  The property of revealed preference that allows this construction is called
 \emph on
-transitive closure
+ transitive closure
 \emph default
-.***VARIAN*** Suppose we have two sets,
+.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Varian1992"
+
+\end_inset
+
+ Suppose we have two sets, 
 \begin_inset ERT
 status open
 
@@ -19585,7 +19711,7 @@ $S_1 =
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19600,7 +19726,7 @@ $S_2 =
 
 \end_inset
 
-, from which two choices have been made,
+, from which two choices have been made, 
 \begin_inset ERT
 status open
 
@@ -19612,6 +19738,9 @@ $C(S_1)=x$
 \end_inset
 
  and
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19623,7 +19752,7 @@ $C(S_2)=y$
 \end_inset
 
 .
- It can be seen that
+ It can be seen that 
 \begin_inset ERT
 status open
 
@@ -19636,7 +19765,7 @@ succeq y$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19650,7 +19779,7 @@ succeq z$
 \end_inset
 
 .
- Transitive closure allows us to then assert that
+ Transitive closure allows us to then assert that 
 \begin_inset ERT
 status open
 
@@ -19681,6 +19810,9 @@ name "sub:Ballot-as-Choice"
 
 \begin_layout Standard
 In the context of deBrucing efforts in Colorado,
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19698,6 +19830,7 @@ Omega$
  These dimensions may be categorical (e.g.
  the target of expenditure) or continuous (e.g.
  the size of the requested increase in a given levy).
+ 
 \begin_inset ERT
 status open
 
@@ -19709,6 +19842,9 @@ $S$
 \end_inset
 
  may be conceived of as each ballot initiative, which contains two choices,
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19719,7 +19855,7 @@ $x$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19731,7 +19867,7 @@ $y$
 \end_inset
 
 .
- For purposes of demonstration, assume that
+ For purposes of demonstration, assume that 
 \begin_inset ERT
 status open
 
@@ -19742,7 +19878,7 @@ $x$
 
 \end_inset
 
- is always the status quo, and
+ is always the status quo, and 
 \begin_inset ERT
 status open
 
@@ -19758,6 +19894,9 @@ $y$
  insofar as environmental factors that are not on the ballot play a role
  in valuation of the status quo.
  Nevertheless, we may say that given two sets,
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19772,7 +19911,7 @@ $S_1 =
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19787,7 +19926,7 @@ $S_2 =
 
 \end_inset
 
-, so long as the distance between
+, so long as the distance between 
 \begin_inset ERT
 status open
 
@@ -19798,7 +19937,7 @@ $x_1$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19809,7 +19948,7 @@ $x_2$
 
 \end_inset
 
- can be evaluated,
+ can be evaluated, 
 \begin_inset ERT
 status open
 
@@ -19820,7 +19959,7 @@ $C(S_1)$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19831,7 +19970,7 @@ $C(S_2)$
 
 \end_inset
 
- can identify the preference relation between
+ can identify the preference relation between 
 \begin_inset ERT
 status open
 
@@ -19842,7 +19981,7 @@ $y_1$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19867,8 +20006,15 @@ This is surely great news if the representative county voter is choosing
  by two factors.
  First, establishment of the representative voter is far from a simple task.
  Much of voting literature is built upon the concept of the median voter.
- ***DOWNS*** The reversing the dimensionality reduction required to make
- this approach tractable has proven remarkably difficult.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "downs1957"
+
+\end_inset
+
+ Reversing the dimensionality reduction required to make this approach tractable
+ has proven remarkably difficult.
  Even if a voter's preferences can be placed in space, strong assumptions
  about the way that space is constructed across voters are required to develop
  a distribution of positions for a given population.
@@ -19877,7 +20023,7 @@ This is surely great news if the representative county voter is choosing
 
 \begin_layout Standard
 The second complication concerns not the dimensionality of the voter's preferenc
-es, but rather the dimensionality of the choices
+es, but rather the dimensionality of the choices 
 \begin_inset ERT
 status open
 
@@ -19891,14 +20037,18 @@ in S$
 \end_inset
 
 .
- Figure
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Utility-Functions"
 
 \end_inset
 
- depicts hypothetical utility functions for Goods
+ depicts hypothetical utility functions for an individual's consumption
+ of goods
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -19909,7 +20059,7 @@ $A$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -19920,7 +20070,7 @@ $B$
 
 \end_inset
 
-, both of which can vary in value along dimension
+, both of which can vary in value along dimension 
 \begin_inset ERT
 status open
 
@@ -19932,7 +20082,7 @@ $x$
 \end_inset
 
 .
- The choice an individual makes between the two goods in
+ The choice an individual makes between the two goods in 
 \begin_inset ERT
 status open
 
@@ -19947,7 +20097,7 @@ $S =
 
 \end_inset
 
- depends on the utility provided at a given value of
+ depends on the utility provided at a given value of 
 \begin_inset ERT
 status open
 
@@ -19997,6 +20147,7 @@ name "fig:Utility-Functions"
 \align center
 \begin_inset Graphics
 	filename figures/utility_1d_goods_compare.png
+	lyxscale 80
 	width 80text%
 
 \end_inset
@@ -20021,7 +20172,7 @@ $u = f(x)$
  The composite hull (the path of maximum utility across both goods) controls
  the decision.
  In the context of the graphic above, an individual would choose Item A
- if consuming a volume
+ if consuming a volume 
 \begin_inset ERT
 status open
 
@@ -20041,7 +20192,7 @@ $x$
 \end_layout
 
 \begin_layout Standard
-As can be seen in Figure
+As can be seen in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:2-D-Utility-Functions"
@@ -20062,9 +20213,9 @@ status collapsed
 \begin_layout Plain Layout
 The curse of dimensionality refers to the idea that observations tend to
  get further away from the point being estimated in high dimensions.
- For example, consider a unit square that is with observations that are
+ For example, consider a unit square that contains observations that are
  uniformly distributed.
- Suppose one is concerned with only one dimension,
+ Suppose one is concerned with only a single dimension, 
 \begin_inset ERT
 status open
 
@@ -20076,7 +20227,7 @@ $X1$
 \end_inset
 
 .
- Essentially, everything in the square is projected down to the
+ Essentially, everything in the square is projected down to the 
 \begin_inset ERT
 status open
 
@@ -20088,8 +20239,8 @@ $X1$
 \end_inset
 
  axis.
- In this case, 10% of the observations may be captured by capturing the
- values within 10% of the range of
+ In this case, 10% of the observations may be identified by capturing the
+ values within 10% of the range of 
 \begin_inset ERT
 status open
 
@@ -20102,6 +20253,9 @@ $X1$
 
 .
  Call this range interval
+ 
+\lang english
+
 \begin_inset ERT
 status open
 
@@ -20124,7 +20278,7 @@ $X1$
 
 \end_inset
 
- and
+ and 
 \begin_inset ERT
 status open
 
@@ -20217,6 +20371,7 @@ name "fig:2-D-Utility-Functions"
 \align center
 \begin_inset Graphics
 	filename figures/utility_itemA_frontier.png
+	lyxscale 60
 	width 45text%
 
 \end_inset
@@ -20229,6 +20384,7 @@ name "fig:2-D-Utility-Functions"
 
 \begin_inset Graphics
 	filename figures/utility_itemB_frontier.png
+	lyxscale 60
 	width 45text%
 
 \end_inset
@@ -20240,6 +20396,7 @@ name "fig:2-D-Utility-Functions"
 \align center
 \begin_inset Graphics
 	filename figures/utility_itemsAB_frontier.png
+	lyxscale 60
 	width 80text%
 
 \end_inset
@@ -20249,6 +20406,7 @@ name "fig:2-D-Utility-Functions"
 
 \begin_layout Plain Layout
 These graphics use the same hypothetical utility functions used in Figure
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Utility-Functions"
@@ -20267,8 +20425,8 @@ reference "fig:Utility-Functions"
 
 \begin_layout Standard
 These complications represent obstacles to a fuller articulation of preferences.
- Instead, we seek only to estimate likelihood of prediction with the greatest
- achievable accuracy.
+ Instead, we seek only to estimate the likelihood of prediction with the
+ greatest achievable accuracy.
  It is for this reason that the introduction to this chapter claims to only
  scratch the surface in the effort to identify voter preferences.
 \end_layout
@@ -20286,7 +20444,7 @@ This chapter seeks to explore exemption behavior from the perspective of
  To understand the marginal impact of ballot components, one must first
  understand how likely a given community is to pass
 \emph on
-any
+ any
 \emph default
  ballot.
 \end_layout
@@ -20309,7 +20467,7 @@ Consequently, the analysis employs a two-stage estimation routine, a common
 The time period considered covers all counties in Colorado between 1993
  and 2009.
  This time period primarily reflects the scope of available exemption vote
- data compiled by
+ data compiled by 
 \begin_inset CommandInset href
 LatexCommand href
 name "Colorado Counties, Inc."
@@ -20320,7 +20478,7 @@ target "http://ccionline.org/"
 .
  These data capture the contents of each exemption vote proposal and the
  vote outcome.
- The socioeconomic data are taken from the
+ The socioeconomic data are taken from the 
 \begin_inset CommandInset href
 LatexCommand href
 name "USA Counties database"
@@ -20429,6 +20587,7 @@ name "fig:DeBrucing-Votes-(1993-2009)"
 \align center
 \begin_inset Graphics
 	filename figures/results_dist.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -20440,6 +20599,7 @@ name "fig:DeBrucing-Votes-(1993-2009)"
 \align center
 \begin_inset Graphics
 	filename figures/vote_counts.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -20457,7 +20617,7 @@ What is the Expected Impact of COTELs?
 \end_layout
 
 \begin_layout Standard
-This chapter the same property tax-centric construction of COTELs presented
+This chapter uses the same property tax-centric construction of COTELs presented
  in Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -20478,7 +20638,7 @@ _stock$
 
 \end_inset
 
-) and the Gallagher ratio (
+) and the Gallagher Ratio (
 \begin_inset ERT
 status open
 
@@ -20495,7 +20655,7 @@ _ratio$
  Both measures are therefore capturing some element of the resource scarcity
  that can occur as a consequence of the intersection between COTELs and
  the prevailing economic activity in a given county.
- However, fiscal stress is a function of both the revenue supply and expenditure
+ However, fiscal stress is a function of both revenue supply and expenditure
  need.
  
 \begin_inset ERT
@@ -20555,8 +20715,15 @@ Since these measures only partially capture indirect measures of expenditure
  The first stage equation uses a diverse range of socioeconomic indicators
  that can account for demand side factors.
  The second stage, however, is focused entirely on ballot design.
- It incorporates demand factors indirectly via the baseline propensity to
- exempt variable estimated in the first stage equation.
+ It incorporates demand factors indirectly via the 
+\begin_inset Quotes eld
+\end_inset
+
+baseline propensity to exempt
+\begin_inset Quotes erd
+\end_inset
+
+ variable estimated in the first stage equation.
  Thus, the entire analysis hinges on capturing demand characteristics in
  the socioeconomic indicators used in the first stage.
 \end_layout
@@ -20742,7 +20909,7 @@ To be sure, there are many more variables in the database.
  All of the data are pulled from a broad mix of agencies and programs, each
  with its own reporting frequency.
  In their raw state, the data are quite sparse.
- A full discussion of the delibgeration surrounding considered imputation
+ A full discussion of the deliberation surrounding considered imputation
  approaches is beyond the scope of this chapter, but in the end, the approach
  taken sought to use the information in the data, and make no further distributi
 onal assumptions.
@@ -20895,6 +21062,7 @@ name "fig:Voting-Outcomes-PCA"
 \align center
 \begin_inset Graphics
 	filename figures/votes_pca_view.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -21009,7 +21177,8 @@ wrong
 
 \begin_layout Standard
 The drawbacks of the approach involve probability interpretations of the
- results and the ease with which the impact of each dimension can be interpreted.
+ results and the difficulty with which the impact of each dimension can
+ be interpreted.
  Both tasks involve post hoc manipulation of the estimator output, as opposed
  to directly falling out the typical estimator output as they would with
  a probit model.
@@ -21092,6 +21261,7 @@ name "fig:Probability-of-Successful-Vote-Passage"
 \align center
 \begin_inset Graphics
 	filename figures/vote_probs.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -22669,6 +22839,7 @@ name "fig:Error-Behavior-OLS"
 \align center
 \begin_inset Graphics
 	filename figures/ols_resid_by_obs.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -22680,6 +22851,7 @@ name "fig:Error-Behavior-OLS"
 \align center
 \begin_inset Graphics
 	filename figures/ols_resid_dist.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
@@ -22696,23 +22868,19 @@ name "fig:Error-Behavior-OLS"
 We are concerned with the intersection of significant values across models.
  Note that significance, in this case, includes both substantive and statistical
  concepts.
- Ordering the results by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$p$
-\end_layout
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ballot-Design-Results"
 
 \end_inset
 
--values fixes the relationship of statistical significance, while the data
- bars facilitate identification of substantive significance.
+ shows the results from all three models.
+ There is notable consistency regarding the directional impact of each component.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
+\begin_inset Float table
 wide false
 sideways false
 status open
@@ -22725,10 +22893,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ballot Design Results
+Ballot Design
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Ballot-Design-Results"
+name "tab:Ballot-Design-Results"
 
 \end_inset
 
@@ -22741,10 +22909,339 @@ name "fig:Ballot-Design-Results"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/ballot_design_results.png
-	width 100text%
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{@{
+\backslash
+extracolsep{5pt}}lccc}  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   & 
+\backslash
+multicolumn{3}{c}{
+\backslash
+textit{Dependent variable:}} 
+\backslash
+
+\backslash
+  
+\backslash
+cline{2-4}  
+\backslash
+
+\backslash
+[-1.8ex] & 
+\backslash
+multicolumn{2}{c}{pass} & results 
+\backslash
+
+\backslash
+  
+\backslash
+
+\backslash
+[-1.8ex] & 
+\backslash
+textit{logistic} & 
+\backslash
+textit{probit} & 
+\backslash
+textit{OLS} 
+\backslash
+
+\backslash
+  
+\backslash
+
+\backslash
+[-1.8ex] & (1) & (2) & (3)
+\backslash
+
+\backslash
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   prob
+\backslash
+_exmpt & 4.243$^{***}$ (1.434) & 2.567$^{***}$ (0.841) & 27.992$^{***}$ (7.877)
+ 
+\backslash
+
+\backslash
+    s
+\backslash
+_time & 0.002 (0.005) & 0.001 (0.003) & $-$0.0001 (0.032) 
+\backslash
+
+\backslash
+    sales
+\backslash
+_change & $-$0.461$^{**}$ (0.181) & $-$0.269$^{**}$ (0.107) & $-$3.246$^{***}$
+ (1.053) 
+\backslash
+
+\backslash
+    prop
+\backslash
+_change & $-$0.166$^{**}$ (0.082) & $-$0.100$^{**}$ (0.049) & $-$1.547$^{***}$
+ (0.483) 
+\backslash
+
+\backslash
+    prop
+\backslash
+_levy
+\backslash
+_change & $-$0.00000 (0.00000) & $-$0.00000 (0.00000) & $-$0.00000$^{**}$ (0.00000)
+ 
+\backslash
+
+\backslash
+    debt
+\backslash
+_change & $-$0.000 (0.000) & $-$0.000 (0.000) & 0.00000 (0.00000) 
+\backslash
+
+\backslash
+    rev
+\backslash
+_time & 0.004 (0.003) & 0.003 (0.002) & 0.023 (0.018) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_open & $-$2.998$^{*}$ (1.816) & $-$1.727 (1.078) & $-$14.611 (9.765) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_sales & $-$1.058 (1.748) & $-$0.739 (1.053) & $-$8.550 (9.846) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_property & $-$2.065 (1.758) & $-$1.175 (1.051) & $-$15.561 (9.804) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_nontax & $-$3.649$^{*}$ (1.934) & $-$2.117$^{*}$ (1.151) & $-$17.659$^{*}$ (10.569)
+ 
+\backslash
+
+\backslash
+    ss
+\backslash
+_value & $-$2.620 (1.752) & $-$1.507 (1.048) & $-$8.957 (9.256) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_transfer & $-$2.875 (1.799) & $-$1.621 (1.063) & $-$8.888 (9.780) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_nonproperty & $-$2.478$^{*}$ (1.276) & $-$1.484$^{**}$ (0.750) & $-$1.681 (7.320)
+ 
+\backslash
+
+\backslash
+    ss
+\backslash
+_tourism & 13.595 (1,103.388) & 3.721 (172.650) & $-$9.354 (11.945) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_unknown & $-$20.509 (2,399.545) & $-$7.489 (376.755) & $-$21.384 (16.708) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_library & 12.468 (2,399.545) & 2.834 (376.755) & $-$10.496 (16.688) 
+\backslash
+
+\backslash
+    ss
+\backslash
+_gaming & 14.109 (1,395.266) & 4.148 (214.962) & 6.990 (11.591) 
+\backslash
+
+\backslash
+    infrastructure & $-$0.851$^{***}$ (0.303) & $-$0.497$^{***}$ (0.182) & $-$3.542$^
+{*}$ (1.832) 
+\backslash
+
+\backslash
+    open & $-$1.794$^{***}$ (0.618) & $-$1.047$^{***}$ (0.353) & $-$7.537$^{**}$
+ (3.124) 
+\backslash
+
+\backslash
+    public.safety & $-$0.652$^{*}$ (0.339) & $-$0.372$^{*}$ (0.205) & $-$4.604$^{**}$
+ (2.053) 
+\backslash
+
+\backslash
+    economic.development & $-$2.324 (1.462) & $-$1.413$^{*}$ (0.825) & $-$6.404
+ (7.039) 
+\backslash
+
+\backslash
+    unspecified & $-$0.731 (0.485) & $-$0.448 (0.294) & $-$2.660 (2.945) 
+\backslash
+
+\backslash
+    environment & 0.418 (0.396) & 0.257 (0.235) & 0.754 (2.289) 
+\backslash
+
+\backslash
+    hss & $-$0.426 (0.364) & $-$0.259 (0.220) & $-$4.668$^{**}$ (2.218) 
+\backslash
+
+\backslash
+    education & $-$0.509 (0.477) & $-$0.298 (0.290) & $-$4.013 (2.956) 
+\backslash
+
+\backslash
+    tourism & 1.239 (0.885) & 0.749 (0.503) & 1.388 (4.535) 
+\backslash
+
+\backslash
+    no.waiver & $-$4.338$^{**}$ (1.845) & $-$2.527$^{**}$ (1.092) & $-$20.917$^{**}$
+ (9.801) 
+\backslash
+
+\backslash
+    administrative & $-$2.937$^{***}$ (1.093) & $-$1.613$^{***}$ (0.551) & $-$24.235$
+^{***}$ (4.637) 
+\backslash
+
+\backslash
+    limited & $-$16.217 (2,399.545) & $-$5.006 (376.754) & $-$8.405 (13.849) 
+\backslash
+
+\backslash
+    agriculture & $-$1.437 (1.246) & $-$0.875 (0.761) & $-$7.892 (7.852) 
+\backslash
+
+\backslash
+    unknown & $-$16.401 (2,399.545) & $-$5.106 (376.754) & $-$28.806$^{**}$ (14.120)
+ 
+\backslash
+
+\backslash
+    choice &  &  &  
+\backslash
+
+\backslash
+    intensity
+\backslash
+_stock & $-$0.334 (0.331) & $-$0.207 (0.200) & $-$5.225$^{***}$ (2.003) 
+\backslash
+
+\backslash
+    prop
+\backslash
+_ratio & 0.456$^{*}$ (0.247) & 0.273$^{*}$ (0.149) & 3.996$^{***}$ (1.493) 
+\backslash
+
+\backslash
+    cty
+\backslash
+_rev
+\backslash
+_prop & 1.716 (1.083) & 1.115$^{*}$ (0.644) & 16.704$^{***}$ (6.100) 
+\backslash
+
+\backslash
+    Constant & 1.965 (2.014) & 1.060 (1.192) & 53.197$^{***}$ (10.909) 
+\backslash
+
+\backslash
+   
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  Observations & 526 & 526 & 526 
+\backslash
+
+\backslash
+  R$^{2}$ &  &  & 0.232 
+\backslash
+
+\backslash
+  Adjusted R$^{2}$ &  &  & 0.177 
+\backslash
+
+\backslash
+  Log Likelihood & $-$303.567 & $-$304.019 &  
+\backslash
+
+\backslash
+  Akaike Inf.
+ Crit.
+ & 679.134 & 680.038 &  
+\backslash
+
+\backslash
+  Residual Std.
+ Error &  &  & 13.443 (df = 490) 
+\backslash
+
+\backslash
+  F Statistic &  &  & 4.231$^{***}$ (df = 35; 490) 
+\backslash
+
+\backslash
+  
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  
+\backslash
+textit{Note:}  & 
+\backslash
+multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} 
+\backslash
+
+\backslash
+  
+\backslash
+end{tabular}
+\end_layout
 
 \end_inset
 
@@ -22752,8 +23249,7 @@ name "fig:Ballot-Design-Results"
 \end_layout
 
 \begin_layout Plain Layout
-A more consistent version of this results table is forthcoming, but in the
- interests of providing information...
+
 \end_layout
 
 \end_inset
@@ -22762,18 +23258,31 @@ A more consistent version of this results table is forthcoming, but in the
 \end_layout
 
 \begin_layout Standard
-The first aspect to note is the fit of the three models (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ballot-Design-Results"
+The first aspect to note is the fit of the three models.
+ The classifiers perform better than the zero information case; both accurately
+ predict about 69% of the time.
+ The OLS model explains only approximately 18% of variation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This value reflects the adjusted 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R^2$
+\end_layout
 
 \end_inset
 
-).
- Both the logit and probit models accurately predict vote outcomes roughly
- 70% of the time.
- The OLS model explains only approximately 18% of variation in the proportion
- of 
+, the base value is 23%.
+\end_layout
+
+\end_inset
+
+ in the proportion of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -22789,8 +23298,8 @@ yes
 \end_layout
 
 \begin_layout Standard
-Next, it can be seen that the most consistent aspect of all three runs is
- the baseline propensity to exempt (
+Next, it can be seen that the most consistent factor in successful outcomes
+ in all three runs is the baseline propensity to exempt (
 \begin_inset ERT
 status open
 
@@ -22805,18 +23314,13 @@ _exmpt$
 
 ).
  It is both substantively and statistically significant in all three models.
- In fact, keeping in mind that the output is sorted by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$p$
-\end_layout
-
-\end_inset
-
--value, it is the clearest signal in every model.
+ In fact, there is no other model component that clearly increases probability
+ of passage by such a magnitude.
+ There are, however, multiple components that substantially drop the probability
+ of passage.
+ Most notably, voters seem to strongly dislike proposals for administrative
+ tasks and unspecified choices.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -22838,7 +23342,18 @@ _stock$
  Furthermore, the sign in the OLS model conflicts with theory.
  One would expect that the greater the constraint placed upon a given county,
  the more likely an exemption vote would be.
- Furthermore, the Gallagher ratio (
+ It is quite possible that this is a consequence of an endogenous relationship.
+ Rather than being motivated by COTEL intensity to pass an exemption vote,
+ the intensity may itself arise because voters aren't passing exemption
+ votes.
+ Simply evaluating the relationship between results and lagged COTEL intensity
+ or lagged percentage change in COTEL intensity does not resolve the issue.
+ Developing a method to tease out this relationship in more detail is a
+ subject for future work.
+\end_layout
+
+\begin_layout Standard
+The Gallagher Ratio (
 \begin_inset ERT
 status open
 
@@ -22860,130 +23375,28 @@ _ratio$
  The author speculates that this is likely an artifact of the specification,
  due to the joint distribution of the constraint variable and other model
  components.
- An alternative explanation is that counties with high COTEL intensity scores
- and high Gallagher ratios employ officials that are unwilling to put property
- tax increases on the ballot.
-\end_layout
+ For example, ballots in counties with 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Standard
-With respect to ballot components, only a few are consistently significant
- across all models.
- Some of the notable features of the comparison include the following:
-\end_layout
+high
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Itemize
-There is considerable overlap in the classifier results, but regression
- output highlights largely different aspects.
-\end_layout
-
-\begin_layout Itemize
-Proposals seeking to improve the function of government with commissions
- or studies (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$administrative$
-\end_layout
+ Gallagher Ratios (those above the median value) are 11% less likely to
+ include sales tax changes, 13% less likely to include open ended waivers,
+ and 19% less likely to have property tax changes.
+ As can be seen in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ballot-Design-Results"
 
 \end_inset
 
-) adversely impact the likelihood of passage.
-\end_layout
-
-\begin_layout Itemize
-Proposals that do not extent spending waiver authority (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$no
-\backslash
-_waiver$
-\end_layout
-
-\end_inset
-
-) are statistically significant across models, but the signs of the effect
- differ across the classification and regression approaches.
- The same can be said of restricting funding sources to non-property revenues
- (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$ss
-\backslash
-_nonproperty$
-\end_layout
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Itemize
-Open ended spending targets (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$open$
-\end_layout
-
-\end_inset
-
-) are clear drivers of the classification results, but figure only modestly
- in the regression approach.
-\end_layout
-
-\begin_layout Itemize
-Changes to sales tax rates (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$sales
-\backslash
-_change$
-\end_layout
-
-\end_inset
-
-) are consistently negative, but lack substantive significance.
- The same could be said of public safety (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$public
-\backslash
-_safety$
-\end_layout
-
-\end_inset
-
-) and changes to the property tax rate (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$prop
-\backslash
-_change$
-\end_layout
-
-\end_inset
-
-).
+, all of these components drop the likelihood of passage.
+ This accords with a certain logic, insofar as counties with high Gallagher
+ ratios may employ officials that are unwilling to put property tax increases
+ on the ballot.
 \end_layout
 
 \begin_layout Standard
@@ -23060,7 +23473,7 @@ nal scope.
  From an institutional perspective, these changes are not absolute.
  However, they do violence to the structure of the political economy that
  prevails prior to their implementation.
- Indeed, it is with this goal that such measures often pursued.
+ Indeed, it is with this goal that such measures are often pursued.
  By that narrow standard, if implemented, the author believes that they
  must be considered a success.
 \end_layout
@@ -23076,8 +23489,15 @@ A broader definition of success, however, evaluates the implications of
  First, and most practically, the author lacks access to any data that even
  approaches precise measures of the utility functions for each constituent,
  or at least some measure of central tendency.
- Chapter 6 opens the door on preference revelation, but this must be seen
- as only a proxy of the roughest kind.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:DeBrucing"
+
+\end_inset
+
+ opens the door on preference revelation, but this must be seen as only
+ a proxy of the roughest kind.
  Second, it is not clear that any absolute answer exists.
  Why should we expect that even if a utility maximizing revenue-expenditure
  bundle could be identified at time 
@@ -23117,8 +23537,8 @@ $t+n$
 ? Populations, and the context in which they live, change.
  It seems likely that prevailing preferences are a function of at least
  these two things.
- For these reasons, this analysis has focused on whether changes are good
- or bad, but rather on whether or not changes have occurred at all.
+ For these reasons, this analysis has not focused on whether changes are
+ good or bad, but rather on whether or not changes have occurred at all.
  From here, we can at least speak to operational implications, if not abstract
  value.
 \end_layout
@@ -23187,7 +23607,8 @@ reference "chap:DeBrucing"
 
 \end_inset
 
- was materially different than the preceding chapters.
+ was materially different than, but contextually relied upon, the preceding
+ chapters.
  Rather than focus on the impacts of COTELs, the final empirical chapter
  sought to explore institutional machinery.
  Insofar as it identified a few ballot components that have comparatively

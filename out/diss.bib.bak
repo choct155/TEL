@@ -487,6 +487,16 @@
   Volume                   = {52}
 }
 
+@Book{downs1957,
+  Title                    = {An Economic Theory of Democracy},
+  Author                   = {Anthony Downs},
+  Publisher                = {Harper and Row},
+  Year                     = {1957},
+
+  Owner                    = {root},
+  Timestamp                = {2015.04.18}
+}
+
 @Article{Due1961,
   Title                    = {{Studies of State-Local Tax Influences on Location of Industry}},
   Author                   = {John F. Due},
@@ -963,6 +973,16 @@
   ISSN                     = {1540-6210},
   Publisher                = {Blackwell Publishing Inc},
   Url                      = {http://dx.doi.org/10.1111/j.1540-6210.2007.00752.x}
+}
+
+@Book{mas_collel1995,
+  Title                    = {Microeconomic Theory},
+  Author                   = {Andreu Mas-Colell and Michael Dennis Whinston and Jerry R. Green},
+  Publisher                = {Oxford University Press},
+  Year                     = {1995},
+
+  Owner                    = {root},
+  Timestamp                = {2015.04.18}
 }
 
 @TechReport{McGuire_Rueben2006,

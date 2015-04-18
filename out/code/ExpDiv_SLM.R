@@ -42,17 +42,17 @@ c_lw<-nb2listw(c_nb)
 print(paste('County Count Equivalent:',length(c_lw$weights)==dim(data[which(data$year==2000),])[1]))
 
 ##  Define Model Specifications ##
-tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
-bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
-pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity + cty_exp_prop
+tot<-dist_clust ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+bvf<-dist_clust_bf ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
+pca<-dist_clust_pca ~ exp_total + pop_growth + pcintgov + pcrev + pcap + prop_ratio + intensity_stock + exp_intensity
 
-tot2<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
-bvf2<-dist_clust_bf ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
-pca2<-dist_clust_pca ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+tot2<-dist_clust ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+bvf2<-dist_clust_bf ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+pca2<-dist_clust_pca ~ pop_growth + pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
 
-tot3<-dist_clust ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
-bvf3<-dist_clust_bf ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
-pca3<-dist_clust_pca ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock + cty_exp_prop
+tot3<-dist_clust ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+bvf3<-dist_clust_bf ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
+pca3<-dist_clust_pca ~ pcintgov + pcrev + pcap_q + prop_ratio + intensity_stock
 
 mlist2<-list(tot2,bvf2,pca2)
 mlist3<-list(tot3,bvf3,pca3)
@@ -125,3 +125,4 @@ res_plot<-ggplot(res_df,aes(colour=Model)) +
             coord_flip() + theme_bw() + facet_wrap(~ Year)
 
 print(res_plot)
+ggsave('../figures/ExpDiv_SLM_by_year.svg')

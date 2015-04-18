@@ -37,9 +37,8 @@ cd2<-cd2[,!(names(cd2) %in% c("cty_rev_prop.1","cty_exp_prop.1"))]
 
 print('***IMPUTING MISSING DATA***')
 #Impute data (dropping variables that do not vary)
-colinear_vars<-c('est_unclass','july_pop','nat_pop_inc','r_REV_OCCUPATION_TAX','r_REV_UNCLASS_TAX')
 newvars<-c('cty_exp_prop','cty_rev_prop')
-cd2_mi<-amelia(cd2[,names(cd2)[!names(cd2) %in% c('nonres_rate','r_REV_REAL_ESTATE_TRANSFER_TAX')]],
+cd2_mi<-amelia(cd2[,names(cd2)[!names(cd2) %in% c('nonres_rate','r_REV_REAL_ESTATE_TRANSFER_TAX',newvars)]],
                    m=5,ts='year',cs='cty',polytime=2,intercs=TRUE,p2s=2,empri=0.1*nrow(cd2),incheck=FALSE)
 
 
@@ -80,7 +79,7 @@ no_eval<-c('dist_clust','dist_clust_bf','dist_clust_pca','dc_diff','dc_diff_bf',
 #Identify non-varying variables
 nonvary<-c('nonres_rate','r_REV_REAL_ESTATE_TRANSFER_TAX')
 #Define feature set
-lasso_vars<-names(cd2)[!names(cd2) %in% c(no_eval,wvars,nonvary)]
+lasso_vars<-names(cd2)[!names(cd2) %in% c(no_eval,wvars,nonvary,newvars)]
 lasso_rhs<-paste(lasso_vars,collapse='+')
 
 ##  Run models for base measure  ##
@@ -144,7 +143,7 @@ lasso_avg<-ggplot(mi_lasso2,aes(x=reorder(var,avg),y=avg)) +
                   ylab('Coefficient') +
                   xlab('Variable')
 
-ggsave('ExpDiv_Lasso_avg.svg')
+ggsave('../figures/ExpDiv_Lasso_avg.svg')
 
 ## Define new function to run lasso on each imputed set and return predictive scores  ##
 
@@ -261,7 +260,7 @@ vs_plot<-ggplot(var_scoresm,aes(lab,value)) + geom_point(aes(colour=Imputation),
           xlab('Distance Measures') + ylab('Explained Variation') + ggtitle('LASSO Scores by Distance Measure and Imputation Set') +
           scale_x_discrete(labels=c("Full Portfolio\nLeading", "Regression Filtered\nLead", "PCA\nLead", "Full Portfolio", "Regression Filtered", "PCA"))
 print(vs_plot)
-ggsave('ExpDiv_Lasso_Scores_by_imp.svg')
+ggsave('../figures/ExpDiv_Lasso_Scores_by_imp.svg')
 
 ## Define general implementation of coefficient consolidation by distance measure ##
 
@@ -359,9 +358,9 @@ coef_plot<-ggplot(coef_estm,aes(order,value)) + geom_point(aes(colour=variable),
             scale_colour_brewer(palette='Set1') +
             geom_vline(aes(xintercept=c(1,2,3)),colour='black',linetype='dotted') + 
             geom_vline(aes(xintercept=c(4,5,6)),colour='black',linetype='dotted') +
-            geom_vline(aes(xintercept=c(7,44,45)),colour='black',linetype='dotted') +
-            geom_vline(aes(xintercept=c(46,47,48)),colour='black',linetype='dotted') +
-            geom_vline(aes(xintercept=c(49,50,63)),colour='black',linetype='dotted')
+            geom_vline(aes(xintercept=c(44,45,63)),colour='black',linetype='dotted') +
+            geom_vline(aes(xintercept=c(46,47,48)),colour='black',linetype='dotted') 
+            #geom_vline(aes(xintercept=c(49,50,63)),colour='black',linetype='dotted')
             #geom_vline(aes(xintercept=c(1,2,3,4,5,6,7)),colour='black',linetype='dotted') +
             #geom_vline(aes(xintercept=c(49,50,51,52,53,54)),colour='black',linetype='dotted')
             
