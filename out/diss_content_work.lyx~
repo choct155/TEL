@@ -977,10 +977,6 @@ name "sec:Layout"
 \end_layout
 
 \begin_layout Standard
-***CHAPTER REFS AREN'T WORKING???
-\end_layout
-
-\begin_layout Standard
 Before any empirical testing, it is important to provide information about
  the operating context.
  Chapter 
@@ -1033,7 +1029,7 @@ reference "chap:RevYieldCapacity"
  Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:ExpPatterns"
+reference "chap:Expenditure-Patterns"
 
 \end_inset
 
@@ -1088,7 +1084,7 @@ reference "sub:ResearchObjectives"
 \begin_inset Quotes eld
 \end_inset
 
-DeBrucing
+deBrucing
 \begin_inset Quotes erd
 \end_inset
 
@@ -1136,6 +1132,616 @@ reference "chap:Conclusion"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Analytic Model Summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle" width="25text%">
+<column alignment="center" valignment="middle" width="15text%">
+<column alignment="center" valignment="middle" width="15text%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Chapter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Research Questions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estimator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dependent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:RevYieldCapacity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Do COTELs increase fiscal convergence?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pooled OLS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LISAs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Do COTELs depress revenue yield or economic capacity?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pooled OLS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC Revenue
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+PC Annual Payroll
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeated 
+\begin_inset CommandInset href
+LatexCommand href
+name "Spatial Lag"
+target "https://geodacenter.asu.edu/spatial-lag-and"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC Revenue
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+PC Annual Payroll
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixed Effect**
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC Revenue
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+PC Annual Payroll
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Expenditure-Patterns"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Do COTELs change expenditure behavior?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeated 
+\begin_inset CommandInset href
+LatexCommand href
+name "Spatial Lag"
+target "https://geodacenter.asu.edu/spatial-lag-and"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cluster Distance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "LASSO"
+target "http://statweb.stanford.edu/~tibs/lasso.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cluster Distance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixed Effect**
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cluster Distance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:DeBrucing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+What is the baseline propensity to deBruce?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "Support Vector Machine"
+target "http://cs229.stanford.edu/notes/cs229-notes3.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Pass/Fail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Which ballot components drive vote outcomes?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Pass/Fail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Pass/Fail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OLS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote % Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+**Note: Both fixed effect and random effect models were evaluated.
+ Fixed effect models were chosen given the result of Hausman tests.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1167,7 +1773,7 @@ The federal system of government in the United States is arguably among
  the most complex social coordinating mechanisms in the world.
  It is comprised of over 90,000 individual governmental entitites
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 According to the US Census Bureau, as of 2012, there were 90,106 state and
@@ -1204,14 +1810,14 @@ In his treatise,
 \emph on
  The Theory of Public Finaince
 \emph default
- (
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Musgrave59"
 
 \end_inset
 
-), Professor Musgrave constructed a framework for conceptualizing public
+, Professor Musgrave constructed a framework for conceptualizing public
  finance in a federal system that has proven robust to a remarkably varied
  set of research inquiries.
  This framework once again proves useful in explaining the significance
@@ -2170,15 +2776,7 @@ Property Tax Decline
 
 \end_inset
 
-Declining
-\begin_inset Quotes eld
-\end_inset
-
-Importance
-\begin_inset Quotes erd
-\end_inset
-
- of Property Taxation
+Property Taxes and Transfers as a Proportion of Total Local Current Receipts
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:prop-tax"
@@ -2196,25 +2794,13 @@ name "fig:prop-tax"
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/NIPA_prop_tax.png
+	filename figures/nipa_prop_transfer.png
+	lyxscale 70
 	width 100text%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-Confirm base does actually include intergovernmental transfers....
- Include 
-\begin_inset Quotes eld
-\end_inset
-
-local
-\begin_inset Quotes erd
-\end_inset
-
- tag in exhibit/
 \end_layout
 
 \end_inset
@@ -2288,7 +2874,7 @@ name "fig:Local-Receipts"
 \end_layout
 
 \begin_layout Plain Layout
-Confirm what 
+Note: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2296,7 +2882,7 @@ Income Receipts on Assets
 \begin_inset Quotes erd
 \end_inset
 
- is....
+ indicates interest, dividend, and rental income on assets.
 \end_layout
 
 \end_inset
@@ -4414,10 +5000,6 @@ name "fig:County-Population-Dynamics"
 
 \end_layout
 
-\begin_layout Plain Layout
-Fix axis labels
-\end_layout
-
 \end_inset
 
 
@@ -4503,6 +5085,7 @@ name "fig:Distribution-of-Income"
 	filename figures/CO_med_inc_cty_map.png
 	lyxscale 80
 	width 100text%
+	BoundingBox 0bp 400bp 1440bp 900bp
 
 \end_inset
 
@@ -8028,22 +8611,35 @@ Hotspots
  every five years, starting with 1987.
  Fiscal hotspots are evaluated via measurement of revenue yield per capita.
  Economic hotspots are evaluated via annual payroll per capita.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-From a spatial perspective, payroll is a superior measure of activity relative
- to income.
- Income is a person-based measure, and thus may be derived from neighboring
- jurisdictions if an individual commutes some distance to their place of
- employment.
- Payroll, by contrast, is a firm-based measure.
- Consequently, it is not capable of mobility in the same sense.
+ 
 \end_layout
 
-\end_inset
+\begin_layout Standard
+One might reasonably ask why annual payroll is being used.
+ It does not correspond to a specific tax base levied by Colorado counties,
+ and in general, per capita income is usually the preferred measure.
+ There are three reasons for this choice.
+ First, a measure of the tax base is already established with per capita
+ revenue.
+ We seek to get at the total economic resources available in this case.
+ Second, in comparing income and annual payroll, we see that income is tied
+ to residents that live in the jurisdiction while payroll is tied to firms
+ that are located in the jurisdiction.
+ Since residents can earn income in jurisdictions other than the one in
+ which they live, their income is more likely to reflect decisions made
+ outside of the county.
+ Annual payroll, on the other hand, is necessarily contained within the
+ county.
+ This is useful insofar as it directly speaks to the economic activity influence
+d by the decisions of policymakers within the county.
+ Third, annual payroll is readily available by county throughout the study
+ period, thanks to the rather detailed Quarterly Census of Employment and
+ Wages.
+ 
+\end_layout
 
- The hotspots are identified with Local Indicators of Spatial Autocorrelation
+\begin_layout Standard
+The hotspots are identified with Local Indicators of Spatial Autocorrelation
  (LISAs) developed initially by Getis & Ord
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -8059,11 +8655,8 @@ key "Anselin1995"
 \end_inset
 
  The measures are Getis & Ord's G* (GOG) and Local Moran's I (LMI), respectively.
-\end_layout
-
-\begin_layout Standard
-To evaluate clustering, LISAs require a definition of the linkages of importance
- between jurisdictions.
+ To evaluate clustering, LISAs require a definition of the linkages of importanc
+e between jurisdictions.
  Said differently, they require an explicitly defined local neighborhood.
  Spatial analysis is generally sensitive to the choice of weight matrices
  (which define the local neighborhood), so we test multiple neighborhood
@@ -19322,10 +19915,7 @@ $A$
 
 \end_inset
 
-,
- 
-\lang english
-
+, 
 \begin_inset ERT
 status open
 
@@ -19336,10 +19926,7 @@ $B$
 
 \end_inset
 
- and
- 
-\lang english
-
+ and 
 \begin_inset ERT
 status open
 
@@ -19561,10 +20148,7 @@ in S'$
 
 \end_inset
 
- and
- 
-\lang english
-
+ and 
 \begin_inset ERT
 status open
 
@@ -19601,10 +20185,7 @@ in C(S')$
 \end_layout
 
 \begin_layout Plain Layout
-In words, the weak axiom says that if
- 
-\lang english
-
+In words, the weak axiom says that if 
 \begin_inset ERT
 status open
 
@@ -19615,10 +20196,7 @@ $x$
 
 \end_inset
 
- is ever chosen when
- 
-\lang english
-
+ is ever chosen when 
 \begin_inset ERT
 status open
 
@@ -19737,10 +20315,7 @@ $C(S_1)=x$
 
 \end_inset
 
- and
- 
-\lang english
-
+ and 
 \begin_inset ERT
 status open
 
@@ -19809,10 +20384,7 @@ name "sub:Ballot-as-Choice"
 \end_layout
 
 \begin_layout Standard
-In the context of deBrucing efforts in Colorado,
- 
-\lang english
-
+In the context of deBrucing efforts in Colorado, 
 \begin_inset ERT
 status open
 
@@ -19843,8 +20415,6 @@ $S$
 
  may be conceived of as each ballot initiative, which contains two choices,
  
-\lang english
-
 \begin_inset ERT
 status open
 
@@ -19893,10 +20463,7 @@ $y$
  A complicating factor is that the status quo does not remain constant,
  insofar as environmental factors that are not on the ballot play a role
  in valuation of the status quo.
- Nevertheless, we may say that given two sets,
- 
-\lang english
-
+ Nevertheless, we may say that given two sets, 
 \begin_inset ERT
 status open
 
@@ -20045,10 +20612,7 @@ reference "fig:Utility-Functions"
 \end_inset
 
  depicts hypothetical utility functions for an individual's consumption
- of goods
- 
-\lang english
-
+ of goods 
 \begin_inset ERT
 status open
 
@@ -20252,10 +20816,7 @@ $X1$
 \end_inset
 
 .
- Call this range interval
- 
-\lang english
-
+ Call this range interval 
 \begin_inset ERT
 status open
 
@@ -22868,19 +23429,15 @@ name "fig:Error-Behavior-OLS"
 We are concerned with the intersection of significant values across models.
  Note that significance, in this case, includes both substantive and statistical
  concepts.
- Ordering the results by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$p$
-\end_layout
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ballot-Design-Results"
 
 \end_inset
 
--values fixes the relationship of statistical significance, while the data
- bars facilitate identification of substantive significance.
+ shows the results from all three models.
+ There is notable consistency regarding the directional impact of each component.
 \end_layout
 
 \begin_layout Standard
@@ -22897,7 +23454,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ballot
+Ballot Design
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Ballot-Design-Results"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -23255,64 +23819,31 @@ end{tabular}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+The first aspect to note is the fit of the three models.
+ The classifiers perform better than the zero information case; both accurately
+ predict about 69% of the time.
+ The OLS model explains only approximately 18% of variation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This value reflects the adjusted 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
 
-\begin_layout Plain Layout
-Ballot Design Results
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Ballot-Design-Results"
-
-\end_inset
-
-
+$R^2$
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/ballot_design_results.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-A more consistent version of this results table is forthcoming, but in the
- interests of providing information...
+, the base value is 23%.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-The first aspect to note is the fit of the three models (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ballot-Design-Results"
-
-\end_inset
-
-).
- Both the logit and probit models accurately predict vote outcomes roughly
- 70% of the time.
- The OLS model explains only approximately 18% of variation in the proportion
- of 
+ in the proportion of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -23328,8 +23859,8 @@ yes
 \end_layout
 
 \begin_layout Standard
-Next, it can be seen that the most consistent aspect of all three runs is
- the baseline propensity to exempt (
+Next, it can be seen that the most consistent factor in successful outcomes
+ in all three runs is the baseline propensity to exempt (
 \begin_inset ERT
 status open
 
@@ -23344,18 +23875,13 @@ _exmpt$
 
 ).
  It is both substantively and statistically significant in all three models.
- In fact, keeping in mind that the output is sorted by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$p$
-\end_layout
-
-\end_inset
-
--value, it is the clearest signal in every model.
+ In fact, there is no other model component that clearly increases probability
+ of passage by such a magnitude.
+ There are, however, multiple components that substantially drop the probability
+ of passage.
+ Most notably, voters seem to strongly dislike proposals for administrative
+ tasks and unspecified choices.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -23377,7 +23903,18 @@ _stock$
  Furthermore, the sign in the OLS model conflicts with theory.
  One would expect that the greater the constraint placed upon a given county,
  the more likely an exemption vote would be.
- Furthermore, the Gallagher ratio (
+ It is quite possible that this is a consequence of an endogenous relationship.
+ Rather than being motivated by COTEL intensity to pass an exemption vote,
+ the intensity may itself arise because voters aren't passing exemption
+ votes.
+ Simply evaluating the relationship between results and lagged COTEL intensity
+ or lagged percentage change in COTEL intensity does not resolve the issue.
+ Developing a method to tease out this relationship in more detail is a
+ subject for future work.
+\end_layout
+
+\begin_layout Standard
+The Gallagher Ratio (
 \begin_inset ERT
 status open
 
@@ -23399,130 +23936,28 @@ _ratio$
  The author speculates that this is likely an artifact of the specification,
  due to the joint distribution of the constraint variable and other model
  components.
- An alternative explanation is that counties with high COTEL intensity scores
- and high Gallagher ratios employ officials that are unwilling to put property
- tax increases on the ballot.
-\end_layout
+ For example, ballots in counties with 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Standard
-With respect to ballot components, only a few are consistently significant
- across all models.
- Some of the notable features of the comparison include the following:
-\end_layout
+high
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Itemize
-There is considerable overlap in the classifier results, but regression
- output highlights largely different aspects.
-\end_layout
-
-\begin_layout Itemize
-Proposals seeking to improve the function of government with commissions
- or studies (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$administrative$
-\end_layout
+ Gallagher Ratios (those above the median value) are 11% less likely to
+ include sales tax changes, 13% less likely to include open ended waivers,
+ and 19% less likely to have property tax changes.
+ As can be seen in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ballot-Design-Results"
 
 \end_inset
 
-) adversely impact the likelihood of passage.
-\end_layout
-
-\begin_layout Itemize
-Proposals that do not extent spending waiver authority (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$no
-\backslash
-_waiver$
-\end_layout
-
-\end_inset
-
-) are statistically significant across models, but the signs of the effect
- differ across the classification and regression approaches.
- The same can be said of restricting funding sources to non-property revenues
- (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$ss
-\backslash
-_nonproperty$
-\end_layout
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Itemize
-Open ended spending targets (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$open$
-\end_layout
-
-\end_inset
-
-) are clear drivers of the classification results, but figure only modestly
- in the regression approach.
-\end_layout
-
-\begin_layout Itemize
-Changes to sales tax rates (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$sales
-\backslash
-_change$
-\end_layout
-
-\end_inset
-
-) are consistently negative, but lack substantive significance.
- The same could be said of public safety (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$public
-\backslash
-_safety$
-\end_layout
-
-\end_inset
-
-) and changes to the property tax rate (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$prop
-\backslash
-_change$
-\end_layout
-
-\end_inset
-
-).
+, all of these components drop the likelihood of passage.
+ This accords with a certain logic, insofar as counties with high Gallagher
+ ratios may employ officials that are unwilling to put property tax increases
+ on the ballot.
 \end_layout
 
 \begin_layout Standard
@@ -23599,7 +24034,7 @@ nal scope.
  From an institutional perspective, these changes are not absolute.
  However, they do violence to the structure of the political economy that
  prevails prior to their implementation.
- Indeed, it is with this goal that such measures often pursued.
+ Indeed, it is with this goal that such measures are often pursued.
  By that narrow standard, if implemented, the author believes that they
  must be considered a success.
 \end_layout
@@ -23615,8 +24050,15 @@ A broader definition of success, however, evaluates the implications of
  First, and most practically, the author lacks access to any data that even
  approaches precise measures of the utility functions for each constituent,
  or at least some measure of central tendency.
- Chapter 6 opens the door on preference revelation, but this must be seen
- as only a proxy of the roughest kind.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:DeBrucing"
+
+\end_inset
+
+ opens the door on preference revelation, but this must be seen as only
+ a proxy of the roughest kind.
  Second, it is not clear that any absolute answer exists.
  Why should we expect that even if a utility maximizing revenue-expenditure
  bundle could be identified at time 
@@ -23656,8 +24098,8 @@ $t+n$
 ? Populations, and the context in which they live, change.
  It seems likely that prevailing preferences are a function of at least
  these two things.
- For these reasons, this analysis has focused on whether changes are good
- or bad, but rather on whether or not changes have occurred at all.
+ For these reasons, this analysis has not focused on whether changes are
+ good or bad, but rather on whether or not changes have occurred at all.
  From here, we can at least speak to operational implications, if not abstract
  value.
 \end_layout
@@ -23685,8 +24127,17 @@ key "Mullins2004"
 
 , the context in which a county operates has substantial implications for
  its ability absorb such restrictions.
- It is perhaps comforting that, in light of these attempts to pursue tighter
+ 
+\emph on
+The approach taken here permits exploration of this context in a way that
+ has not been done before, and in so doing, provided a way to speak to the
+ behavior both within and across counties.
+ 
+\emph default
+It is perhaps comforting that, in light of these attempts to pursue tighter
  measurement, the prevailing theme persists.
+ TELs do have an impact, and now we can see what that impact is on a specific
+ county.
 \end_layout
 
 \begin_layout Standard
@@ -23714,8 +24165,8 @@ reference "chap:Expenditure-Patterns"
 \end_inset
 
  revealed that COTELs are likely to shift expenditure behavior from the
- trajectory that might otherwise have occurred.
- The magnitude of that shift, however, is dominated by demographic factors.
+ trajectory that might otherwise have occurred, albeit modestly.
+ The magnitude of that shift is dominated by demographic factors.
 \end_layout
 
 \begin_layout Standard
@@ -23726,23 +24177,96 @@ reference "chap:DeBrucing"
 
 \end_inset
 
- was materially different than the preceding chapters.
+ was materially different than, but contextually relied upon, the preceding
+ chapters.
  Rather than focus on the impacts of COTELs, the final empirical chapter
  sought to explore institutional machinery.
  Insofar as it identified a few ballot components that have comparatively
  important effects on the likelihood of the passage of a deBrucing vote,
- its provides some intelligence for policymakers, albeit limited.
+ its provides some limited intelligence for policymakers.
  The surprising element from this analysis again highlights the importance
  of socioeconomic context.
- The prevailing propensity of a county to pass any exemption vote outweighed
- the importance of individual design choices.
+ The prevailing propensity of a county to pass any exemption vote was identified
+ as being at least as important as the most critical design choices.
+ Even if local managers cannot change the prevailing propensity, it should
+ materially affect their strategic decisionmaking.
+ 
+\end_layout
+
+\begin_layout Section
+Next Steps
 \end_layout
 
 \begin_layout Standard
 Ultimately, the analysis presented here has only scratched the surface of
  the three topics addressed in the empirical chapters.
- From that perspective, it has in part been motivated by a desire to motivate
- research.
+ To be candid, future work in the areas evaluated here would require a deeper
+ dive.
+ For one thing, better methods of mitigating spatial and temporal non-stationari
+ty would have to be developed.
+ Second, the acquisition of better fiscal data for the other governments
+ in the county would be a material addition.
+ At the current time, the analysis relies on a rather unsatisfying imputation
+ from the USA Counties Database.
+ Unfortunately, the school district fiscal data early in the study period
+ has proven elusive.
+ Given that information, school district and municipal finances could be
+ proportionally allocated to the counties that contain them.
+ Additionally, an enormous amount of work could be done exploring different
+ definitions of 
+\begin_inset Quotes eld
+\end_inset
+
+local neighborhoods
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This study has employed two grouping definitions, based upon first order
+ contiguity and position in fiscal space.
+ However, there are a large variety of directions that could be explored.
+ Finally, a great deal more work could be done in the selection of estimators.
+ For example, relatively straightforward transformations can be applied
+ to OLS specifications to mitigate AR(1) dependence structures (e.g.
+ the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Prais-Winsten "
+target "http://cran.r-project.org/web/packages/panelAR/panelAR.pdf"
+
+\end_inset
+
+ approach).
+ Such methodological improvements could improve the precision and accuracy
+ of the estimates dramatically.
+\end_layout
+
+\begin_layout Standard
+Substantively, not enough is known about TELs and the business cycle, from
+ the perspective of individual jurisdictions.
+ It is reasonable to suppose that the expectations and behavior of local
+ fiscal managers changes in response to prevailing business conditions,
+ not just in Colorado but elsewhere as well.
+ The dynamic effect of changing revenue profiles is a material characteristic
+ of binding TELs, and it would behoove local managers to better understand
+ this action.
+\end_layout
+
+\begin_layout Standard
+Finally, while the COTEL intensity measures used in this study have increased
+ the information we can capture about TEL effects, they are far from perfect.
+ At the very least, they rely on assessment data and imperfect assumptions
+ about starting conditions.
+ Ideally, a better implementation would also incorporate information about
+ voter preferences, although reconciling the endogeneity in this approach
+ is a non-trivial concern.
+ 
+\end_layout
+
+\begin_layout Standard
+In general, this work served as a highly imperfect first step.
+ From that perspective, it has in part been motivated by a desire to incite
+ future research.
  Furthermore, it has sought to encourage new ways of addressing old problems,
  in the hopes that future work may provide fresh insights that may have
  previously been hidden by prevailing practice.
@@ -24043,7 +24567,7 @@ Perhaps the single largest complaint about the homestead exemption is poor
 The rationale for the low-income component is evident given the targeting
  criticism.
  The age component requires another critical contextual element.
- This movement began in the 1950s, a couple decafes after the passage of
+ This movement began in the 1950s, a couple decades after the passage of
  Social Security.
  The country was accumulating evidence that this program was changing the
  prevalent life cycle sequence.
