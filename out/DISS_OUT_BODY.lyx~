@@ -5007,35 +5007,13 @@ name "fig:Distribution-of-Income"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centerline{
-\end_layout
-
-\end_inset
-
-
+\align center
 \begin_inset Graphics
-	filename figures/CO_med_inc_cty_map.svg
+	filename figures/CO_med_inc_cty_map.png
 	lyxscale 80
-	width 150text%
+	width 130text%
 	BoundingBox 0bp 0bp 1440bp 1260bp
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
+	rotateOrigin center
 
 \end_inset
 
@@ -6146,9 +6124,9 @@ centerline{
 
 
 \begin_inset Graphics
-	filename figures/TEL_intensity_2009.png
+	filename figures/TEL_intensity_2009_crop.png
 	lyxscale 80
-	width 90page%
+	width 70page%
 
 \end_inset
 
@@ -6239,7 +6217,7 @@ name "fig:Visual-Rationale-for-Comp-Limit"
 \begin_inset Graphics
 	filename figures/TABOR_vs_SLPTR.png
 	lyxscale 80
-	width 60text%
+	width 55text%
 	rotateAngle 90
 
 \end_inset
@@ -7194,7 +7172,7 @@ name "fig:COTEL-Intensity-Adams"
 \begin_inset Graphics
 	filename figures/adams_cty_intensity.png
 	lyxscale 70
-	width 60text%
+	width 55text%
 	rotateAngle 90
 
 \end_inset
@@ -10887,8 +10865,7 @@ name "fig:Pooled-OLS-Results"
 \align center
 \begin_inset Graphics
 	filename figures/converge_pooled_ols.png
-	width 40text%
-	rotateAngle 90
+	width 100text%
 
 \end_inset
 
@@ -11141,12 +11118,35 @@ name "fig:LISA-Results"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/converge_LISAs.png
 	lyxscale 80
-	width 100text%
+	width 120text%
 	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -11332,7 +11332,7 @@ centerline{
 \begin_inset Graphics
 	filename figures/converge_slm_rev.png
 	lyxscale 80
-	width 95page%
+	width 85page%
 
 \end_inset
 
@@ -11351,7 +11351,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-Note: the single red data points in the
+Note: the single red data points in the 
 \begin_inset ERT
 status open
 
@@ -11362,7 +11362,7 @@ $pcap$
 
 \end_inset
 
-,
+, 
 \begin_inset ERT
 status open
 
@@ -11375,7 +11375,7 @@ _ratio$
 
 \end_inset
 
-, and
+, and 
 \begin_inset ERT
 status open
 
@@ -11388,7 +11388,7 @@ $vac_rate$
 
  subplots are only artifacts of the plotting function.
  As can be seen in the color bar, the range of p-values for these variables
- is entirely below
+ is entirely below 
 \begin_inset ERT
 status open
 
@@ -11519,7 +11519,7 @@ centerline{
 \begin_inset Graphics
 	filename figures/converge_slm_econ.png
 	lyxscale 80
-	width 95page%
+	width 85page%
 
 \end_inset
 
@@ -13889,7 +13889,7 @@ name "fig:Fiscal-Position-Concept"
 \begin_inset Graphics
 	filename figures/fisc_pos_concept.png
 	lyxscale 80
-	width 70text%
+	width 80text%
 
 \end_inset
 
@@ -14545,11 +14545,34 @@ name "fig:Intensity-vs-Exp-Subgroup"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/COTEL_intensity_vs_exp_subgroups.png
 	lyxscale 70
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -15146,11 +15169,34 @@ name "fig:Fiscal-Positions-1975"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/fisc_pos1975.png
 	lyxscale 70
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -15593,11 +15639,34 @@ name "fig:Within-Cluster-Variation-by-Year"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/clust_dist_variance_yr.png
 	lyxscale 80
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -15663,7 +15732,7 @@ name "fig:cty-clust-dist-var"
 \begin_inset Graphics
 	filename figures/clustDist_var_cty.png
 	lyxscale 50
-	width 80text%
+	width 90text%
 
 \end_inset
 
@@ -16794,15 +16863,19 @@ name "fig:Var-Variation-Full"
 \begin_inset Graphics
 	filename figures/ExpDiv_CoV.svg
 	lyxscale 50
-	width 50text%
+	width 80text%
 
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Graphics
 	filename figures/ExpDiv_Corr.svg
 	lyxscale 50
-	width 50text%
+	width 80text%
 
 \end_inset
 
@@ -16954,15 +17027,19 @@ name "fig:Var-Variation-Alt-Dist"
 \begin_inset Graphics
 	filename figures/ExpDiv_varCorr_PCA.svg
 	lyxscale 50
-	width 100text%
+	width 80text%
 
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Graphics
 	filename figures/ExpDiv_varCorr_bivFilt.svg
 	lyxscale 50
-	width 100text%
+	width 80text%
 
 \end_inset
 
@@ -17070,11 +17147,34 @@ name "fig:clust-dist-by-method"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ExpDiv_ctyVar_distCalc.svg
 	lyxscale 50
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -17715,10 +17815,33 @@ name "fig:Spatial-Lag-Model"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ExpDiv_SLM_by_year.png
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -18243,10 +18366,34 @@ name "fig:LASSO-full-avg"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ExpDiv_Lasso_avg.png
-	width 100text%
+	width 110text%
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -18303,11 +18450,34 @@ name "fig:LASSO-Scores-by-measure"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ExpDiv_Lasso_Scores_by_imp.png
 	lyxscale 70
-	width 100text%
+	width 140text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -18458,10 +18628,34 @@ name "fig:LASSO-Estimates-by-measure"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ExpDiv_lasso_coef_by_dist.png
-	width 100text%
+	width 60page%
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -18615,19 +18809,19 @@ name "fig:Comparison-of-Residual-behavior"
 \begin_inset Graphics
 	filename figures/ExpDiv_res_pool_density.png
 	lyxscale 50
-	width 45text%
+	width 80text%
 
 \end_inset
 
 
-\begin_inset space ~
+\begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Graphics
 	filename figures/ExpDiv_res_fe_density.png
 	lyxscale 50
-	width 45text%
+	width 80text%
 
 \end_inset
 
@@ -18669,7 +18863,8 @@ name "fig:Pooled-Residuals-by-county"
 \begin_inset Graphics
 	filename figures/ExpDiv_res_pool_plot_cty.png
 	lyxscale 50
-	width 100text%
+	width 90text%
+	rotateAngle 90
 
 \end_inset
 
@@ -21104,11 +21299,34 @@ name "fig:DeBrucing-Votes-(1993-2009)"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/results_dist.png
 	lyxscale 10
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -21116,11 +21334,34 @@ name "fig:DeBrucing-Votes-(1993-2009)"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/vote_counts.png
 	lyxscale 10
-	width 100text%
+	width 120text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -21579,11 +21820,34 @@ name "fig:Voting-Outcomes-PCA"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/votes_pca_view.png
 	lyxscale 10
-	width 100text%
+	width 130text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -21774,11 +22038,34 @@ name "fig:Probability-of-Successful-Vote-Passage"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/vote_probs.png
 	lyxscale 10
-	width 100text%
+	width 130text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -23328,11 +23615,34 @@ name "fig:Error-Behavior-OLS"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ols_resid_by_obs.png
 	lyxscale 10
-	width 100text%
+	width 130text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -23340,11 +23650,34 @@ name "fig:Error-Behavior-OLS"
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/ols_resid_dist.png
 	lyxscale 10
-	width 100text%
+	width 130text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -24693,9 +25026,8 @@ key "Springer_Lusby_Leatherman_Featherstone2009"
  Per capita property taxes, own-source revenues, and own-source expenditures
  were all lower during the full disclosure regime relative to the period
  characterized by the explicit levy limit.
- ***[Insert Mullins and Mikesell NTA work.]*** These empirical results suggest
- that the impact of full disclosure is varied, but in any case they serve
- as a high value informational tool.
+ These empirical results suggest that the impact of full disclosure is varied,
+ but in any case they serve as a high value informational tool.
  The informational detail offered by such provisions cannot be matched by
  blanket rules that hold constant no matter what environmental circumstance
  may prevail at a given time.
@@ -25064,10 +25396,33 @@ Logged Median Home Values by County (2007-2011 5-Year ACS)
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/mhv_by_cty.png
-	width 100text%
+	width 130text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
