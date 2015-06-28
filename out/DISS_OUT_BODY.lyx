@@ -6,6 +6,7 @@
 \begin_preamble
 \usepackage{amsmath}
 \usepackage{url}
+\renewcommand\abstractname{Acknowledgements}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -77,6 +78,22 @@ modelfloat
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
@@ -25404,6 +25421,22 @@ From the perspective of this study, the Colorado Supreme Court did not move
  State of Colorado v Labato
 \emph default
  case.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

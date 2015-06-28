@@ -6,6 +6,7 @@
 \begin_preamble
 \usepackage{amsmath}
 \usepackage{url}
+\renewcommand\abstractname{Acknowledgements}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -77,6 +78,22 @@ modelfloat
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
@@ -365,7 +382,7 @@ n to the extent possible.
 
 \begin_layout Standard
 The second major innovation in the world of TEL research is the explicit
- acknowledgement of spatial dependency.
+ acknowledgment of spatial dependency.
  No jurisdiction operates in a vacuum.
  By virtue of the fact that this study evaluates the impact of state-enacted
  policies on local governments, the very design suggests that vertical relations
@@ -629,7 +646,7 @@ In Colorado, all county fiscal years coincide with the calendar year.
 
 \end_inset
 
- The subsequent dataset build was then based upon this window.
+ The subsequent data set build was then based upon this window.
 \end_layout
 
 \begin_layout Subsection
@@ -853,7 +870,7 @@ Choice of rules must also contend with the issue of degradation.
 
 \begin_layout Standard
 In this context, ballot initiatives like those that produce tax and expenditure
- limitations, blunt as though they may be, emerge as a method of circumventing
+ limitations, blunt as they may be, emerge as a method of circumventing
  the agenda setting power of established interest groups that have refined
  their ability to influence the policymaking process.
  They are seen as enhancing the role of the public in a democratic mechanism
@@ -1017,10 +1034,7 @@ DeBrucing
 \end_inset
 
  as an instrument of revealed voter preference.
-\end_layout
-
-\begin_layout Standard
-Chapter 
+ Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Conclusion"
@@ -1028,11 +1042,10 @@ reference "chap:Conclusion"
 \end_inset
 
  contains the conclusion.
- It presents final thoughts on what has been learned in the empricial testing
+ It presents final thoughts on what has been learned in the empirical testing
  and seeks to weave the findings together to see what may be said of TELs
  in Colorado.
- It will also include discussion of the extent of the study's external validity,
- as well as thoughts on what may be explored with future research.
+ It will also include thoughts on what may be explored with future research.
 \end_layout
 
 \begin_layout Standard
@@ -1675,7 +1688,7 @@ name "chap:SubFinUS"
 \begin_layout Standard
 The federal system of government in the United States is arguably among
  the most complex social coordinating mechanisms in the world.
- It is comprised of over 90,000 individual governmental entitites
+ It is comprised of over 90,000 individual governmental entities
 \begin_inset Foot
 status collapsed
 
@@ -1712,7 +1725,7 @@ Why are the Fiscal Affairs of States and Localities Important?
 \begin_layout Standard
 In his treatise,
 \emph on
- The Theory of Public Finaince
+ The Theory of Public Finance
 \emph default
  
 \begin_inset CommandInset citation
@@ -1757,7 +1770,7 @@ The first (allocation) is the direct product of government operation, the
  The second (redistribution) seeks to adjust resource allocations to accord
  with societal preferences for distributional equity.
  An additional motivation for this function can be the mitigation of damages
- that have occured due to trade.
+ that have occurred due to trade.
  Insofar as the cost-benefit calculation from a trade is typically considered
  beneficial whether or not the gains help to offset the losses experienced
  by ill-placed parties
@@ -1848,7 +1861,7 @@ Perusal of budgets across the three levels of government will affirm that
 \begin_layout Standard
 Direct service provision serves as the nexus at which the taxpayer realizes
  the connection between tax price and the return from that investment.
- Indeeed, this intuitive dictum accords with an argument that substantially
+ Indeed, this intuitive dictum accords with an argument that substantially
  predates Musgraves' revelation.
  The nascent stages of our republic were characterized by fierce deliberation
  over the capacity to govern such a geographically expansive jurisdiction.
@@ -1922,7 +1935,7 @@ key "Ross_Yinger1999"
 \end_layout
 
 \begin_layout Itemize
-Individual jurisdictions are far more homogenous than the urban area in
+Individual jurisdictions are far more homogeneous than the urban area in
  which they are contained
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2103,7 +2116,7 @@ n is simply an activity, while the absorption of proceeds dictates where
 \begin_layout Standard
 Having established the operational handles of an abstract local tax, the
  choice of specific taxes should strive to capture the ideal elements of
- such a tax: immobility, adequacy/buoyancy, stabilty/predictability, fairness,
+ such a tax: immobility, adequacy/buoyancy, stability/predictability, fairness,
  administrative ease, non-exportality, and visibility (i.e.
  transparency).
  For the most part, these characteristics are goals for any tax at any level.
@@ -2119,7 +2132,7 @@ Note that these are theoretical objectives for tax design, identified for
  delivery in a manner that minimizes noise from other factors.
  The stronger this linkage, the greater the capacity for taxpayers to equalize
  costs and benefits at the margin.
- In practice, however, political expediency has an outsized role in the
+ In practice, however, political expediency has an out-sized role in the
  selection of available revenue handles, and can distort the role of other
  characteristics.
  For example, from a political perspective, exportability becomes an asset
@@ -2313,7 +2326,7 @@ The Economic Significance of the State and Local Government Sector
 
 \begin_layout Standard
 The role of government, as measured by its size relative to the total economy,
- has grown signficantly since the beginning of the early 20th century.
+ has grown significantly since the beginning of the early 20th century.
  Given the comparatively low-level of resources allocated to the judicial
  and legislative branches, this growth has been driven by increases in the
  executive and regulatory capacity of government at all levels.
@@ -2411,8 +2424,8 @@ nted, it was by no means an accident.
 
 [D]espite occasional claims that public administration is a science with
  principles of universal validity, American public administration has evolved
- political theories unmistakeably related to unique economic, social, government
-al, and ideological facts.
+ political theories unmistakably related to unique economic, social, governmenta
+l, and ideological facts.
 \begin_inset Quotes erd
 \end_inset
 
@@ -2539,8 +2552,8 @@ The Role of the Property Tax in Financing Local Government
 \begin_layout Standard
 Over the course of US history, financing the array of service responsibilities
  contained within any given local government entity has required careful
- and ongoing cultivaton of a revenue portfolio that seeks to draw upon the
- economic activity contained within (or near) the jurisdiction in question.
+ and ongoing cultivation of a revenue portfolio that seeks to draw upon
+ the economic activity contained within (or near) the jurisdiction in question.
 \begin_inset Foot
 status collapsed
 
@@ -2900,7 +2913,7 @@ name "fig:Macroeconomic-Turmoil-in-1970s"
 The implications of these reforms was far-reaching.
  The central role played by the property tax makes it a critical tool of
  fiscal autonomy.
- Unlike transders, which rely on the willful participation of other jurisdiction
+ Unlike transfers, which rely on the willful participation of other jurisdiction
 s, taxes are designed by the collecting jurisdiction.
  They are thus customizable, tailored to suit said jurisdiction's needs.
  As has been demonstrated, the property tax plays a dominant role within
@@ -3086,7 +3099,7 @@ The Importance of Demography
 
 \begin_layout Standard
 One of the primary challenges facing fiscal managers at any level of government
- in the US is the deomgraphic shift that is occurring in the country.
+ in the US is the demographic shift that is occurring in the country.
  For local managers, there are three key areas that must always figure prominent
 ly in planning for the future: the senior population, school age children,
  and migratory patterns.
@@ -3110,7 +3123,7 @@ key "Honadle_Costa_Cigler2004"
  that predated the recession.
  Whether that debt will continue to grow in the coming decades will be affected
  by not only long-term demographic and economic trends but also by the policymak
-ers' decsions about taxes and spending.
+ers' decisions about taxes and spending.
  The aging of the baby boom generation portends a significant and sustained
  increase in the share of the population receiving benefits from Social
  Security and Medicaid, as well as long-term care services financed by Medicaid.
@@ -3493,7 +3506,7 @@ name "sec:Motivations-for-Limiting-Property-Tax"
 \end_layout
 
 \begin_layout Standard
-Public opinion is of the upmost importance in a democratic country.
+Public opinion is of the utmost importance in a democratic country.
  For the most part, the distant tails of the political distribution have
  limited impact on the policies actually effected by policymakers.
  However, once opinions gain critical mass, they can have large effects.
@@ -3647,7 +3660,7 @@ This quote captures a prevalent view among academics in the late 19th and
  early 20th centuries in the US.
  The animosity was borne of both seemingly intractable theoretical problems
  with the revenue instrument as well as deficiencies in administration.
- Edward Seligman of Columbia University constructed a multi-facted attack
+ Edward Seligman of Columbia University constructed a multifaceted attack
  in his
 \emph on
  Essays on Taxation.
@@ -3776,7 +3789,7 @@ this is actually a positive feature.
  cannot avoid thinking about the liability.
  In the real world, however, it is largely this feature that has contributed
  to widespread popular disdain for the tax.
- This is partciularly so for taxpayers with fixed incomes that reside in
+ This is particularly so for taxpayers with fixed incomes that reside in
  property they own.
 \begin_inset Foot
 status collapsed
@@ -3788,7 +3801,7 @@ Homes for the Taking)
 \emph default
  detailing the circumstances by which many fixed income residents fell behind
  on their property taxes.
- In many cases, these leins led to eviction.
+ In many cases, these liens led to eviction.
  Such stories grow the disdain for the tax.
  A more nuanced consumption of the information revealed that challenges
  in administration may have been more influential than the city's property
@@ -3832,7 +3845,7 @@ reference "sub:Against-Property-Tax"
 \begin_inset Quotes eld
 \end_inset
 
-lengthening of the period of cumpulsory school attendance.
+lengthening of the period of compulsory school attendance.
 \begin_inset Quotes erd
 \end_inset
 
@@ -3936,7 +3949,7 @@ reference "sec:Motivations-for-Limiting-Property-Tax"
  understanding of taxation in general to sufficiently comprehend and design
  constructive reform in practice.
  In the real world, however, students of public finance are all too rare.
- Admiteedly, the author's bias shines through here, but there is a kernel
+ Admittedly, the author's bias shines through here, but there is a kernel
  of truth in the sense that the motivating factors for reform are often
  discordant with constructive progress.
  Students of public finance need not possess any undue hubris in identifying
@@ -3952,7 +3965,7 @@ reference "sec:Motivations-for-Limiting-Property-Tax"
  When fiscal solutions have unintended effects, particularly when changes
  in fiscal institutions at one level of government influence fiscal or political
  outcomes at another level of government, these changes in one period generate
- forces makeing for further changes in later periods.
+ forces making for further changes in later periods.
 \begin_inset Quotes erd
 \end_inset
 
@@ -4060,8 +4073,8 @@ key "Seabright1996"
 \end_layout
 
 \begin_layout Standard
-This view of political economy of public finaince is salient in the current
- discussion because it suggests that political palatibility is a major element
+This view of political economy of public finance is salient in the current
+ discussion because it suggests that political palatability is a major element
  in the assessment of good public financial practice.
  Although the institutional reforms have limited the efficacy of the property
  tax at any given point in time, these reforms may bear fruit when assessed
@@ -4192,8 +4205,8 @@ Admittedly, Proposition 13 was a particularly aggressive limitation effort.
  base and rate inputs.
  Furthermore, assessed values reverted back to 1976 levels.
  Couple this reduction in the base with the practice of acquisition value
- assessement, in which real estate values only reflect the market value
- at the time of sale, and one gets a potent mix for revenue reduction.
+ assessment, in which real estate values only reflect the market value at
+ the time of sale, and one gets a potent mix for revenue reduction.
 \end_layout
 
 \begin_layout Quotation
@@ -4255,7 +4268,7 @@ key "Downes_Figlio1999"
 \end_layout
 
 \begin_layout Standard
-TELs have been defended as grassrotts efforts, but the ironic reality is
+TELs have been defended as grassroots efforts, but the ironic reality is
  that they often adversely affect local autonomy.
  Mullins & Joyce
 \begin_inset CommandInset citation
@@ -4760,7 +4773,7 @@ reference "fig:Colorado-GSP"
 , although economic growth clearly stagnated during national recession periods,
  the Colorado economy grew dramatically in real terms over the study period.
  Between 1993 and 2009, the real gross state product grew over 90%.
- Nevertheless, the recessionary periods had outsized influence.
+ Nevertheless, the recessionary periods had out-sized influence.
  Insofar as revenues declined in those years, the baseline against which
  future revenues were to be compared was reduced.
  The 
@@ -4965,11 +4978,11 @@ Blue indicates higher values while red indicates lower values.
 
 \end_inset
 
- demonstrates that this variation in magnitude has a strong spatial contigent
+ demonstrates that this variation in magnitude has a strong spatial contingent
  as well.
- Wealther counties reside disproportionately in the northern and northwestern
+ Wealthier counties reside disproportionately in the northern and northwestern
  portions of the state.
- Median houshold incomes range from $25,309 to $101,108.
+ Median household incomes range from $25,309 to $101,108.
 \end_layout
 
 \begin_layout Standard
@@ -5013,7 +5026,7 @@ name "fig:Distribution-of-Income"
 	lyxscale 80
 	width 130text%
 	BoundingBox 0bp 0bp 1440bp 1260bp
-	rotateOrigin center
+	rotateOrigin centerTop
 
 \end_inset
 
@@ -5041,7 +5054,7 @@ Although the data are collected from the 5-year ACS over the 2008-2012 period,
  Unemployment and poverty rates exhibit wide variation.
  Unemployment rates varied from 2.4% to 20.1% during the survey period (2008-2012)
 , while poverty rates varied from 3.9% to 22.5%.
- The inverse relationshp between median household income and measures of
+ The inverse relationship between median household income and measures of
  economic stress is material.
 \end_layout
 
@@ -5376,7 +5389,7 @@ While debt service has been the fastest growing liability for counties in
  Colorado (+633%), it still remains a small portion of the overall budget
  (4.7% in 2009).
  The dominant liability resides with operating expenditures.
- Given the preponderence of direct spending activity at the local level,
+ Given the preponderance of direct spending activity at the local level,
  this is unsurprising.
  Operating expenditures increased 116% over the period, but fell as a percentage
  of total expenditures (79% to 76%).
@@ -7207,7 +7220,7 @@ The Gallagher Ratio
 \begin_layout Standard
 Since the actions imposed by TABOR and SLPTR were conceptually similar,
  they lent themselves to integration.
- GA, by constrast, was modeled separately as simply the ratio between the
+ GA, by contrast, was modeled separately as simply the ratio between the
  residential and non-residential tax bases within a county.
  The idea here was to capture the impact of disparities between county ratios
  and the statewide ratio used to calculate allowable assessment rates.
@@ -7622,7 +7635,7 @@ In a single cross-section, spatial autocorrelation and spatial heterogeneity
 \begin_layout Standard
 One major difference between temporal and spatial dependency is dimensionality.
  Whereas lags move along one dimension in the temporal context, lags move
- in all three cartesian dimensions in the spatial context.
+ in all three Cartesian dimensions in the spatial context.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7632,7 +7645,7 @@ reference "fig:Space-Time-Memory"
 
 , which identifies each lag with a consistent shade of blue, illustrates
  the concept.
- Conseqeuntly, 
+ Consequently, 
 \begin_inset Quotes eld
 \end_inset
 
@@ -7743,7 +7756,7 @@ Second, fixed and random effects are both model parameters to be estimated.
  freedom.
  Generally, the safe bet is to have many observations per group, so that
  said parameters may be reliably estimated.
- In the two-way scenario above, we wittle that observation count down to
+ In the two-way scenario above, we whittle that observation count down to
  one for each county-year effect.
 \end_layout
 
@@ -7970,8 +7983,8 @@ Introduction
 
 \begin_layout Standard
 The economic potential of any system is not only driven by the presence
- of natual and/or developed capital, but also the institutions that govern
- the exploitation of these valueable assets.
+ of natural and/or developed capital, but also the institutions that govern
+ the exploitation of these valuable assets.
  In this sense, the term economic potential is misleadingly incomplete.
  The mechanism that drives resource allocation is a function of both the
  distribution of purely economic value and the feasible range of activities
@@ -8003,7 +8016,7 @@ value extraction
 Once the fiscal policy objectives or targets are decided upon government
  tries to implement them by using policy parameters, such as tax rates,
  subsidies, transfers, purchases and other types of government expenditures
- over which it has conrol.
+ over which it has control.
  These parameters are known as instruments.
  Policy targets and instruments belong to the same economic system.
  The former are endogenous and the latter are pre-determined.
@@ -8508,9 +8521,9 @@ A second, and related, question is whether or not we expect a temporal element
  the county has spent operating under the COTEL? Furthermore, given the
  fact that the COTEL environment is composed of overlapping policies, do
  we expect interaction effects to play a role? To shed light on such questions,
- this study employs spatial techniques to examine a panel dataset of county-leve
-l fiscal and economic data in Colorado over the 1987-2009 time period (econometr
-ic exploration begins in 1995).
+ this study employs spatial techniques to examine a panel data set of county-lev
+el fiscal and economic data in Colorado over the 1987-2009 time period (economet
+ric exploration begins in 1995).
  First, we establish the existence of temporal variation in fiscal clustering,
  and then we employ econometric techniques to uncover the impact of COTEL
  intensity and the Gallagher Ratio.
@@ -8945,7 +8958,7 @@ _kern$
 
 \end_inset
 
-), which hase only six counties with a neighborhood of size five.
+), which has only six counties with a neighborhood of size five.
  The inconsistent neighborhood size distributions demonstrates the substantive
  variation in the definitions employed by each weight matrix and the reason
  for sensitivity to neighborhood definition.
@@ -9003,7 +9016,7 @@ nal characteristics of the data, providing only a single global parameter
 \emph default
  values, and it returns low values when it is surrounded by
 \emph on
- disimilar
+ dissimilar
 \emph default
  values (Figure 
 \begin_inset CommandInset ref
@@ -9346,13 +9359,13 @@ status collapsed
 \begin_layout Plain Layout
 Unusual patterns would be those discontinuities that were beyond those which
  would occur with a random shuffling of values.
- In other words, they would be systemic patterns of disimilarity, also known
- as negative spatial autocorrelation.
+ In other words, they would be systemic patterns of dissimilarity, also
+ known as negative spatial autocorrelation.
 \end_layout
 
 \end_inset
 
- This would render the detection of local anomolies more difficult, and
+ This would render the detection of local anomalies more difficult, and
  in turn, the identification of spatial non-stationarity.
 \begin_inset Foot
 status open
@@ -9723,94 +9736,6 @@ Central tendency generally leans right of zero for LMI, and left of zero
  for GOG.
  This suggests a tendency towards the existence of spatial clustering, but
  this clustering occurs more often among low capacity jurisdictions.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-LISA Kernel Densities
-\end_layout
-
-\end_inset
-
-Kernel Density Estimates of Year-Specific LISA Values for Revenue Yield
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Kernel-LISA"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-These kernel density estimates capture the same information as the spatio-tempor
-al plots in Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:LMI-Plots"
-
-\end_inset
-
- and Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GOG-Plots"
-
-\end_inset
-
-.
- Instead of displaying the values by county, however, the values for all
- counties for a given year are captured in each estimate.
- The plots in the left column (with the
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$_i$
-\end_layout
-
-\end_inset
-
- suffix) capture LMI estimates while the plots in the right column (with
- the
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$_g$
-\end_layout
-
-\end_inset
-
- suffix) capture GOG estimates.
- The weight matrices used are apparent from the labeling.
- For example, in the left plot in the first row, each kernel density estimate
- captures Local Moran's I values for revenue yield in each year captured
- (1987, 1992, 1997, 2002, 2007).
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -10904,7 +10829,7 @@ Using the LISAs as dependents provides some notion of how the variables
  It has already been shown that spatial clustering of fiscal behavior occurs,
  so this wedge is expected to be spatially relevant.
  The visualization of these results employs averages across the five weight
- matrices used in this analysis (see Subsecton 
+ matrices used in this analysis (see Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Weight-Matrices"
@@ -10930,7 +10855,14 @@ $W$
 \begin_layout Standard
 The results of the LISA models can be placed in context by getting a sense
  of the distribution of clustering values.
- Figure X shows the kernel densities of each LISA dependent variable.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Distribution-of-Clustering-Values"
+
+\end_inset
+
+ shows the kernel densities of each LISA dependent variable.
  They are grouped by clustering concept (e.g.
  Local Moran's I, or LMI) and clustering value (e.g.
  per capita revenue, or 
@@ -11065,7 +10997,7 @@ status open
 
 \begin_layout Standard
 To reiterate, high values of LMI indicate the clustering of similar values,
- while low values indicate the clustering of disimilar values.
+ while low values indicate the clustering of dissimilar values.
  In other words, high values of LMI can indicate the presence of a local
  neighborhood of counties characterized by either high revenue yield/fiscal
  capacity or low revenue yield/fiscal capacity.
@@ -11229,7 +11161,7 @@ _ratio$
 
 ) behaves precisely as we would expect from a revenue yield perspective.
  Insofar as it increases the strength of clustering (higher values of LMI)
- and decreases the values assoicated with said clustering (low values of
+ and decreases the values associated with said clustering (low values of
  GOG), the evidence suggests that the measure is a limiting factor on revenue
  yield in the local neighborhood.
  On the fiscal capacity side, the Gallagher Ratio is neither statistically
@@ -11381,27 +11313,39 @@ status open
 
 \begin_layout Plain Layout
 
-$vac_rate$
+$vac
+\backslash
+_rate$
 \end_layout
 
 \end_inset
 
  subplots are only artifacts of the plotting function.
- As can be seen in the color bar, the range of p-values for these variables
- is entirely below 
+ As can be seen in the color bar, the range of 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$p$=0.1
+$p$
+\end_layout
+
+\end_inset
+
+-values for these variables is entirely below 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$ = 0.1
 \end_layout
 
 \end_inset
 
 .
  The final version of this graphic will remedy this issue with post-hoc
- adjsutment of the an SVG version of the plot.
+ adjustment of the an SVG version of the plot.
 \end_layout
 
 \end_inset
@@ -11457,7 +11401,7 @@ The interesting dynamic revealed by the repeated cross-sectional approach
 Evaluating fiscal capacity with the repeated SLM approach reveals the tenuous
  nature of any direct connection between our COTEL variables and per capita
  annual payroll.
- COTEL intensity and the Gallagher Ratio are both statististically insignificant
+ COTEL intensity and the Gallagher Ratio are both statistically insignificant
  in every single year.
  For the most part, COTEL intensity is also substantively insignificant
  while the Gallagher Ratio demonstrates substantial variation in magnitude.
@@ -11616,11 +11560,11 @@ Fixed Effect Estimation
 
 Fixed Effect Model Results - Revenue Yield (
 \emph on
-left
+top
 \emph default
 ) & Fiscal Capacity (
 \emph on
-right
+bottom
 \emph default
 )
 \begin_inset CommandInset label
@@ -11655,14 +11599,14 @@ name "fig:FE-Results"
 \end_layout
 
 \begin_layout Standard
-The raw coefficient estimates are provided in Tables
+The raw coefficient estimates are provided in Tables 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:FE-Rev-Table"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:FE-Econ-Table"
@@ -11697,7 +11641,7 @@ Note that this is the average response to a shift of a single standard deviation
  across the models for all years.
  Thus, this effect would not necessarily scale linearly,
 \emph on
-even if the impact of a change in COTEL variables were consistent through
+ even if the impact of a change in COTEL variables were consistent through
  the entire range of COTEL values
 \emph default
 .
@@ -13233,7 +13177,7 @@ This analysis was designed to evaluate the impact of the cumulative, composite
 \end_layout
 
 \begin_layout Standard
-In constrast, the fiscal capacity models consistently explained less variation
+In contrast, the fiscal capacity models consistently explained less variation
  relative to revenue yield models, and the impacts of COTELs were inconclusive
  across models.
  The implication is that COTELs do not have direct impacts on fiscal capacity.
@@ -13307,7 +13251,7 @@ reference "sub:Duality-in-Public-Finance"
 
 .
  While popular discourse tends to decouple the two, revenues and expenditures
- are instrinsically linked.
+ are intrinsically linked.
  Each unit of revenue collected by a government not used to cover the cost
  of labor is redeployed as some programmatic output designed to either increase
  the real income of constituents or increase their capacity to generate
@@ -13333,7 +13277,7 @@ reference "chap:RevYieldCapacity"
  how to spend public funds than they otherwise would.
  Indeed, since we do not observe an alternative state of the world, such
  a question raises certain difficulties.
- The chief obstacle is the establishment of an artifical, yet defensible,
+ The chief obstacle is the establishment of an artificial, yet defensible,
  counterfactual scenario.
  The analysis that follows leans on basic tools of machine learning to construct
  such a scenario.
@@ -13372,7 +13316,7 @@ key "Samuelson1954"
 
 \end_inset
 
-, Paul Sameulson evaluated the implications of the joint consumption of
+, Paul Samuelson evaluated the implications of the joint consumption of
  public goods.
  This feature of public goods separates them from private goods along one
  very important dimension: the feasibility of preference revelation.
@@ -13435,16 +13379,16 @@ In effect, Tiebout was suggesting that the Samuelson model only applies
  That is, we can make claims about what consumers prefer based upon what
  they choose to consume.
  A mechanism similar to that at work in the private sector could therefore
- be applied to public spaces when mulitiple providers are present.
- It is clear that returns to scale and consistency make the multi-provider
- framework undesirable at the national level.
+ be applied to public spaces when multiple providers are present.
+ It is clear that returns to scale and consistency make the multiplied framework
+ undesirable at the national level.
  In a federal system, however, multiple providers must exist in the subnational
  space, particularly at the local level.
 \end_layout
 
 \begin_layout Standard
 To further the implication of Tiebout's insight, there are two dimensions
- along which the consumption evironment may provide the capacity for revealed
+ along which the consumption environment may provide the capacity for revealed
  preference.
  First, the ease with which preferences may be articulated increases with
  the volume of choices, or in this case, the number of local governments
@@ -13523,8 +13467,8 @@ In the past, there have been three broad approaches taken to address such
  tax and non-tax.
  The revenues can then be characterized by a single proportional value and
  entered easily into a given model.
- This is a useful approach, but there is a threat that disimilar cases will
- be lumped together.
+ This is a useful approach, but there is a threat that dissimilar cases
+ will be lumped together.
  If we have limited resolution (only two dimensions of comparison in the
  example), there is a limited ability to typify communities into distinct
  groups.
@@ -13898,8 +13842,8 @@ name "fig:Fiscal-Position-Concept"
 
 \begin_layout Plain Layout
 The figure demonstrates the concept of fiscal position in two dimensions.
- Suppose Counties A, B, and C all had only two expenditure functions: Infrastuct
-ure and Public Safety.
+ Suppose Counties A, B, and C all had only two expenditure functions: Infrastruc
+ture and Public Safety.
  We can relate their expenditure profiles to one another by placing the
  counties in space according to the proportion of expenditures allocated
  to each function.
@@ -14077,8 +14021,8 @@ $x_1=d_1$
  a county and its start group, we can still pull useful information out
  of this approach, even if it is difficult to explain precisely how a county
  is different.
- In any event, since one track's weakeness is the other's strength, the
- parallel tracks are complementary.
+ In any event, since one track's weakness is the other's strength, the parallel
+ tracks are complementary.
  If consistent results are seen across both, it adds strength to the findings.
  Henceforth, the 
 \begin_inset ERT
@@ -14286,7 +14230,7 @@ Health, Social Services
 \begin_layout Plain Layout
 
 \emph on
-Captial Improvements and Debt Service
+Capital Improvements and Debt Service
 \end_layout
 
 \end_inset
@@ -15241,11 +15185,8 @@ $k$
 
 , is a useful but insufficient means for identifying the correct clustering
  profile.
- On the one hand, SSM is
-\emph on
-always
-\emph default
- a non-increasing function of the number of groups 
+ On the one hand, SSM is always a non-increasing function of the number
+ of groups 
 \begin_inset ERT
 status open
 
@@ -15552,8 +15493,8 @@ reference "fig:Within-Cluster-Variation"
 
 \end_inset
 
- we see violinplots of cluster distances within each group, as well as the
- coefficient of variation for county distances for each group.
+ we see violin plots of cluster distances within each group, as well as
+ the coefficient of variation for county distances for each group.
 \end_layout
 
 \begin_layout Standard
@@ -15754,7 +15695,7 @@ The counties are colored by type.
 However, this view does some violence to the idea of constant covariance
  in within-cluster expenditure preferences.
  First, while we seek to identify within-cluster differences associated
- with COTELs, other differences capture inherent disimilarity as well.
+ with COTELs, other differences capture inherent dissimilarity as well.
  Second, there is an assumption that counties do not change types, but it
  is plausible that the variation seen in Figure 
 \begin_inset CommandInset ref
@@ -15765,7 +15706,7 @@ reference "fig:cty-clust-dist-var"
 
  would lead to different types at different times.
  Again, if this is due to COTELs, this is a useful finding.
- If it is due to other factors, it again highlights inherent disimilarity.
+ If it is due to other factors, it again highlights inherent dissimilarity.
 \end_layout
 
 \begin_layout Standard
@@ -16929,7 +16870,7 @@ $pcap$
 \end_layout
 
 \begin_layout Standard
-Our measure of similarity, or disimilarity as the case may be, is 
+Our measure of similarity, or dissimilarity as the case may be, is 
 \begin_inset ERT
 status open
 
@@ -17047,7 +16988,7 @@ name "fig:Var-Variation-Alt-Dist"
 \end_layout
 
 \begin_layout Plain Layout
-The significance of assosciation between cluster distance (
+The significance of association between cluster distance (
 \begin_inset ERT
 status open
 
@@ -17185,8 +17126,8 @@ status open
 The space in which cluster distance was measured is indicated by color.
  The
 \color red
- red boxplots indicate the distance was calculated across the entire expenditure
- portfolio
+ red box plots indicate the distance was calculated across the entire expenditur
+e portfolio
 \color inherit
 .
  The
@@ -17206,7 +17147,7 @@ The space in which cluster distance was measured is indicated by color.
 \end_layout
 
 \begin_layout Standard
-The boxplot in Figure 
+The box plot in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:clust-dist-by-method"
@@ -17646,7 +17587,7 @@ name "fig:Moran's-I-dist_clust-yr"
 \begin_layout Plain Layout
 The figure depicts the value of Moran's I for each distance measure by year.
  Higher values indicate clustering of similar values while lower values
- indicate clustering of disimilar values.
+ indicate clustering of dissimilar values.
  A value of zero should be interpreted as the absence of clustering.
  In other words, the distribution of cluster distances is relatively random
  across counties.
@@ -17691,7 +17632,7 @@ reference "fig:Moran's-I-dist_clust-yr"
 and that clustering intensity declines over time
 \emph default
 .
- In short, while it seems as though regional dynamics could play an outsized
+ In short, while it seems as though regional dynamics could play an out-sized
  role in causing counties to stray from the behavior of their initial types,
  the data seem to suggest that this expectation is overstated.
 \end_layout
@@ -17914,7 +17855,7 @@ key "Mill1836"
 
 \begin_layout Standard
 Mill hints at the natural tension between those at either end of the inquiry
- spectrum, while simultanesouly recognizing that the differences between
+ spectrum, while simultaneously recognizing that the differences between
  the poles are matters of degree, not concept.
  This is, in fact, an instructive point for the current situation.
  The a priori theoretical relationships hypothesized at the top of this
@@ -17966,9 +17907,9 @@ reference "alg:Shrinkage-Methods"
 ).
  Their utility extends beyond the specific use case for which they were
  designed.
- In general, they are useful for identifying the components of a dataset
+ In general, they are useful for identifying the components of a data set
  that are the best predictors.
- In contrast to filtering based on pairwise correlation or stepwise variable
+ In contrast to filtering based on pairwise correlation or step-wise variable
  selection, they avoid the primary deficiency with discrete subset selection
  methods: comparatively high variance in predictive accuracy.
  Shrinkage methods rely instead on a continuous process for subset selection.
@@ -18174,7 +18115,7 @@ lambda$
 In this analysis, following the theoretical specification above with LASSO
  regression provides information that we may use to update the model.
  Furthermore, this approach lessens the chance of omitted variable bias
- (assuming our initial dataset contains a sufficient amount of information).
+ (assuming our initial data set contains a sufficient amount of information).
  Finally, if the institutional variables remain significant, it lends support
  to the main theoretical thrust of this inquiry.
 \end_layout
@@ -18211,7 +18152,7 @@ reference "fig:LASSO-full-avg"
 
  depicts the impacts of each variable on cluster distance in the full portfolio
  space, averaged across all imputation sets.
- As can be seen, the institutonal variables (
+ As can be seen, the institutional variables (
 \begin_inset ERT
 status open
 
@@ -18761,7 +18702,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Note that there is also a gradual upward trend in the residuals, but the
- year effect is not nearly as siginificant as the county-specific factors.
+ year effect is not nearly as significant as the county-specific factors.
 \end_layout
 
 \end_inset
@@ -19156,7 +19097,7 @@ reference "tab:Fixed-Effect-Results-county"
 
 \end_inset
 
-) and the second incoroporates both county and year fixed effects (Table
+) and the second incorporates both county and year fixed effects (Table
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19740,7 +19681,9 @@ status open
 
 \begin_layout Plain Layout
 
-$dist_clust*$
+$dist
+\backslash
+_clust*$
 \end_layout
 
 \end_inset
@@ -19777,7 +19720,7 @@ _ratio$
 
 \end_inset
 
- estimates were decidely more mixed than those associated with 
+ estimates were decidedly more mixed than those associated with 
 \begin_inset ERT
 status open
 
@@ -19853,7 +19796,7 @@ It is clear that COTELs have changed the operating space for local fiscal
 \end_layout
 
 \begin_layout Standard
-These motivating questions harken back to the discussion of TELs as instruments
+These motivating questions hearken back to the discussion of TELs as instruments
  of democracy in Subsection 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -20177,7 +20120,7 @@ $B$
 
 \begin_layout Standard
 With this in mind, the analysis here leans on Samuelson's rather famous
- weak axiom of revealed preference (Algorithm
+ weak axiom of revealed preference (Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:WARP"
@@ -21680,7 +21623,7 @@ status collapsed
 \begin_layout Plain Layout
 An alternative approach involved applying a multivariate normal prior.
  This approach resulted in a number of infeasible values and did not improve
- the separability of vote coutcomes.
+ the separability of vote outcomes.
  In other words, it did not perform better than the chosen approach from
  the perspective of prediction.
 \end_layout
@@ -21726,7 +21669,7 @@ reference "fig:Voting-Outcomes-PCA"
 The typical candidate for estimating the probability of an outcome is the
  probit regression model, particularly when the estimate is to be used in
  a second stage equation.
- In this case, however, the probit estimater has a number of drawbacks.
+ In this case, however, the probit estimator has a number of drawbacks.
  First, link function estimators of this type
 \begin_inset Foot
 status collapsed
@@ -22078,7 +22021,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Neverthelss, the probability of successful passage for each vote was still
+Nevertheless, the probability of successful passage for each vote was still
  recoverable.
  As can be seen in Figure 
 \begin_inset CommandInset ref
@@ -22105,7 +22048,7 @@ What is the Impact of Ballot Design?
 With the baseline propensity to pass an exemption established for each county,
  focus can be centered on the actual elements of the ballot.
  Out of all 527 votes, no two ballot initiatives were exactly the same.
- They differ in revenue source, expenditure targets, and timeframes.
+ They differ in revenue source, expenditure targets, and time frames.
 \end_layout
 
 \begin_layout Subsection
@@ -22942,7 +22885,7 @@ linebreak
 
 \end_inset
 
- Hopsital Improvement
+ Hospital Improvement
 \end_layout
 
 \end_inset
@@ -23377,7 +23320,7 @@ _time$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Revenue Change Duraction (years)
+Revenue Change Duration (years)
 \end_layout
 
 \end_inset
@@ -24445,7 +24388,7 @@ reference "chap:DeBrucing"
  The prevailing propensity of a county to pass any exemption vote was identified
  as being at least as important as the most critical design choices.
  Even if local managers cannot change the prevailing propensity, it should
- materially affect their strategic decisionmaking.
+ materially affect their strategic decision-making.
  
 \end_layout
 
@@ -24544,7 +24487,7 @@ reference "chap:SubFinUS"
 , comprehension of TELs is well served by understanding the additional reforms
  in play before and during the growth in the TEL movement.
  The discussion of these reforms is continued here, stratified into three
- groups: targeted on-neutralities, neutral reforms, and general restrictions.
+ groups: targeted nonneutralities, neutral reforms, and general restrictions.
  In general, these reforms stem from what Mullins refers to as a 
 \begin_inset Quotes eld
 \end_inset
@@ -24593,7 +24536,7 @@ relief
 \end_layout
 
 \begin_layout Subsection
-Targeted Non-Neutralities
+Targeted Nonneutralities
 \end_layout
 
 \begin_layout Subsubsection
@@ -24605,7 +24548,7 @@ One of the challenges in researching relief mechanisms is the establishment
  of definitions that provide clear delineations across different policy
  alternatives.
  The variety in implementation that occurs for these relief mechanisms creates
- an environment in which considerable grey areas arise in classification.
+ an environment in which considerable gray areas arise in classification.
  Bowman notes that these arise because all property tax relief measures
  necessarily act on one of three things: the tax base, the tax rate, or
  the income of the taxpayer.
@@ -24623,7 +24566,7 @@ key "Bowman2009"
 \end_inset
 
 an inverse relationship, over a significant range of income, between income
- and tax relief amounts for a givene property tax amount.
+ and tax relief amounts for a given property tax amount.
 \begin_inset Quotes erd
 \end_inset
 
@@ -24683,8 +24626,8 @@ key "Bowman2008"
  On the other hand, circuit breakers directly decrease the property tax
  base, thereby potentially increasing liabilities for everyone else.
  Consequently, this instrument does particularly well to stoke tensions
- in the politicial space (voters abover the threshold versus voters below
- the threshold) that serve as an instrinsic characteristic of public finance.
+ in the political space (voters above the threshold versus voters below
+ the threshold) that serve as an intrinsic characteristic of public finance.
 \end_layout
 
 \begin_layout Standard
@@ -24873,7 +24816,7 @@ The rationale for the low-income component is evident given the targeting
 \begin_inset Quotes eld
 \end_inset
 
-In the 1950s, a sharp drop occurre in labor force participation for men
+In the 1950s, a sharp drop occurred in labor force participation for men
  65 and older, as Social Security retirements affected labor force participation
  rates.
  [...] Another reason for the decline in men's labor force participation rates,
@@ -24961,7 +24904,7 @@ key "Musgrave1979"
 \begin_inset Quotes eld
 \end_inset
 
-[i]dex the tax system, therby removing hidden tax increases in tax rates
+[i]ndex the tax system, thereby removing hidden tax increases in tax rates
  that permit the government to receive windfall revenue gains without having
  to ask explicitly for tax rate increases.
 \begin_inset Quotes erd
@@ -25064,7 +25007,7 @@ key "Gold1981"
 
 \end_inset
 
- Sexton notes that the amount of liabilitthat can be deferred is typically
+ Sexton notes that the amount of liability that can be deferred is typically
  restricted to 80-85%.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -25146,7 +25089,7 @@ There are two broad operational regimes in the US that govern state-local
  Clinton v Cedar Rapids & Missouri River Railroad Company
 \emph default
  case.
- The component of that opininon that has had lasting effect in subnational
+ The component of that opinion that has had lasting effect in subnational
  governance, and which was elaborated upon extensively in his treatise
 \emph on
  Municipal Corporations
@@ -25166,11 +25109,11 @@ key "Dillon1873"
 \end_inset
 
 It is a general and undisputed proposition that a municipal corporation
- possesses and can erxercise the following powers, and no others: first,
+ possesses and can exercise the following powers, and no others: first,
  those granted in express words; second, those necessarily or fairly implied
  in or incident to the powers expressly granted; third, those essential
  to the accomplishment of the declared objects and purposes of the corporation
- - not simply inconvenient, but indispensible.
+ - not simply inconvenient, but indispensable.
  Any fair, reasonable, substantial doubt concerning the existence of a power
  is resolved by the courts against a corporation, and the power is denied.
 \begin_inset Quotes erd
@@ -25260,8 +25203,8 @@ In the context of the current study, these competing doctrines have implications
  for local tax policy.
  Localities with Home Rule status have far greater discretion in designing
  the local revenue portfolio.
- Dillon's Rule became the de facto standard for states, whith Home Rule
- statutes being implemented as deviations from it.
+ Dillon's Rule became the de facto standard for states, with Home Rule statutes
+ being implemented as deviations from it.
  The first departure was enacted by Missouri in 1875, but it was not a general
  repudiation of the doctrine.
 \begin_inset CommandInset citation

@@ -1,0 +1,221 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass authesis
+\begin_preamble
+\usepackage{amsmath}
+\usepackage{url}
+\end_preamble
+\options titlepage
+\use_default_options true
+\begin_modules
+boxedfloat
+modelfloat
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement !tph
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+DOES ONE SIZE FIT ALL?
+\emph on
+ AN ANALYSIS OF
+\begin_inset Newline newline
+\end_inset
+
+TAX AND EXPENDITURE LIMITATIONS
+\begin_inset Newline newline
+\end_inset
+
+IN COLORADO
+\end_layout
+
+\begin_layout Author
+Marvin Ward Jr.
+\end_layout
+
+\begin_layout DegreeYear
+2015
+\end_layout
+
+\begin_layout Degree
+Doctor of Philosophy
+\end_layout
+
+\begin_layout Chair
+Dr.
+ Daniel Mullins
+\end_layout
+
+\begin_layout SecondReader
+Dr.
+ Rene Aubourg
+\end_layout
+
+\begin_layout ThirdReader
+Dr.
+ Jocelyn Johnston
+\end_layout
+
+\begin_layout DegreeField
+Public Administration/Finance
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyrightpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AbstractN
+This analysis evaluates three tax and expenditure limitation (TEL) policies
+ in Colorado: the Taxpayers' Bill of Rights (TABOR), the Statewide Limitation
+ on Property Tax Revenue (SLPTR), and the Gallagher Amendment (GA).
+ It extends previous research in two novel ways.
+ First, it enables analysis of overlapping policies while incorporating
+ county-specific characteristics by abstracting away from specific policies.
+ Rather, the focus rests on the impacts of these policies on property tax
+ levies.
+ Second, it incorporates spatial dependency to account for overlapping populatio
+ns and economic activity.
+ Within this framework, the revenue and expenditure implications of TEL
+ policies are evaluated, and TELs are found to have material impacts in
+ both cases.
+ TELs are associated with depressed revenues and measurable changes in expenditu
+re behavior.
+ With this context, the final empirical section evaluates the drivers of
+ successful 
+\begin_inset Quotes eld
+\end_inset
+
+DeBrucing
+\begin_inset Quotes erd
+\end_inset
+
+ efforts, in which localities are able to exempt themselves from components
+ of TABOR and SLPTR.
+ The analysis demonstrates that socioeconomic factors are the dominant determina
+nt of voting outcomes.
+\end_layout
+
+\begin_layout Acknowledgements
+My journey through the doctoral process, to which my wife can attest, has
+ been a lengthy enterprise.
+ The length of this process is, in large part, a consequence of having held
+ multiple jobs during this time.
+ Indeed, my time with American University, DC's Office of Revenue Analysis,
+ and the Congressional Budget Office have all made their imprint on this
+ work.
+ However, what such an approach has cost me in terms of duration has been,
+ in my estimation, more than offset by the quality of the folks that have
+ touched my life along the way.
+ In truth, this work is a reflection of not only my personal knowledge and
+ growth, but also of the experiences I have collected by way of my interactions
+ with family, friends, colleagues, professional superiors, and colleages.
+ I cannot practically identify them all here, but I can accomodate the highlight
+s.
+ I will break with tradition and first mention the single most important
+ person, my wife.
+ Without her patience and understanding, or lack thereof in some situations,
+ I would never have made it through to the end.
+ Both poles proved essential, for the world is not made of gumdrops and
+ unicorns.
+ Her perserverence is a testament to her character, and a reminder of why
+ I am a lucky man.
+ My parents, in addition to their unassailable support, have provided the
+ incredibly durable gift of making good decisions on behalf of my brother
+ and me.
+ They put us first, and in so doing, provided me with the necessary tools
+ to undertake this task.
+ My brother, though it took me a long time to realize it, gave me an enduring
+ reason to stay curious and focused on trying to leave the world more informed
+ than I found it.
+ He once called me his teacher, which blew me away.
+ Sometimes I wonder if he knows how much he has taught me.
+ Of course, I am quite grateful to my committee, consisting of Rene Aubourg,
+ Jocelyn Johnston, John Mikesell, and Dan Mullins.
+ Each of them assisted me through the uncharted waters of this dissertation.
+ Dan Mullins, my chair, has been of particular importance.
+ He has been my technical guide since long before the dissertation germinated
+ into something tractable.
+ But, more than that, beyond the equations and concepts, he has imparted
+ knowledge about what it means to be a scholar.
+ It is not a task, it is a mindset and lifestyle.
+ Most importantly, this is just the beginning.
+\end_layout
+
+\end_body
+\end_document
